@@ -1,0 +1,174 @@
+html,body {
+    margin:0;
+    padding:0;
+    line-height:1.5;
+}
+
+html {
+    background:#fefefe;
+    color:#111;
+
+    font-family:"Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+
+    // specific webkit property, not prefixed by autoprefixer
+    //-webkit-font-smoothing:antialiased;
+}
+
+ol,ul,li,dl,dt,dd {
+    margin:0;
+    padding:0;
+}
+
+body {
+    margin:0 auto;
+    padding:2rem 1rem;
+    max-width:38rem;
+    font-size:1.25rem;
+}
+
+a {
+    color:#2964E0;
+
+    &:visited {
+        color:#991C99;
+    }
+
+}
+
+h1 {
+    font-size:2rem;
+    text-align:center;
+}
+
+h2 {
+    font-size:1.5rem;
+}
+
+h3 {
+    font-size:1.333rem;
+    font-style:italic;
+}
+
+h1,h2,h3 {
+    font-weight:normal;
+}
+
+p {
+    + h1, + h2, + h3 {
+        margin-top:3rem;
+    }
+}
+
+
+
+
+.meta {
+
+    dt {
+        display:none;
+    }
+
+    dd {
+        font-weight:bold;
+    }
+
+    ul {
+        list-style-type:none;
+        font-size:1rem;
+        font-weight:normal;
+        color:#888;
+    }
+
+    li {
+        display:inline;
+
+        &:not(:last-child) {
+
+            &::after {
+                content:', '
+            }
+        }
+
+    }
+
+}
+
+
+
+
+.content {
+
+    p:first-child {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        text-align:center;
+    }
+
+    ul {
+        margin-left:2.5rem;
+    }
+
+}
+
+
+
+
+article {
+
+    header {
+        border-bottom:1px dotted #ccc;
+        padding-bottom:1.5rem;
+        text-align:center;
+
+        h1 {
+            font-style:italic;
+            font-family:Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+        }
+    }
+
+}
+
+
+
+
+li {
+    h1 {
+        text-align:left;
+        font-size:1.5rem;
+    }
+
+}
+
+
+// Code Highlighting
+.highlight {
+
+    position:relative;
+    margin:2rem 0;
+
+    pre {
+        margin:0;
+    }
+
+    code {
+
+        &:before {
+            display:block;
+            color:#DDDFDA;
+            padding-bottom:.75rem;
+            margin-bottom:.75rem;
+            content:attr(class);
+            border-bottom:2px solid #EAECE6;
+        }
+    }
+
+    .lineno {
+        color:#DDDFDA;
+        margin-right:.5rem;
+    }
+}
+
+
+@import 'pygments';

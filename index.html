@@ -1,15 +1,5 @@
 ---
+layout: base
 title: test
 ---
-<p>test</p>
-
-<ul>
-    {% for post in site.posts %}
-    <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        {{ post.excerpt }}
-    </li>
-    {% endfor %}
-</ul>
-
-<p>test end</p>
+{% include thoughts.html %}

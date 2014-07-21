@@ -22,16 +22,16 @@ layout: thought
             <dd>
                 <ul>
                     {% for tag in page.tags %}
-                    <li>
-                        {{ tag }}
-                    </li>
+                    <li>{{ tag }}</li>
                     {% endfor %}
                 </ul>
             </dd>
         </dl>
     </header>
 
+    <div class="content">
     {{ content }}
+    </div>
 
     {% include comments.html %}
 

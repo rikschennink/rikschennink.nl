@@ -19,16 +19,16 @@ Below are some suggestions on how to do this.
 If you are applying styles to a node use the cssText property, cssText allows you to add a group of styles in one go.
 
 JavaScript causing three reflows
-```javascript
+{% highlight javascript linenos %}
 node.style.left="10px";
 node.style.top="10px";
 node.style.width="200px";
-```
+{% endhighlight %}
 
 JavaScript causing one reflow
-```javascript
+{% highlight javascript linenos %}
 node.style.cssText="left:10px;top:10px;width:200px;"
-```
+{% endhighlight %}
 
 ## Creating DOM nodes
 

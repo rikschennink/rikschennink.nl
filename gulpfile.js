@@ -36,10 +36,10 @@ gulp.task('_jekyll',function(cb){
 
 gulp.task('_scss',function(){
 
-	return gulp.src('./scss/styles.scss')
-		.pipe(sass())
+	return gulp.src('./static/scss/styles.scss')
+		.pipe(sass({errLogToConsole: true}))
 		.pipe(autoprefixer('last 1 version', '> 5%', 'ie 8'))
-		.pipe(gulp.dest('./css'));
+		.pipe(gulp.dest('./static/css'));
 
 });
 
@@ -52,15 +52,16 @@ gulp.task('build',function(cb){
 gulp.task('dev',['build','_connect'],function(){
 
 	gulp.watch([
-		'./scss/**/*',
-		'./js/**/*',
-		'./_includes/**/*',
+
+		// all static files
+		'./static/**/*',
 
 		// all html and markdown files
 		'./**/*.html',
 		'./**/*.md',
 
 		// exclude these files
+		'!./static/css/*',
 		'!./_site/**/*',
 		'!./node_modules/**/*'
 
