@@ -1,0 +1,4 @@
+pygments: true
+safe: true
+exclude: [node_modules, README.md, package.json, gulpfile.js]
+permalink: /thoughts/:title

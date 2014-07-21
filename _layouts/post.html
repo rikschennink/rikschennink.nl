@@ -1,0 +1,38 @@
+---
+layout: thought
+---
+<article>
+
+    <header>
+        <h1>{{ page.title }}</h1>
+        <dl class="meta">
+            <dt>Date</dt>
+            <dd>
+                {% assign d = page.date | date: "%-d"  %}
+                {{ page.date | date: "%B" }}
+                {% case d %}
+                {% when '1' or '21' or '31' %}{{ d }}st
+                {% when '2' or '22' %}{{ d }}nd
+                {% when '3' or '23' %}{{ d }}rd
+                {% else %}{{ d }}th
+                {% endcase %},
+                {{ page.date | date: "%Y" }}
+            </dd>
+            <dt>Tags</dt>
+            <dd>
+                <ul>
+                    {% for tag in page.tags %}
+                    <li>
+                        {{ tag }}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </dd>
+        </dl>
+    </header>
+
+    {{ content }}
+
+    {% include comments.html %}
+
+</article>
