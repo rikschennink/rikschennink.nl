@@ -1,94 +1,3 @@
-html, body {
-  margin: 0;
-  padding: 0; }
-
-html {
-  background: #fefefe;
-  color: #111;
-  font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif; }
-
-ol, ul, li, dl, dt, dd {
-  margin: 0;
-  padding: 0; }
-
-body {
-  margin: 0 auto;
-  padding: 2rem 1rem;
-  max-width: 38rem;
-  font-size: 1.25rem;
-  line-height: 1.5; }
-
-a {
-  color: #2964E0; }
-  a:visited {
-    color: #991C99; }
-
-h1 {
-  font-size: 2rem;
-  text-align: center; }
-
-h2 {
-  font-size: 1.5rem; }
-
-h3 {
-  font-size: 1.333rem;
-  font-style: italic; }
-
-h1, h2, h3 {
-  font-weight: normal; }
-
-p + h1, p + h2, p + h3 {
-  margin-top: 3rem; }
-
-.meta dt {
-  display: none; }
-.meta dd {
-  font-weight: bold; }
-.meta ul {
-  list-style-type: none;
-  font-size: 1rem;
-  font-weight: normal;
-  color: #888; }
-.meta li {
-  display: inline; }
-  .meta li:not(:last-child)::after {
-    content: ', '; }
-
-.content > p:first-child {
-  font-size: 1.5rem; }
-.content h2 {
-  text-align: center; }
-.content ul {
-  margin-left: 2.5rem; }
-
-article header {
-  text-align: center; }
-  article header h1 {
-    font-style: italic;
-    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; }
-
-li h1 {
-  text-align: left;
-  font-size: 1.5rem; }
-
-.highlight {
-  position: relative;
-  margin: 2rem 0;
-  max-width: 100%;
-  overflow: hidden; }
-  .highlight pre {
-    margin: 0; }
-  .highlight code:before {
-    display: block;
-    color: #DDDFDA;
-    padding-bottom: 0.75rem;
-    margin-bottom: 0.75rem;
-    content: attr(class);
-    border-bottom: 2px solid #EAECE6; }
-  .highlight .lineno {
-    color: #DDDFDA;
-    margin-right: 0.5rem; }
-
 .highlight .hll {
   background-color: #d6d6d6; }
 
@@ -351,3 +260,124 @@ li h1 {
   color: #f5871f; }
 
 /* Literal.Number.Integer.Long */
+.js [data-module]:not([data-initialized]) {
+  visibility: hidden; }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+html {
+  background: #fefefe;
+  color: #111;
+  font-family: 'Georgia', serif; }
+
+ol, ul, li, dl, dt, dd {
+  margin: 0;
+  padding: 0; }
+
+canvas, img {
+  max-width: 100%; }
+
+body {
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  max-width: 38rem;
+  font-size: 1.25rem;
+  line-height: 1.5; }
+
+a {
+  color: #2964E0; }
+  a:visited {
+    color: #991C99; }
+
+h1 {
+  font-size: 2rem;
+  text-align: center; }
+
+h2 {
+  font-size: 1.5rem; }
+
+h3 {
+  font-size: 1.333rem;
+  font-style: italic; }
+
+h1, h2, h3 {
+  font-weight: normal; }
+
+p + h1, p + h2, p + h3 {
+  margin-top: 3rem; }
+
+.meta dt {
+  display: none; }
+.meta dd {
+  font-weight: bold; }
+.meta ul {
+  list-style-type: none;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #888; }
+.meta li {
+  display: inline; }
+  .meta li:not(:last-child)::after {
+    content: ', '; }
+
+.content > p:first-child {
+  font-size: 1.5rem; }
+.content h2 {
+  text-align: center; }
+.content ul {
+  margin-left: 2.5rem; }
+
+article header {
+  text-align: center; }
+  article header h1 {
+    font-style: italic;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; }
+
+li h1 {
+  text-align: left;
+  font-size: 1.5rem; }
+
+.highlight {
+  position: relative;
+  margin: 2rem 0;
+  max-width: 100%;
+  overflow: hidden;
+  background: transparent; }
+  .highlight pre {
+    margin: 0; }
+  .highlight code:before {
+    display: block;
+    color: #D6D8D2;
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.75rem;
+    content: attr(class); }
+  .highlight .lineno {
+    color: #D6D8D2;
+    margin-right: 0.5rem; }
+
+.cinema {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  margin: 2rem 0 2rem -50vw;
+  box-sizing: border-box;
+  padding: 2rem;
+  background: #EDF0EA; }
+  .cinema .highlight {
+    margin: 0; }
+
+.flickr a {
+  display: inline-block;
+  width: 16.666%;
+  border: 0;
+  vertical-align: top;
+  overflow: hidden;
+  padding: 1rem;
+  box-sizing: border-box; }
+.flickr img {
+  display: block;
+  width: 100%;
+  max-width: auto;
+  height: auto; }

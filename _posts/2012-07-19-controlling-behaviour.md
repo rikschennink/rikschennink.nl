@@ -17,6 +17,7 @@ Before I started writing any big client-side frameworks I wrote a lot of tiny we
 
 And thus, the BehaviourController was born. The BehaviourController (BC) is a JavaScript Class that in it’s most basic form listens to the `DOMContentLoaded` event, when the `DOMContentLoaded` event fires the BC collects all DOM nodes with a `data-behaviour` attribute. The value of the “data-behaviour” attribute corresponds to a JavaScript behaviour Class with the same name. For each of the DOM nodes with a set behaviour, the BC will create a new instance of the corresponding JavaScript behaviour Class, passing the node along. This looks something like this:
 
+<div class="cinema">
 {% highlight javascript linenos %}
 /*
  * Clock Class
@@ -64,8 +65,9 @@ ClearField.prototype.handleEvent = function(e) {
     }
 };
 {% endhighlight %}
+</div>
 
-
+<div class="cinema">
 {% highlight html linenos %}
 <!-- Clock behaviour HTML -->
 <p data-behaviour="Clock">Clock is inactive</p>
@@ -78,6 +80,7 @@ ClearField.prototype.handleEvent = function(e) {
 BehaviourController.applyDefault();
 </script>
 {% endhighlight %}
+</div>
 
 When we run this, the BC instantiates a new Clock and a new ClearField, it is not concerned with what type of objects it’s making, it’s only concern is to find references to Classes and make instances, marvelous! View the [BehaviourController Demo](/demo/behaviour-controller/basic/) using a modern browser.
 
@@ -89,6 +92,7 @@ To get the above working, we need another two Classes that take care of loading 
 
 The HTML and JavaScript would now look like the example below.
 
+<div class="cinema">
 {% highlight javascript linenos %}
 /*
  * BehaviourBase Abstract Class
@@ -187,7 +191,9 @@ ClearField.prototype._unload = function() {
     this._element.parentNode.removeChild(button);
 };
 {% endhighlight %}
+</div>
 
+<div class="cinema">
 {% highlight html linenos %}
 <!-- Clock behaviour HTML -->
 <p data-behaviour="Clock" data-conditions='{"window":{"minWidth":600}}'>Clock is inactive</p>
@@ -200,6 +206,7 @@ ClearField.prototype._unload = function() {
 BehaviourController.applyDefault();
 </script>
 {% endhighlight %}
+</div>
 
 Be sure to resize your window a couple times when checking the [Responsive BehaviourController Demo](http://rikschennink.nl/demo/behaviour-controller/responsive/). The two controls will load and unload depending on your window width so they might not be active when you open the page.
 
