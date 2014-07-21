@@ -75,7 +75,9 @@ li h1 {
 
 .highlight {
   position: relative;
-  margin: 2rem 0; }
+  margin: 2rem 0;
+  max-width: 100%;
+  overflow: hidden; }
   .highlight pre {
     margin: 0; }
   .highlight code:before {
