@@ -1,12 +1,11 @@
 html, body {
   margin: 0;
-  padding: 0;
-  line-height: 1.5; }
+  padding: 0; }
 
 html {
   background: #fefefe;
   color: #111;
-  font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif; }
+  font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif; }
 
 ol, ul, li, dl, dt, dd {
   margin: 0;
@@ -16,7 +15,8 @@ body {
   margin: 0 auto;
   padding: 2rem 1rem;
   max-width: 38rem;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  line-height: 1.5; }
 
 a {
   color: #2964E0; }
@@ -54,7 +54,7 @@ p + h1, p + h2, p + h3 {
   .meta li:not(:last-child)::after {
     content: ', '; }
 
-.content p:first-child {
+.content > p:first-child {
   font-size: 1.5rem; }
 .content h2 {
   text-align: center; }
@@ -62,8 +62,6 @@ p + h1, p + h2, p + h3 {
   margin-left: 2.5rem; }
 
 article header {
-  border-bottom: 1px dotted #ccc;
-  padding-bottom: 1.5rem;
   text-align: center; }
   article header h1 {
     font-style: italic;

@@ -1,17 +1,12 @@
 html,body {
     margin:0;
     padding:0;
-    line-height:1.5;
 }
 
 html {
     background:#fefefe;
     color:#111;
-
-    font-family:"Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
-
-    // specific webkit property, not prefixed by autoprefixer
-    //-webkit-font-smoothing:antialiased;
+    font-family:'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
 }
 
 ol,ul,li,dl,dt,dd {
@@ -24,6 +19,7 @@ body {
     padding:2rem 1rem;
     max-width:38rem;
     font-size:1.25rem;
+    line-height:1.5;
 }
 
 a {
@@ -98,7 +94,7 @@ p {
 
 .content {
 
-    p:first-child {
+    >p:first-child {
         font-size: 1.5rem;
     }
 
@@ -118,8 +114,6 @@ p {
 article {
 
     header {
-        border-bottom:1px dotted #ccc;
-        padding-bottom:1.5rem;
         text-align:center;
 
         h1 {
@@ -134,6 +128,7 @@ article {
 
 
 li {
+
     h1 {
         text-align:left;
         font-size:1.5rem;
