@@ -39,7 +39,8 @@ gulp.task('_scss',function(){
 	return gulp.src('./static/scss/styles.scss')
 		.pipe(sass({errLogToConsole: true}))
 		.pipe(autoprefixer('last 1 version', '> 5%', 'ie 8'))
-		.pipe(gulp.dest('./static/css'));
+		.pipe(gulp.dest('./static/css'))
+		.pipe(gulp.dest('._site/static/css'));
 
 });
 
@@ -61,7 +62,6 @@ gulp.task('dev',['build','_connect'],function(){
 		'./**/*.md',
 
 		// exclude these files
-		'!./static/css/*',
 		'!./_site/**/*',
 		'!./node_modules/**/*'
 

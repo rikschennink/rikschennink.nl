@@ -65,49 +65,51 @@ Before the first 24 hours where over I already shipped 25.000 units. Most of the
 
 Below you can see the amount of downloads during the free period. It’s quit shocking compared to the 2 to 5 downloads I normally get on an average day.
 
-<div class="cinema" data-module="ui/LineChart">
-    <table summary="Eve of Impact Free Period Downloads">
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th>Downloads</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th><time datetime="2012-12-14">Fri. 14th</time></th>
-                <td data-value="5">5</td>
-            </tr>
-            <tr>
-                <th><time datetime="2012-12-15">Sat. 15th</time></th>
-                <td data-value="7000">7.000</td>
-            </tr>
-            <tr>
-                <th><time datetime="2012-12-16">Sun. 16th</time></th>
-                <td data-value="29759">29.759</td>
-            </tr>
-            <tr>
-                <th><time datetime="2012-12-17">Mon. 17th</time></th>
-                <td data-value="24482">24.482</td>
-            </tr>
-            <tr>
-                <th><time datetime="2012-12-18">Tue. 18th</time></th>
-                <td data-value="15989">15.989</td>
-            </tr>
-            <tr>
-                <th><time datetime="2012-12-19">Wed. 19th</time></th>
-                <td data-value="11295">11.295</td>
-            </tr>
-            <tr>
-                <th><time datetime="2012-12-20">Thu. 20th</time></th>
-                <td data-value="5324">5.324</td>
-            </tr>
-            <tr>
-                <th><time datetime="2012-12-21">Fri. 21th</time></th>
-                <td data-value="65">65</td>
-            </tr>
-        </tbody>
-    </table>
+<div class="cinema">
+    <div class="dataset" data-module="ui/LineChart">
+        <table summary="Eve of Impact Free Period Downloads">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Downloads</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><time datetime="2012-12-14">Fri. 14th</time></th>
+                    <td data-value="5">5</td>
+                </tr>
+                <tr>
+                    <th><time datetime="2012-12-15">Sat. 15th</time></th>
+                    <td data-value="7000">7.000</td>
+                </tr>
+                <tr>
+                    <th><time datetime="2012-12-16">Sun. 16th</time></th>
+                    <td data-value="29759">29.759</td>
+                </tr>
+                <tr>
+                    <th><time datetime="2012-12-17">Mon. 17th</time></th>
+                    <td data-value="24482">24.482</td>
+                </tr>
+                <tr>
+                    <th><time datetime="2012-12-18">Tue. 18th</time></th>
+                    <td data-value="15989">15.989</td>
+                </tr>
+                <tr>
+                    <th><time datetime="2012-12-19">Wed. 19th</time></th>
+                    <td data-value="11295">11.295</td>
+                </tr>
+                <tr>
+                    <th><time datetime="2012-12-20">Thu. 20th</time></th>
+                    <td data-value="5324">5.324</td>
+                </tr>
+                <tr>
+                    <th><time datetime="2012-12-21">Fri. 21th</time></th>
+                    <td data-value="65">65</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 
 
@@ -138,63 +140,64 @@ Since I suspected most of my original sales happened through people searching th
 
 Before the sale Eve of Impact was slowly falling down in the search ranking, I also saw this happening to my sales (not a lot but a negative trend), so these two variables might be related. As you can see below the sale positively impacted search ranking which in turn should, if my theory is correct, improve future sales. I’ll only show the keyword “asteroid”, the other keywords follow a similar pattern. At the time of this writing (three weeks after the sale has ended) it’s still ranked around position 25.
 
-<div class="cinema" data-module="ui/LineChart">
-<table summary="Eve of Impact Search Ranking">
-    <thead>
-        <tr>
-            <th>Date</th>
-            <th>Ranking</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th><time datetime="2012-12-13">Thu. 13th</time></th>
-            <td data-value="-139">139</td>
-        </tr>
-        <tr>
-            <th><time datetime="2012-12-14">Fri. 14th</time></th>
-            <td data-value="-145">145</td>
-        </tr>
-        <tr>
-            <th><time datetime="2012-12-15">Sat. 15th</time></th>
-            <td data-value="-42">42</td>
-        </tr>
-        <tr>
-            <th><time datetime="2012-12-16">Sun. 16th</time></th>
-            <td data-value="-17">17</td>
-        </tr>
-        <tr>
-            <th><time datetime="2012-12-17">Mon. 17th</time></th>
-            <td data-value="-10">10</td>
-        </tr>
-        <tr>
-            <th><time datetime="2012-12-18">Tue. 18th</time></th>
-            <td data-value="-10">10</td>
-        </tr>
-        <tr>
-            <th><time datetime="2012-12-19">Wed. 19th</time></th>
-            <td data-value="-10">10</td>
-        </tr>
-        <tr>
-            <th><time datetime="2012-12-20">Thu. 20th</time></th>
-            <td data-value="-10">10</td>
-        </tr>
-        <tr>
-            <th><time datetime="2012-12-21">Fri. 21th</time></th>
-            <td data-value="-10">10</td>
-        </tr>
-        <tr>
-            <th><time datetime="2012-12-22">Sat. 22th</time></th>
-            <td data-value="-27">27</td>
-        </tr>
-        <tr>
-            <th><time datetime="2012-12-23">Sun. 23th</time></th>
-            <td data-value="-27">27</td>
-        </tr>
-    </tbody>
-</table>
+<div class="cinema">
+    <div class="dataset" data-module="ui/LineChart">
+        <table summary="Eve of Impact Search Ranking">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Ranking</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><time datetime="2012-12-13">Thu. 13th</time></th>
+                    <td data-value="-139">139</td>
+                </tr>
+                <tr>
+                    <th><time datetime="2012-12-14">Fri. 14th</time></th>
+                    <td data-value="-145">145</td>
+                </tr>
+                <tr>
+                    <th><time datetime="2012-12-15">Sat. 15th</time></th>
+                    <td data-value="-42">42</td>
+                </tr>
+                <tr>
+                    <th><time datetime="2012-12-16">Sun. 16th</time></th>
+                    <td data-value="-17">17</td>
+                </tr>
+                <tr>
+                    <th><time datetime="2012-12-17">Mon. 17th</time></th>
+                    <td data-value="-10">10</td>
+                </tr>
+                <tr>
+                    <th><time datetime="2012-12-18">Tue. 18th</time></th>
+                    <td data-value="-10">10</td>
+                </tr>
+                <tr>
+                    <th><time datetime="2012-12-19">Wed. 19th</time></th>
+                    <td data-value="-10">10</td>
+                </tr>
+                <tr>
+                    <th><time datetime="2012-12-20">Thu. 20th</time></th>
+                    <td data-value="-10">10</td>
+                </tr>
+                <tr>
+                    <th><time datetime="2012-12-21">Fri. 21th</time></th>
+                    <td data-value="-10">10</td>
+                </tr>
+                <tr>
+                    <th><time datetime="2012-12-22">Sat. 22th</time></th>
+                    <td data-value="-27">27</td>
+                </tr>
+                <tr>
+                    <th><time datetime="2012-12-23">Sun. 23th</time></th>
+                    <td data-value="-27">27</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
-
 
 ## AppStore Holiday Closing
 

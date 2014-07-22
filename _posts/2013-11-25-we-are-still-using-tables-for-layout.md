@@ -44,13 +44,9 @@ In 2014, let’s change things, let’s write our *HTML first* and then think ab
 We would get all these wonderful things for free:
 
 - Print!
-
 - A stable base to create an accessible webpage.
-
 - A correct HTML5 document outline.
-
 - The perfect starting point to work with Progressive Enhancement.
-
 - Usable and readable pages on all devices.
 
 What do you think?

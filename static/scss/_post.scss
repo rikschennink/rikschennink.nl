@@ -4,13 +4,21 @@
         text-align:center;
     }
 
+    aside {
+
+        margin-top:3.75rem;
+
+        h1 {
+            text-align:center;
+        }
+    }
+
     >div {
 
-        a {
-            color:#444;
-        }
-
         h2 {
+
+            font-style:italic;
+            margin-left:-1.5rem;
 
             &::before {
                 content: '';
@@ -18,30 +26,34 @@
                 height: 1px;
                 width: 20%;
                 background: #dadada;
-                margin: 0 0 1.875rem -1.5rem;
+                margin: 0 0 1.875rem 0rem;
             }
 
         }
 
-        ul {
-            margin-left:2.5rem;
-        }
-
+        // paragraphs
         >p:first-child {
             font-style:italic;
             margin-left:-1.5rem;
             font-size:1.5rem;
         }
 
-        /*
-        >p:first-child+p:first-letter {
-            float:left;
-            font-size:400%;
-            margin-top:7px;
-            margin-right:5px;
-            color:#992E00;
+        // lists
+        ol,
+        ul {
+            margin-left:2.5rem;
+            margin-right:5rem;
+
+            ul,ol {
+                margin-top:.9375rem;
+                margin-right:0;
+            }
         }
-        */
+
+
+        li {
+            margin-bottom:.9375rem;
+        }
 
     }
 

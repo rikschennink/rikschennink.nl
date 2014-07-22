@@ -7,11 +7,7 @@ layout: thought
         <h1>{{ page.title }}</h1>
         <dl class="meta">
             <dt>Date</dt>
-            <dd>
-                <time datetime="{{ page.date | date: '%Y-%m-%d' }}">
-                {% assign d = page.date | date: "%-d"  %}{{ page.date | date: "%B" }} {% case d %}{% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ page.date | date: "%Y" }}
-                </time>
-            </dd>
+            <dd><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{% assign d = page.date | date: "%-d"  %}{{ page.date | date: "%B" }} {% case d %}{% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ page.date | date: "%Y" }}</time></dd>
         </dl>
     </header>
 
@@ -22,6 +18,3 @@ layout: thought
     {% include comments.html %}
 
 </article>
-
-<script src="/static/js/vendor/amchart.js"></script>
-<script src="/static/js/vendor/amchart-kickoff.js"></script>

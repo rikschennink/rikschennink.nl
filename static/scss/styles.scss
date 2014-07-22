@@ -1,5 +1,5 @@
-.js [data-module]:not([data-initialized]) {
-    visibility:hidden;
+section,aside,article,nav,footer {
+    display:block;
 }
 
 html,body {
@@ -14,8 +14,8 @@ html {
 }
 
 ::selection {
-    color: #eee;
-    background: #aaa;
+    color:#fff;
+    background:#111;
 }
 
 // vertical rhythm tester
@@ -43,7 +43,7 @@ canvas,img {
     max-width:100%;
 }
 
-pre,code {
+pre, code {
     font-size:1rem;
     font-family:'Courier New', Courier, monospace;
 }
@@ -54,21 +54,14 @@ body {
     max-width:38rem;
     font-size:1.25rem;
     line-height:1.5;
+    overflow-x:hidden;
 }
 
 a {
-    color:#2964E0;
-
-    &:visited {
-        color:#991C99;
-    }
+    color:#111;
 }
 
-body > h1 {
-    display:none;
-}
-
-h1,h2,h3,p {
+h1,h2,h3,p,footer {
     margin:1.875rem 0;
     font-weight:normal;
 }
@@ -76,85 +69,54 @@ h1,h2,h3,p {
 h1 {
     font-size:2.25rem;
     line-height:1.25;
-    margin-bottom:1.5rem;
 }
 
 h2 {
     font-size:1.75rem;
     line-height:1.333;
-    color:#C97979;
-    font-family:'lucida sans unicode',sans-serif;
 }
 
 h3 {
-    font-size:1.5rem;
-    font-weight:bold;
+    font-size:1.25rem;
+    font-family:'lucida sans unicode',sans-serif;
+    text-transform:uppercase;
+    letter-spacing:.06125rem;
 }
 
-h3 + p {
-    margin-top:-1.875rem;
-}
 
 
 
 // crumbs
-body > h1 {
-    margin:1.875rem 0;
+body > nav {
+    
+    margin:0 -1.5rem 3.75rem;
     font-size:1.25rem;
-}
+    text-align:left;
 
-
-
-.meta {
-
-    margin-bottom:1.875rem;
-
-    dt {
+    h1 {
         display:none;
     }
 
-    time {
-        display:block;
-        text-transform:uppercase;
-        font-size:1rem;
-        color:#999;
-        letter-spacing:.125rem;
-    }
+    a {
+        color:#6f93cf;
+        text-decoration:none;
 
-    ul {
-        list-style-type:none;
-        font-size:1rem;
-        font-weight:normal;
-        color:#888;
-    }
-
-    li {
-        display:inline;
-
-        &:not(:last-child) {
-
-            &::after {
-                content:', '
-            }
+        &::before {
+            content:'◂';
+            margin-right:.25rem;
+            font-family:1.5rem;
+            position:relative;
+            top:.125rem;
+            font-size:1.5rem;
         }
-
     }
-
 }
 
 
 
 
-li {
-
-    h1 {
-        text-align:left;
-        font-size:1.5rem;
-    }
-
-}
-
-p code {
+// inline code snippet
+:not(pre) code {
     padding:0 .333rem;
     display:inline-block;
     white-space:nowrap;
@@ -164,10 +126,19 @@ p code {
 }
 
 
+// module loading
+.js [data-module]:not([data-initialized]) {
+    visibility:hidden;
+}
+
+
 // components
-@import 'highlight';
 @import 'cinema';
+@import 'highlight';
 @import 'flickr';
+@import 'dataset';
+@import 'meta';
+@import 'list-thoughts';
 
 // layouts
 @import 'post';
