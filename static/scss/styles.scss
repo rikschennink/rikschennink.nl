@@ -1,5 +1,3 @@
-@import 'pygments';
-
 .js [data-module]:not([data-initialized]) {
     visibility:hidden;
 }
@@ -10,23 +8,49 @@ html,body {
 }
 
 html {
-    background:#fefefe;
+    font-family:'Noto Serif','Times',serif;
     color:#111;
-    font-family:'Georgia', serif;
+    background:#fefefe;
+}
+
+::selection {
+    color: #eee;
+    background: #aaa;
+}
+
+// vertical rhythm tester
+html::before {
+    position:absolute;
+    left:50%;
+    top:0;
+    bottom:0;
+    right:0;
+
+    //content:'';
+
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.1) 50%);
+    background-size:1px 3.75rem; // 2 * (1.5 * 1.25rem)
+    background-position: 0 0;
 }
 
 ol,ul,li,dl,dt,dd {
     margin:0;
     padding:0;
+    font-weight:normal;
 }
 
 canvas,img {
     max-width:100%;
 }
 
+pre,code {
+    font-size:1rem;
+    font-family:'Courier New', Courier, monospace;
+}
+
 body {
+    padding:1.875rem 1rem;
     margin:0 auto;
-    padding:2rem 1rem;
     max-width:38rem;
     font-size:1.25rem;
     line-height:1.5;
@@ -38,44 +62,63 @@ a {
     &:visited {
         color:#991C99;
     }
-
 }
 
-h1 {
-    font-size:2rem;
-    text-align:center;
+body > h1 {
+    display:none;
 }
 
-h2 {
-    font-size:1.5rem;
-}
-
-h3 {
-    font-size:1.333rem;
-    font-style:italic;
-}
-
-h1,h2,h3 {
+h1,h2,h3,p {
+    margin:1.875rem 0;
     font-weight:normal;
 }
 
-p {
-    + h1, + h2, + h3 {
-        margin-top:3rem;
-    }
+h1 {
+    font-size:2.25rem;
+    line-height:1.25;
+    margin-bottom:1.5rem;
 }
 
+h2 {
+    font-size:1.75rem;
+    line-height:1.333;
+    color:#C97979;
+    font-family:'lucida sans unicode',sans-serif;
+}
+
+h3 {
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+h3 + p {
+    margin-top:-1.875rem;
+}
+
+
+
+// crumbs
+body > h1 {
+    margin:1.875rem 0;
+    font-size:1.25rem;
+}
 
 
 
 .meta {
 
+    margin-bottom:1.875rem;
+
     dt {
         display:none;
     }
 
-    dd {
-        font-weight:bold;
+    time {
+        display:block;
+        text-transform:uppercase;
+        font-size:1rem;
+        color:#999;
+        letter-spacing:.125rem;
     }
 
     ul {
@@ -102,41 +145,6 @@ p {
 
 
 
-.content {
-
-    >p:first-child {
-        font-size: 1.5rem;
-    }
-
-    h2 {
-        text-align:center;
-    }
-
-    ul {
-        margin-left:2.5rem;
-    }
-
-}
-
-
-
-
-article {
-
-    header {
-        text-align:center;
-
-        h1 {
-            font-style:italic;
-            font-family:Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-        }
-    }
-
-}
-
-
-
-
 li {
 
     h1 {
@@ -146,74 +154,20 @@ li {
 
 }
 
-
-// Code Highlighting
-.highlight {
-
-    position:relative;
-    margin:2rem 0;
-    max-width:100%;
-    overflow:hidden;
-    background:transparent;
-
-    pre {
-        margin:0;
-    }
-
-    code {
-
-        &:before {
-            display:block;
-            color:#D6D8D2;
-            padding-bottom:.75rem;
-            margin-bottom:.75rem;
-            content:attr(class);
-        }
-    }
-
-    .lineno {
-        color:#D6D8D2;
-        margin-right:.5rem;
-    }
+p code {
+    padding:0 .333rem;
+    display:inline-block;
+    white-space:nowrap;
+    color: #4271AE;
+    background: #EFF4FA;
+    border-radius:.25rem;
 }
 
 
+// components
+@import 'highlight';
+@import 'cinema';
+@import 'flickr';
 
-.cinema {
-
-    position:relative;
-    width:100vw;
-    left:50%;
-    margin:2rem 0 2rem -50vw;
-
-    box-sizing:border-box;
-    padding:2rem;
-    background:#EDF0EA;
-
-    .highlight {
-        margin:0;
-    }
-    
-}
-
-
-.flickr {
-
-    a {
-        display:inline-block;
-        width:16.666%;
-        border:0;
-        vertical-align:top;
-        overflow:hidden;
-        padding:1rem;
-        box-sizing:border-box;
-    }
-    
-    img {
-        display:block;
-        width:100%;
-        max-width:auto;
-        height:auto;
-    }
-
-}
+// layouts
+@import 'post';

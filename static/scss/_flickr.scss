@@ -1,0 +1,21 @@
+
+.flickr {
+
+    a {
+        display:inline-block;
+        width:16.666%;
+        border:0;
+        vertical-align:top;
+        overflow:hidden;
+        padding:1rem;
+        box-sizing:border-box;
+    }
+
+    img {
+        display:block;
+        width:100%;
+        max-width:auto;
+        height:auto;
+    }
+
+}

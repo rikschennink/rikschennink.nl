@@ -1,0 +1,23 @@
+
+.cinema {
+
+    padding:0 1.5rem;
+    margin:1.875rem 0;
+
+    .highlight {
+        margin:0;
+    }
+
+}
+
+@media (min-width:38rem) {
+
+    .cinema {
+        position:relative;
+        width:100vw;
+        left:50%;
+        margin-left:-50vw;
+        box-sizing:border-box;
+    }
+
+}

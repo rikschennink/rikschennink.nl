@@ -1,0 +1,48 @@
+.post {
+
+    header {
+        text-align:center;
+    }
+
+    >div {
+
+        a {
+            color:#444;
+        }
+
+        h2 {
+
+            &::before {
+                content: '';
+                display: block;
+                height: 1px;
+                width: 20%;
+                background: #dadada;
+                margin: 0 0 1.875rem -1.5rem;
+            }
+
+        }
+
+        ul {
+            margin-left:2.5rem;
+        }
+
+        >p:first-child {
+            font-style:italic;
+            margin-left:-1.5rem;
+            font-size:1.5rem;
+        }
+
+        /*
+        >p:first-child+p:first-letter {
+            float:left;
+            font-size:400%;
+            margin-top:7px;
+            margin-right:5px;
+            color:#992E00;
+        }
+        */
+
+    }
+
+}

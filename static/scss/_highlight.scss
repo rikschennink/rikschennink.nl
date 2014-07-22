@@ -1,0 +1,41 @@
+@import 'vendor/pygments';
+
+.highlight {
+
+    position:relative;
+    max-width:100%;
+    overflow:hidden;
+    background:transparent;
+
+    margin:0;
+    padding:1rem;
+    border:1px solid #E3E6DD;
+    border-radius:.5rem;
+
+    pre {
+        margin:0;
+        padding-left:2rem;
+        word-break:break-word;
+    }
+
+    code {
+
+        &:before {
+            display:block;
+            color:#D6D8D2;
+            margin-left:-2rem;
+            padding-bottom:.75rem;
+            margin-bottom:.75rem;
+            content:attr(data-lang) ':';
+        }
+
+    }
+
+    .lineno {
+        position: absolute;
+        color:#D6D8D2;
+        margin-right:.5rem;
+        margin-left: -2rem;
+    }
+}
+

@@ -84,7 +84,7 @@ BehaviourController.applyDefault();
 
 When we run this, the BC instantiates a new Clock and a new ClearField, it is not concerned with what type of objects it’s making, it’s only concern is to find references to Classes and make instances, marvelous! View the [BehaviourController Demo](/demo/behaviour-controller/basic/) using a modern browser.
 
-We are now able to create new Classes and link them to DOM nodes using the`data-behaviour` attribute. There is no more need to call the constructor of each class separately, there is only one starting point (the BC). JavaScript Classes are unaware of each other resulting in nice clean maintainable code.
+We are now able to create new Classes and link them to DOM nodes using the `data-behaviour` attribute. There is no more need to call the constructor of each class separately, there is only one starting point (the BC). JavaScript Classes are unaware of each other resulting in nice clean maintainable code.
 
 To take this to the responsive level I introduce to you the `data-conditions` attribute, this will contain information about the conditions that need to be met for this behaviour be active (think window size, element size, wether geolocation should be available etc.). For this example we will go with window width which looks like the following: `data-conditions='{"window":{"minWidth":600}}'`. This would mean the class should only be active when the window has a minimum width of 600 pixels.
 
