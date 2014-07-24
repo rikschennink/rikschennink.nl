@@ -68,10 +68,11 @@ define(['chart','utils/toArray'],function(Chart,toArray){
 
                 pointDotStrokeWidth: 2,
 
-                scaleGridLineColor: '#DDDFDA',
-                scaleGridLineWidth: 1,
+                scaleGridLineColor: options.gridColor,
+                scaleGridLineWidth: 2,
+	            scaleFontColor: options.fontColor,
 
-                scaleLineColor: '#8e908c',
+                scaleLineColor: options.axisColor,
                 scaleFontSize: 16,
                 scaleFontFamily: 'Georgia, serif',
                 scaleLineWidth: 2

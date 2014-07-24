@@ -124,7 +124,7 @@ The social aspect of the game worked out really great, nearly 450 end game scree
 
 <div class="cinema">
     <div class="flickr">
-        <script src="http://www.flickr.com/badge_code_v2.gne?count=6&display=random&size=s&layout=h&source=user_set&user=68438664%40N05&set=72157632472688670&context=in%2Fset-72157632472688670%2F"></script>
+        <script src="http://www.flickr.com/badge_code_v2.gne?count=6&display=random&size=m&layout=h&source=user_set&user=68438664%40N05&set=72157632472688670&context=in%2Fset-72157632472688670%2F"></script>
     </div>
 </div>
 

@@ -51,7 +51,7 @@ pre, code {
 body {
     padding:1.875rem 1rem;
     margin:0 auto;
-    max-width:38rem;
+    max-width:34rem; // equals approx. 65 characters @ 1.25rem
     font-size:1.25rem;
     line-height:1.5;
     overflow-x:hidden;
@@ -88,7 +88,8 @@ h3 {
 
 // crumbs
 body > nav {
-    
+
+    display:none;
     margin:0 -1.5rem 3.75rem;
     font-size:1.25rem;
     text-align:left;
@@ -116,12 +117,12 @@ body > nav {
 
 
 // inline code snippet
-:not(pre) code {
+:not(pre)>code {
     padding:0 .333rem;
     display:inline-block;
     white-space:nowrap;
-    color: #4271AE;
-    background: #EFF4FA;
+    color:#5F7386;
+    background:#F0F3F7;
     border-radius:.25rem;
 }
 

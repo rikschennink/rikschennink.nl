@@ -18,7 +18,8 @@
         h2 {
 
             font-style:italic;
-            margin-left:-1.5rem;
+            //margin-left:-1.5rem;
+            margin-left:-5vw;
 
             &::before {
                 content: '';
@@ -34,8 +35,19 @@
         // paragraphs
         >p:first-child {
             font-style:italic;
-            margin-left:-1.5rem;
+            //margin-left:-1.5rem;
             font-size:1.5rem;
+
+            //color:#5F7386;
+
+            position: relative;
+            //left: -25vw;
+            //margin-left: 50%;
+            //width: 50vw;
+            //padding: 1.875rem;
+            //padding-left: 10vw;
+
+            margin:0 -5vw;
         }
 
         // lists
