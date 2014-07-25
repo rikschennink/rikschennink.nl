@@ -13,10 +13,10 @@ require(['conditioner'],function(conditioner) {
         'modules':{
             'ui/LineChart':{
                 'options':{
+	                'pointColor':'#FFFFFF',
 	                'gridColor':'#EDF0F3',
 	                'axisColor':'#EDF0F3',
                     'lineColor':'#0E6CCA',
-                    'pointColor':'#EDF0EA',
 	                'fontColor':'#B1BBC5'
                 }
             }

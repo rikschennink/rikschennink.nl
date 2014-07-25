@@ -37,7 +37,7 @@ gulp.task('_jekyll',function(cb){
 gulp.task('_scss',function(){
 
 	return gulp.src('./static/scss/styles.scss')
-		.pipe(sass({errLogToConsole: true}))
+		.pipe(sass())
 		.pipe(autoprefixer('last 1 version', '> 5%', 'ie 8'))
 		.pipe(gulp.dest('./static/css'))
 		.pipe(gulp.dest('._site/static/css'));

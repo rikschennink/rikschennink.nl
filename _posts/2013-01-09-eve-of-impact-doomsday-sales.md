@@ -51,11 +51,18 @@ Forums also give you the opportunity to monitor the amount of views a certain to
 
 In the beginning of 2012 I added a social aspect to Eve of Impact, the ability to share your score over Twitter. If you choose to share your score, the game automatically adds a screenshot of the game-over screen, in a way it’s a little teaser. Since this generates free exposure, I thought this component was essential to have before even considering dropping the price. Having a lot of people tweet about your app will result in extra traffic, which might result in extra sales.
 
-<blockquote class="twitter-tweet tw-align-center"><p>Broadcast to 17.880 survivors: Earth has been lost, it&#8217;s up to us to find a new home. <a href="https://twitter.com/search/%23eveofimpact" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://twitter.com']);">#eveofimpact</a> <a href="http://t.co/S4kRS59i" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://t.co']);" title="http://twitter.com/rikschennink/status/219403098161033218/photo/1">twitter.com/rikschennink/s…</a></p>
-<p>&mdash; Rik Schennink (@rikschennink) <a href="https://twitter.com/rikschennink/status/219403098161033218" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://twitter.com']);" data-datetime="2012-07-01T12:12:30+00:00">July 1, 2012</a></p></blockquote>
-
-<script async src="http://platform.twitter.com/widgets.js"></script>
-
+<div class="cinema">
+    <ul class="tweets">  
+        <li>
+        <blockquote class="twitter-tweet" lang="en"><p>Broadcast to 57.474 survivors:<a href="https://twitter.com/hashtag/eveofimpact?src=hash">#eveofimpact</a> che fugata sto gioco <a href="http://t.co/WSnBzkUNLx">pic.twitter.com/WSnBzkUNLx</a></p>&mdash; Luca A Pellegrini (@LucaAPellegrini) <a href="https://twitter.com/LucaAPellegrini/statuses/391972471391256576">October 20, 2013</a></blockquote>
+        </li><li>
+        <blockquote class="twitter-tweet" lang="en"><p>Broadcast to 17.880 survivors: Earth has been lost, it&#39;s up to us to find a new home. <a href="https://twitter.com/hashtag/eveofimpact?src=hash">#eveofimpact</a> <a href="http://t.co/S4kRS59i">pic.twitter.com/S4kRS59i</a></p>&mdash; Rik Schennink (@rikschennink) <a href="https://twitter.com/rikschennink/statuses/219403098161033218">July 1, 2012</a></blockquote>
+        </li><li>
+        <blockquote class="twitter-tweet" lang="en"><p>Good game: Broadcast to 34.925 survivors: Earth has been lost, it&#39;s up to us to find a new home <a href="https://twitter.com/hashtag/eveofimpact?src=hash">#eveofimpact</a> <a href="http://t.co/AXfrZsuZUp">pic.twitter.com/AXfrZsuZUp</a></p>&mdash; JesperBylund (@JesperBylund) <a href="https://twitter.com/JesperBylund/statuses/394350148727230464">October 27, 2013</a></blockquote>
+        </li>
+    </ul>
+    <script async src="http://platform.twitter.com/widgets.js"></script>
+</div>
 
 ## Results
 

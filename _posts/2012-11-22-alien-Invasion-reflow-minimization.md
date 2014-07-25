@@ -6,7 +6,9 @@ tags:
 - JavaScript
 - Performance
 ---
-To have your web apps performing at peak level you need to keep an eye on browser reflow. Reflow is the process of recalculating the positions and sizes of your DOM elements. Your browser does this every time the DOM changes or a node is altered. Depending on the position and properties of the DOM node it needs to reflow the entire DOM tree or just a section of it. Calculating this information is a process that takes a considerable amount of time ([see it in action here and you’ll know why](http://www.youtube.com/watch?v=dndeRnzkJDU)). Minimizing reflow time will make your web app feel more responsive, resulting in happy times for you and for your users.
+To have your web apps performing at peak level you need to keep an eye on browser reflow. Reflow is the process of recalculating the positions and sizes of your DOM elements. Trying to get to that 60fps page? Keep your reflows to a minimum.
+
+Your browser 'reflows' the page every time the DOM changes or a node is altered. Depending on the position and properties of the DOM node it needs to reflow the entire DOM tree or just a section of it. Calculating this information is a process that takes a considerable amount of time ([see it in action here and you’ll know why](http://www.youtube.com/watch?v=dndeRnzkJDU)). Minimizing reflow time will make your web app feel more responsive, resulting in happy times for you and for your users.
 
 It’s now clear that changing (layout related) properties on nodes causes a reflow, what’s also interesting is the fact that requesting certain properties also causes one. For instance, requesting offsetLeft causes a reflow because before returning you the offset the browser needs to know for sure it is giving you the correct value.
 
@@ -18,16 +20,16 @@ Below are some suggestions on how to do this.
 
 If you are applying styles to a node use the cssText property, cssText allows you to add a group of styles in one go.
 
-JavaScript causing three reflows
-{% highlight javascript linenos %}
-node.style.left="10px";
-node.style.top="10px";
-node.style.width="200px";
+Three reflows
+{% highlight javascript %}
+node.style.left = '10px';
+node.style.top = '10px';
+node.style.width = '200px';
 {% endhighlight %}
 
-JavaScript causing one reflow
-{% highlight javascript linenos %}
-node.style.cssText="left:10px;top:10px;width:200px;"
+One reflow
+{% highlight javascript %}
+node.style.cssText = 'left:10px; top:10px; width:200px;';
 {% endhighlight %}
 
 ## Creating DOM nodes

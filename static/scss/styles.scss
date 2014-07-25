@@ -44,8 +44,9 @@ canvas,img {
 }
 
 pre, code {
-    font-size:1rem;
-    font-family:'Courier New', Courier, monospace;
+    font-size:.875rem;
+    font-family:Menlo, monospace;
+    letter-spacing:.06125rem;
 }
 
 body {
@@ -66,23 +67,34 @@ h1,h2,h3,p,footer {
     font-weight:normal;
 }
 
+h2,h3 {
+    font-family:Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
 h1 {
     font-size:2.25rem;
+    font-style:italic;
     line-height:1.25;
 }
 
 h2 {
     font-size:1.75rem;
     line-height:1.333;
+    font-weight: bold;
 }
 
 h3 {
-    font-size:1.25rem;
-    font-family:'lucida sans unicode',sans-serif;
+    font-size:1.5rem;
     text-transform:uppercase;
     letter-spacing:.06125rem;
 }
 
+footer {
+    margin-top:3.75rem;
+    font-size:1rem;
+    color:#D0D5DA;
+    text-align:center;
+}
 
 
 
@@ -137,6 +149,7 @@ body > nav {
 @import 'cinema';
 @import 'highlight';
 @import 'flickr';
+@import 'tweets';
 @import 'dataset';
 @import 'meta';
 @import 'list-thoughts';

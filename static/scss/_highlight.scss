@@ -1,17 +1,17 @@
-//@import 'vendor/pygments';
-
 .highlight {
 
     position:relative;
-    overflow:hidden;
-    margin:0 auto;
-    padding:1.875rem 3.75rem;
-    max-width:55rem;
+
+    + .highlight {
+        margin-top:1.875rem;
+    }
 
     pre {
-        margin:0;
-        padding:0;
+        margin:0 0 0 -1.875rem;
+        padding:0 0 0 1.875rem;
         word-break:break-word;
+        border-left:2px solid #D6DADD;
+        overflow:hidden;
     }
 
     code {
@@ -21,15 +21,9 @@
             color:#B1BBC5;
             padding-bottom:.75rem;
             margin-bottom:.75rem;
-            content: ' // ' attr(data-lang);
+            content: '// ' attr(data-lang);
         }
 
-    }
-
-
-    // pygments
-    .lineno {
-        display:none;
     }
 
     // comments
@@ -37,28 +31,24 @@
         color:#B1BBC5;
     }
 
-    // javascript objects
-    .k,.kd,.na {
-        color:#DB2F3C;
+    // javascript objects and html tags
+    .k,.kd,.nt {
+        color:#0E6CCA;
     }
 
     // methods
     .nt,.nx {
-        color:#0E6CCA;
+        //color:#111;
     }
 
     // numbers
     .mi {
-        color:#C99017;
-        background-color:#F8EFDF;
-        padding:0 .25rem;
+        color:#F88303;
     }
 
-    // string
-    .s,.s1 {
-        color:#5D8D08;
-        background-color:#EEF6DF;
-        padding:0 .125rem;
+    // strings
+    .s,.s1,.s2 {
+        color:#4A9B00;
     }
 
     // operator

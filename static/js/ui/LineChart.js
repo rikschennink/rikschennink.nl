@@ -83,8 +83,11 @@ define(['chart','utils/toArray'],function(Chart,toArray){
     };
 
     exports.options = {
-        lineColor:'#333',
-        pointColor:'#333'
+        'lineColor':'#333',
+        'pointColor':'#333',
+	    'gridColor':'#eee',
+	    'axisColor':'#333',
+	    'fontColor':'#333'
     };
 
     // Chart uses global variable, this restores original contents of that variable
