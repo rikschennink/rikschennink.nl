@@ -16,10 +16,10 @@
 
     >div {
 
-        >p:first-child,h2 {
+        >p:first-child,
+        h2 {
             margin-left:-1.875rem;
         }
-
 
         // dash
         ul+h2,
@@ -35,10 +35,10 @@
             }
         }
 
-
         // paragraphs
         >p:first-child {
             font-size:1.5rem;
+            line-height:1.4;
         }
 
         // lists
