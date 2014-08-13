@@ -79,7 +79,7 @@ BehaviourController.applyDefault();
 </script>
 {% endhighlight %}
 
-When we run this, the BC instantiates a new Clock and a new ClearField, it is not concerned with what type of objects it’s making, it’s only concern is to find references to Classes and make instances, marvelous! View the [BehaviourController Demo](/demo/behaviour-controller/basic/) using a modern browser.
+When we run this, the BC instantiates a new Clock and a new ClearField, it is not concerned with what type of objects it’s making, it’s only concern is to find references to Classes and make instances, marvelous! View the [BehaviourController Demo](http://codepen.io/rikschennink/pen/Fsfnu) using a modern browser.
 
 We are now able to create new Classes and link them to DOM nodes using the `data-behaviour` attribute. There is no more need to call the constructor of each class separately, there is only one starting point (the BC). JavaScript Classes are unaware of each other resulting in nice clean maintainable code.
 
@@ -202,18 +202,8 @@ BehaviourController.applyDefault();
 </script>
 {% endhighlight %}
 
-Be sure to resize your window a couple times when checking the [Responsive BehaviourController Demo](http://rikschennink.nl/demo/behaviour-controller/responsive/). The two controls will load and unload depending on your window width so they might not be active when you open the page.
+Be sure to resize your window a couple times when checking the [Responsive BehaviourController Demo](http://codepen.io/rikschennink/pen/ytshL). The two controls will load and unload depending on your window width so they might not be active when you open the page.
 
 So now we have a JavaScript solution that allows us to load and unload JavaScript on the fly depending on the conditions supplied in the `data-conditions` attribute. Ideal for any web project but especially for responsive projects where you want to conditionally load scripts depending on the environment.
-
-In the mean time I’ve extended the above functionality with some extras:
-
-- Namespaces to group Classes together;
-- Conditional async script loading;
-- An OptionController for handling custom Class options;
-- The option to add your own conditions;
-- Media Query support;
-
-Be sure to check out the [BehaviourController "Steroids" Demo](http://rikschennink.nl/demo/behaviour-controller/steroids/). Just so you know, it asks for your permission to use geolocation as one of the Classes has geolocation as a required condition.
 
 Any thoughts?
