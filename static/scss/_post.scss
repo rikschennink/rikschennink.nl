@@ -1,5 +1,8 @@
 .post {
 
+	padding:1.875rem 3.75rem;
+	background:#fff;
+
     header {
         text-align:center;
     }
@@ -16,29 +19,14 @@
 
     >div {
 
-        >p:first-child,
         h2 {
             margin-left:-1.875rem;
         }
 
-        // dash
-        ul+h2,
-        ol+h2,
-        p+h2 {
-            &::before {
-                content:'';
-                display:block;
-                height:1px;
-                width:20%;
-                background: #dadada;
-                margin:0 0 1.875rem 0rem;
-            }
-        }
-
         // paragraphs
         >p:first-child {
+			margin:3.75rem 0;
             font-size:1.5rem;
-            line-height:1.4;
         }
 
         // lists

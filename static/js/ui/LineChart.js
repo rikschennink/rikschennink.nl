@@ -74,7 +74,7 @@ define(['chart','utils/toArray'],function(Chart,toArray){
 
                 scaleLineColor: options.axisColor,
                 scaleFontSize: 16,
-                scaleFontFamily: 'Georgia, serif',
+                scaleFontFamily: options.axisFont,
                 scaleLineWidth: 2
 
             }

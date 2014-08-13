@@ -1,0 +1,1851 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Tilt</title>
+
+    <meta name="description" content="Tilt, 3D Metro Physics and more.">
+    <meta name="author" content="Rik Schennink">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link href="static/css/styles.min.css" rel="stylesheet"/>
+
+    <link href="static/css/font-awesome.min.css" rel="stylesheet"/>
+
+    <link href="static/css/lib/tilt.min.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+
+    
+
+<div class="logo">
+    <h1>Tilt</h1>
+</div>
+
+<!--
+<a class="buy" href="http://codecanyon.net/item/30-photo-animations/6000717">
+    <span>Buy now</span>
+    for $0,00
+</a>
+-->
+
+<div class="content">
+
+<section class="demo">
+
+    <div class="wrapper">
+
+        <h1>Hi!</h1>
+
+        <p>Welcome to tilt.</p>
+
+<p>Tilt is a CSS and JavaScript library for building Metro like tiles and other things that tilt. It mimics the behaviour of 3D Metro UI tiles which when pushed tilt based the interaction location.</p>
+
+<p>It&#39;s responsive, and works on a wide range of modern mobile, tablet and desktop browsers.</p>
+
+<p>Below you can view some demos created with tilt, they should give you an impression on how you could apply tilt in your project.</p>
+
+<p>This page also features the <a href="#docs">tilt docs</a>. They contain a complete overview of what tilt brings to the table.</p>
+
+        
+
+        <section class="tilts">
+
+            
+            <h2><i class="fa fa-windows"></i> Metro Grid</h2>
+            
+
+            <p>A grid containing tiles which feature 3D interaction patterns similar to Metro UI.</p>
+
+<p>Resize your browser window, the grid will never loose it&#39;s shape and reorder based on the available space and custom <a href="#topic-grid-tiles-hints">tile hints</a>.</p>
+
+            
+
+            
+            <ul class="tilt-grid">
+
+    <li data-tile-type="m,9_l">
+        <div>
+            <span class="tilt tilt-tile tilt-tile-emerald tilt-icon-center">
+                <i class="fa fa-home"></i>
+                <span>Home</span>
+            </span>
+        </div>
+    </li>
+
+    <li data-tile-type="s,6_s,7s,8m,9m">
+        <div>
+            <span class="tilt tilt-tile tilt-tile-lime tilt-icon-center">
+                <i class="fa fa-camera"></i>
+                <span>Camera</span>
+            </span>
+        </div>
+    </li>
+
+    <li data-tile-type="s,6_s,7s,8m">
+        <div>
+            <span class="tilt tilt-tile tilt-tile-lime tilt-icon-center">
+                <i class="fa fa-comments"></i>
+                <span>Blog</span>
+            </span>
+        </div>
+    </li>
+
+    <li data-tile-type="s,5m">
+        <div>
+            <span class="tilt tilt-tile tilt-tile-green tilt-icon-center tilt-caption-tl">
+                <span class="tilt-count"><i class="fa fa-group"></i>8</span>
+                <span>Contacts</span>
+            </span>
+        </div>
+    </li>
+
+    <li data-tile-type="s,5m">
+        <div>
+            <span class="tilt tilt-tile tilt-tile-emerald tilt-caption-bc tilt-icon-center">
+                <i class="fa fa-calendar"></i>
+                <span>Calendar</span>
+            </span>
+        </div>
+    </li>
+
+    <li data-tile-type="s,6m,9_s">
+        <div>
+            <span class="tilt tilt-tile tilt-tile-green tilt-caption-br tilt-icon-center">
+                <i class="fa fa-briefcase"></i>
+                <span>Portfolio</span>
+            </span>
+        </div>
+    </li>
+
+    <li data-tile-type="s,6s,7m,8m">
+        <div>
+            <span class="tilt tilt-tile tilt-tile-emerald tilt-caption-br tilt-icon-center">
+                <i class="fa fa-phone"></i>
+                <span>Contact</span>
+            </span>
+        </div>
+    </li>
+
+    <li data-tile-type="m,5s,7m,8_s">
+        <div>
+            <span class="tilt tilt-tile tilt-tile-green tilt-caption-bl tilt-icon-bl tilt-img">
+                <i class="fa fa-coffee"></i>
+                <span>Break</span>
+                <img src="media/port-02.jpg" alt=""/>
+            </span>
+        </div>
+    </li>
+
+    <li data-tile-type="s,6s,9|s">
+        <div>
+            <a class="tilt tilt-tile" href="http://www.facebook.com/sharer/sharer.php">
+                <i class="fa fa-facebook"></i>
+                <span>Facebook</span>
+            </a>
+        </div>
+    </li>
+
+    <li data-tile-type="s,5_s,6s,9|s">
+        <div>
+            <a class="tilt tilt-tile tilt-caption-bc tilt-icon-center" href="https://twitter.com/rikschennink">
+                <i class="fa fa-twitter"></i>
+                <span>Twitter</span>
+            </a>
+        </div>
+    </li>
+
+</ul>
+
+            
+
+        </section>
+        
+
+        <section class="tilts">
+
+            
+            <h2><i class="fa fa-camera"></i> Gallery Grid</h2>
+            
+
+            <p>You can also use the grid to create responsive image galleries. The grid below features <a href="http://lokeshdhakar.com/projects/lightbox2/">Lightbox2</a>, it is not included in the package but is can be downloaded for free.</p>
+
+            
+
+            
+            
+
+<ul class="tilt-grid" data-tile-size="l" data-tile-spacing="s">
+
+    
+
+    <li data-tile-type="_l">
+        <div>
+            <a href="media/land-01.jpg" class="tilt tilt-img tilt-type-s tilt-caption-br" data-lightbox="gallery">
+                <img src="media/land-01.jpg" alt=""/>
+                <span>By Angelina Odemchuk</span>
+            </a>
+        </div>
+    </li>
+
+    
+
+    <li data-tile-type="s,7m">
+        <div>
+            <a href="media/land-02.jpg" class="tilt tilt-img tilt-type-s tilt-caption-br" data-lightbox="gallery">
+                <img src="media/land-02.jpg" alt=""/>
+                <span>By Philipp Reiner</span>
+            </a>
+        </div>
+    </li>
+
+    
+
+    <li data-tile-type="s">
+        <div>
+            <a href="media/land-03.jpg" class="tilt tilt-img tilt-type-s tilt-caption-br" data-lightbox="gallery">
+                <img src="media/land-03.jpg" alt=""/>
+                <span>By Dyaa Eldin Moustafa</span>
+            </a>
+        </div>
+    </li>
+
+    
+
+    <li data-tile-type="s">
+        <div>
+            <a href="media/land-04.jpg" class="tilt tilt-img tilt-type-s tilt-caption-br" data-lightbox="gallery">
+                <img src="media/land-04.jpg" alt=""/>
+                <span>By Wojtek Witkowski</span>
+            </a>
+        </div>
+    </li>
+
+    
+
+    <li data-tile-type="s,5m,7s">
+        <div>
+            <a href="media/pano-01.jpg" class="tilt tilt-img tilt-type-s tilt-caption-br" data-lightbox="gallery">
+                <img src="media/pano-01.jpg" alt=""/>
+                <span>By Linh Nguyen</span>
+            </a>
+        </div>
+    </li>
+
+    
+
+    <li data-tile-type="m,5m,6_l">
+        <div>
+            <a href="media/pano-02.jpg" class="tilt tilt-img tilt-type-s tilt-caption-br" data-lightbox="gallery">
+                <img src="media/pano-02.jpg" alt=""/>
+                <span>By Wolfgang Moritzer</span>
+            </a>
+        </div>
+    </li>
+
+    
+
+    <li data-tile-type="_s,5m">
+        <div>
+            <a href="media/squa-01.jpg" class="tilt tilt-img tilt-type-s tilt-caption-br" data-lightbox="gallery">
+                <img src="media/squa-01.jpg" alt=""/>
+                <span>By Elias Carlsson</span>
+            </a>
+        </div>
+    </li>
+
+    
+
+    <li data-tile-type="m,5s,7m">
+        <div>
+            <a href="media/squa-02.jpg" class="tilt tilt-img tilt-type-s tilt-caption-br" data-lightbox="gallery">
+                <img src="media/squa-02.jpg" alt=""/>
+                <span>By Marc Müller</span>
+            </a>
+        </div>
+    </li>
+
+    
+
+    <li data-tile-type="s,5|s,6m,7|s">
+        <div>
+            <a href="media/port-01.jpg" class="tilt tilt-img tilt-type-s tilt-caption-br" data-lightbox="gallery">
+                <img src="media/port-01.jpg" alt=""/>
+                <span>By Matthew Skinner</span>
+            </a>
+        </div>
+    </li>
+
+    
+
+    <li data-tile-type="s,5s,6m,7m">
+        <div>
+            <a href="media/port-02.jpg" class="tilt tilt-img tilt-type-s tilt-caption-br" data-lightbox="gallery">
+                <img src="media/port-02.jpg" alt=""/>
+                <span>By Diogo Tavares</span>
+            </a>
+        </div>
+    </li>
+
+    
+
+    <li data-tile-type="_s,5|s,6_l,7s">
+        <div>
+            <a href="media/port-03.jpg" class="tilt tilt-img tilt-type-s tilt-caption-br" data-lightbox="gallery">
+                <img src="media/port-03.jpg" alt=""/>
+                <span>By Sylwia Bartyzel</span>
+            </a>
+        </div>
+    </li>
+
+    
+
+    <li data-tile-type="_s,5s,6m,7m">
+        <div>
+            <a href="media/port-04.jpg" class="tilt tilt-img tilt-type-s tilt-caption-br" data-lightbox="gallery">
+                <img src="media/port-04.jpg" alt=""/>
+                <span>By Danka Peter</span>
+            </a>
+        </div>
+    </li>
+
+    
+
+</ul>
+
+<p class="small">These free to use photos can be found on <a href="http://unsplash.com" target="_blank">unsplash</a></p>
+
+            
+
+        </section>
+        
+
+        <section class="tilts">
+
+            
+            <h2><i class="fa fa-th-list"></i> News List</h2>
+            
+
+            <p>A news list with 3D tilt transforms, when clicked or tapped the items will tilt, excellent for touch feedback on handheld devices.</p>
+
+            
+
+            
+            
+
+<ul class="news">
+    
+    <li>
+        <div class="tilt">
+            <h3>Quisque ut enim auctor, semper arcu porttitor, consequat felis</h3>
+            <img src="media/land-01.jpg" alt=""/>
+        </div>
+    </li>
+    
+    <li>
+        <div class="tilt">
+            <h3>Donec vitae metus ac sem suscipit aliquam sed sed nibh</h3>
+            <img src="media/land-02.jpg" alt=""/>
+        </div>
+    </li>
+    
+    <li>
+        <div class="tilt">
+            <h3>Donec quis risus iaculis, hendrerit mi non, placerat ipsum</h3>
+            <img src="media/land-03.jpg" alt=""/>
+        </div>
+    </li>
+    
+    <li>
+        <div class="tilt">
+            <h3>Curabitur lacinia erat ut nunc condimentum, quis porttitor nibh aliquam</h3>
+            <img src="media/land-04.jpg" alt=""/>
+        </div>
+    </li>
+    
+    <li>
+        <div class="tilt">
+            <h3>Curabitur vitae dui auctor, semper magna et, aliquet risus</h3>
+            <img src="media/land-01.jpg" alt=""/>
+        </div>
+    </li>
+    
+</ul>
+
+            
+
+        </section>
+        
+
+        <section class="social">
+            <h1>Contact</h1>
+            <ul>
+                <li><a target="_blank" href="http://codecanyon.net/user/rikschennink"><i class="fa fa-html5"></i> CodeCanyon</a></li>
+                <li><a target="_blank" href="http://twitter.com/rikschennink"><i class="fa fa-twitter"></i> Twitter</a></li>
+                <li><a target="_blank" href="http://github.com/rikschennink"><i class="fa fa-github-alt"></i> GitHub</a></li>
+            </ul>
+        </section>
+
+    </div>
+
+</section>
+
+<section class="docs" id="docs">
+
+    <div class="wrapper">
+
+        <h1>Docs</h1>
+
+        <nav>
+            <h2 class="visuallyhidden">Index</h2>
+
+            <ul>
+    
+    <li>
+        <a href="#topic-node">Node</a>
+
+        
+
+    </li>
+    
+    <li>
+        <a href="#topic-tile">Tile</a>
+
+        
+
+        
+        
+
+        <ul>
+    
+    <li>
+        <a href="#topic-tile-caption">Caption</a>
+
+        
+
+    </li>
+    
+    <li>
+        <a href="#topic-tile-icons">Icons</a>
+
+        
+
+        
+        
+
+        <ul>
+    
+    <li>
+        <a href="#topic-tile-icons-position">Position</a>
+
+        
+
+    </li>
+    
+    <li>
+        <a href="#topic-tile-icons-counter">Counter</a>
+
+        
+
+    </li>
+    
+</ul>
+        
+
+    </li>
+    
+    <li>
+        <a href="#topic-tile-image">Image</a>
+
+        
+
+    </li>
+    
+    <li>
+        <a href="#topic-tile-type">Type</a>
+
+        
+
+    </li>
+    
+    <li>
+        <a href="#topic-tile-size">Size</a>
+
+        
+
+    </li>
+    
+    <li>
+        <a href="#topic-tile-corners">Corners</a>
+
+        
+
+    </li>
+    
+    <li>
+        <a href="#topic-tile-glass">Glass</a>
+
+        
+
+    </li>
+    
+    <li>
+        <a href="#topic-tile-colors">Colors</a>
+
+        
+
+    </li>
+    
+    <li>
+        <a href="#topic-tile-social">Social</a>
+
+        
+
+    </li>
+    
+    <li>
+        <a href="#topic-tile-hover">Hover</a>
+
+        
+
+    </li>
+    
+</ul>
+        
+
+    </li>
+    
+    <li>
+        <a href="#topic-grid">Grid</a>
+
+        
+
+        
+        
+
+        <ul>
+    
+    <li>
+        <a href="#topic-grid-size">Size</a>
+
+        
+
+    </li>
+    
+    <li>
+        <a href="#topic-grid-spacing">Spacing</a>
+
+        
+
+    </li>
+    
+    <li>
+        <a href="#topic-grid-tiles">Tiles</a>
+
+        
+
+        
+        
+
+        <ul>
+    
+    <li>
+        <a href="#topic-grid-tiles-hints">Hints</a>
+
+        
+
+    </li>
+    
+</ul>
+        
+
+    </li>
+    
+</ul>
+        
+
+    </li>
+    
+    <li>
+        <a href="#topic-set">Set</a>
+
+        
+
+    </li>
+    
+</ul>
+
+        </nav>
+
+        
+<section>
+
+    
+
+    <h2 id="topic-node">Node</h2>
+
+    <p>You can tilt any html element by adding the <code>.tilt</code> classname to it&#39;s <code>class</code> attribute.</p>
+
+<p>It&#39;s best to wrap the element being tiltd in another element. See the example below. The anchor is being tiltd and it&#39;s wrapped in a div element.</p><dl class="code-sample"><dt>tilt classname on an anchor</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt"</span>&gt;</span>Foo<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div></dd></dl>
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h2 id="topic-tile">Tile</h2>
+
+    <p>Create Metro style tiles by adding the <code>.tilt-tile</code> classname to an html element. If you want 3D interaction patterns, leave the <code>.tilt</code> classname on the element.</p><dl class="code-sample"><dt>tilt tile example</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt tilt-tile"</span>&gt;</span>Foo<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <ul class="tilt-set">
+    <li><span class="tilt tilt-tile">
+        <span>Foo</span>
+    </span>
+</ul>
+    </div>
+    
+
+    
+
+
+
+    
+
+    
+    
+    
+
+    
+<section>
+
+    
+
+    <h3 id="topic-tile-caption">Caption</h3>
+
+    <p>Within the tile you can align the caption. By using the following classnames.</p>
+
+<ul><li><code>.tilt-caption-tl</code> to position the text in the top left corner, this is the default.</li><li><code>.tilt-caption-tr</code> positions the text to the top right.</li><li><code>.tilt-caption-tc</code> top center.</li><li><code>.tilt-caption-br</code> bottom right.</li><li><code>.tilt-caption-bl</code> bottom left.</li><li><code>.tilt-caption-bc</code> and the last one, bottom center.</li></ul>
+
+<p>If there&#39;s more text than space available the text will be cutoff using ellipsis...</p>
+
+<p>If you want to hide the caption, add the <code>.tilt-caption-hidden</code> classname.</p>
+
+<p>Note that to position the caption you need to wrap the caption in a <code>&lt;span&gt;</code> element as shown in the html snippet below.</p><dl class="code-sample"><dt>tilt caption example</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt tilt-tile tilt-caption-br"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Foo<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        
+<ul class="tilt-grid" data-tile-size="l">
+    
+    <li data-tile-type="_s">
+        <div>
+            <span class="tilt tilt-tile tilt-caption-tl">
+                <span>top left</span>
+            </span>
+        </div>
+    </li>
+    <li data-tile-type="_s">
+        <div>
+            <span class="tilt tilt-tile tilt-caption-tc">
+                <span>top center</span>
+            </span>
+        </div>
+    </li>
+    <li data-tile-type="_s">
+        <div>
+            <span class="tilt tilt-tile tilt-caption-tr">
+                <span>top right</span>
+            </span>
+        </div>
+    </li>
+    <li data-tile-type="_s">
+        <div>
+            <span class="tilt tilt-tile tilt-caption-br">
+                <span>bottom right</span>
+            </span>
+        </div>
+    </li>
+    <li data-tile-type="_s">
+        <div>
+            <span class="tilt tilt-tile tilt-caption-bc">
+                <span>bottom center</span>
+            </span>
+        </div>
+    </li>
+    <li data-tile-type="_s">
+        <div>
+            <span class="tilt tilt-tile tilt-caption-bl">
+                <span>bottom left</span>
+            </span>
+        </div>
+    </li></ul>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h3 id="topic-tile-icons">Icons</h3>
+
+    <p>The icons are setup using <a href="http://fontawesome.io/">Font Awesome</a>, a free to use icon font, it&#39;s possible to use your own icons though.</p>
+
+<p>You can have the icon separate from the text or linked to the text, in the later case it&#39;s not possible to use any of the positioning options.</p><dl class="code-sample"><dt>tilt icon example</dt><dd><div class="highlight"><pre><code><span class="hljs-comment">&lt;!-- icon separate from text --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt tilt-tile tilt-caption-br"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fa fa-coffee"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Separate<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- icon linked to text --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt tilt-tile tilt-caption-br"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fa fa-coffee"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span> Linked<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <ul class="tilt-set">
+    <li>
+        <span class="tilt tilt-tile">
+            <i class="fa fa-coffee"></i>
+            <span>Coffee</span>
+        </span>
+    <li>
+        <span class="tilt tilt-tile tilt-caption-br">
+            <i class="fa fa-coffee"></i>
+            <span>Separate</span>
+        </span>
+    <li>
+        <span class="tilt tilt-tile tilt-caption-br">
+            <span>
+                <i class="fa fa-coffee"></i> Linked
+            </span>
+        </span>
+</ul>
+    </div>
+    
+
+    
+
+
+
+    
+
+    
+    
+    
+
+    
+<section>
+
+    
+
+    <h4 id="topic-tile-icons-position">Position</h4>
+
+    <p>You can set the icon to the center of the tile by adding the <code>.tilt-icon-center</code> classname.</p>
+
+<p>On top of this you can move it to all corners of the tile by adding the following classnames.</p>
+
+<ul><li><code>.tilt-icon-tl</code> for position top left.</li><li><code>.tilt-icon-tr</code> for top right.</li><li><code>.tilt-icon-bl</code> bottom left.</li><li><code>.tilt-icon-br</code> and bottom right.</li></ul>
+
+<p>If you&#39;ve moved your caption into any of these positions tilt will automatically make space for the icon.</p><dl class="code-sample"><dt>tilt icon position example</dt><dd><div class="highlight"><pre><code><span class="hljs-comment">&lt;!-- centered icon --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt tilt-tile tilt-icon-center"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fa fa-coffee"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Coffee<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- icon bottom right corner --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt tilt-tile tilt-icon-br tilt-caption-br"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fa fa-coffee"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Coffee<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- icon in top right corner --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt tilt-tile tilt-icon-tr tilt-caption-br"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fa fa-coffee"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Coffee<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <ul class="tilt-set">
+    <li>
+        <span class="tilt tilt-tile tilt-icon-center">
+            <i class="fa fa-coffee"></i>
+            <span>Coffee</span>
+        </span>
+    <li>
+        <span class="tilt tilt-tile tilt-icon-br tilt-caption-br">
+            <i class="fa fa-coffee"></i>
+            <span>Coffee</span>
+        </span>
+    <li>
+        <span class="tilt tilt-tile tilt-icon-tr tilt-caption-br">
+            <i class="fa fa-coffee"></i>
+            <span>Coffee</span>
+        </span>
+</ul>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h4 id="topic-tile-icons-counter">Counter</h4>
+
+    <p>You can add a counter to the icon by using the <code>.tilt-count</code> classname. Note this classname is <em>not</em> added to the tilt element and is only be used in conjunction with <code>.tilt-icon-center</code> as the icon must be centered for the effect.</p><dl class="code-sample"><dt>tilt counter example</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt tilt-tile tilt-icon-center"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt-count"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fa fa-coffee"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>5
+    <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Coffee<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <ul class="tilt-set">
+    <li><span class="tilt tilt-tile tilt-icon-center tilt-caption-br">
+            <span class="tilt-count"><i class="fa fa-coffee"></i>1</span>
+            <span>Coffee</span>
+        </span>
+
+    <li><span class="tilt tilt-tile tilt-icon-center tilt-caption-tr">
+            <span class="tilt-count"><i class="fa fa-coffee"></i>5</span>
+            <span>Coffees</span>
+        </span>
+
+    <li><span class="tilt tilt-tile tilt-icon-center tilt-caption-hidden">
+            <span class="tilt-count"><i class="fa fa-coffee"></i>15</span>
+            <span>Coffees</span>
+        </span>
+</ul>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h3 id="topic-tile-image">Image</h3>
+
+    <p>The <code>.tilt-img</code> classname can be used to set images as the background of a tilt element.</p>
+
+<p>If the caption <code>&lt;span&gt;</code> is placed after <code>&lt;img&gt;</code> it is automatically given a black translucent color. If the caption precedes the element the background is left transparent.</p><dl class="code-sample"><dt>tilt tile image example</dt><dd><div class="highlight"><pre><code><span class="hljs-comment">&lt;!-- black background, &lt;img/&gt; first --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt tilt-tile tilt-img"</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"foo.jpg"</span>/&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Foo<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- transparent background, &lt;span&gt; first  --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt tilt-tile tilt-img"</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Foo<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"foo.jpg"</span>/&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <ul class="tilt-grid">
+    <li>
+        <div>
+            <span class="tilt tilt-tile tilt-img tilt-caption-tr">
+                <img src="media/port-04.jpg" alt=""/>
+                <span>Coffee</span>
+            </span>
+        </div>
+    </li>
+    <li>
+        <div>
+            <span class="tilt tilt-tile tilt-img tilt-caption-tr">
+                <img src="media/port-04.jpg" alt=""/>
+                <span><i class="fa fa-coffee"></i> Coffee</span>
+            </span>
+        </div>
+    </li>
+    <li>
+        <div>
+            <span class="tilt tilt-tile tilt-img tilt-caption-bl">
+                <span>Coffee</span>
+                <img src="media/port-04.jpg" alt=""/>
+            </span>
+        </div>
+    </li>
+    <li>
+        <div>
+            <span class="tilt tilt-tile tilt-img tilt-caption-bl">
+                <span><i class="fa fa-coffee"></i> Coffee</span>
+                <img src="media/port-04.jpg" alt=""/>
+            </span>
+        </div>
+    </li>
+    <li>
+        <div>
+            <span class="tilt tilt-tile tilt-img tilt-caption-bc tilt-icon-center">
+                <i class="fa fa-coffee"></i>
+                <span>Coffee</span>
+                <img src="media/port-04.jpg" alt=""/>
+            </span>
+        </div>
+    </li>
+    <li>
+        <div>
+            <span class="tilt tilt-tile tilt-img tilt-caption-hidden tilt-icon-center">
+                <span class="tilt-count">
+                    <i class="fa fa-coffee"></i>15
+                </span>
+                <span>Coffee</span>
+                <img src="media/port-04.jpg" alt=""/>
+            </span>
+        </div>
+    </li>
+</ul>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h3 id="topic-tile-type">Type</h3>
+
+    <p>You can define multiple type sizes for the tiles, ranging from <code>xs</code> to <code>xl</code>.</p><dl class="code-sample"><dt>tilt type sizes</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt tilt-tile tilt-type-xl"</span>&gt;</span>Foo<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <ul class="tilt-set">
+    <li><span class="tilt tilt-tile tilt-icon-center tilt-type-xs">
+            <span class="tilt-count"><i class="fa fa-coffee"></i>1</span>
+            <span>Coffee</span>
+        </span>
+    <li><span class="tilt tilt-tile tilt-icon-center tilt-type-s">
+            <span class="tilt-count"><i class="fa fa-coffee"></i>5</span>
+            <span>Coffees</span>
+        </span>
+    <li><span class="tilt tilt-tile tilt-icon-center tilt-type-m">
+            <span class="tilt-count"><i class="fa fa-coffee"></i>15</span>
+            <span>Coffees</span>
+        </span>
+    <li><span class="tilt tilt-tile tilt-icon-center tilt-type-l">
+            <span class="tilt-count"><i class="fa fa-coffee"></i>1</span>
+            <span>Coffee</span>
+        </span>
+    <li><span class="tilt tilt-tile tilt-icon-center tilt-type-xl">
+            <span class="tilt-count"><i class="fa fa-coffee"></i>5</span>
+            <span>Coffees</span>
+        </span>
+</ul>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h3 id="topic-tile-size">Size</h3>
+
+    <p>You can define multiple tile sizes, ranging from <code>xs</code> to <code>xl</code>.</p><dl class="code-sample"><dt>tilt tile sizes</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt tilt-tile tilt-size-xl"</span>&gt;</span>Foo<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <ul class="tilt-set">
+    <li><span class="tilt tilt-tile tilt-icon-center tilt-size-xs">
+            <span class="tilt-count"><i class="fa fa-coffee"></i>1</span>
+            <span>Coffee</span>
+        </span>
+    <li><span class="tilt tilt-tile tilt-icon-center tilt-size-s">
+            <span class="tilt-count"><i class="fa fa-coffee"></i>5</span>
+            <span>Coffees</span>
+        </span>
+    <li><span class="tilt tilt-tile tilt-icon-center tilt-size-m">
+            <span class="tilt-count"><i class="fa fa-coffee"></i>15</span>
+            <span>Coffees</span>
+        </span>
+    <li><span class="tilt tilt-tile tilt-icon-center tilt-size-l">
+            <span class="tilt-count"><i class="fa fa-coffee"></i>1</span>
+            <span>Coffee</span>
+        </span>
+    <li><span class="tilt tilt-tile tilt-icon-center tilt-size-xl">
+            <span class="tilt-count"><i class="fa fa-coffee"></i>5</span>
+            <span>Coffees</span>
+        </span>
+</ul>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h3 id="topic-tile-corners">Corners</h3>
+
+    <p>If you prefer the corners of the tile to be a little less sharp, add one of the following pillow classes.</p>
+
+<ul><li><code>.tilt-pillow-s</code> for tiny corners.</li><li><code>.tilt-pillow-m</code> or <code>.tilt-pillow</code> for medium corners.</li><li><code>.tilt-pillow-l</code> to make the corners really stand out.</li></ul><dl class="code-sample"><dt>tilt pillow example</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt tilt-tile tilt-pillow-m"</span>&gt;</span>Foo<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <ul class="tilt-set">
+    <li><span class="tilt tilt-tile tilt-icon-center tilt-caption-br tilt-pillow-s">
+            <span>Foo</span>
+        </span>
+    <li><span class="tilt tilt-tile tilt-icon-center tilt-caption-br tilt-pillow-m">
+            <span>Foo</span>
+        </span>
+    <li><span class="tilt tilt-tile tilt-icon-center tilt-caption-br tilt-pillow-l">
+            <span>Foo</span>
+        </span>
+</ul>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h3 id="topic-tile-glass">Glass</h3>
+
+    <p>There&#39;s two glass style tiles included, a dark and a bright one, useful on backdrops.</p>
+
+    
+    <div class="el-sample wall">
+        
+        <ul class="tilt-grid">
+    <li>
+        <div>
+            <a class="tilt tilt-tile tilt-glass tilt-icon-center">
+                <i class="fa fa-sun-o"></i>Bright
+            </a>
+        </div>
+    </li>
+    <li>
+        <div>
+            <a class="tilt tilt-tile tilt-glass-dark tilt-icon-center">
+                <i class="fa fa-moon-o"></i>Dark
+            </a>
+        </div>
+    </li>
+</ul>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h3 id="topic-tile-colors">Colors</h3>
+
+    <p>The pack contains all Metro UI default colors.</p>
+
+<p>For example, a &quot;crimson&quot; colored tile can by created by adding the following classname <code>.tilt-tile-crimson</code></p>
+
+<p>If you want to bring your own colors to the table just apply a <code>background-color</code> to the <code>.tilt-tile</code> classname in your css file.</p><dl class="code-sample"><dt>tilt color example</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt tilt-tile tilt-crimson"</span>&gt;</span>Foo<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <ul class="tilt-grid" data-tile-size="s">
+    
+    <li><div>
+            <span class="tilt tilt-tile tilt-tile-amber">Amber</span>
+        </div>
+    </li>
+    <li><div>
+            <span class="tilt tilt-tile tilt-tile-brown">Brown</span>
+        </div>
+    </li>
+    <li><div>
+            <span class="tilt tilt-tile tilt-tile-cobalt">Cobalt</span>
+        </div>
+    </li>
+    <li><div>
+            <span class="tilt tilt-tile tilt-tile-crimson">Crimson</span>
+        </div>
+    </li>
+    <li><div>
+            <span class="tilt tilt-tile tilt-tile-cyan">Cyan</span>
+        </div>
+    </li>
+    <li><div>
+            <span class="tilt tilt-tile tilt-tile-magenta">Magenta</span>
+        </div>
+    </li>
+    <li><div>
+            <span class="tilt tilt-tile tilt-tile-lime">Lime</span>
+        </div>
+    </li>
+    <li><div>
+            <span class="tilt tilt-tile tilt-tile-indigo">Indigo</span>
+        </div>
+    </li>
+    <li><div>
+            <span class="tilt tilt-tile tilt-tile-green">Green</span>
+        </div>
+    </li>
+    <li><div>
+            <span class="tilt tilt-tile tilt-tile-emerald">Emerald</span>
+        </div>
+    </li>
+    <li><div>
+            <span class="tilt tilt-tile tilt-tile-mauve">Mauve</span>
+        </div>
+    </li>
+    <li><div>
+            <span class="tilt tilt-tile tilt-tile-olive">Olive</span>
+        </div>
+    </li>
+    <li><div>
+            <span class="tilt tilt-tile tilt-tile-orange">Orange</span>
+        </div>
+    </li>
+    <li><div>
+            <span class="tilt tilt-tile tilt-tile-pink">Pink</span>
+        </div>
+    </li>
+    <li><div>
+            <span class="tilt tilt-tile tilt-tile-red">Red</span>
+        </div>
+    </li>
+    <li><div>
+            <span class="tilt tilt-tile tilt-tile-sienna">Sienna</span>
+        </div>
+    </li>
+    <li><div>
+            <span class="tilt tilt-tile tilt-tile-steel">Steel</span>
+        </div>
+    </li>
+    <li><div>
+            <span class="tilt tilt-tile tilt-tile-teal">Teal</span>
+        </div>
+    </li>
+    <li><div>
+            <span class="tilt tilt-tile tilt-tile-violet">Violet</span>
+        </div>
+    </li>
+    <li><div>
+            <span class="tilt tilt-tile tilt-tile-yellow">Yellow</span>
+        </div>
+    </li></ul>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h3 id="topic-tile-social">Social</h3>
+
+    <p>If the classname <code>.tilt-tile</code> is applied to a link, which points to for instance Facebook or Twitter, the tile will automatically change color to the scheme of the social network.</p>
+
+<p>The following social networks are detect automatically: Twitter, Facebook, LinkedIn, Pintrest, Tumblr, GooglePlus, VK and Xing.</p>
+
+    
+    <div class="el-sample">
+        
+        <ul class="tilt-grid" data-tile-size="s">
+    
+    <li>
+        <div>
+            <a href="https://twitter.com/intent/tweet" class="tilt tilt-tile tilt-type-s tilt-icon-center tilt-caption-hidden" target="_blank">
+                <i class="fa fa-twitter"></i>
+                <span>Twitter</span>
+            </a>
+        </div>
+    </li>
+    <li>
+        <div>
+            <a href="http://www.facebook.com/sharer/sharer.php" class="tilt tilt-tile tilt-type-s tilt-icon-center tilt-caption-hidden" target="_blank">
+                <i class="fa fa-facebook"></i>
+                <span>Facebook</span>
+            </a>
+        </div>
+    </li>
+    <li>
+        <div>
+            <a href="http://www.linkedin.com/shareArticle" class="tilt tilt-tile tilt-type-s tilt-icon-center tilt-caption-hidden" target="_blank">
+                <i class="fa fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+        </div>
+    </li>
+    <li>
+        <div>
+            <a href="http://pinterest.com/pin/create/button" class="tilt tilt-tile tilt-type-s tilt-icon-center tilt-caption-hidden" target="_blank">
+                <i class="fa fa-pinterest"></i>
+                <span>Pinterest</span>
+            </a>
+        </div>
+    </li>
+    <li>
+        <div>
+            <a href="http://www.tumblr.com/share" class="tilt tilt-tile tilt-type-s tilt-icon-center tilt-caption-hidden" target="_blank">
+                <i class="fa fa-tumblr"></i>
+                <span>Tumblr</span>
+            </a>
+        </div>
+    </li>
+    <li>
+        <div>
+            <a href="https://plus.google.com/share" class="tilt tilt-tile tilt-type-s tilt-icon-center tilt-caption-hidden" target="_blank">
+                <i class="fa fa-google-plus"></i>
+                <span>Google+</span>
+            </a>
+        </div>
+    </li>
+    <li>
+        <div>
+            <a href="https://vk.com/share.php" class="tilt tilt-tile tilt-type-s tilt-icon-center tilt-caption-hidden" target="_blank">
+                <i class="fa fa-vk"></i>
+                <span>VK</span>
+            </a>
+        </div>
+    </li>
+    <li>
+        <div>
+            <a href="https://www.xing-share.com" class="tilt tilt-tile tilt-type-s tilt-icon-center tilt-caption-hidden" target="_blank">
+                <i class="fa fa-xing"></i>
+                <span>Xing</span>
+            </a>
+        </div>
+    </li></ul>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h3 id="topic-tile-hover">Hover</h3>
+
+    <p>Last, but not least, add the <code>.tilt-hover</code> classname to make the tile &quot;hover&quot; above the page. It will add a shadow beneath the tile which will be repositioned on interaction.</p><dl class="code-sample"><dt>tilt hover example</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt tilt-tile tilt-hover"</span>&gt;</span>Foo<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample inv padded">
+        
+        <ul class="tilt-set">
+    <li><span class="tilt tilt-tile tilt-hover"><span>Hovers</span></span>
+    <li><span class="tilt tilt-tile"><span>No hovering</span></span>
+</ul>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h2 id="topic-grid">Grid</h2>
+
+    <p>The tilt grid can be used to create a Metro style square grid. It will automatically calculate the available space and reorder it&#39;s children to fill up the space.</p>
+
+<p>It&#39;s setup using the <code>.tilt-grid</code> classname as shown in the html snippet below.</p><dl class="code-sample"><dt>tilt grid setup</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt-grid"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+            ...
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+            ...
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+            ...
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- etc. --&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <ul class="tilt-grid">
+    <li>
+        <div>
+            <a class="tilt tilt-tile">Foo</a>
+        </div>
+    </li>
+    <li>
+        <div>
+            <a class="tilt tilt-tile">Bar</a>
+        </div>
+    </li>
+    <li>
+        <div>
+            <a class="tilt tilt-tile">Baz</a>
+        </div>
+    </li>
+    <li data-tile-type="s">
+        <div>
+            <a class="tilt tilt-tile">Foo</a>
+        </div>
+    </li>
+    <li data-tile-type="s">
+        <div>
+            <a class="tilt tilt-tile">Bar</a>
+        </div>
+    </li>
+</ul>
+    </div>
+    
+
+    
+
+
+
+    
+
+    
+    
+    
+
+    
+<section>
+
+    
+
+    <h3 id="topic-grid-size">Size</h3>
+
+    <p>You can define the relative size of all the tiles in the grid by setting the <code>data-tile-size</code> attribute.</p>
+
+<p>Choose between <code>s</code>, the default <code>m</code> or <code>l</code></p><dl class="code-sample"><dt>tilt grid size</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt-grid"</span> <span class="hljs-attribute">data-tile-size</span>=<span class="hljs-value">"s"</span>&gt;</span>
+    ...
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <span>small</span>
+<ul class="tilt-grid" data-tile-size="s">
+    <li>
+        <div>
+            <a class="tilt tilt-tile">Foo</a>
+        </div>
+    </li>
+    <li>
+        <div>
+            <a class="tilt tilt-tile">Bar</a>
+        </div>
+    </li>
+    <li>
+        <div>
+            <a class="tilt tilt-tile">Baz</a>
+        </div>
+    </li>
+</ul>
+<span>medium</span>
+<ul class="tilt-grid" data-tile-size="m">
+    <li>
+        <div>
+            <a class="tilt tilt-tile">Foo</a>
+        </div>
+    </li>
+    <li>
+        <div>
+            <a class="tilt tilt-tile">Bar</a>
+        </div>
+    </li>
+    <li>
+        <div>
+            <a class="tilt tilt-tile">Baz</a>
+        </div>
+    </li>
+</ul>
+<span>large</span>
+<ul class="tilt-grid" data-tile-size="l">
+    <li>
+        <div>
+            <a class="tilt tilt-tile">Foo</a>
+        </div>
+    </li>
+    <li>
+        <div>
+            <a class="tilt tilt-tile">Bar</a>
+        </div>
+    </li>
+    <li>
+        <div>
+            <a class="tilt tilt-tile">Baz</a>
+        </div>
+    </li>
+</ul>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h3 id="topic-grid-spacing">Spacing</h3>
+
+    <p>You can set the spacing between the tiles using the <code>data-tile-spacing</code> attribute.</p>
+
+<p>Choose between <code>none</code> for no spacinng, <code>s</code>, the default <code>m</code> or <code>l</code></p><dl class="code-sample"><dt>tilt grid spacing</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt-grid"</span> <span class="hljs-attribute">data-tile-spacing</span>=<span class="hljs-value">"s"</span>&gt;</span>
+    ...
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <span>none</span>
+<ul class="tilt-grid" data-tile-spacing="none">
+    <li>
+        <div>
+            <a class="tilt tilt-tile">Foo</a>
+        </div>
+    </li>
+    <li data-tile-type="s">
+        <div>
+            <a class="tilt tilt-tile">Bar</a>
+        </div>
+    </li>
+    <li data-tile-type="s">
+        <div>
+            <a class="tilt tilt-tile">Baz</a>
+        </div>
+    </li>
+</ul>
+<span>small</span>
+<ul class="tilt-grid" data-tile-spacing="s">
+    <li>
+        <div>
+            <a class="tilt tilt-tile">Foo</a>
+        </div>
+    </li>
+    <li data-tile-type="s">
+        <div>
+            <a class="tilt tilt-tile">Bar</a>
+        </div>
+    </li>
+    <li data-tile-type="s">
+        <div>
+            <a class="tilt tilt-tile">Baz</a>
+        </div>
+    </li>
+</ul>
+<span>medium</span>
+<ul class="tilt-grid" data-tile-spacing="m">
+    <li>
+        <div>
+            <a class="tilt tilt-tile">Foo</a>
+        </div>
+    </li>
+    <li data-tile-type="s">
+        <div>
+            <a class="tilt tilt-tile">Bar</a>
+        </div>
+    </li>
+    <li data-tile-type="s">
+        <div>
+            <a class="tilt tilt-tile">Baz</a>
+        </div>
+    </li>
+</ul>
+<span>large</span>
+<ul class="tilt-grid" data-tile-spacing="l">
+    <li>
+        <div>
+            <a class="tilt tilt-tile">Foo</a>
+        </div>
+    </li>
+    <li data-tile-type="s">
+        <div>
+            <a class="tilt tilt-tile">Bar</a>
+        </div>
+    </li>
+    <li data-tile-type="s">
+        <div>
+            <a class="tilt tilt-tile">Baz</a>
+        </div>
+    </li>
+</ul>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h3 id="topic-grid-tiles">Tiles</h3>
+
+    <p>Tilt enables you to define tile types, based on the type of tile defined, the grid will be rearranged.</p>
+
+<p>There&#39;s four different square tiles, two landscape and two portrait tiles.</p>
+
+<ul><li><code>s</code>, <code>m</code>, <code>l</code> and <code>xl</code> render square tiles.</li><li><code>_s</code> and <code>_l</code> render landscape tiles.</li><li><code>|s</code> and <code>|l</code> render portrait tiles.</li></ul><dl class="code-sample"><dt>tilt grid tiles type example</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt-grid"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">data-tile-type</span>=<span class="hljs-value">"m"</span>&gt;</span>
+        Foo
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">data-tile-type</span>=<span class="hljs-value">"_s"</span>&gt;</span>
+        Bar
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">data-tile-type</span>=<span class="hljs-value">"s"</span>&gt;</span>
+        Baz
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">data-tile-type</span>=<span class="hljs-value">"s"</span>&gt;</span>
+        Foo
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">data-tile-type</span>=<span class="hljs-value">"m"</span>&gt;</span>
+        Bar
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">data-tile-type</span>=<span class="hljs-value">"|s"</span>&gt;</span>
+        Baz
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <ul class="tilt-grid">
+    <li data-tile-type="m">
+        <div>
+            <a class="tilt tilt-tile">Foo</a>
+        </div>
+    </li>
+    <li data-tile-type="_s">
+        <div>
+            <a class="tilt tilt-tile">Bar</a>
+        </div>
+    </li>
+    <li data-tile-type="s">
+        <div>
+            <a class="tilt tilt-tile">Baz</a>
+        </div>
+    </li>
+    <li data-tile-type="s">
+        <div>
+            <a class="tilt tilt-tile">Foo</a>
+        </div>
+    </li>
+    <li data-tile-type="m">
+        <div>
+            <a class="tilt tilt-tile">Bar</a>
+        </div>
+    </li>
+    <li data-tile-type="|s">
+        <div>
+            <a class="tilt tilt-tile">Baz</a>
+        </div>
+    </li>
+</ul>
+    </div>
+    
+
+    
+
+
+
+    
+
+    
+    
+    
+
+    
+<section>
+
+    
+
+    <h4 id="topic-grid-tiles-hints">Hints</h4>
+
+    <p>Now this is where it gets a little tricky. When you resize the screen, tilt will try to rearrange the tiles so they still fit nicely on the grid.</p>
+
+<p>Unfortunately tilt is not <a href="http://en.wikipedia.org/wiki/Skynet_(Terminator)">SkyNet</a> so sometimes it needs a little nudge in the right direction. We can supply these nudges using &quot;hints&quot;.</p>
+
+<p>You can define hints using the <code>data-tile-type</code> attribute, instead of defining a single type, you define multiple.</p>
+
+<p>Some examples:</p>
+
+<ul><li><p><code>data-tile-type=&quot;s&quot;</code> this always shows a small tile.</p></li><li><p><code>data-tile-type=&quot;s,6m&quot;</code> this show a small tile, but shows a medium tile if the grid is more than 6 slots wide.</p></li><li><p><code>data-tile-type=&quot;m,5s,9_l&quot;</code> this shows a medium tile, from 5 slots wide it becomes a small tile, than starting from 9 slots it&#39;s turned into a large landscape tile.</p></li></ul>
+
+<p>The red grid below has 3 medium sized tiles. The grid is 5 slots wide (a small square tile occupies 1 slot), so in this situation we have an empty column on the right as tile number three does noet fit in the narrow column.</p>
+
+<p>To resolve this, we can tell tilt to resize the last tile when the grid is 5 slots wide, the result is rendered as the green grid.</p>
+
+    
+    <div class="el-sample hints">
+        
+        
+<span>5 slots</span>
+
+<ul class="tilt-grid" data-tile-size="s" style="width:240px;">
+    <li data-tile-type="s">
+        <div>
+            <a class="tilt tilt-tile tilt-tile-steel">1</a>
+        </div>
+    </li>
+    <li data-tile-type="s">
+        <div>
+            <a class="tilt tilt-tile tilt-tile-steel">2</a>
+        </div>
+    </li>
+    <li data-tile-type="s">
+        <div>
+            <a class="tilt tilt-tile tilt-tile-steel">3</a>
+        </div>
+    </li>
+    <li data-tile-type="s">
+        <div>
+            <a class="tilt tilt-tile tilt-tile-steel">4</a>
+        </div>
+    </li>
+    <li data-tile-type="s">
+        <div>
+            <a class="tilt tilt-tile tilt-tile-steel">5</a>
+        </div>
+    </li>
+</ul>
+
+<!-- no hints -->
+
+<span>without hints</span>
+
+<ul class="tilt-grid" data-tile-size="s" style="width:240px;">
+    <li data-tile-type="m">
+        <div>
+            <a class="tilt tilt-tile tilt-tile-red">1</a>
+        </div>
+    </li>
+    <li data-tile-type="m">
+        <div>
+            <a class="tilt tilt-tile tilt-tile-red">2</a>
+        </div>
+    </li>
+    <li data-tile-type="m">
+        <div>
+            <a class="tilt tilt-tile tilt-tile-red">3</a>
+        </div>
+    </li>
+</ul>
+
+<!-- hints -->
+<span>with hints</span>
+<ul class="tilt-grid" data-tile-size="s" style="width:240px;">
+    <li data-tile-type="m">
+        <div>
+            <a class="tilt tilt-tile tilt-tile-green">1</a>
+        </div>
+    </li>
+    <li data-tile-type="m">
+        <div>
+            <a class="tilt tilt-tile tilt-tile-green">2</a>
+        </div>
+    </li>
+    <li data-tile-type="m,5|s">
+        <div>
+            <a class="tilt tilt-tile tilt-tile-green">3</a>
+        </div>
+    </li>
+</ul>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+
+    
+
+</section>
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h2 id="topic-set">Set</h2>
+
+    <p>The tilt set can be used to group tilt tiles and puts them next to each other. To prevent additional spacing between the tiles the <code>&lt;li&gt;</code> elements are not closed.</p><dl class="code-sample"><dt>tilt set example</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt-set"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt tilt-tile"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Foo<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt tilt-tile"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Bar<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt tilt-tile"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Baz<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- etc. --&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <ul class="tilt-set">
+    <li><span class="tilt tilt-tile"><span>Foo</span></span>
+    <li><span class="tilt tilt-tile"><span>Bar</span></span>
+    <li><span class="tilt tilt-tile"><span>Baz</span></span>
+</ul>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+
+    </div>
+
+</section>
+
+</div>
+
+
+
+    <script src="static/js/lib/tilt.min.js"></script>
+
+    <script src="static/js/lightbox/lightbox-2.6.min.js"></script>
+
+</body>
+
+</html>

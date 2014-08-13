@@ -9,28 +9,13 @@ html,body {
 
 html {
     font-family:'Noto Serif','Times',serif;
-    color:#111;
-    background:#fefefe;
+    color:#22211D;
+    background:#F1F0ED;
 }
 
 ::selection {
     color:#fff;
-    background:#111;
-}
-
-// vertical rhythm tester
-html::before {
-    position:absolute;
-    left:50%;
-    top:0;
-    bottom:0;
-    right:0;
-
-    //content:'';
-
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.1) 50%);
-    background-size:1px 3.75rem; // 2 * (1.5 * 1.25rem)
-    background-position: 0 0;
+    background:#ce3925;
 }
 
 ol,ul,li,dl,dt,dd {
@@ -50,9 +35,9 @@ pre, code {
 }
 
 body {
-    padding:1.875rem 1rem;
     margin:0 auto;
-    max-width:34rem; // equals approx. 65 characters @ 1.25rem
+	padding:1.875rem;
+    max-width:40rem; // equals approx. 65 characters @ 1.25rem
     font-size:1.25rem;
     line-height:1.5;
     overflow-x:hidden;
@@ -67,7 +52,7 @@ h1,h2,h3,p,footer {
     font-weight:normal;
 }
 
-h2,h3 {
+footer,h2,h3 {
     font-family:Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
@@ -80,7 +65,8 @@ h1 {
 h2 {
     font-size:1.75rem;
     line-height:1.333;
-    font-weight: bold;
+    font-weight:bold;
+	color:#ce3925;
 }
 
 h3 {
@@ -92,8 +78,7 @@ h3 {
 footer {
     margin-top:3.75rem;
     font-size:1rem;
-    color:#D0D5DA;
-    text-align:center;
+    color:#c6c5c2;
 }
 
 
@@ -149,10 +134,13 @@ body > nav {
 @import 'cinema';
 @import 'highlight';
 @import 'flickr';
+@import 'tweet';
 @import 'tweets';
 @import 'dataset';
 @import 'meta';
+@import 'products';
 @import 'list-thoughts';
+@import 'disqus';
 
 // layouts
 @import 'post';

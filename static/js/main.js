@@ -13,11 +13,12 @@ require(['conditioner'],function(conditioner) {
         'modules':{
             'ui/LineChart':{
                 'options':{
-	                'pointColor':'#FFFFFF',
-	                'gridColor':'#EDF0F3',
-	                'axisColor':'#EDF0F3',
-                    'lineColor':'#0E6CCA',
-	                'fontColor':'#B1BBC5'
+	                'pointColor':'#F1F0ED',
+	                'gridColor':'#F1F0ED',
+	                'axisColor':'#e4e3df',
+                    'lineColor':'#ce3925',
+	                'fontColor':'#b8b6ae',
+                    'axisFont':'Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif'
                 }
             }
         }

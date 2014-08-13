@@ -1,0 +1,37 @@
+.products {
+
+	list-style-type:none;
+	margin:0 -.9875rem;
+
+	li {
+		box-sizing:border-box;
+		display:inline-block;
+		width:33.333%;
+		padding:.9875rem;
+		text-align:center;
+		vertical-align:top;
+	}
+
+	article {
+		background:#fff;
+		padding:.9875rem;
+	}
+
+	a {
+		text-decoration:none;
+	}
+
+	dd {
+		position:absolute;
+		right:0;
+		top:0;
+	}
+
+	a[href^='http'] {
+		display:block;
+		color:#fff;
+		padding:.5rem;
+		background:#ce3925;
+	}
+
+}

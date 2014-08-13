@@ -1,13 +1,19 @@
 .tweets {
 
-    margin:0;
-    padding:0 .9375rem;
+	padding:0;
+	list-style-type:none;
+	text-align:center;
 
     li {
         display:inline-block;
         width:33.33%;
         box-sizing:border-box;
         padding:0 .9375rem;
-        vertical-align:top;
+        vertical-align:middle;
     }
+
+	iframe {
+		border:3px solid #e4e3df !important;
+		box-shadow:none !important;
+	}
 }
