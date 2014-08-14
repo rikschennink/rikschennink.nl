@@ -1,0 +1,235 @@
+
+::selection {
+	color:#fff;
+	background:#ce3925;
+}
+
+section,aside,article,nav,footer {
+	display:block;
+}
+
+html,body {
+	margin:0;
+	padding:0;
+}
+
+html {
+	font-family:$font-stack-serif;
+}
+
+html {
+	background:$fill-color-back;
+}
+
+html,table {
+	color:$font-color-text;
+}
+
+ol,ul,li,dl,dt,dd {
+	margin:0;
+	padding:0;
+	font-weight:normal;
+}
+
+canvas,img {
+	max-width:100%;
+}
+
+pre, code {
+	font-size:.6875rem;
+	font-family:$font-stack-mono;
+}
+
+body {
+	margin:0 auto;
+	padding:.9875rem;
+	max-width:40rem; // equals approx. 65 characters @ 1.25rem
+	font-size:1rem;
+	line-height:1.5;
+	overflow-x:hidden;
+}
+
+a {
+	color:$font-color-link;
+
+	&:hover,
+	&:focus {
+		color:darken($font-color-link,7%);
+		background-color:lighten($font-color-link,46%);
+		box-shadow:0 0 0 .25rem lighten($font-color-link,46%);
+	}
+}
+
+h1,h2,h3,p,footer {
+	margin:1.875rem 0;
+	font-weight:normal;
+}
+
+footer,h2,h3 {
+	font-family:$font-stack-sans;
+}
+
+h1 {
+	font-size:2rem;
+	font-style:italic;
+	line-height:1.25;
+
+	a {
+		color:$font-color-text;
+	}
+}
+
+h2 {
+	font-size:1.333rem;
+	line-height:1.333;
+	color:$font-color-link;
+}
+
+h3 {
+	font-size:1.125rem;
+	font-weight:bold;
+	text-transform:uppercase;
+
+	a {
+		color:$font-color-text;
+	}
+}
+
+footer {
+	margin-top:3.75rem;
+	font-size:1rem;
+	color:#c6c5c2;
+}
+
+
+h1,h3 {
+	a {
+
+		&:hover,
+		&:focus {
+			background-color:transparent;
+			box-shadow:none;
+		}
+	}
+}
+
+
+table {
+	font-family:$font-stack-sans;
+	width:100%;
+	border-collapse:collapse;
+	text-align:center;
+	//box-shadow:0 0 0 3px #F1F0ED;
+}
+
+thead {
+	font-size:.875rem;
+	background-color:#E2E1DF;
+}
+
+tbody {
+	font-size:.75rem;
+}
+
+td,th {
+	border:1px solid #CFCCC6;
+	padding:.25rem;
+}
+
+
+
+
+// crumbs and nav
+body {
+	padding-bottom:3rem; // space required for nav element
+}
+
+body > nav {
+
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	font-size:1rem;
+	background:rgba(71, 28, 22, 0.94);
+
+
+	h1 {
+		display:none;
+	}
+
+	a {
+		display:block;
+		padding:.9875rem 0;
+		color:#F1F0ED;
+		text-decoration:none;
+		vertical-align:middle;
+		line-height:1;
+		text-transform:lowercase;
+		cursor:pointer;
+
+		&::before {
+			display:inline-block;
+			content:'◂';
+			text-align:center;
+			font-size:1rem;
+			width:1.875rem;
+		}
+
+		&:focus,
+		&:hover {
+			background-color:transparent;
+			box-shadow:none;
+			color:#F1F0ED;
+		}
+	}
+}
+
+
+
+
+// inline code snippet
+:not(pre)>code {
+	//padding:.125rem .25rem;
+	margin:0 .25rem;;
+	display:inline;
+	color:#747772;
+	//background:#ECEEE9;
+	//border-radius:.25rem;
+
+
+	background-color:#ECEEE9;
+	box-shadow:0 0 0 .333rem #ECEEE9;
+}
+
+
+// module loading
+.js [data-module]:not([data-processed]) {
+	visibility:hidden;
+}
+
+
+// what happens beyond stack width
+@media (min-width:$stack-width) {
+
+	body {
+		padding:1.875rem;
+		font-size:1.25rem;
+	}
+
+	h1 {
+		font-size:2.25rem;
+	}
+
+	h2 {
+		font-size:1.75rem;
+	}
+
+	h3 {
+		font-size:1.5rem;
+	}
+
+	pre,code {
+		font-size:.875rem;
+	}
+}

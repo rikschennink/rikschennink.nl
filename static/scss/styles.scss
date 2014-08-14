@@ -1,163 +1,17 @@
 
 $stack-width:30rem;
 
+$font-stack-sans:Lucida Sans Unicode, Lucida Grande, Arial, sans-serif;
+$font-stack-serif:'Noto Serif','Times',serif;
+$font-stack-mono:monaco,monospace;
 
-section,aside,article,nav,footer {
-    display:block;
-}
+$font-color-text:#22211D;
+$font-color-link:#ce3925;
 
-html,body {
-    margin:0;
-    padding:0;
-}
+$fill-color-back:#ECECE9;
 
-html {
-    font-family:'Noto Serif','Times',serif;
-    color:#22211D;
-    background:#F1F0ED;
-}
-
-::selection {
-    color:#fff;
-    background:#ce3925;
-}
-
-ol,ul,li,dl,dt,dd {
-    margin:0;
-    padding:0;
-    font-weight:normal;
-}
-
-canvas,img {
-    max-width:100%;
-}
-
-pre, code {
-    font-size:.875rem;
-    font-family:Menlo, monospace;
-    letter-spacing:.06125rem;
-}
-
-body {
-    margin:0 auto;
-	padding:0;
-    max-width:40rem; // equals approx. 65 characters @ 1.25rem
-	font-size:1rem;
-    line-height:1.5;
-    overflow-x:hidden;
-}
-
-a {
-    color:#ce3925;
-}
-
-h1,h2,h3,p,footer {
-    margin:1.875rem 0;
-    font-weight:normal;
-}
-
-footer,h2,h3 {
-    font-family:Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-}
-
-h1 {
-    font-size:2rem;
-    font-style:italic;
-    line-height:1.25;
-}
-
-h2 {
-    font-size:1.5rem;
-    line-height:1.333;
-    font-weight:bold;
-	color:#ce3925;
-}
-
-h3 {
-	font-size:1.25rem;
-    text-transform:uppercase;
-    letter-spacing:.06125rem;
-}
-
-footer {
-    margin-top:3.75rem;
-    font-size:1rem;
-    color:#c6c5c2;
-}
-
-
-
-// crumbs
-body > nav {
-
-    display:none;
-    margin:0 -1.5rem 3.75rem;
-    font-size:1.25rem;
-    text-align:left;
-
-    h1 {
-        display:none;
-    }
-
-    a {
-        color:#6f93cf;
-        text-decoration:none;
-
-        &::before {
-            content:'◂';
-            margin-right:.25rem;
-            font-family:1.5rem;
-            position:relative;
-            top:.125rem;
-            font-size:1.5rem;
-        }
-    }
-}
-
-
-
-
-// inline code snippet
-:not(pre)>code {
-    padding:0 .333rem;
-    display:inline-block;
-    white-space:nowrap;
-    color:#5F7386;
-    background:#F0F3F7;
-    border-radius:.25rem;
-}
-
-
-// module loading
-.js [data-module]:not([data-initialized]) {
-    visibility:hidden;
-}
-
-
-// what happens beyond stack width
-@media (min-width:$stack-width) {
-
-	body {
-		padding:1.875rem;
-		font-size:1.25rem;
-	}
-
-	h1 {
-		font-size:2.25rem;
-	}
-
-	h2 {
-		font-size:1.75rem;
-	}
-
-	h3 {
-		font-size:1.5rem;
-	}
-
-}
-
-
-
+// foundation
+@import 'base';
 
 // components
 @import 'author';

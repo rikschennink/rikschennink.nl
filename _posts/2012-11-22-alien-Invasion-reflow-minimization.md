@@ -10,7 +10,7 @@ To have your web apps performing at peak level you need to keep an eye on browse
 
 Your browser 'reflows' the page every time the DOM changes or a node is altered. Depending on the position and properties of the DOM node it needs to reflow the entire DOM tree or just a section of it. Calculating this information is a process that takes a considerable amount of time ([see it in action here and you’ll know why](http://www.youtube.com/watch?v=dndeRnzkJDU)). Minimizing reflow time will make your web app feel more responsive, resulting in happy times for you and for your users.
 
-It’s now clear that changing (layout related) properties on nodes causes a reflow, what’s also interesting is the fact that requesting certain properties also causes one. For instance, requesting offsetLeft causes a reflow because before returning you the offset the browser needs to know for sure it is giving you the correct value.
+It’s now clear that changing (layout related) properties on nodes causes a reflow, what’s also interesting is the fact that requesting certain properties also causes one. For instance, requesting `offsetLeft` causes a reflow because before returning you the offset the browser needs to know for sure it is giving you the correct value.
 
 To keep things running smooth, only change layout properties when you have to, and when you have to, try to do all the needed changes at the same time.
 
@@ -18,7 +18,7 @@ Below are some suggestions on how to do this.
 
 ## Applying styles
 
-If you are applying styles to a node use the cssText property, cssText allows you to add a group of styles in one go.
+If you are applying styles to a node use the `cssText` property, `cssText` allows you to add a group of styles in one go.
 
 Three reflows
 {% highlight javascript %}

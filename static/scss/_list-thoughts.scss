@@ -3,9 +3,17 @@
     list-style-type:none;
 
     h1 {
-        margin-bottom:0;
         text-align:left;
         font-size:1.5rem;
+
+		a::before {
+			position:absolute;
+			left:0;
+			top:0;
+			right:0;
+			bottom:0;
+			content:'';
+		}
     }
 
 	li {
@@ -15,7 +23,20 @@
 	article {
 		position:relative;
 		background:#fff;
-		padding:1px 1.875rem;
+		padding:1px 1.875em;
+	}
+
+	p a {
+		position:relative;
+		z-index:1;
+	}
+
+}
+
+@media (min-width:$stack-width) {
+
+	h1 {
+		margin-bottom:0;
 	}
 
 	time {
@@ -26,6 +47,12 @@
 		margin-right:1.875rem;
 		white-space:nowrap;
 		text-align:right;
+	}
+
+	article {
+		position:relative;
+		background:#fff;
+		padding:1px 1.875rem;
 	}
 
 }

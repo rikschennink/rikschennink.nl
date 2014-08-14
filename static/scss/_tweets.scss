@@ -3,12 +3,11 @@
 	text-align:center;
 	padding:0;
 	list-style-type:none;
-	overflow-x:scroll;
-	//max-width:100%;
-	white-space:nowrap;
+	width:10rem;
+
 
     li {
-		display:inline-block;
+		display:block;
 		box-sizing:border-box;
 		vertical-align:top;
 		margin-right:.9875rem;
@@ -25,6 +24,9 @@
 @media (min-width:30rem) {
 
 	.tweets {
+
+		white-space:nowrap;
+
 		li {
 			display:inline-block;
 			width:50%;

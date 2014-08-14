@@ -1,15 +1,11 @@
 .products {
 
 	list-style-type:none;
-	margin:0 -.9875rem;
 
 	li {
-		box-sizing:border-box;
-		display:inline-block;
-		width:33.333%;
-		padding:.9875rem;
 		text-align:center;
 		vertical-align:top;
+		margin-bottom:1rem;
 	}
 
 	article {
@@ -28,5 +24,22 @@
 		padding:.5rem;
 		background:#ce3925;
 	}
+
+}
+
+@media (min-width:$stack-width) {
+
+	.products {
+		margin:0 -.9875rem;
+
+		li {
+			box-sizing:border-box;
+			display:inline-block;
+			width:33.333%;
+			padding:.9875rem;
+		}
+
+	}
+
 
 }

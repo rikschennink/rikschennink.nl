@@ -5,18 +5,18 @@
 	text-align:center;
 
     a {
+		display:inline-block;
 		position:relative;
 
-        display:inline-block;
-        width:30%;
-		margin:0 1.25% 1.875rem;
         vertical-align:top;
         overflow:hidden;
-        //height:5rem;
         box-sizing:border-box;
 
-		border-radius:.5rem;
-		padding-bottom:15%;
+		width:47.5%;
+		margin:0 1.25%;
+		padding-bottom:25%;
+		margin-bottom:1.875rem;
+
 		border:0;
 
     }
@@ -25,11 +25,23 @@
 		position:absolute;
 
         display:block;
-        width:auto;
         max-width:none;
-        //height:100%;
 		height:auto;
 		width:100%;
     }
+
+}
+
+@media (min-width:$stack-width) {
+
+	.flickr {
+
+		a {
+			width:30%;
+			padding-bottom:15%;
+		}
+
+	}
+
 
 }

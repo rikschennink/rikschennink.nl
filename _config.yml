@@ -1,4 +1,4 @@
 highlighter: pygments
 safe: true
-exclude: [node_modules, README.md, package.json, gulpfile.js]
+exclude: [node_modules, CNAME, README.md, package.json, gulpfile.js, static]
 permalink: /thoughts/:title

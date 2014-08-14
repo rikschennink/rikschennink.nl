@@ -10,7 +10,7 @@
         margin:0 0 0 -1.875rem;
         padding:0 0 0 1.875rem;
         word-break:break-word;
-        border-left:2px solid #D6DADD;
+        border-left:2px dashed #DDE2DA;
         overflow:hidden;
     }
 
@@ -18,7 +18,7 @@
 
         &:before {
             display:block;
-            color:#B1BBC5;
+            color:#C8CCC4;
             padding-bottom:.75rem;
             margin-bottom:.75rem;
             content: '// ' attr(data-lang);
@@ -28,12 +28,12 @@
 
     // comments
     .c,.cm,.c1 {
-        color:#B1BBC5;
+        color:#C8CCC4;
     }
 
     // javascript objects and html tags
     .k,.kd,.nt {
-        color:#0E6CCA;
+        color:#ce3925;
     }
 
     // methods
@@ -43,17 +43,17 @@
 
     // numbers
     .mi {
-        color:#F88303;
+        color:#708DE9;
     }
 
     // strings
     .s,.s1,.s2 {
-        color:#4A9B00;
+        color:#789C2A;
     }
 
     // operator
     .o {
-        color:#858C94;
+        color:#C8CCC4;
     }
 
 }

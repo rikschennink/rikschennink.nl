@@ -15,7 +15,6 @@ Last week I attended the 2013 edition of Mobilism which, in short, was pretty aw
 
 The common theme running through all talks was that in order to create the beautiful, fast and maintainable webpages of tomorrow we need to embrace content structure and put it at the core of our web dev process.
 
-
 ## Day 1
 
 ### [Dave Shea - Responsive Anti Patterns](http://mezzoblue.com/presentations/2013/mobilism/)

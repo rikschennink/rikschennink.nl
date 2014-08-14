@@ -3,8 +3,9 @@ var connect = require('gulp-connect');
 var sass = require('gulp-sass');
 var sequence = require('run-sequence');
 var autoprefixer = require('gulp-autoprefixer');
+var livereload = require('gulp-livereload');
 var spawn = require('child_process').spawn;
-
+var reloader = null;
 
 gulp.task('_connect', function() {
 
@@ -28,43 +29,77 @@ gulp.task('_jekyll',function(cb){
 	});
 
 	ls.on('close', function (code) {
-		console.log('jekyll: finished ' + code);
+		console.log('jekyll: finished (' + code + ')');
 		cb();
 	});
 
 });
 
-gulp.task('_scss',function(){
+gulp.task('_static',function(){
 
 	return gulp.src('./static/scss/styles.scss')
 		.pipe(sass())
 		.pipe(autoprefixer('last 1 version', '> 5%', 'ie 8'))
+
+        // one for 'gh_pages'
 		.pipe(gulp.dest('./static/css'))
-		.pipe(gulp.dest('._site/static/css'));
+
+        // one for '_site'
+		.pipe(gulp.dest('./_site/static/css'));
+
+});
+
+gulp.task('_inject',function(){
+
+    return gulp.src('./static/**/*',{ base: './' })
+        .pipe(gulp.dest('./_site'));
+
+});
+
+gulp.task('_content',function(cb){
+
+    // build new jekyll site, than inject static files
+	sequence(['_jekyll'],'_inject',cb);
 
 });
 
 gulp.task('build',function(cb){
 
-	sequence(['_scss'],'_jekyll',cb);
+    sequence(['_jekyll','_static'],'_inject',cb);
 
 });
 
 gulp.task('dev',['build','_connect'],function(){
 
-	gulp.watch([
+    // start live reload server
+    livereload.listen();
 
-		// all static files
-		'./static/**/*',
+    // now watching static files
+    gulp.watch([
+
+        // all static files
+        './static/**/*'
+
+    ],['_static']);
+
+    // now watching html files
+	gulp.watch([
 
 		// all html and markdown files
 		'./**/*.html',
 		'./**/*.md',
 
 		// exclude these files
-		'!./_site/**/*',
-		'!./node_modules/**/*'
+        '!./node_modules/**/*',
+        '!./_site/**/*'
 
-	],['build']);
+	],['_content']);
+
+    // wait for site to be rebuild
+    gulp.watch([
+
+        './_site/static/**/*'
+
+    ]).on('change', livereload.changed);
 
 });

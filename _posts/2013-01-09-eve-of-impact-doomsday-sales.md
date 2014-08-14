@@ -52,15 +52,9 @@ Forums also give you the opportunity to monitor the amount of views a certain to
 In the beginning of 2012 I added a social aspect to Eve of Impact, the ability to share your score over Twitter. If you choose to share your score, the game automatically adds a screenshot of the game-over screen, in a way it’s a little teaser. Since this generates free exposure, I thought this component was essential to have before even considering dropping the price. Having a lot of people tweet about your app will result in extra traffic, which might result in extra sales.
 
 <div class="cinema">
-    <ul class="tweets">  
-        <li>
-        <blockquote class="twitter-tweet" lang="en"><p>Broadcast to 57.474 survivors:<a href="https://twitter.com/hashtag/eveofimpact?src=hash">#eveofimpact</a> che fugata sto gioco <a href="http://t.co/WSnBzkUNLx">pic.twitter.com/WSnBzkUNLx</a></p>&mdash; Luca A Pellegrini (@LucaAPellegrini) <a href="https://twitter.com/LucaAPellegrini/statuses/391972471391256576">October 20, 2013</a></blockquote>
-        </li><li>
-        <blockquote class="twitter-tweet" lang="en"><p>Broadcast to 17.880 survivors: Earth has been lost, it&#39;s up to us to find a new home. <a href="https://twitter.com/hashtag/eveofimpact?src=hash">#eveofimpact</a> <a href="http://t.co/S4kRS59i">pic.twitter.com/S4kRS59i</a></p>&mdash; Rik Schennink (@rikschennink) <a href="https://twitter.com/rikschennink/statuses/219403098161033218">July 1, 2012</a></blockquote>
-        </li><li>
-        <blockquote class="twitter-tweet" lang="en"><p>Good game: Broadcast to 34.925 survivors: Earth has been lost, it&#39;s up to us to find a new home <a href="https://twitter.com/hashtag/eveofimpact?src=hash">#eveofimpact</a> <a href="http://t.co/AXfrZsuZUp">pic.twitter.com/AXfrZsuZUp</a></p>&mdash; JesperBylund (@JesperBylund) <a href="https://twitter.com/JesperBylund/statuses/394350148727230464">October 27, 2013</a></blockquote>
-        </li>
-    </ul>
+
+    <blockquote class="twitter-tweet" lang="en"><p>Broadcast to 17.880 survivors: Earth has been lost, it&#39;s up to us to find a new home. <a href="https://twitter.com/hashtag/eveofimpact?src=hash">#eveofimpact</a> <a href="http://t.co/S4kRS59i">pic.twitter.com/S4kRS59i</a></p>&mdash; Rik Schennink (@rikschennink) <a href="https://twitter.com/rikschennink/statuses/219403098161033218">July 1, 2012</a></blockquote>
+    
     <script async src="http://platform.twitter.com/widgets.js"></script>
 </div>
 
@@ -73,7 +67,7 @@ Before the first 24 hours where over I already shipped 25.000 units. Most of the
 Below you can see the amount of downloads during the free period. It’s quit shocking compared to the 2 to 5 downloads I normally get on an average day.
 
 <div class="cinema">
-    <div class="dataset" data-module="ui/LineChart">
+    <div class="dataset" data-module="ui/LineChart" data-conditions="media:{(min-width:30rem)}">
         <table summary="Eve of Impact Free Period Downloads">
             <thead>
                 <tr>
@@ -148,7 +142,7 @@ Since I suspected most of my original sales happened through people searching th
 Before the sale Eve of Impact was slowly falling down in the search ranking, I also saw this happening to my sales (not a lot but a negative trend), so these two variables might be related. As you can see below the sale positively impacted search ranking which in turn should, if my theory is correct, improve future sales. I’ll only show the keyword “asteroid”, the other keywords follow a similar pattern. At the time of this writing (three weeks after the sale has ended) it’s still ranked around position 25.
 
 <div class="cinema">
-    <div class="dataset" data-module="ui/LineChart">
+    <div class="dataset" data-module="ui/LineChart" data-conditions="media:{(min-width:30rem)}">
         <table summary="Eve of Impact Search Ranking">
             <thead>
                 <tr>

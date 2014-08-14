@@ -28,6 +28,13 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
 	font-size: 12px;
 }
 
+blockquote.twitter-tweet iframe {
+	border:3px solid #e4e3df !important;
+	box-shadow:none !important;
+	max-width:98% !important;
+}
+
+
 /** Timeline */
 
 a.twitter-timeline {
