@@ -1,3 +1,7 @@
+
+$stack-width:30rem;
+
+
 section,aside,article,nav,footer {
     display:block;
 }
@@ -36,9 +40,9 @@ pre, code {
 
 body {
     margin:0 auto;
-	padding:1.875rem;
+	padding:0;
     max-width:40rem; // equals approx. 65 characters @ 1.25rem
-    font-size:1.25rem;
+	font-size:1rem;
     line-height:1.5;
     overflow-x:hidden;
 }
@@ -57,20 +61,20 @@ footer,h2,h3 {
 }
 
 h1 {
-    font-size:2.25rem;
+    font-size:2rem;
     font-style:italic;
     line-height:1.25;
 }
 
 h2 {
-    font-size:1.75rem;
+    font-size:1.5rem;
     line-height:1.333;
     font-weight:bold;
 	color:#ce3925;
 }
 
 h3 {
-    font-size:1.5rem;
+	font-size:1.25rem;
     text-transform:uppercase;
     letter-spacing:.06125rem;
 }
@@ -130,7 +134,33 @@ body > nav {
 }
 
 
+// what happens beyond stack width
+@media (min-width:$stack-width) {
+
+	body {
+		padding:1.875rem;
+		font-size:1.25rem;
+	}
+
+	h1 {
+		font-size:2.25rem;
+	}
+
+	h2 {
+		font-size:1.75rem;
+	}
+
+	h3 {
+		font-size:1.5rem;
+	}
+
+}
+
+
+
+
 // components
+@import 'author';
 @import 'cinema';
 @import 'highlight';
 @import 'flickr';

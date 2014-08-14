@@ -2,7 +2,7 @@
     margin:1.875rem 0;
 }
 
-@media (min-width:38rem) {
+@media (min-width:$stack-width) {
 
     .cinema {
 		box-sizing:border-box;
