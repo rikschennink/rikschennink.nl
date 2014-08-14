@@ -1,0 +1,36 @@
+.tweets {
+
+	text-align:center;
+	padding:0;
+	list-style-type:none;
+	overflow-x:scroll;
+	//max-width:100%;
+	white-space:nowrap;
+
+    li {
+		display:inline-block;
+		box-sizing:border-box;
+		vertical-align:top;
+		margin-right:.9875rem;
+    }
+
+	iframe {
+		border:3px solid #e4e3df !important;
+		box-shadow:none !important;
+		max-width:98% !important;
+	}
+
+}
+
+@media (min-width:30rem) {
+
+	.tweets {
+		li {
+			display:inline-block;
+			width:50%;
+			padding:0 .9375rem;
+			vertical-align:middle;
+		}
+	}
+
+}

@@ -1,0 +1,73 @@
+.post {
+
+	background:#fff;
+	padding:1.875rem;
+
+    header {
+        text-align:center;
+    }
+
+    aside {
+
+        margin-top:3.75rem;
+
+        h1 {
+            text-align:center;
+            margin-bottom:3.75rem;
+        }
+    }
+
+    >div {
+
+        // paragraphs
+        >p:first-child {
+			font-size:1.25rem;
+        }
+
+        // lists
+        >ol,
+        >ul {
+            margin-left:1rem;
+			margin-right:10%;
+
+            ul,ol {
+                margin-top:.9375rem;
+                margin-right:0;
+                margin-left:1.875rem;
+            }
+
+            >li {
+                margin-bottom:.9375rem;
+            }
+        }
+
+    }
+
+}
+
+@media (min-width:$stack-width) {
+
+	.post {
+
+		padding:1.875rem 3.75rem;
+
+		>div {
+
+			>ol,
+			>ul {
+				margin-left:0;
+			}
+
+			>p:first-child {
+				margin:3.75rem 0;
+				font-size:1.5rem;
+			}
+
+			h2 {
+				margin-left:-1.875rem;
+			}
+
+		}
+	}
+
+}

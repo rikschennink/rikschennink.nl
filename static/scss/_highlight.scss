@@ -1,0 +1,60 @@
+.highlight {
+
+    position:relative;
+
+    + .highlight {
+        margin-top:1.875rem;
+    }
+
+    pre {
+        margin:0 0 0 -1.875rem;
+        padding:0 0 0 1.875rem;
+        word-break:break-word;
+        border-left:2px solid #D6DADD;
+        overflow:hidden;
+    }
+
+    code {
+
+        &:before {
+            display:block;
+            color:#B1BBC5;
+            padding-bottom:.75rem;
+            margin-bottom:.75rem;
+            content: '// ' attr(data-lang);
+        }
+
+    }
+
+    // comments
+    .c,.cm,.c1 {
+        color:#B1BBC5;
+    }
+
+    // javascript objects and html tags
+    .k,.kd,.nt {
+        color:#0E6CCA;
+    }
+
+    // methods
+    .nt,.nx {
+        //color:#111;
+    }
+
+    // numbers
+    .mi {
+        color:#F88303;
+    }
+
+    // strings
+    .s,.s1,.s2 {
+        color:#4A9B00;
+    }
+
+    // operator
+    .o {
+        color:#858C94;
+    }
+
+}
+

@@ -1,0 +1,35 @@
+
+.flickr {
+
+	margin:0 auto -1.875rem;
+	text-align:center;
+
+    a {
+		position:relative;
+
+        display:inline-block;
+        width:30%;
+		margin:0 1.25% 1.875rem;
+        vertical-align:top;
+        overflow:hidden;
+        //height:5rem;
+        box-sizing:border-box;
+
+		border-radius:.5rem;
+		padding-bottom:15%;
+		border:0;
+
+    }
+
+    img {
+		position:absolute;
+
+        display:block;
+        width:auto;
+        max-width:none;
+        //height:100%;
+		height:auto;
+		width:100%;
+    }
+
+}

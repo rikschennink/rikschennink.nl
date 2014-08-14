@@ -17,7 +17,8 @@ Before I started writing any big client-side frameworks I wrote a lot of tiny we
 
 And thus, the BehaviourController was born. The BehaviourController (BC) is a JavaScript Class that in it’s most basic form listens to the `DOMContentLoaded` event, when the `DOMContentLoaded` event fires the BC collects all DOM nodes with a `data-behaviour` attribute. The value of the “data-behaviour” attribute corresponds to a JavaScript behaviour Class with the same name. For each of the DOM nodes with a set behaviour, the BC will create a new instance of the corresponding JavaScript behaviour Class, passing the node along. This looks something like this:
 
-{% highlight javascript linenos %}
+
+{% highlight javascript %}
 /*
  * Clock Class
  */
@@ -65,8 +66,7 @@ ClearField.prototype.handleEvent = function(e) {
 };
 {% endhighlight %}
 
-
-{% highlight html linenos %}
+{% highlight html %}
 <!-- Clock behaviour HTML -->
 <p data-behaviour="Clock">Clock is inactive</p>
  
@@ -79,9 +79,9 @@ BehaviourController.applyDefault();
 </script>
 {% endhighlight %}
 
-When we run this, the BC instantiates a new Clock and a new ClearField, it is not concerned with what type of objects it’s making, it’s only concern is to find references to Classes and make instances, marvelous! View the [BehaviourController Demo](/demo/behaviour-controller/basic/) using a modern browser.
+When we run this, the BC instantiates a new Clock and a new ClearField, it is not concerned with what type of objects it’s making, it’s only concern is to find references to Classes and make instances, marvelous! View the [BehaviourController Demo](http://codepen.io/rikschennink/pen/Fsfnu) using a modern browser.
 
-We are now able to create new Classes and link them to DOM nodes using the`data-behaviour` attribute. There is no more need to call the constructor of each class separately, there is only one starting point (the BC). JavaScript Classes are unaware of each other resulting in nice clean maintainable code.
+We are now able to create new Classes and link them to DOM nodes using the `data-behaviour` attribute. There is no more need to call the constructor of each class separately, there is only one starting point (the BC). JavaScript Classes are unaware of each other resulting in nice clean maintainable code.
 
 To take this to the responsive level I introduce to you the `data-conditions` attribute, this will contain information about the conditions that need to be met for this behaviour be active (think window size, element size, wether geolocation should be available etc.). For this example we will go with window width which looks like the following: `data-conditions='{"window":{"minWidth":600}}'`. This would mean the class should only be active when the window has a minimum width of 600 pixels.
 
@@ -89,7 +89,8 @@ To get the above working, we need another two Classes that take care of loading 
 
 The HTML and JavaScript would now look like the example below.
 
-{% highlight javascript linenos %}
+
+{% highlight javascript %}
 /*
  * BehaviourBase Abstract Class
  */
@@ -188,7 +189,7 @@ ClearField.prototype._unload = function() {
 };
 {% endhighlight %}
 
-{% highlight html linenos %}
+{% highlight html %}
 <!-- Clock behaviour HTML -->
 <p data-behaviour="Clock" data-conditions='{"window":{"minWidth":600}}'>Clock is inactive</p>
  
@@ -201,18 +202,8 @@ BehaviourController.applyDefault();
 </script>
 {% endhighlight %}
 
-Be sure to resize your window a couple times when checking the [Responsive BehaviourController Demo](http://rikschennink.nl/demo/behaviour-controller/responsive/). The two controls will load and unload depending on your window width so they might not be active when you open the page.
+Be sure to resize your window a couple times when checking the [Responsive BehaviourController Demo](http://codepen.io/rikschennink/pen/ytshL). The two controls will load and unload depending on your window width so they might not be active when you open the page.
 
 So now we have a JavaScript solution that allows us to load and unload JavaScript on the fly depending on the conditions supplied in the `data-conditions` attribute. Ideal for any web project but especially for responsive projects where you want to conditionally load scripts depending on the environment.
-
-In the mean time I’ve extended the above functionality with some extras:
-
-- Namespaces to group Classes together;
-- Conditional async script loading;
-- An OptionController for handling custom Class options;
-- The option to add your own conditions;
-- Media Query support;
-
-Be sure to check out the [BehaviourController "Steroids" Demo](http://rikschennink.nl/demo/behaviour-controller/steroids/). Just so you know, it asks for your permission to use geolocation as one of the Classes has geolocation as a required condition.
 
 Any thoughts?

@@ -1,0 +1,38 @@
+
+.meta {
+
+    margin-bottom:1.875rem;
+
+    dt {
+        display:none;
+    }
+
+    time {
+        display:block;
+        text-transform:uppercase;
+        font-size:1rem;
+        color: #ce3925;
+        letter-spacing:.125rem;
+        font-family:Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    }
+
+    ul {
+        list-style-type:none;
+        font-size:1rem;
+        font-weight:normal;
+        color:#888;
+    }
+
+    li {
+        display:inline;
+
+        &:not(:last-child) {
+
+            &::after {
+                content:', '
+            }
+        }
+
+    }
+
+}

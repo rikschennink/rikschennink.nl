@@ -1,0 +1,31 @@
+.thoughts {
+
+    list-style-type:none;
+
+    h1 {
+        margin-bottom:0;
+        text-align:left;
+        font-size:1.5rem;
+    }
+
+	li {
+		margin-bottom:1.5rem;
+	}
+
+	article {
+		position:relative;
+		background:#fff;
+		padding:1px 1.875rem;
+	}
+
+	time {
+		position:absolute;
+		right:100%;
+		top:1.875rem;
+		line-height:2;
+		margin-right:1.875rem;
+		white-space:nowrap;
+		text-align:right;
+	}
+
+}

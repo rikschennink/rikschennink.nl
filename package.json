@@ -1,43 +1,44 @@
 {
-	"name": "rikschennink.nl",
-	"version": "1.0.0",
-	"description": "Home of Rik Schennink",
-	"homepage": "http://rikschennink.nl",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/rikschennink/rikschennink.nl.git"
-	},
-	"bugs": {
-		"url": "https://github.com/rikschennink/rikschennink.nl/issues"
-	},
-	"keywords": [
-		"homepage",
-		"website",
-		"thoughts",
-		"blog",
-		"feed"
-	],
-	"author": {
-		"name": "Rik Schennink",
-		"url": "http://rikschennink.nl"
-	},
-	"licenses": [
-		{
-			"type": "MIT",
-			"url": "http://www.opensource.org/licenses/mit-license.php"
-		}
-	],
-	"readmeFilename": "README.md",
-	"devDependencies": {
-		"gulp": "^3.6.2",
-		"gulp-autoprefixer": "0.0.7",
-		"gulp-connect": "^2.0.5",
-		"gulp-sass": "^0.7.1",
-		"run-sequence": "^0.3.6",
-		"sync": "^0.2.2"
-	}
+  "name": "rikschennink.nl",
+  "version": "1.0.0",
+  "description": "Home of Rik Schennink",
+  "homepage": "http://rikschennink.nl",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rikschennink/rikschennink.nl.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rikschennink/rikschennink.nl/issues"
+  },
+  "keywords": [
+    "homepage",
+    "website",
+    "thoughts",
+    "blog",
+    "feed"
+  ],
+  "author": {
+    "name": "Rik Schennink",
+    "url": "http://rikschennink.nl"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "gulp-autoprefixer": "0.0.8",
+    "gulp-connect": "^2.0.5",
+    "gulp-ruby-sass": "^0.6.0",
+    "gulp-sass": "^0.7.2",
+    "run-sequence": "^0.3.6",
+    "sync": "^0.2.2"
+  }
 }

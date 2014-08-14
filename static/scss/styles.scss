@@ -1,171 +1,176 @@
+
+$stack-width:30rem;
+
+
+section,aside,article,nav,footer {
+    display:block;
+}
+
 html,body {
     margin:0;
     padding:0;
 }
 
 html {
-    background:#fefefe;
-    color:#111;
-    font-family:'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
+    font-family:'Noto Serif','Times',serif;
+    color:#22211D;
+    background:#F1F0ED;
+}
+
+::selection {
+    color:#fff;
+    background:#ce3925;
 }
 
 ol,ul,li,dl,dt,dd {
     margin:0;
     padding:0;
+    font-weight:normal;
+}
+
+canvas,img {
+    max-width:100%;
+}
+
+pre, code {
+    font-size:.875rem;
+    font-family:Menlo, monospace;
+    letter-spacing:.06125rem;
 }
 
 body {
     margin:0 auto;
-    padding:2rem 1rem;
-    max-width:38rem;
-    font-size:1.25rem;
+	padding:0;
+    max-width:40rem; // equals approx. 65 characters @ 1.25rem
+	font-size:1rem;
     line-height:1.5;
+    overflow-x:hidden;
 }
 
 a {
-    color:#2964E0;
+    color:#ce3925;
+}
 
-    &:visited {
-        color:#991C99;
-    }
+h1,h2,h3,p,footer {
+    margin:1.875rem 0;
+    font-weight:normal;
+}
 
+footer,h2,h3 {
+    font-family:Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
 h1 {
     font-size:2rem;
-    text-align:center;
+    font-style:italic;
+    line-height:1.25;
 }
 
 h2 {
     font-size:1.5rem;
+    line-height:1.333;
+    font-weight:bold;
+	color:#ce3925;
 }
 
 h3 {
-    font-size:1.333rem;
-    font-style:italic;
+	font-size:1.25rem;
+    text-transform:uppercase;
+    letter-spacing:.06125rem;
 }
 
-h1,h2,h3 {
-    font-weight:normal;
-}
-
-p {
-    + h1, + h2, + h3 {
-        margin-top:3rem;
-    }
+footer {
+    margin-top:3.75rem;
+    font-size:1rem;
+    color:#c6c5c2;
 }
 
 
 
+// crumbs
+body > nav {
 
-.meta {
+    display:none;
+    margin:0 -1.5rem 3.75rem;
+    font-size:1.25rem;
+    text-align:left;
 
-    dt {
+    h1 {
         display:none;
     }
 
-    dd {
-        font-weight:bold;
-    }
+    a {
+        color:#6f93cf;
+        text-decoration:none;
 
-    ul {
-        list-style-type:none;
-        font-size:1rem;
-        font-weight:normal;
-        color:#888;
-    }
-
-    li {
-        display:inline;
-
-        &:not(:last-child) {
-
-            &::after {
-                content:', '
-            }
-        }
-
-    }
-
-}
-
-
-
-
-.content {
-
-    >p:first-child {
-        font-size: 1.5rem;
-    }
-
-    h2 {
-        text-align:center;
-    }
-
-    ul {
-        margin-left:2.5rem;
-    }
-
-}
-
-
-
-
-article {
-
-    header {
-        text-align:center;
-
-        h1 {
-            font-style:italic;
-            font-family:Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+        &::before {
+            content:'◂';
+            margin-right:.25rem;
+            font-family:1.5rem;
+            position:relative;
+            top:.125rem;
+            font-size:1.5rem;
         }
     }
+}
+
+
+
+
+// inline code snippet
+:not(pre)>code {
+    padding:0 .333rem;
+    display:inline-block;
+    white-space:nowrap;
+    color:#5F7386;
+    background:#F0F3F7;
+    border-radius:.25rem;
+}
+
+
+// module loading
+.js [data-module]:not([data-initialized]) {
+    visibility:hidden;
+}
+
+
+// what happens beyond stack width
+@media (min-width:$stack-width) {
+
+	body {
+		padding:1.875rem;
+		font-size:1.25rem;
+	}
+
+	h1 {
+		font-size:2.25rem;
+	}
+
+	h2 {
+		font-size:1.75rem;
+	}
+
+	h3 {
+		font-size:1.5rem;
+	}
 
 }
 
 
 
 
-li {
+// components
+@import 'author';
+@import 'cinema';
+@import 'highlight';
+@import 'flickr';
+@import 'tweet';
+@import 'tweets';
+@import 'dataset';
+@import 'meta';
+@import 'products';
+@import 'list-thoughts';
+@import 'disqus';
 
-    h1 {
-        text-align:left;
-        font-size:1.5rem;
-    }
-
-}
-
-
-// Code Highlighting
-.highlight {
-
-    position:relative;
-    margin:2rem 0;
-    max-width:100%;
-    overflow:hidden;
-
-    pre {
-        margin:0;
-    }
-
-    code {
-
-        &:before {
-            display:block;
-            color:#DDDFDA;
-            padding-bottom:.75rem;
-            margin-bottom:.75rem;
-            content:attr(class);
-            border-bottom:2px solid #EAECE6;
-        }
-    }
-
-    .lineno {
-        color:#DDDFDA;
-        margin-right:.5rem;
-    }
-}
-
-
-@import 'pygments';
+// layouts
+@import 'post';

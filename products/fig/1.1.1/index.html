@@ -1,0 +1,843 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Docs | Fig</title>
+    <!-- info -->
+    <meta name="description" content="Fig is a CSS and JavaScript library that allows you to build beautifully animated photo galleries.">
+    <meta name="author" content="Rik Schennink">
+    <meta name="viewport" content="width=device-width">
+    <!-- include the fig styles in the head of the document before your other syles so you can override styles if necessary-->
+    <link href="./fig/fig.css" rel="stylesheet">
+    <!-- include containig the default styles -->
+    <link href="./static/css/styles.css" rel="stylesheet">
+    <!-- include pygments styles -->
+    <link href="./static/css/pygments.css" rel="stylesheet">
+    <!-- include font awesome -->
+    <link rel="stylesheet" href="./static/css/font-awesome.css">
+    <!--[if IE 8]>
+    <script src="./static/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body class="product">
+<!-- auto iframe resize -->
+<script>
+    if (window.addEventListener) {
+        function correctIFrameHeight(frame,attempts) {
+            if (attempts<=0) {
+                return;
+            }
+            attempts--;
+            var contentHeight = frame.contentWindow.document.body.offsetHeight;
+            frame.style.height = contentHeight + 'px';
+            setTimeout(function(){
+                correctIFrameHeight(frame,attempts)
+            },100);
+        }
+        // fix iframe heights on load
+        function onIFrameUpdated(frame) {
+            correctIFrameHeight(frame,5);
+        }
+        // fix iframe heights on resize
+        var timer = null;
+        window.addEventListener('resize',function(){
+            clearTimeout(timer);
+            timer = setTimeout(function(){
+                var i=0,iframes = document.querySelectorAll('iframe'),l=iframes.length;
+                for (;i<l;i++) {
+                    correctIFrameHeight(iframes[i],1);
+                }
+            },500);
+        });
+    }
+</script>
+<!-- content -->
+<div class="logo">
+    <h1>Fig</h1>
+</div>
+<a class="buy" href="http://codecanyon.net/item/30-photo-animations/6000717">
+    <span>Buy now</span>
+    for $5
+</a>
+<section class="demo">
+    <div class="wrapper">
+        <h1>Demo</h1>
+        <p>Hi! Welcome to the fig documentation. Fig is a CSS and JavaScript library that allows you to build beautifully animated photo galleries.</p>
+<p>Below I've setup some demo galleries using the animations and styles available in the fig library, this should give you some ideas on how you could use fig on your website.</p>
+<p>Also located on this page are the <a href="#docs">fig docs</a>. They contain a quick introduction on how to setup fig and there's a complete overview of all animations and effects available within in the library.</p>
+<section class="figs">
+    <h2>Focus + Blur + Slide + Stack</h2>
+<ul class="fig-set" data-layout="alpha">
+    <li>
+        <article class="fig-item">
+<figure class="fig fig-frame fig-fill-blur" data-figset="group-1" data-intro="fade" data-interact="focus:top" data-caption="slide:down" data-content="stack:fall" >
+    <figcaption class="fig-caption">
+        <h1 id='focus'>Focus</h1>
+<p>Bring a certain part of the photo in to <a href='#intro-focus'>focus</a> to give it extra attention while showing the caption.</p>
+    </figcaption>
+    <img src="" data-src="./media/demo-portrait-01.jpg" alt=""/>
+</figure>
+        </article>
+    <li>
+        <article class="fig-item">
+<figure class="fig fig-frame fig-fill-blur" data-figset="group-1" data-intro="fade" data-interact="focus:bottom" data-caption="slide:up" data-content="stack:rise" >
+    <figcaption class="fig-caption">
+        <h1 id='slide'>Slide</h1>
+<p>Use the <a href='#caption-slide'>slide</a> animation to have the caption panel slide into view.</p>
+    </figcaption>
+    <img src="" data-src="./media/demo-portrait-02.jpg" alt=""/>
+</figure>
+        </article>
+    <li>
+        <article class="fig-item">
+<figure class="fig fig-frame fig-fill-blur" data-figset="group-1" data-intro="fade" data-interact="focus" data-caption="slide:left" data-content="stack:rise" >
+    <figcaption class="fig-caption">
+        <h1 id='fill'>Fill</h1>
+<p>Set <a href='#caption-fill'>fill</a> to &#8216;heavy&#8217; blur to create a frosted glass like overlay.</p>
+<p>The blur &#8216;light&#8217; setting allows more of the photo to shine through.</p>
+    </figcaption>
+    <img src="" data-src="./media/demo-portrait-03.jpg" alt=""/>
+</figure>
+        </article>
+    <li>
+        <article class="fig-item">
+<figure class="fig fig-frame fig-fill-blur" data-figset="group-1" data-intro="fade" data-interact="focus" data-caption="slide:right" data-content="stack:fall" >
+    <figcaption class="fig-caption">
+        <h1 id='stack'>Stack</h1>
+<p>Use the content <a href='#content-stack'>stack</a> &#8216;fall&#8217; or &#8216;rise&#8217; animations to have the caption content drop into view.</p>
+    </figcaption>
+    <img src="" data-src="./media/demo-portrait-04.jpg" alt=""/>
+</figure>
+        </article>
+            </ul>
+</section>
+<section class="figs">
+    <h2>Rotate + Push + Slide</h2>
+<ul class="fig-set" data-layout="alpha">
+    <li>
+        <article class="fig-item">
+<figure class="fig fig-frame" data-figset="group-2" data-intro="rotate:left" data-interact="focus" data-caption="push:right" data-content="slide:right" >
+    <figcaption class="fig-caption">
+        <h1 id='push'>Push</h1>
+<p>Use the <a href='#caption-push'>push</a> effect to move the photo out of view and have the user focus solely on the caption.</p>
+    </figcaption>
+    <img src="" data-src="./media/demo-portrait-01.jpg" alt=""/>
+</figure>
+        </article>
+    <li>
+        <article class="fig-item">
+<figure class="fig fig-frame" data-figset="group-2" data-intro="rotate:left" data-interact="focus" data-caption="push:left" data-content="slide:left" >
+    <figcaption class="fig-caption">
+        <h1 id='slide'>Slide</h1>
+<p>Use the content <a href='#content-slide'>slide</a> effect to slide the caption content into view horizontally.</p>
+    </figcaption>
+    <img src="" data-src="./media/demo-portrait-02.jpg" alt=""/>
+</figure>
+        </article>
+    <li>
+        <article class="fig-item">
+<figure class="fig fig-frame" data-figset="group-2" data-intro="rotate:top" data-interact="focus" data-caption="push:up" data-content="slide:right" >
+    <figcaption class="fig-caption">
+        <h1 id='push'>Push</h1>
+<p>You can <a href='#caption-push'>push</a> the photo &#8216;up&#8217;, &#8216;down&#8217;, &#8216;left&#8217; or &#8216;right&#8217;.</p>
+    </figcaption>
+    <img src="" data-src="./media/demo-portrait-03.jpg" alt=""/>
+</figure>
+        </article>
+    <li>
+        <article class="fig-item">
+<figure class="fig fig-frame" data-figset="group-2" data-intro="rotate:top" data-interact="focus" data-caption="push:down" data-content="slide:left" >
+    <figcaption class="fig-caption">
+        <h1 id='rotate'>Rotate</h1>
+<p>After the photo has loaded it will <a href='#intro-rotate'>rotate</a> into view from the backround.</p>
+    </figcaption>
+    <img src="" data-src="./media/demo-portrait-04.jpg" alt=""/>
+</figure>
+        </article>
+            </ul>
+</section>
+<section class="figs">
+    <h2>Zoom + Caption + Focus</h2>
+<ul class="fig-set" data-layout="alpha">
+    <li>
+        <article class="fig-item">
+<figure class="fig fig-frame" data-figset="group-3" data-intro="zoom:out" data-interact="focus:bottom" data-content="fade" >
+    <figcaption class="fig-caption">
+        <h1 id='focus'>Focus</h1>
+<p>Even though the caption is now positioned above the image the focus animations still function.</p>
+    </figcaption>
+    <img src="" data-src="./media/demo-portrait-01.jpg" alt=""/>
+</figure>
+        </article>
+    <li>
+        <article class="fig-item">
+<figure class="fig fig-frame" data-figset="group-3" data-intro="zoom:out" data-interact="focus:bottom" data-content="fade" >
+    <img src="" data-src="./media/demo-portrait-02.jpg" alt=""/>
+    <figcaption class="fig-caption">
+        <h1 id='zoom'>Zoom</h1>
+<p>Start in zoomed in state and <a href='#intro-zoom'>zoom</a> out when the photo has loaded slowly revealing more of the photo.</p>
+    </figcaption>
+</figure>
+        </article>
+    </ul>
+<figure class="fig fig-frame fig-block" data-figset="group-3" data-intro="zoom:out" data-interact="focus:bottom" data-content="fade" >
+    <img src="" data-src="./media/demo-landscape-03.jpg" alt=""/>
+    <figcaption class="fig-caption">
+        <h1 id='autoscale'>Autoscale</h1>
+<p>By default the fig elements takes up any available space, you can control it&#8217;s scale by setting a fixed width or by putting it in a scaled container.</p>
+    </figcaption>
+</figure>
+</section>
+<section class="figs">
+    <h2>Fade + Move + Soft</h2>
+<ul class="fig-set" data-layout="alpha">
+    <li>
+        <article class="fig-item">
+<figure class="fig fig-frame fig-fill-soft" data-figset="group-4" data-intro="fade" data-interact="move:up" data-caption="fade slide:up" data-content="fade" >
+    <figcaption class="fig-caption">
+        <h1 id='move'>Move</h1>
+<p><a href='#interaction-move'>Move</a> the photo in a certain direction on user interaction.</p>
+    </figcaption>
+    <img src="" data-src="./media/demo-portrait-04.jpg" alt=""/>
+</figure>
+        </article>
+    <li>
+        <article class="fig-item">
+<figure class="fig fig-frame fig-fill-soft" data-figset="group-4" data-intro="fade" data-interact="move:down" data-caption="fade slide:down" data-content="fade" >
+    <figcaption class="fig-caption">
+        <h1 id='fade'>Fade</h1>
+<p>Use the content <a href='#content-fade'>fade</a> effect to fade the content into view.</p>
+    </figcaption>
+    <img src="" data-src="./media/demo-portrait-01.jpg" alt=""/>
+</figure>
+        </article>
+    <li>
+        <article class="fig-item">
+<figure class="fig fig-frame fig-fill-soft" data-figset="group-4" data-intro="fade" data-interact="move:left" data-caption="fade slide:left" data-content="fade" >
+    <figcaption class="fig-caption">
+        <h1 id='soft'>Soft</h1>
+<p>Set <a href='#caption-fill'>fill</a> to soft mode to create a dreamy overlay effect.</p>
+    </figcaption>
+    <img src="" data-src="./media/demo-portrait-02.jpg" alt=""/>
+</figure>
+        </article>
+    <li>
+        <article class="fig-item">
+<figure class="fig fig-frame fig-fill-soft" data-figset="group-4" data-intro="fade" data-interact="move:right" data-caption="fade slide:right" data-content="fade" >
+    <figcaption class="fig-caption">
+        <h1 id='fade'>Fade</h1>
+<p>Use the intro <a href='#intro-fade'>fade</a> effect to fade the photo in to view once it&#8217;s loaded.</p>
+    </figcaption>
+    <img src="" data-src="./media/demo-portrait-03.jpg" alt=""/>
+</figure>
+        </article>
+            </ul>
+</section>
+        <section class="social">
+            <h1>Contact</h1>
+            <ul>
+                <li><a target="_blank" href="http://codecanyon.net/item/30-photo-animations/6000717"><i class="fa fa-html5"></i> CodeCanyon</a></li>
+                <li><a target="_blank" href="http://twitter.com/rikschennink"><i class="fa fa-twitter"></i> Twitter</a></li>
+                <li><a target="_blank" href="http://github.com/rikschennink"><i class="fa fa-github-alt"></i> GitHub</a></li>
+            </ul>
+        </section>
+        <section class="rights">
+            <h1>Imagery</h1>
+            <div class="user">
+                <h3><a target="_blank" href="http://www.flickr.com/photos/stone-soup" title="Jules on Flickr">Jules</a></h3>
+                <ul>
+                    <li><a target="_blank" href="http://www.flickr.com/photos/stone-soup/477053950">Fig &amp; Almond Tart</a></li>
+                    <li><a target="_blank" href="http://www.flickr.com/photos/stone-soup/224282307">Fig Jam</a></li>
+                    <li><a target="_blank" href="http://www.flickr.com/photos/stone-soup/2273326953">Fig Pie</a></li>
+                    <li><a target="_blank" href="http://www.flickr.com/photos/stone-soup/2273326947">Fig Pie Full</a></li>
+                    <li><a target="_blank" href="http://www.flickr.com/photos/stone-soup/4478491206">Fig Tarts</a></li>
+                </ul>
+            </div>
+            <div class="user">
+                <h3><a target="_blank" href="http://www.flickr.com/photos/noelzialee" title="No&euml;l Zia Lee on Flickr">No&euml;l Zia Lee</a></h3>
+                <ul>
+                    <li><a target="_blank" href="http://www.flickr.com/photos/noelzialee/1844211656">Fig in Tree</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</section>
+<section class="docs" id="docs">
+    <div class="wrapper">
+        <h1>Docs</h1>
+        <nav>
+    <h2 class="visuallyhidden">Index</h2>
+    <ul>
+        <li>
+            <a href="#setup">Setup</a>
+            <ul>
+                <li><a href="#basics">Basics</a></li>
+                <li><a href="#binding">Binding effects</a></li>
+                <li><a href="#links">Links</a></li>
+                <li>
+                    <a href="#layout">Layout</a>
+                    <ul>
+                        <li><a href="#layout-rows">Rows</a></li>
+                        <li><a href="#layout-sets">Sets</a></li>
+                        <li><a href="#layout-blocks">Blocks</a></li>
+                    </ul>
+                </li>
+                <li><a href="#loading">Loading images</a></li>
+                <li><a href="#fallback">Fallback</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#styles">Styles</a>
+            <ul class="cols">
+                <li>
+                    <a href="#caption">Caption</a>
+                    <ul>
+                        <li><a href="#caption-position">Position</a></li>
+                        <li><a href="#caption-fill">Fill</a></li>
+                        <li><a href="#caption-color">Color</a></li>
+                        <li><a href="#caption-font">Font</a></li>
+                        <li><a href="#caption-text">Text</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#frame">Frame</a>
+                    <ul>
+                        <li><a href="#frame-color">Color</a></li>
+                        <li><a href="#frame-width">Width</a></li>
+                    </ul>
+                </li>
+            </ul>
+        <li>
+            <a href="#animations">Animations</a>
+            <ul class="cols">
+                <li>
+                    <a href="#intro">Intro</a>
+                    <ul>
+                        <li><a href="#intro-fade">Fade</a></li>
+                        <li><a href="#intro-zoom">Zoom</a></li>
+                        <li><a href="#intro-rotate">Rotate</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#interaction">Interaction</a>
+                    <ul>
+                        <li><a href="#interaction-focus">Focus</a></li>
+                        <li><a href="#interaction-move">Move</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#caption">Caption</a>
+                    <ul>
+                        <li><a href="#caption-fade">Fade</a></li>
+                        <li><a href="#caption-slide">Slide</a></li>
+                        <li><a href="#caption-push">Push</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#content">Content</a>
+                    <ul>
+                        <li><a href="#content-fade">Fade</a></li>
+                        <li><a href="#content-slide">Slide</a></li>
+                        <li><a href="#content-stack">Stack</a></li>
+                        <li><a href="#content-zebra">Zebra</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<h2 id="setup">Setup</h2>
+<h3 id="basics">Basics</h3>
+<p>Setting up fig elements is quite easy. Depending on your situation you can choose between an HTML4 and an HTML5 setup. Both are supported equally.</p>
+<dl class="code-sample">
+<dt>HTML4</dt>
+<dd>
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;fig&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;fig-caption&quot;</span><span class="nt">&gt;</span>
+        ...
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;path/to/image/file.jpg&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+</dd>
+<dt>HTML5</dt>
+<dd>
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">&quot;fig-caption&quot;</span><span class="nt">&gt;</span>
+        ...
+    <span class="nt">&lt;/figcaption&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;path/to/image/file.jpg&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+</dd>
+</dl>
+<p>The <code>&lt;figcaption&gt;</code> is optional and only required if you have text to show over or under the image.</p>
+<p>The code samples below will be based on the HTML5 version of the element, if you want to use the HTML4 version you can replace the <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> elements with a <code>&lt;div&gt;</code>.</p>
+<h3 id="binding">Binding effects</h3>
+<p>Effects can be bound to the figure using data attributes. You can see how we trigger a fade animation using the <code>data-intro</code> attribute below. This will cause the figure to fade in once the image has loaded.</p>
+<dl class="code-sample">
+<dt>data attributes</dt>
+<dd>
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig&quot;</span> <span class="na">data-intro=</span><span class="s">&quot;fade&quot;</span><span class="nt">&gt;</span>
+    ...
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+</dd>
+</dl>
+<p>Different parts of the fig element can be animated using different data attributes. For example, you can animate the caption by using the <code>data-caption</code> attribute. First you set the type of animation and then the directionality. You can control the intro, caption, interaction and content animations using data attributes.</p>
+<dl class="code-sample">
+    <dt>animating captions</dt>
+    <dd>
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig&quot;</span> <span class="na">data-caption=</span><span class="s">&quot;slide:left&quot;</span><span class="nt">&gt;</span>
+    ...
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+    </dd>
+</dl>
+<p>It's also possible to use multiple animations together. For example having a caption slide and fade into view at the same time could be accomplished like so.</p>
+<dl class="code-sample">
+    <dt>multiple animations</dt>
+    <dd>
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig&quot;</span> <span class="na">data-caption=</span><span class="s">&quot;fade slide:left&quot;</span><span class="nt">&gt;</span>
+    ...
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+    </dd>
+</dl>
+<h3 id="links">Links</h3>
+<p>You can wrap the fig element in an anchor tag or have anchor tags in the <code>&lt;figcaption&gt;</code> element. It will all work flawlessly.</p>
+<dl class="code-sample">
+    <dt>An anchor wrapping the element</dt>
+    <dd>
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;foo.html&quot;</span> <span class="na">title=</span><span class="s">&quot;Wrapping the figure&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig&quot;</span><span class="nt">&gt;</span>
+        ...
+    <span class="nt">&lt;/figure&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>
+    </dd>
+</dl>
+<dl class="code-sample">
+    <dt>An anchor as content</dt>
+    <dd>
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">&quot;fig-caption&quot;</span><span class="nt">&gt;</span>
+        ...
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;bar.html&quot;</span><span class="nt">&gt;</span>Nice and contained.<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+    </dd>
+</dl>
+<h3 id="layout">Layout</h3>
+<p>Fig contains a small set of layout styles which allow you to steer the way the figs are organized on the page.</p>
+<h4 id="layout-rows">Rows</h4>
+<p>Create rows of figs by using the <code>fig-row</code> container. Copy paste the fig HTML within the <code>fig-item</code> articles shown below (replace the dots with the fig HTML).</p>
+<dl class="code-sample">
+    <dt>a row of figs</dt>
+    <dd>
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;fig-row&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">&quot;fig-item&quot;</span><span class="nt">&gt;</span>
+        ...
+    <span class="nt">&lt;/article&gt;</span>
+    <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">&quot;fig-item&quot;</span><span class="nt">&gt;</span>
+        ...
+    <span class="nt">&lt;/article&gt;</span>
+    <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">&quot;fig-item&quot;</span><span class="nt">&gt;</span>
+        ...
+    <span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+    </dd>
+</dl>
+<p>The above code creates three evenly spaced containers for your figs. Add or remove <code>&lt;article&gt;</code> elements to control the amount of figs on a single row.</p>
+<h4 id="layout-sets">Sets</h4>
+<p>You also have the option to use a fig set instead of a fig row. The fig row will always put the amount of items you define on one row. The fig set will add the amount appropriate for the given screen size.</p>
+<dl class="code-sample">
+    <dt>a fig set</dt>
+    <dd>
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;fig-set&quot;</span> <span class="na">data-layout=</span><span class="s">&quot;beta&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">&quot;fig-item&quot;</span><span class="nt">&gt;</span>
+            ...
+        <span class="nt">&lt;/article&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">&quot;fig-item&quot;</span><span class="nt">&gt;</span>
+            ...
+        <span class="nt">&lt;/article&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">&quot;fig-item&quot;</span><span class="nt">&gt;</span>
+            ...
+        <span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div>
+    </dd>
+</dl>
+<p>Note that there are the <code>&lt;/li&gt;</code> tags have been omitted. This is required to fit the figs next to each other, this is still valid HTML5.</p>
+<p>The <code>data-layout</code> property allows you to define the maximum amount of figs you want on each row.</p>
+<p>Choose between "alpha", "beta", "gamma", "delta", "epsilon", "zeta", "eta" and "theta". Where "alpha" will try to put two figs next to each other and "theta" will attempt to fit nine.</p>
+<h4 id="layout-blocks">Blocks</h4>
+<p>If you want a fig to span the entire available width of it's container you can add the <code>fig-block</code> class.</p>
+<dl class="code-sample">
+    <dt>a fig block</dt>
+    <dd>
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig fig-block&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;&quot;</span> <span class="na">data-src=</span><span class="s">&quot;path/to/image/file.jpg&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+    </dd>
+</dl>
+<h3 id="loading">Loading images</h3>
+<p>You can optionally postpone image loading till the image scrolls into view by setting the <code>data-src</code> attribute instead of the <code>src</code> attribute.</p>
+<dl class="code-sample">
+    <dt>delayed loading</dt>
+    <dd>
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;&quot;</span> <span class="na">data-src=</span><span class="s">&quot;path/to/image/file.jpg&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+    </dd>
+</dl>
+<p>By setting a <code>data-figset</code> you can group images together and have them animate in to view in sequence.</p>
+<dl class="code-sample">
+    <dt>group loading</dt>
+    <dd>
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig&quot;</span> <span class="na">data-figset=</span><span class="s">&quot;foo-bar&quot;</span><span class="nt">&gt;</span>
+    ...
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+    </dd>
+</dl>
+<h3 id="fallback">Fallback</h3>
+<p>Should you wish to style the fig element as it shows on Internet Explorer 8 you can use the <code>.fallback</code> classname in your CSS. It is only added on browsers that do not support fig styling and animation.</p>
+<h2 id="styles">Styles</h2>
+<p>The default styles allow you to control the look and feel of the fig element. If you require more control than the styles shown below you can always override the styles in your own stylesheet.</p>
+<h3 id="caption">Caption</h3>
+    <p>Caption styles apply to the caption of the fig element. Colors and transparancy might be influenced by the position of the caption.</p>
+<h4 id="caption-position">Position</h4>
+            <div class="iframe-wrapper">
+<iframe class="xl" src="doc-style-caption-position.html" marginheight="0" marginwidth="0" frameborder="0" onload="onIFrameUpdated(this)"></iframe>
+<div class="highlight"><pre><code class="html"><span class="c">&lt;!--</span>
+<span class="c">choose between &#39;top&#39;, &#39;bottom&#39; and &#39;cover&#39;</span>
+<span class="c">--&gt;</span>
+<span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig fig-position-bottom&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;&quot;</span> <span class="na">data-src=</span><span class="s">&quot;path/to/image/file.jpg&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">&quot;fig-caption&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Title<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Description<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;foo.html&quot;</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+</div>
+<h4 id="caption-fill">Fill</h4>
+            <div class="iframe-wrapper">
+<iframe class="l" src="doc-style-caption-fill.html" marginheight="0" marginwidth="0" frameborder="0" onload="onIFrameUpdated(this)"></iframe>
+<div class="highlight"><pre><code class="html"><span class="c">&lt;!--</span>
+<span class="c">choose between &#39;blur&#39;, &#39;blur-light&#39;, &#39;blur-heavy&#39; and</span>
+<span class="c">&#39;soft&#39; to control the fill style</span>
+<span class="c">--&gt;</span>
+<span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig fig-fill-blur-light&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;&quot;</span> <span class="na">data-src=</span><span class="s">&quot;path/to/image/file.jpg&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">&quot;fig-caption&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Title<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Description<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;foo.html&quot;</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+</div>
+<h4 id="caption-color">Color</h4>
+            <div class="iframe-wrapper">
+<iframe class="xl" src="doc-style-caption-color.html" marginheight="0" marginwidth="0" frameborder="0" onload="onIFrameUpdated(this)"></iframe>
+<div class="highlight"><pre><code class="html"><span class="c">&lt;!--</span>
+<span class="c">add class &#39;fig-caption-dark&#39; to setup a dark caption</span>
+<span class="c">--&gt;</span>
+<span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig fig-caption-dark&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;&quot;</span> <span class="na">data-src=</span><span class="s">&quot;path/to/image/file.jpg&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">&quot;fig-caption&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Title<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Description<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;foo.html&quot;</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+</div>
+<h4 id="caption-font">Font</h4>
+            <div class="iframe-wrapper">
+<iframe class="m" src="doc-style-caption-font.html" marginheight="0" marginwidth="0" frameborder="0" onload="onIFrameUpdated(this)"></iframe>
+<div class="highlight"><pre><code class="html"><span class="c">&lt;!--</span>
+<span class="c">add class &#39;fig-font-sansserif&#39; to setup a sans serif caption</span>
+<span class="c">--&gt;</span>
+<span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig fig-font-sansserif&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;&quot;</span> <span class="na">data-src=</span><span class="s">&quot;path/to/image/file.jpg&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">&quot;fig-caption&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Title<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Description<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;foo.html&quot;</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+</div>
+<h4 id="caption-text">Text</h4>
+            <div class="iframe-wrapper">
+<iframe class="m" src="doc-style-caption-text.html" marginheight="0" marginwidth="0" frameborder="0" onload="onIFrameUpdated(this)"></iframe>
+<div class="highlight"><pre><code class="html"><span class="c">&lt;!--</span>
+<span class="c">add class &#39;fig-text-large&#39; to set large caption text</span>
+<span class="c">--&gt;</span>
+<span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig fig-text-large&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;&quot;</span> <span class="na">data-src=</span><span class="s">&quot;path/to/image/file.jpg&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">&quot;fig-caption&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Title<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Description<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;foo.html&quot;</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+</div>
+<h3 id="frame">Frame</h3>
+    <p>Frame styles allow you to setup a picture frame around the fig element and control it&#8217;s width and color.</p>
+<h4 id="frame-color">Color</h4>
+            <div class="iframe-wrapper">
+<iframe class="s" src="doc-style-frame-color.html" marginheight="0" marginwidth="0" frameborder="0" onload="onIFrameUpdated(this)"></iframe>
+<div class="highlight"><pre><code class="html"><span class="c">&lt;!--</span>
+<span class="c">add class &#39;fig-frame&#39; to add a frame around the image</span>
+<span class="c">additionally add &#39;fig-frame-dark&#39; to make it dark</span>
+<span class="c">--&gt;</span>
+<span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig fig-frame fig-frame-dark&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;&quot;</span> <span class="na">data-src=</span><span class="s">&quot;path/to/image/file.jpg&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">&quot;fig-caption&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Title<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Description<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;foo.html&quot;</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+</div>
+<h4 id="frame-width">Width</h4>
+            <div class="iframe-wrapper">
+<iframe class="m" src="doc-style-frame-width.html" marginheight="0" marginwidth="0" frameborder="0" onload="onIFrameUpdated(this)"></iframe>
+<div class="highlight"><pre><code class="html"><span class="c">&lt;!--</span>
+<span class="c">control the thickness of the frame by adding</span>
+<span class="c">&#39;fig-frame-thick&#39; or &#39;fig-frame-thin&#39; classes</span>
+<span class="c">--&gt;</span>
+<span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig fig-frame fig-frame-thick&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;&quot;</span> <span class="na">data-src=</span><span class="s">&quot;path/to/image/file.jpg&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">&quot;fig-caption&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Title<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Description<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;foo.html&quot;</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+</div>
+<h2 id="animations">Animations</h2>
+<p>Some of the animations below only execute when the image has just loaded. If you&#8217;ve missed the animation, click the &#8216;refresh&#8217; button on the right to replay it.</p>
+<h3 id="intro">Intro</h3>
+    <p>Intro effects are executed when the image has loaded. All images contained in fig elements are automatically hidden till they&#8217;ve finished loading. Once the image has loaded it is revealed, if an intro has been set the intro effect is used to reveal the image if not it is revealed at once.</p>
+<h4 id="intro-fade">Fade</h4>
+            <div class="iframe-wrapper">
+<iframe class="s" src="doc-animation-intro-fade.html" marginheight="0" marginwidth="0" frameborder="0" onload="onIFrameUpdated(this)"></iframe>
+<div class="highlight"><pre><code class="html"><span class="c">&lt;!--</span>
+<span class="c">a fig with a fade intro</span>
+<span class="c">--&gt;</span>
+<span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig&quot;</span> <span class="na">data-intro=</span><span class="s">&quot;fade&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;&quot;</span> <span class="na">data-src=</span><span class="s">&quot;path/to/image/file.jpg&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+</div>
+<h4 id="intro-zoom">Zoom</h4>
+            <div class="iframe-wrapper">
+<iframe class="s" src="doc-animation-intro-zoom.html" marginheight="0" marginwidth="0" frameborder="0" onload="onIFrameUpdated(this)"></iframe>
+<div class="highlight"><pre><code class="html"><span class="c">&lt;!--</span>
+<span class="c">a fig with a zoom intro, choose between</span>
+<span class="c">zooming &#39;in&#39; and &#39;out&#39;</span>
+<span class="c">--&gt;</span>
+<span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig&quot;</span> <span class="na">data-intro=</span><span class="s">&quot;zoom:out&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;&quot;</span> <span class="na">data-src=</span><span class="s">&quot;path/to/image/file.jpg&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+</div>
+<h4 id="intro-rotate">Rotate</h4>
+            <div class="iframe-wrapper">
+<iframe class="m" src="doc-animation-intro-rotate.html" marginheight="0" marginwidth="0" frameborder="0" onload="onIFrameUpdated(this)"></iframe>
+<div class="highlight"><pre><code class="html"><span class="c">&lt;!--</span>
+<span class="c">a fig with a rotate intro, choose between</span>
+<span class="c">rotating from the &#39;top&#39;, &#39;right&#39;, &#39;bottom&#39; or &#39;left&#39;</span>
+<span class="c">side of the frame.</span>
+<span class="c">--&gt;</span>
+<span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig&quot;</span> <span class="na">data-intro=</span><span class="s">&quot;rotate:top&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;&quot;</span> <span class="na">data-src=</span><span class="s">&quot;path/to/image/file.jpg&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+</div>
+<h3 id="interaction">Interaction</h3>
+    <p>Interaction effects are executed once the user interacts with the fig element, interaction is detected when the user moves his mouse over the element.</p>
+<h4 id="interaction-focus">Focus</h4>
+            <div class="iframe-wrapper">
+<iframe class="m" src="doc-animation-interact-focus.html" marginheight="0" marginwidth="0" frameborder="0" onload="onIFrameUpdated(this)"></iframe>
+<div class="highlight"><pre><code class="html"><span class="c">&lt;!--</span>
+<span class="c">a fig with a focus animation when you mouseover</span>
+<span class="c">the image, control which part of the image is</span>
+<span class="c">focuessed when the user hovers over the element.</span>
+<span class="c">Choose between &#39;top&#39;, &#39;right&#39;, &#39;bottom&#39; or &#39;left&#39;.</span>
+<span class="c">--&gt;</span>
+<span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig&quot;</span> <span class="na">data-interact=</span><span class="s">&quot;focus:right&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;&quot;</span> <span class="na">data-src=</span><span class="s">&quot;path/to/image/file.jpg&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+</div>
+<h4 id="interaction-move">Move</h4>
+            <div class="iframe-wrapper">
+<iframe class="m" src="doc-animation-interact-move.html" marginheight="0" marginwidth="0" frameborder="0" onload="onIFrameUpdated(this)"></iframe>
+<div class="highlight"><pre><code class="html"><span class="c">&lt;!--</span>
+<span class="c">a fig with a move animation when you mouseover</span>
+<span class="c">the image, control which direction the image is</span>
+<span class="c">moved in when the user hovers over the element.</span>
+<span class="c">Choose between &#39;up&#39;, &#39;down&#39;, &#39;left&#39; or &#39;right&#39;.</span>
+<span class="c">--&gt;</span>
+<span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig&quot;</span> <span class="na">data-interact=</span><span class="s">&quot;move:down&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;&quot;</span> <span class="na">data-src=</span><span class="s">&quot;path/to/image/file.jpg&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+</div>
+<h3 id="caption">Caption</h3>
+    <p>Caption effects apply to the caption of the fig element. They control the movements of the caption and the fill of the caption. You can use multiple effects together. For instance, &#8216;position&#8217;, &#8216;fade&#8217; and &#8216;fill&#8217;.</p>
+<p>Not all caption effects can be stacked. Setting a &#8216;position&#8217; and telling the caption to &#8216;push&#8217; the image is contradictory and will give unexpected results.</p>
+<h4 id="caption-fade">Fade</h4>
+            <div class="iframe-wrapper">
+<iframe class="s" src="doc-animation-caption-fade.html" marginheight="0" marginwidth="0" frameborder="0" onload="onIFrameUpdated(this)"></iframe>
+<div class="highlight"><pre><code class="html"><span class="c">&lt;!--</span>
+<span class="c">fade caption into view by setting</span>
+<span class="c">the &#39;data-caption&#39; attribute to &#39;fade&#39;</span>
+<span class="c">--&gt;</span>
+<span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig&quot;</span> <span class="na">data-caption=</span><span class="s">&quot;fade&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;&quot;</span> <span class="na">data-src=</span><span class="s">&quot;path/to/image/file.jpg&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">&quot;fig-caption&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Title<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Description<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;foo.html&quot;</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+</div>
+<h4 id="caption-slide">Slide</h4>
+            <div class="iframe-wrapper">
+<iframe class="m" src="doc-animation-caption-slide.html" marginheight="0" marginwidth="0" frameborder="0" onload="onIFrameUpdated(this)"></iframe>
+<div class="highlight"><pre><code class="html"><span class="c">&lt;!--</span>
+<span class="c">slide the caption into view by setting</span>
+<span class="c">the &#39;data-caption&#39; attribute to &#39;slide&#39; and</span>
+<span class="c">picking &#39;up&#39;, &#39;down&#39;, &#39;left&#39; or &#39;right&#39;.</span>
+<span class="c">--&gt;</span>
+<span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig&quot;</span> <span class="na">data-caption=</span><span class="s">&quot;slide:up&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;&quot;</span> <span class="na">data-src=</span><span class="s">&quot;path/to/image/file.jpg&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">&quot;fig-caption&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Title<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Description<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;foo.html&quot;</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+</div>
+<h4 id="caption-push">Push</h4>
+            <div class="iframe-wrapper">
+<iframe class="m" src="doc-animation-caption-push.html" marginheight="0" marginwidth="0" frameborder="0" onload="onIFrameUpdated(this)"></iframe>
+<div class="highlight"><pre><code class="html"><span class="c">&lt;!--</span>
+<span class="c">push the caption into view by setting</span>
+<span class="c">the &#39;data-caption&#39; attribute to &#39;push&#39; and</span>
+<span class="c">pick &#39;up&#39;, &#39;down&#39;, &#39;left&#39; or &#39;right&#39;.</span>
+<span class="c">where slide moves over the image, push will</span>
+<span class="c">move the image aside.</span>
+<span class="c">--&gt;</span>
+<span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig&quot;</span> <span class="na">data-caption=</span><span class="s">&quot;push:right&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;&quot;</span> <span class="na">data-src=</span><span class="s">&quot;path/to/image/file.jpg&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">&quot;fig-caption&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Title<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Description<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;foo.html&quot;</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+</div>
+<h3 id="content">Content</h3>
+    <p>Content effects apply to the content of the caption. You are free to define the content as you please. The examples show headers, links and paragraphs but you can have other elements in there if you want. The content animations target any element contained within the caption and are not tied to certain element types.</p>
+<h4 id="content-fade">Fade</h4>
+            <div class="iframe-wrapper">
+<iframe class="s" src="doc-animation-content-fade.html" marginheight="0" marginwidth="0" frameborder="0" onload="onIFrameUpdated(this)"></iframe>
+<div class="highlight"><pre><code class="html"><span class="c">&lt;!--</span>
+<span class="c">fade text into view by setting</span>
+<span class="c">the &#39;data-content&#39; attribute to &#39;fade&#39;</span>
+<span class="c">--&gt;</span>
+<span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig&quot;</span> <span class="na">data-content=</span><span class="s">&quot;fade&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;&quot;</span> <span class="na">data-src=</span><span class="s">&quot;path/to/image/file.jpg&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">&quot;fig-caption&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Title<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Description<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;foo.html&quot;</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+</div>
+<h4 id="content-slide">Slide</h4>
+            <div class="iframe-wrapper">
+<iframe class="s" src="doc-animation-content-slide.html" marginheight="0" marginwidth="0" frameborder="0" onload="onIFrameUpdated(this)"></iframe>
+<div class="highlight"><pre><code class="html"><span class="c">&lt;!--</span>
+<span class="c">slide the content into view by setting</span>
+<span class="c">the &#39;data-content&#39; attribute to &#39;slide&#39; and</span>
+<span class="c">picking &#39;left&#39; or &#39;right&#39;.</span>
+<span class="c">--&gt;</span>
+<span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig&quot;</span> <span class="na">data-content=</span><span class="s">&quot;slide:left&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;&quot;</span> <span class="na">data-src=</span><span class="s">&quot;path/to/image/file.jpg&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">&quot;fig-caption&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Title<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Description<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;foo.html&quot;</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+</div>
+<h4 id="content-stack">Stack</h4>
+            <div class="iframe-wrapper">
+<iframe class="s" src="doc-animation-content-stack.html" marginheight="0" marginwidth="0" frameborder="0" onload="onIFrameUpdated(this)"></iframe>
+<div class="highlight"><pre><code class="html"><span class="c">&lt;!--</span>
+<span class="c">stack the content into view by setting</span>
+<span class="c">the &#39;data-content&#39; attribute to &#39;stack&#39; and</span>
+<span class="c">picking &#39;rise&#39; or &#39;fall&#39;.</span>
+<span class="c">--&gt;</span>
+<span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig&quot;</span> <span class="na">data-content=</span><span class="s">&quot;stack:rise&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;&quot;</span> <span class="na">data-src=</span><span class="s">&quot;path/to/image/file.jpg&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">&quot;fig-caption&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Title<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Description<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;foo.html&quot;</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+</div>
+<h4 id="content-zebra">Zebra</h4>
+            <div class="iframe-wrapper">
+<iframe class="s" src="doc-animation-content-zebra.html" marginheight="0" marginwidth="0" frameborder="0" onload="onIFrameUpdated(this)"></iframe>
+<div class="highlight"><pre><code class="html"><span class="c">&lt;!--</span>
+<span class="c">zebra is almost the same as slide where</span>
+<span class="c">slide moves all text in the same direction</span>
+<span class="c">zebra will move each different element</span>
+<span class="c">in it&#39;s own direction.</span>
+<span class="c">--&gt;</span>
+<span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;fig&quot;</span> <span class="na">data-content=</span><span class="s">&quot;zebra&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;&quot;</span> <span class="na">data-src=</span><span class="s">&quot;path/to/image/file.jpg&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">&quot;fig-caption&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Title<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Description<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;foo.html&quot;</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+</div>
+    </div>
+</section>
+<!-- allows refreshing of iframes -->
+<script src="./static/js/refresh.js"></script>
+<!-- include the fig script at the end of the body -->
+<script src="./fig/fig.js"></script>
+</body>
+</html>
