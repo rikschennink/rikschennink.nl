@@ -18,7 +18,7 @@ gulp.task('_connect', function() {
 
 gulp.task('_jekyll',function(cb){
 
-	var ls = spawn('jekyll',['build']);
+	var ls = spawn('jekyll',['build','--config','_config.yml,_local.yml']);
 
 	ls.stdout.on('data', function (data) {
 		console.log('jekyll: ' + data);
