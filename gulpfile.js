@@ -5,7 +5,6 @@ var sequence = require('run-sequence');
 var autoprefixer = require('gulp-autoprefixer');
 var livereload = require('gulp-livereload');
 var spawn = require('child_process').spawn;
-var reloader = null;
 
 gulp.task('_connect', function() {
 

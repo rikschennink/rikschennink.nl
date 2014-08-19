@@ -106,32 +106,39 @@ body {
 
 body > nav {
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   right: 0;
-  font-size: 1rem;
-  background: rgba(71, 28, 22, 0.94); }
+  text-align: center; }
   body > nav h1 {
     display: none; }
   body > nav a {
-    display: block;
-    padding: 0.9875rem 0;
-    color: #F1F0ED;
+    display: inline-block;
+    padding: 0.9875rem;
     text-decoration: none;
     vertical-align: middle;
     line-height: 1;
     text-transform: lowercase;
-    cursor: pointer; }
+    cursor: pointer;
+    border-radius: 0 0 1rem 1rem;
+    background: #8EB454;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff; }
     body > nav a::before {
-      display: inline-block;
-      content: '◂';
-      text-align: center;
-      font-size: 1rem;
-      width: 1.875rem; }
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #8EB454;
+      height: 0.75rem;
+      content: ''; }
     body > nav a:focus, body > nav a:hover {
-      background-color: transparent;
-      box-shadow: none;
-      color: #F1F0ED; }
+      box-shadow: none; }
+    body > nav a:hover::before, body > nav a:focus::before {
+      color: #b03020;
+      background-color: #fae6e4;
+      box-shadow: none; }
 
 :not(pre) > code {
   margin: 0 0.25rem;
@@ -371,28 +378,12 @@ a.twitter-timeline:focus {
     position: relative;
     z-index: 1; }
 
-@media (min-width: 30rem) {
-  h1 {
-    margin-bottom: 0; }
-  time {
-    position: absolute;
-    right: 100%;
-    top: 1.875rem;
-    line-height: 2;
-    margin-right: 1.875rem;
-    white-space: nowrap;
-    text-align: right; }
-  article {
-    position: relative;
-    background: #fff;
-    padding: 1px 1.875rem; } }
-
 #disqus_thread a {
   color: #ce3925; }
 
 .post {
   background: #fff;
-  padding: 1.875rem;
+  padding: 3.75rem 1.875rem;
   margin: -0.9875rem; }
   .post aside {
     margin-top: 3.75rem; }

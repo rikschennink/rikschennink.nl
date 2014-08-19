@@ -104,7 +104,6 @@ footer {
 
 h1,h3 {
 	a {
-
 		&:hover,
 		&:focus {
 			background-color:transparent;
@@ -147,40 +146,49 @@ body {
 body > nav {
 
 	position:fixed;
-	bottom:0;
+	top:0;
 	left:0;
 	right:0;
-	font-size:1rem;
-	background:rgba(71, 28, 22, 0.94);
-
+	text-align:center;
 
 	h1 {
 		display:none;
 	}
 
 	a {
-		display:block;
-		padding:.9875rem 0;
-		color:#F1F0ED;
+		display:inline-block;
+		padding:.9875rem;
 		text-decoration:none;
 		vertical-align:middle;
 		line-height:1;
 		text-transform:lowercase;
 		cursor:pointer;
+		border-radius:0 0 1rem 1rem;
+		background:#8EB454;
+		font-size:1rem;
+		text-align:center;
+		color:#fff;
 
 		&::before {
-			display:inline-block;
-			content:'◂';
-			text-align:center;
-			font-size:1rem;
-			width:1.875rem;
+			position:absolute;
+			top:0;
+			left:0;
+			right:0;
+			background:#8EB454;
+			height:.75rem;
+			content:'';
 		}
 
 		&:focus,
 		&:hover {
-			background-color:transparent;
 			box-shadow:none;
-			color:#F1F0ED;
+		}
+
+		&:hover::before,
+		&:focus::before {
+			color:darken($font-color-link,7%);
+			background-color:lighten($font-color-link,46%);
+			box-shadow:none;
 		}
 	}
 }
@@ -190,14 +198,9 @@ body > nav {
 
 // inline code snippet
 :not(pre)>code {
-	//padding:.125rem .25rem;
 	margin:0 .25rem;;
 	display:inline;
 	color:#747772;
-	//background:#ECEEE9;
-	//border-radius:.25rem;
-
-
 	background-color:#ECEEE9;
 	box-shadow:0 0 0 .333rem #ECEEE9;
 }
@@ -232,4 +235,5 @@ body > nav {
 	pre,code {
 		font-size:.875rem;
 	}
+
 }
