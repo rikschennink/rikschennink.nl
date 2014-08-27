@@ -8,7 +8,7 @@ tags:
 - Gulp
 - SASS
 ---
-Writing maintainable CSS can be a though cookie. CSS has this tendency to  quickly spiral out of control, before you know it you find yourself between managing way too specific selectors and hundreds of deprecated vendor prefixes. Technologies like SASS and AutoPrefixer can help you get out of this uncomfortable situation, but to get there, you'll have to jump some hoops.
+Writing maintainable CSS can be a tough cookie. CSS has this tendency to  quickly spiral out of control, before you know it you find yourself between managing way too many specific selectors and hundreds of deprecated vendor prefixes. Technologies like SASS and AutoPrefixer can help you get out of this uncomfortable situation, but to get there, you'll have to jump some hoops.
 
 We're going to write a simple [GulpJS](http://gulpjs.com/) script so we can run a [SASS](http://sass-lang.com/), [AutoPrefixer](https://github.com/metrime/gulp-autoprefixer) and watch task for quick and maintainable CSS development.
 
