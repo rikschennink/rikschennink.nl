@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Responsive, adaptive, are we done yet?
+title: Responsive, Adaptive, are we done yet?
 tags:
 - Frontend
 - Responsive
