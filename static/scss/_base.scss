@@ -175,7 +175,7 @@ body > nav {
 			left:0;
 			right:0;
 			background:#8EB454;
-			height:.75rem;
+			height:.875rem;
 			content:'';
 		}
 
@@ -193,6 +193,14 @@ body > nav {
 	}
 }
 
+@media (min-width:$stack-width) {
+
+	body > nav {
+		position:absolute;
+		top:0;
+	}
+
+}
 
 
 
