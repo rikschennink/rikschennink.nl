@@ -168,6 +168,23 @@ body > nav {
   pre, code {
     font-size: 0.875rem; } }
 
+.author {
+  margin-bottom: 3.75rem;
+  font-size: 1rem;
+  text-align: center; }
+  .author h1 {
+    font-size: 1.5rem; }
+  .author p {
+    padding: 0 2rem;
+    margin: 0 auto;
+    max-width: 30rem; }
+  .author img {
+    margin: 0 0 1rem 0;
+    min-width: 5rem;
+    width: 15%;
+    border-radius: 50%;
+    border: 2px solid #fff; }
+
 .cinema {
   margin: 1.875rem 0; }
 
