@@ -6,7 +6,7 @@ tags:
 - Responsive
 - Adaptive
 ---
-There's confusion on the streets about what responsive and adaptive actually mean. I notice this among colleagues but also, unsurprisingly, among clients, they must be in a serious world of hurt. The fun thing is, we've sowed this confusion ourself by coining these cool terms. I feel these terms have served their purpose and it's now time to move one.
+There's confusion on the streets about what responsive and adaptive actually mean. I notice this among colleagues but also, unsurprisingly, among clients, they must be in a serious world of hurt. The fun thing is, we've sowed this confusion ourself by coining these cool terms. I feel these terms have served their purpose and it's now time to move on.
 
 There was a time, a simple time, when we had the internet with its back against the wall serving our every request at 1024 pixels per second. Then, media queries, responsive, adaptive, all-the-things-first, great stuff, it helped us focus on developing for the "new" web. I've put that in quotes as the web itself didn't really change.
 
