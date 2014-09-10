@@ -131,7 +131,7 @@ body > nav {
       left: 0;
       right: 0;
       background: #8EB454;
-      height: 0.75rem;
+      height: 0.875rem;
       content: ''; }
     body > nav a:focus, body > nav a:hover {
       box-shadow: none; }
@@ -139,6 +139,11 @@ body > nav {
       color: #b03020;
       background-color: #fae6e4;
       box-shadow: none; }
+
+@media (min-width: 30rem) {
+  body > nav {
+    position: absolute;
+    top: 0; } }
 
 :not(pre) > code {
   margin: 0 0.25rem;
@@ -162,6 +167,23 @@ body > nav {
     font-size: 1.5rem; }
   pre, code {
     font-size: 0.875rem; } }
+
+.author {
+  margin-bottom: 3.75rem;
+  font-size: 1rem;
+  text-align: center; }
+  .author h1 {
+    font-size: 1.5rem; }
+  .author p {
+    padding: 0 2rem;
+    margin: 0 auto;
+    max-width: 30rem; }
+  .author img {
+    margin: 0 0 1rem 0;
+    min-width: 5rem;
+    width: 15%;
+    border-radius: 50%;
+    border: 2px solid #fff; }
 
 .cinema {
   margin: 1.875rem 0; }
