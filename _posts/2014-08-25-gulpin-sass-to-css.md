@@ -19,9 +19,9 @@ We're going to write a simple [GulpJS](http://gulpjs.com/) script so we can run 
 - Open a Terminal window. 
 I can imagine you might be uncomfortable using the Terminal, if so, just take your time, you'll get the hang of it. To get started, read [introduction to the Terminal by Jim Hoskins](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line).
 - Now, navigate to your project directory. If you don't know how to do this, no worries, the article I mentioned in the previous step will explain further.
-- Run `npm init`, this will create a `package.json` file. This file contains the name of your project, the description, version, dependencies, license and some other stuff. If you're lazy just jab your return key like a madman and it will use defaults for everything.
+- Run <kbd>npm init</kbd>, this will create a "package.json" file. This file contains the name of your project, the description, version, dependencies, license and some other stuff. If you're lazy just jab your return key like a madman and it will use defaults for everything.
 
-Now, about that `npm` command. NPM stands for Node Package Manager, it's used to install node packages from [npmjs.org](http://www.npmjs.org), this we'll be doing in a couple of seconds.
+Now, about that "npm" command. NPM stands for Node Package Manager, it's used to install node packages from [npmjs.org](http://www.npmjs.org), this we'll be doing in a couple of seconds.
 
 We've now setup Node and are ready to install Gulp and some of it's tasks. Good stuff!
 
@@ -30,17 +30,17 @@ We've now setup Node and are ready to install Gulp and some of it's tasks. Good 
 
 Gulp is there to take commands. You just give it a list of things to do and in what order to do them and it will just handle it all like a pro and report back to you on it's progress.
 
-- Type `npm install --global gulp` to install the Gulp CLI. This makes it possible to run your future gulp files using the `gulp` command (CLI stands for Command Line Interface, so there you go).
+- Type <kbd>npm install --global gulp</kbd> to install the Gulp CLI. This makes it possible to run your future gulp files using the "gulp" command (CLI stands for Command Line Interface, so there you go).
 
-If you run into any errors, you might have to execute this command as administrator. Just prepend `sudo` and run again. `sudo npm install --global gulp`.
+If you run into any errors, you might have to execute this command as administrator. Just prepend <kbd>sudo</kbd> and run again. <kbd>sudo npm install --global gulp</kbd>.
 
 In any case, you don't have to do this for each project, once you've installed Gulp CLI you're all set for happy times.
 
-- Now we've got our CLI setup, lets add Gulp to your project. Type `npm install --save-dev gulp` to get this over with. We need this to use the Gulp API in your gulp file. 
+- Now we've got our CLI setup, lets add Gulp to your project. Type <kbd>npm install --save-dev gulp</kbd> to get this over with. We need this to use the Gulp API in your gulp file. 
 
 Notice that the *package.json* file has been updated and Gulp has been added as a *devDependency* (that's because of the --save-dev command). Also, a *node_modules* directory has appeared out of thin air. This directory will contain all installed node modules for this project (better stay out of there).
 
-- Next we'll have to setup that gulp file we keep talking about. Create a new file in your poject root called `gulpfile.js`. Yes, Gulp is that literal.
+- Next we'll have to setup that gulp file we keep talking about. Create a new file in your poject root called "gulpfile.js". Yes, Gulp is that literal.
 
 Use your copy paste skills to move the following code to the newly created file.
 
@@ -52,9 +52,9 @@ gulp.task('default', function() {
 });
 {% endhighlight %}
 
-You can now execute this file by running Gulp from your terminal. Give it a go, open your terminal, navigate to your project folder (if you're not already there) and run the `gulp` command.
+You can now execute this file by running Gulp from your terminal. Give it a go, open your terminal, navigate to your project folder (if you're not already there) and run the <kbd>gulp</kbd> command.
 
-Gulp will look for a *gulpfile.js* in the same directory and run it. Within a couple nanoseconds your terminal should read **Hello World**.
+Gulp will look for a "gulpfile.js" in the same directory and run it. Within a couple nanoseconds your terminal should read <samp>Hello World</samp>.
 
 
 ## Adding tasks like there's no tomorrow
@@ -66,9 +66,9 @@ Now for the good stuff, we're going to add all the CSS related tasks we need Gul
 
 SASS, a way to use variables in your CSS, nest selectors, write mixins, loops and use all that other over-the-top tech you always dreamed of. But, with great power comes great responsiblablabla. Seriously though, this stuff is like [cocaine](http://www.heydonworks.com/article/reinventing-the-hyperlink), so take it easy.
 
-Okay, focus, run `npm install --save-dev gulp-sass` to add the SASS task to your project.
+Okay, focus, run <kbd>npm install --save-dev gulp-sass</kbd> to add the SASS task to your project.
 
-Now let's alter our `gulpfile.js` a bit. Time to use those Kung Fu copy paste skills once more.
+Now let's alter our "gulpfile.js" a bit. Time to use those Kung Fu copy paste skills once more.
 
 {% highlight javascript %}
 var gulp = require('gulp');
@@ -88,14 +88,14 @@ gulp.task('default',function(){
 });
 {% endhighlight %}
 
-Run the `gulp` command again and you'll see a *styles.css* file has been created in the */static/css* directory. Excellent.
+Run the <kbd>gulp</kbd> command again and you'll see a *styles.css* file has been created in the */static/css* directory. Excellent.
 
 
 ### Getting rid of those prefixes
 
 Still things could be better, we've got our SASS magic, which is great and all, but AutoPrefixer that's where things really start moving in the right direction.
 
-Run `npm install --save-dev gulp-autoprefixer` to add the AutoPrefixer task to your project. Adding modules really is this simple, I can't get enough of it. View the small code changes to the gulp file below.
+Run <kbd>npm install --save-dev gulp-autoprefixer</kbd> to add the AutoPrefixer task to your project. Adding modules really is this simple, I can't get enough of it. View the small code changes to the gulp file below.
 
 {% highlight javascript %}
 var gulp = require('gulp');
@@ -118,12 +118,12 @@ gulp.task('default',function(){
 });
 {% endhighlight %}
 
-Same trick as last time, run `gulp` and presto, vendor prefixes are now automatically added to *styles.css*.
+Same trick as last time, run <kbd>gulp</kbd> and presto, vendor prefixes are now automatically added to *styles.css*.
 
 
 ### Automating the build
 
-Now, we don't want to have to run the `gulp` command each time we've changed one of our .scss files. So let's automate this whole process.
+Now, we don't want to have to run the "gulp" command each time we've changed one of our ".scss" files. So let's automate this whole process.
 
 {% highlight javascript %}
 var gulp = require('gulp');
@@ -150,8 +150,8 @@ gulp.task('default',['sass'],function(){
 });
 {% endhighlight %}
 
-Run `gulp` and start developing. Gulp will keep running allowing you to relax, grab coffee, and write some truly awesome CSS without the maintenance nightmare!
+Run <kbd>gulp</kbd> and start developing. Gulp will keep running allowing you to relax, grab coffee, and write some truly awesome CSS without the maintenance nightmare!
 
-If you ever want to stop that Gulp task, just jab CTRL+C.
+If you ever want to stop that Gulp task, just jab <kbd>CTRL+C</kbd>.
 
 You can view the [gulp file example code on GitHub](https://github.com/rikschennink/gulpin-sass-to-css).

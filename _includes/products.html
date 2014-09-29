@@ -1,14 +1,10 @@
 <ul class="products">
     {% for product in site.data.products %}<li>
-        <article>
-            <a href="/products/{{ product[0] }}/{{ product[1].versions | last }}">
-                <h1>{{ product[1].title }}</h1>
-                <dl class="meta">
-                    <dt>Version</dt>
-                    <dd>{{ product[1].versions | last }}</dd>
-                </dl>
-                <p>{{ product[1].description }}</p>
-            </a>
-        </article>
+        <a href="/products/{{ product[0] }}/{{ product[1].versions | last }}">{{ product[1].title }}</a>
+        <dl class="meta">
+            <dt>Version</dt>
+            <dd>{{ product[1].versions | last }}</dd>
+        </dl>
+        <p>{{ product[1].description }}</p>
     </li>{% endfor %}
 </ul>

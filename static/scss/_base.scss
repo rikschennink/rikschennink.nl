@@ -1,7 +1,19 @@
+$pixel:.0625rem;
+
+%intro {
+	font-size:1.125rem;
+	font-family:$family-serif;
+	font-style:italic;
+	text-align:justify;
+}
+
+* {
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
 
 ::selection {
 	color:#fff;
-	background:#ce3925;
+	background:#cc4654;
 }
 
 section,aside,article,nav,footer {
@@ -14,15 +26,21 @@ html,body {
 }
 
 html {
-	font-family:$font-stack-serif;
+	background:#fff;
 }
 
-html {
-	background:$fill-color-back;
+html,button {
+	font-size:1rem;
+	font-family:$family-serif;
 }
 
 html,table {
-	color:$font-color-text;
+	color:#83807d;
+}
+
+body {
+	line-height:1.5;
+	padding:1.875rem;
 }
 
 ol,ul,li,dl,dt,dd {
@@ -31,22 +49,64 @@ ol,ul,li,dl,dt,dd {
 	font-weight:normal;
 }
 
+a {
+	color:#cc4654;
+}
+
+button {
+	cursor:pointer;
+}
+
+pre {
+	word-break:break-word;
+}
+
+pre, code, kbd, samp {
+	font-size:.75rem;
+	font-family:$font-stack-mono;
+}
+
 canvas,img {
 	max-width:100%;
 }
 
-pre, code {
-	font-size:.6875rem;
-	font-family:$font-stack-mono;
+h1,h2,h3,h4,h5,h6 {
+	font-weight:normal;
 }
 
+// main level headings
+main>section>h1 {
+	@extend %screenreader;
+}
+
+// inline code snippet
+:not(pre)>code {
+
+}
+
+// keyboard commands
+kbd {
+	margin:0 .25rem;;
+	display:inline;
+	color:#747772;
+	background-color:#eceee9;
+	box-shadow:0 0 0 .25rem #eceee9;
+}
+
+// computer output
+samp {
+
+}
+
+
+
+
+/*
 body {
 	margin:0 auto;
 	padding:.9875rem;
 	max-width:40rem; // equals approx. 65 characters @ 1.25rem
 	font-size:1rem;
-	line-height:1.5;
-	overflow-x:hidden;
 }
 
 a {
@@ -245,3 +305,4 @@ body > nav {
 	}
 
 }
+*/

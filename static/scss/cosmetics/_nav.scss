@@ -1,0 +1,16 @@
+nav {
+
+	a {
+		display:block;
+		width:$margin-base * 2;
+		height:$margin-base * 2;
+		background:#e3e4c8;
+		color:transparent;
+		font-size:0;
+	}
+
+	h1 {
+		@extend %screenreader;
+	}
+
+}

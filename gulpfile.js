@@ -3,7 +3,7 @@ var connect = require('gulp-connect');
 var sass = require('gulp-sass');
 var sequence = require('run-sequence');
 var autoprefixer = require('gulp-autoprefixer');
-var livereload = require('gulp-livereload');
+//var livereload = require('gulp-livereload');
 var spawn = require('child_process').spawn;
 
 gulp.task('_connect', function() {
@@ -34,17 +34,20 @@ gulp.task('_jekyll',function(cb){
 
 });
 
-gulp.task('_static',function(){
+gulp.task('_scss',function() {
 
-	return gulp.src('./static/scss/styles.scss')
-		.pipe(sass())
-		.pipe(autoprefixer('last 1 version', '> 5%', 'ie 8'))
+    return gulp.src('./static/scss/styles.scss')
+        .pipe(sass({errLogToConsole:true}))
+        .pipe(autoprefixer('last 1 version', '> 5%', 'ie 8'))
 
         // one for 'gh_pages'
-		.pipe(gulp.dest('./static/css'))
+        .pipe(gulp.dest('./static/css'));
 
-        // one for '_site'
-		.pipe(gulp.dest('./_site/static/css'));
+});
+
+gulp.task('_static',function(cb){
+
+    sequence('_scss','_inject',cb);
 
 });
 
@@ -58,20 +61,20 @@ gulp.task('_inject',function(){
 gulp.task('_content',function(cb){
 
     // build new jekyll site, than inject static files
-	sequence(['_jekyll'],'_inject',cb);
+	sequence('_jekyll','_inject',cb);
 
 });
 
 gulp.task('build',function(cb){
 
-    sequence(['_jekyll','_static'],'_inject',cb);
+    sequence('_jekyll','_static',cb);
 
 });
 
 gulp.task('dev',['build','_connect'],function(){
 
     // start live reload server
-    livereload.listen();
+    //livereload.listen();
 
     // now watching static files
     gulp.watch([
@@ -95,10 +98,10 @@ gulp.task('dev',['build','_connect'],function(){
 	],['_content']);
 
     // wait for site to be rebuild
-    gulp.watch([
+    //gulp.watch([
 
-        './_site/static/**/*'
+//        './_site/static/**/*'
 
-    ]).on('change', livereload.changed);
+    //]).on('change', livereload.changed);
 
 });

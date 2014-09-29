@@ -1,0 +1,59 @@
+
+.author {
+
+	$mq-author-a:35rem;
+	$fs-base:1.125rem;
+
+	position:relative;
+	z-index:1;
+
+	@media (max-width:$mq-author-a) {
+
+		margin-bottom:-1.25rem;
+		font-size:$fs-base;
+
+		h1 {
+			margin-top:-.25rem;
+		}
+
+		a {
+			position:absolute;
+			top:100%;
+			right:-$margin-base;
+			margin-top:-6.25rem;
+		}
+
+		img {
+			margin-top:1.25rem;
+			height:6.25rem;
+		}
+
+	}
+
+
+	@media (min-width:$mq-author-a + $pixel) {
+
+		font-size:$fs-base;
+		margin-bottom:3.875rem;
+
+		img {
+			position:absolute;
+			left:50%;
+			top:0;
+			margin-left:-6.25rem;
+			height:6.25rem;
+		}
+
+		a {
+			position:absolute;
+			top:0;
+			right:0;
+		}
+
+		a,img {
+			margin-top:0;
+		}
+
+}
+
+}

@@ -1,5 +1,57 @@
 .post {
 
+	header {
+		margin:-$margin-base
+			   -1.875rem
+				1.875rem
+				3.75rem;
+	}
+
+	.meta {
+		margin-top:$margin-base;
+	}
+
+	.caption {
+		text-align:right;
+		padding-right:1.875rem;
+	}
+
+	>div {
+
+		//margin-right:$margin-base;
+
+		// opening paragraph
+		>p:first-child {
+			//margin-right:-$margin-base;
+			@extend %intro;
+		}
+
+		// lists
+		>ol,
+		>ul {
+			margin-left:1rem;
+			margin-right:10%;
+
+			ul,ol {
+				margin-top:.9375rem;
+				margin-right:0;
+				margin-left:1.875rem;
+			}
+
+			>li {
+				margin-bottom:.9375rem;
+			}
+		}
+
+	}
+
+
+}
+
+
+
+/*.post {
+
 	background:#fff;
 	padding:3.75rem 1.875rem;
 	margin:-.9875rem;
@@ -72,3 +124,4 @@
 	}
 
 }
+*/

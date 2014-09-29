@@ -1,0 +1,19 @@
+
+// Tile color variations
+
+@if $color_name {
+
+    @for $i from 1 through length($color_name) {
+
+        .tilt-tile-#{nth($color_name, $i)} {
+
+            $fill:nth($color_value, $i);
+            background-color:$fill;
+
+        }
+
+    }
+
+}
+
+

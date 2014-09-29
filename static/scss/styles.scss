@@ -5,26 +5,29 @@ $font-stack-sans:Lucida Sans Unicode, Lucida Grande, Arial, sans-serif;
 $font-stack-serif:'Noto Serif','Times',serif;
 $font-stack-mono:monaco,monospace;
 
+
 $font-color-text:#22211D;
 $font-color-link:#ce3925;
-
 $fill-color-back:#ECECE9;
+
+
+$family-mono:monaco,monospace;
+$family-serif:Palatino;
+$family-sans-serif:'Helvetica Neue',sans-serif;
+
+
+$twitter-stroke:#2169a0;
+$twitter-fill:#6eb6ed;
+
+
+$margin-base:1.875rem;
+
 
 // foundation
 @import 'base';
+@import 'cosmetics';
+@import 'compositions';
+@import 'utils';
 
-// components
-@import 'author';
-@import 'cinema';
-@import 'highlight';
-@import 'flickr';
-@import 'tweet';
-@import 'tweets';
-@import 'dataset';
-@import 'meta';
-@import 'products';
-@import 'list-thoughts';
-@import 'disqus';
-
-// layouts
-@import 'post';
+// external
+@import 'vendor/tilt';

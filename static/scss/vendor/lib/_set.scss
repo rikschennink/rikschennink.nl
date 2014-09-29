@@ -1,0 +1,49 @@
+
+/* Tilt Set */
+.tilt-set {
+
+    display:block;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+
+}
+
+.tilt-set li {
+
+    position:relative;
+    box-sizing:border-box;
+    display:inline-block;
+    margin:0;
+    padding:.25em;
+    font-size:1em;
+    vertical-align:top;
+
+}
+
+.tilt-set .tilt-tile {
+    display:block;
+    vertical-align:bottom;
+    max-width:none;
+    max-height:none;
+}
+
+
+
+
+
+.tilt-set-alpha>li {
+    position:relative;
+    width:50%;
+    padding-bottom: 50%;
+}
+
+.tilt-set-alpha>li>span {
+    position:absolute;
+    width:auto;
+    height:auto;
+    right:.25em;
+    left:.25em;
+    top:.25em;
+    bottom:.25em;
+}

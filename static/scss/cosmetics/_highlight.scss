@@ -1,26 +1,25 @@
 .highlight {
 
     position:relative;
+	margin-left:-$margin-base;
+	//margin-right:-$margin-base;
+	overflow:hidden;
+	padding-left:$margin-base;
+	padding-top:$margin-base;
 
     + .highlight {
-        margin-top:1.875rem;
-    }
-
-    pre {
-        margin:0 0 0 -1.875rem;
-        padding:0 0 0 1.875rem;
-        word-break:break-word;
-        border-left:2px dashed #DDE2DA;
-        overflow:hidden;
+        margin-top:$margin-base;
     }
 
     code {
 
         &:before {
-            display:block;
-            color:#C8CCC4;
-            padding-bottom:.75rem;
-            margin-bottom:.75rem;
+            position:absolute;
+            color:#fff;
+			padding:.25rem .5rem;
+			left:0;
+			top:0;
+			background:#98B656;
             content: '// ' attr(data-lang);
         }
 

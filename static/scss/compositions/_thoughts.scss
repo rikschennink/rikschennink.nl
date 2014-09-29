@@ -1,0 +1,44 @@
+.thoughts {
+
+	.caption {
+
+	}
+
+}
+
+@media (min-width:28rem + $pixel) {
+
+	.js .thoughts {
+
+		.caption {
+			width:50%;
+		}
+
+		.intro {
+			transition:none;
+			margin-left:0;
+			transform:translateX(50%) scale(.5);
+		}
+
+	}
+
+}
+
+@media (min-width:35rem) {
+
+	.thoughts {
+
+		margin:0 auto;
+		max-width:35rem;
+
+	}
+
+}
+
+@media (min-width:54rem) {
+
+	.thoughts {
+		margin-left:7.25rem;
+	}
+
+}

@@ -1,0 +1,31 @@
+.author {
+
+	h1 {
+		margin:0;
+		font-size:1em;
+		color:#83807d; // color text contrast modest
+	}
+
+	p {
+		margin:0;
+		font-family:$family-serif;
+		font-style:italic;
+		color:#C5C0BC; // color text contrast lowest
+		text-transform:lowercase;
+	}
+
+	img {
+		vertical-align:top;
+		background:#e3e4c8;
+	}
+
+	a {
+		text-decoration:none;
+		line-height:1;
+		display:inline-block;
+		padding:.5rem .75rem;
+		color:$twitter-stroke;
+		background:$twitter-fill;
+	}
+
+}
