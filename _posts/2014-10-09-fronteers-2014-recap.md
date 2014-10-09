@@ -7,6 +7,8 @@ tags:
 - Performance
 ---
 
+A quick list based recap of what was said during Fronteers 2014.
+
 Links to the presentations will be added as they come available. I’ll update the content with references to resources and photos in the coming days.
 
 ## Day 1
