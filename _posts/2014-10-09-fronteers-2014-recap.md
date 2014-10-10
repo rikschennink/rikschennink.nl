@@ -11,10 +11,9 @@ A quick, list based, recap of what was said during [Fronteers 2014](https://fron
 
 Links to the presentations will be added as they come available. I’ll update the content with references to resources and photos in the coming days.
 
-
 ## Day 1
 
-It’s gotta be said, [Jake Archibald](https://twitter.com/jaffathecake) MC-ed this conference like a boss. He talked about being nice, the location of fire exists, picking the right fire exit, being nice to fire, fire not being a requirement for a conference, no need to start a fire then, plus, some excuses about the british people pissing walls after football matches. To the first talk!
+It’s gotta be said, [Jake Archibald](https://twitter.com/jaffathecake) kicked of this conference like a pro. He talked about being nice, the location of fire exists, picking the right fire exit, being nice to fire, fire not being a requirement for a conference, no need to start a fire then, plus, some excuses about the british people pissing walls after football matches. To the first talk!
 
 ### [Getting nowhere with CSS best practices](http://slides.com/heydon/getting-nowhere-with-css-best-practices) - [Heydon Pickering](http://twitter.com/heydonworks)
 
@@ -55,7 +54,7 @@ Great talk, funny and very sharp!
 - At Etsy, anybody can touch anything, everyone deploys, if something goes wrong, it’s a sign things need to be improved in (for example) the areas of automation or culture. 
 - Continuos deployment, many small changes over short periods of time are less risky than a lot of changes at once.
 - Designers at Etsy write and push code as well.
-- Using an in house tool called **Deployinator** for continuos deployment.
+- Using an in house tool called Deployinator for continuos deployment.
 - They’ve got lots of graphs and charts to keep a close eye on the production environment.
 - There’s 25 to 50 pushes a day (each push takes approximately 15 minutes).
 - There’s a flag file which enables new features for a percentage of users on the production environment.
@@ -122,8 +121,8 @@ Jake: “If you want to go full Michael Bay on your visitors, wrap your site in 
 - Animation improves adoption rate of new interfaces, change can be easier comprehended when it’s gradual, especially for the young and elderly.
 - Products with animation will outcompete products without it, see Google Material Design animation comparison videos. People will start to expect animation to be there.
 - There’s some excellent animation libraries out there:
-— [GSAP](https://greensock.com/gsap), GreenSock Animation Platform, previously a flash library
-— [Velocity.js](http://velocityjs.org), An alternative to jQueries Animate
+ - [GSAP](https://greensock.com/gsap), GreenSock Animation Platform, previously a flash library
+ - [Velocity.js](http://velocityjs.org), An alternative to jQueries Animate
 - `will-change` is [alternative for translateZ(0)](https://dev.opera.com/articles/css-will-change-property/) which is kind of a hacky way to promote elements to there own render layer.
 - [Animation API](http://updates.html5rocks.com/2014/05/Web-Animations---element-animate-is-now-in-Chrome-36) it seems is not ready for production yet.
 
