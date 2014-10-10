@@ -203,10 +203,6 @@ Maybe in a decade or so we’ll be more lucky.
 - Explicit saving is not required, it’s done automatically.
 - Offline is the new standard. Progressive Enhancement has a new starting point.
 
-<div class="cinema">
-<blockquote class="twitter-tweet" lang="en"><p>I would not say offline-first is the new Progressive Enhancement. &#10;&#10;Progressive Enhancement just has a new starting point. <a href="https://twitter.com/hashtag/fronteers14?src=hash">#fronteers14</a></p>&mdash; Rik Schennink (@rikschennink) <a href="https://twitter.com/rikschennink/status/520232375918555136">October 9, 2014</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-
 It’s a bit tricky though as javascript is required for syncing. Still we could store content offline with app cache and layer on server syncing and certain interaction patterns as an enrichment.
 
 - Even with increasing network coverage offline first will stay relevant because there will be glitches. For instance when large groups of people come together and there’s just too many connections.
