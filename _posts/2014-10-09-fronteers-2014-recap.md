@@ -257,26 +257,26 @@ Takeaway, it’s time to restructure static source files in to web_modules.
 </div>
 
 - Performance issues caused by Responsive Web Design.
-— `display:none`, sending data, then hiding is bad.
-— Sending big images and then shrinking, is sending unnecessary bits and bytes.
-— Downloading scripts that are not necessary for current view.
+ - `display:none`, sending data, then hiding is bad.
+ - Sending big images and then shrinking, is sending unnecessary bits and bytes.
+ - Downloading scripts that are not necessary for current view.
 - Page Speed Insights helps you analyse your website for multiple devices.
 - Everyone should follow the Website Performance Optimisation course at Audacity
 - WebPageTest, just use it already, it’s amazing and it’s been here for years.
 - Set a Performance Budget. By defining the minimum time a page should load in you can deduct the maximum file size. John Cleveley talked about this at [Mobilism 2013](http://rikschennink.nl/thoughts/recap-of-mobilism-2013/)
 - Server side quick wins:
-— Browser cache
-— CSS and HTML(!) compression
-— AJAX requests are not as fast as you might think, you could leverage perceived performance by putting HTML in script tags.
-— gzipping
+ - Browser cache
+ - CSS and HTML(!) compression
+ - AJAX requests are not as fast as you might think, you could leverage perceived performance by putting HTML in script tags.
+ - gzipping
 - Image quick wins:
-— Avoid images, compress images (people are not really worried about artifacts), use `srcset`. The `<picture>` element should only be used to serve art directed imagery though.
-— leverage tooling like Gulp and Grunt to optimise your static files, also imagemin, image-resize, sprites min, svgmin, google-cdn, uglify, and the list goes on.
+ - Avoid images, compress images (people are not really worried about artifacts), use `srcset`. The `<picture>` element should only be used to serve art directed imagery though.
+ - leverage tooling like Gulp and Grunt to optimise your static files, also imagemin, image-resize, sprites min, svgmin, google-cdn, uglify, and the list goes on.
 - Javascript quick wins:
-— Use less Javascript, less Libraries, look at MicroJS.
-— Avoid reflows and repaints.
-— Use Touch or Fastclick to prevent 300ms touch delay.
-— Leverage the power CDNs.
+ - Use less Javascript, less Libraries, look at MicroJS.
+ - Avoid reflows and repaints.
+ - Use Touch or Fastclick to prevent 300ms touch delay.
+ - Leverage the power CDNs.
 - Use Spof-o-matic to measure SPOF. SPOF-o-Matic detects likely third-party single points of failure.
 - Optimise for the critical rendering path, get everything at the top of the page in view as fast as possible. Then lazy load the rest.
 - “Politically we had to have a carousel.” That just says it all.
@@ -350,16 +350,16 @@ Excellent talk, great insights, some stuff we all should be doing right now.
 - An alarming amount of people have trouble reading.
 - Can’t delay accessibility to the end, it needs to be part of your core process.
 - How to do this:
-— Write down your team values.
-— Refactor whenever you touch.
-— Leave things better than you found them.
-— Define “done” appropriately.
-— Do accessibility testing katas.
+ - Write down your team values.
+ - Refactor whenever you touch.
+ - Leave things better than you found them.
+ - Define “done” appropriately.
+ - Do accessibility testing katas.
 - “Talent is Overrated” and “Outliers” are some excellent books to read on this subject.
 - Various [Deliberate Practise](http://expertenough.com/1423/deliberate-practice) models to look into:
-— Sports Model, analogues to conditioning.
-— Chess Model, what did the grand master do?
-— Music Model, chunking & mental rehearsal.
+ - Sports Model, analogues to conditioning.
+ - Chess Model, what did the grand master do?
+ - Music Model, chunking & mental rehearsal.
 - Ask yourself, is my work designed in a way that makes it an effective deliberate practise.
 - Do retrospectives instead of post-mortems, something has to die to do a post-mortem, that’s never good.
 - [Accessibility](http://a11yproject.com) is not an optional extra. You would not charge extra for testing would you?
@@ -396,9 +396,9 @@ If you’re fighting with JavaScript, who isn’t, this talk is for you.
 The raffle goes horribly wrong and shows all signs of a failing JavaScript app. Various `undefined` values show up, Jake, tries to salvage the situation by checking if “undefined” might be a very common name in the Netherlands.
 
 - Three questions to keep asking yourself in all stages of a project:
-— Is there a defect?
-— How bad is it?
-— How can we fix it?
+ - Is there a defect?
+ - How bad is it?
+ - How can we fix it?
 - In an agile workflow the problem is slowly understood and therefor less mistakes are being made, resulting in less money and time wasted. 
 
 If you want to know when you should be testing what using which test method this is the talk for you.
@@ -429,4 +429,3 @@ Vivid, imaginative and almost relaxing talk. The relaxing part could also origin
 That’s it, [Fronteers 2014](https://fronteers.nl/congres/2014), what a fantastic conference this was. Great food, great speakers, a great venue and above all, great people. 
 
 An insta-attend for 2015.
-
