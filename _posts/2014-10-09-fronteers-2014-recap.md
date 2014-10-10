@@ -30,6 +30,9 @@ I wonder if a blind user understands the concept of a tab. Do we need to communi
 
 - [Aria states](http://www.w3.org/TR/wai-aria/states_and_properties), there’s a lot of them, so there’s almost no excuse to use class names. [Be careful to not misuse aria attributes though.](https://www.ssbbartgroup.com/blog/2014/06/05/how-not-to-misuse-aria-states-properties-and-roles/)
 - Compares class and attribute selector performance. A Greyhound race visualisation is shown, the difference is extremely minimal. Also, when other factors like images come into play selector performance is micro optimisation.
+
+![Greyhound race disruption](/media/fronteers14/heydon.jpg)
+
 - Links without `href` attributes are nonsense and also cannot be focussed.
 - An overkill of web animations and parallaxing can make people physically sick. Be kind to your users.
 
@@ -64,6 +67,9 @@ Great talk, funny and very sharp!
 - They can use it to create all kinds of cross sections of the frontend interface making people more comfortable altering code.
 - A small script called Shrinkray detects unused CSS on the production server (1% of users will have the script loaded). It compares CSS selectors to results of `querySelector` calls to determine selector validity.
 - Color definitions in Etsy CSS have grown out of control.
+
+![A slide filled with all of the colour definitions in the Etsy CSS](/media/fronteers14/daniel.jpg)
+
 - Moving to SCSS to get this under control, but not using all functionality for now. Everyone needs to be able to work on the code (designers and developers) introducing complex functionality would hinder this. Also it’s easy to generate a lot of CSS with just a couple of lines of SCSS.
 - A lot of the discussed tooling will be made open source.
 
@@ -156,10 +162,15 @@ I’ve personally played around with Phaser, it’s very good, has a lot of opti
 - Demos ImpactJS the engine powering Xibalba. Very cool stuff, awesome map editor and a lot of controls to work with.
 - Shows how to quickly create a secret room with a rocket launcher using the map editor. Then cheats his way through the first level of the game, what a bastard.
 
+![Xibalba running on various web enabled devices](/media/fronteers14/dominic.jpg)
+
 
 ### [WebRTC: a front-end perspective](http://www.slideshare.net/shwetank/webrtc-a-frontend-perspective) - [Shwetank Dixit](https://twitter.com/shwetank)
 
 - Shows old school lock “screen” on landline phone.
+
+![Lock screen on landline phone](/media/fronteers14/shwetank.jpg)
+
 - In remote parts of the world people access the web over wireless, they never had land lines and probably never will.
 - [Sqwiggle](https://www.sqwiggle.com) uses WebRTC to allow you to communicate and collaborate with others on the web.
 - `getUserMedia` combined with [CSS filters](http://css-tricks.com/almanac/properties/f/filter/) is an easy way to create nice effects.
@@ -233,6 +244,9 @@ Quote from CEO of HP:
 - They’ve setup a “node_modules” and a “web_modules” folder.
 - There’s no hierarchy in the web_modules folder, all modules are contained in their own folders.
 - The component folder contains all CSS, JS, tests, templates and readme related to the component.
+
+![Twitter component folder structure](/media/fronteers14/nicholas.jpg)
+
 - Use WebDriver to test component functionality across browsers. Do end to end testing with [theintern](http://theintern.io)
 - Use [WebPack](http://webpack.github.io) to bundle modules and create optimised static files.
 
@@ -309,6 +323,9 @@ I’ve never learned so much web things in such a short timespan.
 
 - The web is changing really fast, new browsers are released on ever shorter intervals, how to deal with this ongoing change.
 - AppCache arrived and got immediately shot down by Jake Archibald, it’s very buggy.
+
+![AppCache Killer Wanted](/media/fronteers14/paul.jpg)
+
 - ServiceWorker gives more control than AppCache.
 - ServiceWorkers allow you to respond to various events and interact with all stuff the browser is doing, also, run stuff in the background.
 - Once we have our app running in the background the page itself just becomes the view. Our app does not even require a view then.
@@ -390,6 +407,8 @@ If you’re fighting with JavaScript, who isn’t, this talk is for you.
 
 The raffle goes horribly wrong and shows all signs of a failing JavaScript app. Various `undefined` values show up, Jake, tries to salvage the situation by checking if “undefined” might be a very common name in the Netherlands.
 
+![Raffle Crash](/media/fronteers14/raffle.jpg)
+
 - Three questions to keep asking yourself in all stages of a project:
  - Is there a defect?
  - How bad is it?
@@ -420,6 +439,8 @@ Pretty dramatic stuff. But such an interesting story when looking at things from
 - @csupnig said: “Don’t start a revolution, enable a revolution to start.”
 
 Vivid, imaginative and almost relaxing talk. The relaxing part could also originate from the fact that this was the last talk of the day.
+
+![Final words, the crew is on the stage](/media/fronteers14/end.jpg)
 
 That’s it, [Fronteers 2014](https://fronteers.nl/congres/2014), what a fantastic conference this was. Great food, great speakers, a great venue and above all, great people. 
 
