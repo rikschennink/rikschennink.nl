@@ -11,9 +11,10 @@ A quick, list based, recap of what was said during [Fronteers 2014](https://fron
 
 Links to the presentations will be added as they come available. I’ll update the content with references to resources and photos in the coming days.
 
+
 ## Day 1
 
-It’s gotta be said, [Jake Archibald](https://twitter.com/jaffathecake) kicked of this conference like a boss. He talked about being nice, the location of fire exists, picking the right fire exit, being nice to fire, fire not being a requirement for a conference, no need to start a fire then, plus, some excuses about the british people pissing walls after football matches. To the first talk!
+It’s gotta be said, [Jake Archibald](https://twitter.com/jaffathecake) MC-ed this conference like a boss. He talked about being nice, the location of fire exists, picking the right fire exit, being nice to fire, fire not being a requirement for a conference, no need to start a fire then, plus, some excuses about the british people pissing walls after football matches. To the first talk!
 
 ### [Getting nowhere with CSS best practices](http://slides.com/heydon/getting-nowhere-with-css-best-practices) - [Heydon Pickering](http://twitter.com/heydonworks)
 
@@ -212,3 +213,220 @@ It’s a bit tricky though as javascript is required for syncing. Still we could
 - Even with increasing network coverage offline first will stay relevant because there will be glitches. For instance when large groups of people come together and there’s just too many connections.
 
 And that’s it for day one. A great start to a great conference.
+
+## Day 2
+
+### Making Twitter UI infrastructure - [Nicholas Gallagher](http://twitter.com/necolas)
+
+- Twitter has a lot of apps they’re working on, Tweet Deck, Analytics, Ads, Vine, Twitter itself and Mobile Twitter.
+- Engineering on Twitter user number scales can be really expensive.
+- There’s 3500 people working on Twitter apps, among those are approximately 1000 engineers.
+- It would be inefficient to build each new app from the ground up, it’s not cost and time effective
+- The UI Infrastructure project at twitter has been set in place to enhance efficiency and allow people to use their time to be creative instead of reinventing the wheel each time.
+- Focus during this infrastructure project is on outcome and process not on tooling.
+- They’re not aiming for perfection but for flexibility.
+- Each component is a highly cohesive **functional** building block. Creating components allows individual testability instead of having the test entire apps. With components it’s also easier to share task among team members, people can take responsibility over a certain component.
+- Not creating a lot of tailor made stuff, custom things hinder portability and adoptability.
+- Everything should be documented because the original creator is not always available and might have even left the company. Or might have been hit by a truck.
+
+Quote from CEO of HP:
+“if HP knew what HP knows we would be 3 times more profitable” 
+
+- Analogy of a Clock Radio. When taken apart, it’s transitors / capacitors / speakers / wires, not raw materials. That’s what we’ve been doing on the web, we’re using raw materials but should be using the individual components.
+- Each component has an input > output just like the components you find in a Clock Radio.
+- A component exposes slots where other components can be inserted in the DOM. This sorta resembles the functionality of the shadow DOM.
+- They’ve setup a “node_modules” and a “web_modules” folder.
+- There’s no hierarchy in the web_modules folder, all modules are contained in their own folders.
+- The component folder contains all CSS, JS, tests, templates and readme related to the component.
+- Use WebDriver to test component functionality across browsers. Do end to end testing with [theintern](http://theintern.io)
+- Use [WebPack](http://webpack.github.io) to bundle modules and create optimised static files.
+
+Takeaway, it’s time to restructure static source files in to web_modules.
+
+
+### [Optimizing web performance](http://www.slideshare.net/dmolsenwvu/optimizing-web-performance-fronteers-edition) - [Dave Olsen](https://twitter.com/dmolsen)
+
+- Average weight of a homepage today is 1.8 MB. That’s more than a floppy disk.
+- Responsive Design is not a cure all. There’s a lot of responsive design based websites out there whose footprints are way too large.
+- Users expect your website to load fast no matter which device they are using. Less than 5 seconds to load or else people leave.
+- 300ms delay on page load is 5% higher bounce rate.
+- Mobile first means Performance first.
+
+<div class="cinema">
+<blockquote class="twitter-tweet" lang="en"><p>mobile first&#10;offline first&#10;performance first&#10;content first&#10;&#10;Okay guys, who&#39;s first. Pick one.&#10;&#10;<a href="https://twitter.com/hashtag/fronteers14?src=hash">#fronteers14</a></p>&mdash; Rik Schennink (@rikschennink) <a href="https://twitter.com/rikschennink/status/520484504985960448">October 10, 2014</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+- Performance issues caused by Responsive Web Design.
+— `display:none`, sending data, then hiding is bad.
+— Sending big images and then shrinking, is sending unnecessary bits and bytes.
+— Downloading scripts that are not necessary for current view.
+- Page Speed Insights helps you analyse your website for multiple devices.
+- Everyone should follow the Website Performance Optimisation course at Audacity
+- WebPageTest, just use it already, it’s amazing and it’s been here for years.
+- Set a Performance Budget. By defining the minimum time a page should load in you can deduct the maximum file size. John Cleveley talked about this at [Mobilism 2013](http://rikschennink.nl/thoughts/recap-of-mobilism-2013/)
+- Server side quick wins:
+— Browser cache
+— CSS and HTML(!) compression
+— AJAX requests are not as fast as you might think, you could leverage perceived performance by putting HTML in script tags.
+— gzipping
+- Image quick wins:
+— Avoid images, compress images (people are not really worried about artifacts), use `srcset`. The `<picture>` element should only be used to serve art directed imagery though.
+— leverage tooling like Gulp and Grunt to optimise your static files, also imagemin, image-resize, sprites min, svgmin, google-cdn, uglify, and the list goes on.
+- Javascript quick wins:
+— Use less Javascript, less Libraries, look at MicroJS.
+— Avoid reflows and repaints.
+— Use Touch or Fastclick to prevent 300ms touch delay.
+— Leverage the power CDNs.
+- Use Spof-o-matic to measure SPOF. SPOF-o-Matic detects likely third-party single points of failure.
+- Optimise for the critical rendering path, get everything at the top of the page in view as fast as possible. Then lazy load the rest.
+- “Politically we had to have a carousel.” That just says it all.
+
+By this point, I’ve given up taking notes, there’s just too much juice in this presentation to keep up. The slides are really extensive luckily.
+
+In short, excellent talk, ridiculous amount of information.
+
+
+### Animating SVGs with CSS and SMIL - [Sara Soueidan](https://twitter.com/SaraSoueidan)
+
+- SVG is XML but for creating and animating 2d vector graphics.
+- You can animate SVG using CSS, SMIL or JavaScript.
+- Only a subset of SVGs presentation attributes can be set in CSS
+- SVG2 will unlock more properties.
+- Can have style blocks in your SVG, and externally, just like in HTML.
+- Transform origin in SVG is different than in CSS: `center,center` vs `0,0`.
+- Need to use percentage and pixel values to have `transform-origin` work cross browser (Firefox does not support percentages).
+- Not all SVG properties can be animated using CSS, in those cases you can use SMIL.
+- There’s a great support table in the presentation showing how you can embed SVG, and which things work in which situation.
+- SMIL supports event handling and animation synchronisation.
+- SMIL does not work in IE.
+- SMIL animations are set up using tags so are easily readable by humans.
+
+Sara shares a lot of in-depth information on how to setup animations in the various techniques described. If you’re wondering how to animate something, anything, in someway, in SVG, watch this presentation.
+
+- Did you know that you can adjust `animation-timing` per keyframe? I didn’t. Thats pure gold right there.
+
+Sara is going to do SVG performance tests and will be sharing those in the near future.
+
+I’ve never learned so much web things in such a short timespan.
+
+
+### This is the web platform - [Paul Kinlan](https://twitter.com/Paul_Kinlan)
+
+- The web is changing really fast, new browsers are released on ever shorter intervals, how to deal with this ongoing change.
+- AppCache arrived and got immediately shot down by Jake Archibald, it’s very buggy.
+- ServiceWorker gives more control than AppCache.
+- ServiceWorkers allow you to respond to various events and interact with all stuff the browser is doing, also, run stuff in the background.
+- Once we have our app running in the background the page itself just becomes the view. Our app does not even require a view then.
+- Also would pave the way for the physical web which would allow you to interact with objects via urls.
+- Google is doing deep app indexing, search results link directly to app when clicked. I guess they test if you have the app?
+- [caniuse.com](http://caniuse.com) data is in JSON format and can be accessed via the GitHub repository. This allows you to do all sorts of data analysis on it.
+- [iwanttouse.com](http://www.iwanttouse.com) allows you to see how many users can use a specific feature you want to use.
+- Revenue generated by IE8 users is holding us and the web back.
+- Don’t work with IE8 as your baseline, use modern features make content accessible on IE8.
+- Mobile is growing rapidly and supports a lot of fantastic modern CSS features.
+- Raise your prices for IE8, developing for IE8 adds a lot of complexity for your internal infrastructure, virtual machines, test scripts, legacy code, impact on maintainability.
+- Developers are dropping accessibility support in favor of IE8 support which is a really bad thing. Percentage wise there’s mor eusers with disabilities than people using IE8.
+
+<div class="cinema">
+<blockquote class="twitter-tweet" lang="en"><p>There’s more users with disabilities than people using IE8. &#10;&#10;Still, we tend to drop accessibility in favour of IE8 support.&#10;&#10; <a href="https://twitter.com/hashtag/fronteers14?src=hash">#fronteers14</a></p>&mdash; Rik Schennink (@rikschennink) <a href="https://twitter.com/rikschennink/status/520521059884617728">October 10, 2014</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+- At this point, Paul takes a small moment to try and burn his retinas with his laser pointer.
+- Support latest browser versions, latest-2 is good, latest-1 is better.
+- The web platform currently has a great set of features but not all the right ones for a lot of mobile use cases. Think of push, camera, sync, orientation problems.
+- [mobilewebappsftw.tumblr.com](http://mobilewebappsftw.tumblr.com) a collection of great mobile web applications by Paul, send in quality apps, he wants to know what is being created around the world.
+- [github.com/paulkinlan/cli-caniuse](http://github.com/paulkinlan/cli-caniuse) allows you to access caniuse through your command line.
+- Pauls prediction is that the web, or certain parts of the web, will partly move out of the browser.
+
+Excellent talk, great insights, some stuff we all should be doing right now.
+
+
+### [Using agile to bake in accessibility](http://blog.geekmanager.co.uk/2014/10/10/baking-accessibility-in-fronteers-2014/) - [Meri Williams](http://twitter.com/Geek_Manager)
+
+- At age 15 Meri was part of building South Africa’s first satellite, once you’ve done that, it’s all downhill from there.
+- She’s not a frontend dev, not an accessibility expert, but a CTO.
+- Passionate about accessibility, family members have disabilities. So recognises a lot of problems they experience.
+- Accessibility is not only about design and tech but also about the content, use simple language whenever you can, don’t complicate stuff.
+- An alarming amount of people have trouble reading.
+- Can’t delay accessibility to the end, it needs to be part of your core process.
+- How to do this:
+— Write down your team values.
+— Refactor whenever you touch.
+— Leave things better than you found them.
+— Define “done” appropriately.
+— Do accessibility testing katas.
+- “Talent is Overrated” and “Outliers” are some excellent books to read on this subject.
+- Various [Deliberate Practise](http://expertenough.com/1423/deliberate-practice) models to look into:
+— Sports Model, analogues to conditioning.
+— Chess Model, what did the grand master do?
+— Music Model, chunking & mental rehearsal.
+- Ask yourself, is my work designed in a way that makes it an effective deliberate practise.
+- Do retrospectives instead of post-mortems, something has to die to do a post-mortem, that’s never good.
+- [Accessibility](http://a11yproject.com) is not an optional extra. You would not charge extra for testing would you?
+
+A really insightful and amusing talk.
+
+
+### Choose your own JS adventure - [Kyle Simpson](https://twitter.com/getify)
+
+Kyle immediately drops in the lounge area, kicks of his shoes and has them deported of the stage.
+
+- Everyone at the conference has written code that does not work without knowing why.
+- Everyone at the conference has written code that worked without knowing why.
+
+- Kyle has been writing free books on JS which can be found at [youdontknowjs.com](http://youdontknowjs.com)
+- Instead of discussing whitespace vs. tabs and semicolons vs. no semicolons why not solve this in a tool. Kyle is working on a [configurable two way formatting tool](http://github.com/getify/esre) to fix this.
+- [SweetJS](http://sweetjs.org) provides macros to javascript developers. Currently being adopted by the mozilla foundation.
+- ES6 brings [block scoping](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) with the `let` keyword. It’s not a `var` replacement though. You can and should use the two next to each other.
+- [FoilScript](http://github.com/getify/foilscript), A new dialect accent variant of JS that fixes the sucky parts but still looks and feels like JS.
+- [Literalizer](https://github.com/getify/literalizer) applies heuristic rules to identify the complex literals in javascript.
+- `!(“foo” in bar)` reads odd, his tools allows you to write `(“foo” !in bar)`.
+
+Kyle is demoing various javascript constructs that could be solved with these macros.
+
+- So instead of switching to a whole different language we should just alter small parts of JavaScript.
+- Kyle calls this two way conversion thing: “Inversible Transforms”.
+- Kyle gives mad props to the ES6 group, then proceeds to totally annihilate them on the `class` keyword. Amusing stuff.
+
+If you’re fighting with JavaScript, who isn’t, this talk is for you.
+
+
+### Scaling up and down: evolving your testing strategies - [Pete Hunt](https://twitter.com/floydophone)
+
+The raffle goes horribly wrong and shows all signs of a failing JavaScript app. Various `undefined` values show up, Jake, tries to salvage the situation by checking if “undefined” might be a very common name in the Netherlands.
+
+- Three questions to keep asking yourself in all stages of a project:
+— Is there a defect?
+— How bad is it?
+— How can we fix it?
+- In an agile workflow the problem is slowly understood and therefor less mistakes are being made, resulting in less money and time wasted. 
+
+If you want to know when you should be testing what using which test method this is the talk for you.
+
+
+### Dream big. Think small - [Petro Salema](https://twitter.com/petrosalema)
+
+- Kicks of with dramatic story of Death, Destruction and wrongly interpreted statistics during WW2.
+- When your users are dying on your system (piloting planes being shot down) you’ve got a usability problem.
+- No revenue in the balance, if they lost a user they lost a countryman. Losing the project meant losing the war.
+
+Pretty dramatic stuff. But such an interesting story when looking at things from a data point of view.
+
+- Accessibility bias means your hindsight limits your foresight.
+- You won’t get a better answer than the question you can ask, it’s all about asking the right questions.
+- Nothing is harder to overcome than accessibility bias because you can’t ignore your experience.
+- An irrelevant feature won’t generate issues because its simply not used.
+- In software we boobytrap anything with analytics so we know what everyone is doing with our product.
+- Analytics in themselves do not save us, they might even make the accessibility bias more prominent.
+- The goal is and should always be user experience.
+- Innovation is about using existing capabilities in new ways, look at the [Oculus Rift](http://www.oculus.com), build in a garage with existing things by a young tinkerer.
+- Awesome explanation on what [Beeping](http://onlinelibrary.wiley.com/store/10.1111/j.1083-6101.2007.00383.x/asset/j.1083-6101.2007.00383.x.pdf;jsessionid=8568D227BF240B7B5EABF63CEAA08A09.f01t02?v=1&t=i13xyaif&s=c22dee210d301634456d0a2d9d964bf5f10f7dd2) is and how it works in real life.
+- Downloading apps and extensions is about shopping for super powers, as a user I want to empower / optimise my life with additional functionality.
+- @csupnig said: “Don’t start a revolution, enable a revolution to start.”
+
+Vivid, imaginative and almost relaxing talk. The relaxing part could also originate from the fact that this was the last talk of the day.
+
+That’s it, [Fronteers 2014](https://fronteers.nl/congres/2014), what a fantastic conference this was. Great food, great speakers, a great venue and above all, great people. 
+
+An insta-attend for 2015.
+
