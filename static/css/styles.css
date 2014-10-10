@@ -187,6 +187,10 @@ body > nav {
 
 .cinema {
   margin: 1.875rem 0; }
+  
+  .cinema iframe {
+    margin: 0 auto !important;
+  }
 
 @media (min-width: 30rem) {
   .cinema {
