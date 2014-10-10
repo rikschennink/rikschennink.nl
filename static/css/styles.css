@@ -187,10 +187,6 @@ body > nav {
 
 .cinema {
   margin: 1.875rem 0; }
-  
-  .cinema iframe {
-    margin: 0 auto !important;
-  }
 
 @media (min-width: 30rem) {
   .cinema {
@@ -262,8 +258,8 @@ body > nav {
 blockquote.twitter-tweet {
   display: block;
   padding: 16px;
-  margin: 10px auto;
   max-width: 468px;
+  margin: 0 auto;
   border-radius: 5px;
   text-align: left;
   font: bold 14px/18px Helvetica, Arial, sans-serif;
@@ -280,10 +276,11 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
   color: #666;
   font-size: 12px; }
 
-blockquote.twitter-tweet iframe {
+iframe.twitter-tweet {
   border: 3px solid #e4e3df !important;
   box-shadow: none !important;
-  max-width: 98% !important; }
+  max-width: 98% !important;
+  margin: 0 auto !important; }
 
 /** Timeline */
 a.twitter-timeline {
