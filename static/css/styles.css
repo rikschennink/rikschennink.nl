@@ -256,9 +256,9 @@ body > nav {
 
 /** Embedded Tweets */
 blockquote.twitter-tweet {
-  display: inline-block;
+  display: block;
   padding: 16px;
-  margin: 10px 0;
+  margin: 10px auto;
   max-width: 468px;
   border-radius: 5px;
   text-align: left;
