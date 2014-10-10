@@ -7,7 +7,7 @@ tags:
 - Performance
 ---
 
-A quick, list based, recap of what was said during [Fronteers 2014](https://fronteers.nl/congres/2014).
+A list based recap of what was said during [Fronteers 2014](https://fronteers.nl/congres/2014).
 
 Links to the presentations will be added as they come available. I’ll update the content with references to resources and photos in the coming days.
 
@@ -157,7 +157,7 @@ I’ve personally played around with Phaser, it’s very good, has a lot of opti
 - Shows how to quickly create a secret room with a rocket launcher using the map editor. Then cheats his way through the first level of the game, what a bastard.
 
 
-### WebRTC: a front-end perspective - [Shwetank Dixit](https://twitter.com/shwetank)
+### [WebRTC: a front-end perspective](http://www.slideshare.net/shwetank/webrtc-a-frontend-perspective) - [Shwetank Dixit](https://twitter.com/shwetank)
 
 - Shows old school lock “screen” on landline phone.
 - In remote parts of the world people access the web over wireless, they never had land lines and probably never will.
