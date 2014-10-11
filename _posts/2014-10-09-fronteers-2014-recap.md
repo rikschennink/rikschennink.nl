@@ -270,7 +270,7 @@ Takeaway, it’s time to restructure static source files in to web_modules.
  - Sending big images and then shrinking, is sending unnecessary bits and bytes.
  - Downloading scripts that are not necessary for current view.
 - Page Speed Insights helps you analyse your website for multiple devices.
-- Everyone should follow the Website Performance Optimisation course at Audacity
+- Everyone should follow the [Website Performance Optimisation course at Udacity](https://www.udacity.com/course/ud884).
 - WebPageTest, just use it already, it’s amazing and it’s been here for years.
 - Set a Performance Budget. By defining the minimum time a page should load in you can deduct the maximum file size. John Cleveley talked about this at [Mobilism 2013](http://rikschennink.nl/thoughts/recap-of-mobilism-2013/)
 - Server side quick wins:
