@@ -10,12 +10,11 @@ tags:
 ---
 Writing maintainable CSS can be a tough cookie. CSS has this tendency to quickly spiral out of control, before you know it you find yourself between managing way too many specific selectors and hundreds of deprecated vendor prefixes. Technologies like SASS and AutoPrefixer can help you get out of this uncomfortable situation, but to get there, you'll have to jump some hoops.
 
-We're going to write a simple [GulpJS](http://gulpjs.com/) script so we can run a [SASS](http://sass-lang.com/), [AutoPrefixer](https://github.com/metrime/gulp-autoprefixer) and watch task for quick and maintainable CSS development.
-
+We'll start by setting up NodeJS, it allows us to run JavaScript outside of the browser.
 
 ## Setting up NodeJS
 
-- Install [NodeJS](http://nodejs.org/), it's easy like clickety-clack.
+- Install [NodeJS](http://nodejs.org/), it's very easy as it is packaged as a nice installer.
 - Open a Terminal window. 
 I can imagine you might be uncomfortable using the Terminal, if so, just take your time, you'll get the hang of it. To get started, read [introduction to the Terminal by Jim Hoskins](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line).
 - Now, navigate to your project directory. If you don't know how to do this, no worries, the article I mentioned in the previous step will explain further.
@@ -153,5 +152,7 @@ gulp.task('default',['sass'],function(){
 Run `gulp` and start developing. Gulp will keep running allowing you to relax, grab coffee, and write some truly awesome CSS without the maintenance nightmare!
 
 If you ever want to stop that Gulp task, just jab CTRL+C.
+
+We've done it! We've written a simple [GulpJS](http://gulpjs.com/) script and are now running a [SASS](http://sass-lang.com/), [AutoPrefixer](https://github.com/metrime/gulp-autoprefixer) and watch task. It's the perfect stepping stone to start adding more tasks which will make developing websites even easier.
 
 You can view the [gulp file example code on GitHub](https://github.com/rikschennink/gulpin-sass-to-css).

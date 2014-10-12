@@ -32,7 +32,7 @@ Mouse pointer is still in the center of the screen, how can you work like this H
 - The trick is to use correct HTML elements instead of classes for everything. There’s a lot of elements out there and they bring semantics to your code. Including aria attributes like `role=“navigation”` instead of `.main-nav` makes your HTML more accessible.
 
 A very dramatic quote from a developer out there.
->I never considered wether class 'left' or 'right' was semantic or not, but I suppose it is not. **I feel like my world is falling around me.**
+> I never considered wether class 'left' or 'right' was semantic or not, but I suppose it is not. **I feel like my world is falling around me.**
 
 - Use conventions, but pick the right convention for the job. Once you’ve chosen one, it often sticks till the end of a project.
 - Use `role=“tab”` to describe a tab element. 
@@ -253,7 +253,7 @@ And that’s it for day one. A great start to a great conference.
 - Everything should be documented because the original creator is not always available and might have even left the company. Or might have been hit by a truck.
 
 CEO of HP:
->if HP knew what HP knows we would be 3 times more profitable. 
+> if HP knew what HP knows we would be 3 times more profitable. 
 
 - Analogy of a Clock Radio. When taken apart, it’s transitors / capacitors / speakers / wires, not raw materials. That’s what we’ve been doing on the web, we’re using raw materials but should be using the individual components.
 - Each component has an input > output just like the components you find in a Clock Radio.
