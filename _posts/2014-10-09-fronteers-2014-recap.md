@@ -32,6 +32,7 @@ Mouse pointer is still in the center of the screen, how can you work like this H
 - The trick is to use correct HTML elements instead of classes for everything. There’s a lot of elements out there and they bring semantics to your code. Including aria attributes like `role=“navigation”` instead of `.main-nav` makes your HTML more accessible.
 
 A very dramatic quote from a developer out there.
+
 > I never considered wether class 'left' or 'right' was semantic or not, but I suppose it is not. **I feel like my world is falling around me.**
 
 - Use conventions, but pick the right convention for the job. Once you’ve chosen one, it often sticks till the end of a project.
@@ -132,6 +133,7 @@ An excellent summary of various methods to handle asynchronous communication. Al
 ### State of the Animation 2014 - [Rachel Nabors](https://twitter.com/rachelnabors)
 
 Jake 
+
 > If you want to go full Michael Bay on your visitors, wrap your site in a blink tag.
 
 Rachel speaks the words “blink” and “tag”, next thing you know, full system failure. A couple of minutes later we're back on track!
@@ -252,7 +254,8 @@ And that’s it for day one. A great start to a great conference.
 - Not creating a lot of tailor made stuff, custom things hinder portability and adoptability.
 - Everything should be documented because the original creator is not always available and might have even left the company. Or might have been hit by a truck.
 
-CEO of HP:
+CEO of HP
+
 > if HP knew what HP knows we would be 3 times more profitable. 
 
 - Analogy of a Clock Radio. When taken apart, it’s transitors / capacitors / speakers / wires, not raw materials. That’s what we’ve been doing on the web, we’re using raw materials but should be using the individual components.
@@ -456,6 +459,7 @@ Pretty dramatic stuff. But such an interesting story when looking at things from
 - Downloading apps and extensions is about shopping for super powers, as a user I want to empower / optimise my life with additional functionality.
 
 [Christopher Supnig](http://twitter.com/csupnig)
+
 > Don’t start a revolution, enable a revolution to start.
 
 Vivid, imaginative and almost relaxing talk. The relaxing part could also originate from the fact that this was the last talk of the day.

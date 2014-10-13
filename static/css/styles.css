@@ -101,6 +101,14 @@ td, th {
   border: 1px solid #CFCCC6;
   padding: 0.25rem; }
 
+blockquote {
+  border-left: 2px solid #CFCCC6;
+  color: #8f8d88;
+  font-style: italic;
+  margin-left: 0;
+  margin-right: 3rem;
+  padding-left: 1.75rem; }
+
 body {
   padding-bottom: 3rem; }
 
