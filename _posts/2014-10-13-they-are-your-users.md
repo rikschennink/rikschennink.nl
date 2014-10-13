@@ -9,7 +9,7 @@ tags:
 
 A couple of days ago I posted a [tweet about us developers dropping accessibility in favour of Internet Explorer 8 support](https://twitter.com/rikschennink/status/520521059884617728). A lot of people wanted to know what information I based my statement on. Starting to doubt myself I wrote this article to back it up.
 
-I’ve taken the liberty to collect some usage statistics and do some research on accessibility in The Netherlands. My comparison  is below. It’s not super in depth and it’s not complete, but even these couple numbers paint a clear picture.
+The [source I based the statement on](http://john.foliot.ca/user-statistics-people-with-disabilities/) is still there but I’ve taken the liberty to collect some usage statistics and do some research on accessibility in The Netherlands. My comparison  is below. It’s not super in depth and it’s not complete, but even these couple numbers paint a clear picture.
 
 
 ## Browser usage
