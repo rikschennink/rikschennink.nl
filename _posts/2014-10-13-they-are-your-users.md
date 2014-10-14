@@ -9,7 +9,7 @@ tags:
 
 A couple of days ago I posted a [tweet about us developers dropping accessibility in favour of Internet Explorer 8 support](https://twitter.com/rikschennink/status/520521059884617728). A lot of people wanted to know what information I based my statement on. Starting to doubt myself I wrote this article to back it up.
 
-The [source I based the statement on](http://john.foliot.ca/user-statistics-people-with-disabilities/) is still there but I’ve taken the liberty to collect some usage statistics and do some research on accessibility in The Netherlands. My comparison  is below. It’s not super in depth and it’s not complete, but even these couple numbers paint a clear picture.
+The [source I based the statement on](http://john.foliot.ca/user-statistics-people-with-disabilities/) is still there but I’ve taken the liberty to collect some additional usage statistics on accessibility in The Netherlands. My comparison  is below. It’s not super in depth and it’s not complete, but even these couple numbers paint a clear picture.
 
 
 ## Browser usage
@@ -25,7 +25,7 @@ Now let’s compare these numbers to statistics on people with disabilities.
 
 ## Disability stats
 
-I’ve been collecting some accessibility related numbers from The Netherlands. I assume, which I know is dangerous, that these numbers might be somewhat the same around the globe. Note that my sources are in Dutch, I expect some translation service will able to help you out.
+The following numbers I’ve collecting from accessibility related resources in The Netherlands. I assume, which I know is dangerous, that these numbers might be somewhat the same around the globe. Note that my sources are in Dutch, I expect some translation service will able to help you out.
 
 
 ### Vision
@@ -51,19 +51,20 @@ You might break your arm or dislocate your shoulder. Browsing the web with your 
 If you are planning to move to another country or have to request overseas information it would be nice if this information was easy to understand, even for non natives.
 
 
-## Conclusion
+## Comparison
 
-We cannot simply add these percentages together because there’s probably some overlap in them. Also, these are just a couple of disabilities, there are way more, but I feel these numbers are enough to drive the point home.
+We cannot simply stack these numbers to get a total percentage because these groups obviously overlap. For instance, people having cognitive and vision problems.
 
-I think if we’re honest we can conclude that the total amount will be above the Internet Explorer 8 usage percentage, most certainly in The Netherlands but also in The United States and a lot of countries around the world.
+When we try to compare these numbers to Internet Explorer 8 usage statistics we run into problems as well. There are people with disabilities that use Internet Explorer 8 to browse the web. The assistive technologies they use might not work on other browsers, or, they could be working in an environment where they don’t have control over what browser they use.
 
-That was not the point of the tweet though. In the end it’s not about favouring accessibility over Internet Explorer 8. If you follow a smart progressive enhancement strategy and educate your client about the web you will be able to do both.
 
-The original tweet was about awareness.
+## It’s not an OR statement
 
-When we talk about browser support, we are all very serious about usage percentages, ready to drop support when it falls below a certain level. But putting those percentages on groups of disabled users would be wrong and creates room to drop user groups. With the data above we could decide to build in support for people with cognitive problems and ignore those who are color blind, or fully blind for that matter. That cannot be the way forward.
+The point of the tweet was not about choosing between Internet Explorer 8 and Accessibility. If you follow a smart progressive enhancement strategy and educate your client about the web you should be able to have both. The tweet was about creating awareness of how big this group of users actually is.
 
-A lot of these people have got a though enough time already, by making it easy for them to access information you’re brightening their day and helping your future self in the process. If that isn’t a good thing then I don’t know what is.
+These people are also your users, they want to access your information, they generate your revenue, they use modern and old browsers and you can’t filter them because they don’t show up in your analytics. And, they’ve got a though enough time already, by making it easy for them to access information you’re brightening their day and helping your future self in the process. 
+
+If that isn’t a good thing then I don’t know what is.
 
 
 
