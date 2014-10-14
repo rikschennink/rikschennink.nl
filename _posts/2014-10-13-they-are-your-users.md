@@ -62,7 +62,7 @@ When we try to compare these numbers to Internet Explorer 8 usage statistics we 
 
 The point of the tweet was not about choosing between Internet Explorer 8 and Accessibility. If you follow a smart progressive enhancement strategy and educate your client about the web you should be able to have both. The tweet was about creating awareness of how big this group of users actually is.
 
-These people are also your users, they want to access your information, they generate your revenue, they use modern and old browsers and you can’t filter them because they don’t show up in your analytics. And, they’ve got a though enough time already, by making it easy for them to access information you’re brightening their day and helping your future self in the process. 
+These people are also your users, they want to access your information, they generate your revenue, they use modern and old browsers and you can’t filter them because they don’t show up in your analytics. And, [they’ve got a though enough time already](https://the-pastry-box-project.net/anne-gibson/2014-july-31), by making it easy for them to access information you’re brightening their day and helping your future self in the process. 
 
 If that isn’t a good thing then I don’t know what is.
 
