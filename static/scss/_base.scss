@@ -1,10 +1,8 @@
 $pixel:.0625rem;
 
 %intro {
-	font-size:1.125rem;
 	font-family:$family-serif;
 	font-style:italic;
-	text-align:justify;
 }
 
 * {
@@ -43,10 +41,11 @@ body {
 	padding:1.875rem;
 }
 
-ol,ul,li,dl,dt,dd {
-	margin:0;
+ol,ul,li,dl,dt,dd,p {
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
 	padding:0;
-	font-weight:normal;
 }
 
 a {
@@ -62,16 +61,12 @@ pre {
 }
 
 pre, code, kbd, samp {
-	font-size:.75rem;
+	font-size:.875em;
 	font-family:$font-stack-mono;
 }
 
 canvas,img {
 	max-width:100%;
-}
-
-h1,h2,h3,h4,h5,h6 {
-	font-weight:normal;
 }
 
 // main level headings
@@ -98,7 +93,30 @@ samp {
 
 }
 
+// headers
+h1,h2,h3,h4,h5,h6 {
+	margin-bottom:0;
+	font-weight:normal;
+}
 
+h1,h2,h3,h4,h5,h6,strong {
+	color:#47413B;
+}
+
+// base layout rules
+* + * {
+	margin-top:1.875rem;
+}
+
+p + p {
+	margin-top:.9375rem;
+//	text-indent:1em;
+}
+
+main {
+	margin-left:-1.875rem;
+	margin-right:-1.875rem;
+}
 
 
 /*

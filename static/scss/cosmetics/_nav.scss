@@ -1,5 +1,9 @@
 nav {
 
+	&,a {
+		margin:0;
+	}
+
 	a {
 		display:block;
 		width:$margin-base * 2;

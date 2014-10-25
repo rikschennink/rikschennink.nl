@@ -4,9 +4,11 @@
 
         {% include caption.html url=post.url date=post.date title=post.title %}
 
-        <div class="intro">
-            {{ post.excerpt }}
-        </div>
+        {% if forloop.first %}
+
+        {{ post.excerpt }}
+
+        {% endif %}
 
     </li>
     {% endfor %}

@@ -1,8 +1,6 @@
 .post > div > p:first-child, .thoughts p {
-  font-size: 1.125rem;
   font-family: Palatino;
-  font-style: italic;
-  text-align: justify; }
+  font-style: italic; }
 
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
@@ -36,10 +34,11 @@ body {
   line-height: 1.5;
   padding: 1.875rem; }
 
-ol, ul, li, dl, dt, dd {
-  margin: 0;
-  padding: 0;
-  font-weight: normal; }
+ol, ul, li, dl, dt, dd, p {
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0; }
 
 a {
   color: #cc4654; }
@@ -51,14 +50,11 @@ pre {
   word-break: break-word; }
 
 pre, code, kbd, samp {
-  font-size: 0.75rem;
+  font-size: 0.875em;
   font-family: monaco, monospace; }
 
 canvas, img {
   max-width: 100%; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal; }
 
 kbd {
   margin: 0 0.25rem;
@@ -66,6 +62,23 @@ kbd {
   color: #747772;
   background-color: #eceee9;
   box-shadow: 0 0 0 0.25rem #eceee9; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+  font-weight: normal; }
+
+h1, h2, h3, h4, h5, h6, strong {
+  color: #47413B; }
+
+* + * {
+  margin-top: 1.875rem; }
+
+p + p {
+  margin-top: 0.9375rem; }
+
+main {
+  margin-left: -1.875rem;
+  margin-right: -1.875rem; }
 
 /*
 body {
@@ -312,9 +325,8 @@ body > nav {
   .caption a, .caption h1 {
     display: block;
     color: #fff;
-    margin: -0.625rem 0 -0.45rem;
+    margin: -0.25em 0 -0.3em;
     line-height: 1.3;
-    font-size: 1.5rem;
     font-weight: bold; }
   .caption a {
     text-decoration: none; }
@@ -329,8 +341,13 @@ body > nav {
   .caption time {
     text-transform: uppercase; }
   .caption .meta {
-    margin: 2.5rem 0 1.25rem;
+    margin: 0.5rem 0 1.25rem;
     line-height: 1; }
+  .caption a, .caption h1 {
+    font-size: 1.25em;
+    max-width: 15rem; }
+  .caption time {
+    font-size: 0.875em; }
 
 .caption-alpha {
   background: #e76e7c; }
@@ -354,11 +371,14 @@ body > nav {
 .post .caption {
   text-align: right;
   padding-right: 1.875rem; }
+  .post .caption > * {
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end; }
 .post > div > ol, .post > div > ul {
-  margin-left: 1rem;
+  margin-left: 1em;
   margin-right: 10%; }
   .post > div > ol ul, .post > div > ol ol, .post > div > ul ul, .post > div > ul ol {
-    margin-top: 0.9375rem;
     margin-right: 0;
     margin-left: 1.875rem; }
   .post > div > ol > li, .post > div > ul > li {
@@ -439,90 +459,53 @@ body > nav {
 
 }
 */
-.thoughts {
-  margin: 0 -1.875rem;
-  overflow: hidden; }
-  .thoughts, .thoughts > li {
-    padding: 0;
-    list-style-type: none; }
-  .thoughts .caption {
-    margin-right: 3.75rem;
-    transition: -webkit-transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out; }
-    .thoughts .caption a::after {
-      right: 3.75rem; }
-  .thoughts > li {
-    position: relative;
-    display: block;
-    margin-bottom: 1.875rem;
-    transition: -webkit-transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out; }
-    .thoughts > li button, .thoughts > li a[rel] {
-      position: absolute;
-      top: 100%;
-      margin: -2.5rem 0 0 0;
-      line-height: 2;
-      text-decoration: none;
-      font-family: Lucida Sans Unicode, Lucida Grande, Arial, sans-serif; }
-    .thoughts > li button {
-      opacity: 0;
-      left: 1.875rem;
-      padding: 0;
-      color: #83807d;
-      border: none;
-      background: transparent;
-      outline: none;
-      transition: opacity 0.5s ease-in-out; }
-    .thoughts > li a[rel] {
-      padding: 0 0.75rem;
-      right: 0;
-      color: #fff;
-      background: #83807d;
-      -webkit-transform: translateX(100%);
-              transform: translateX(100%);
-      transition: -webkit-transform 0.5s ease-in-out;
-      transition: transform 0.5s ease-in-out; }
-    .thoughts > li p {
-      transition: opacity 0.5s ease-in-out; }
-    .thoughts > li.focus p {
-      opacity: 1; }
-    .thoughts > li.focus button {
-      opacity: 1;
-      transition-delay: 0.25s; }
-    .thoughts > li.focus a[rel] {
-      -webkit-transform: translateX(0);
-              transform: translateX(0); }
-    .thoughts > li.focus .intro {
-      cursor: inherit;
-      -webkit-transform: translateX(2.5rem) scale(1);
-              transform: translateX(2.5rem) scale(1); }
-    .thoughts > li.focus .caption {
-      -webkit-transform: translateX(-100%);
-              transform: translateX(-100%); }
+.thoughts, .thoughts > li {
+  padding: 0;
+  list-style-type: none; }
+.thoughts .caption {
+  margin-right: 3.75rem;
+  padding-right: 1.875rem;
+  font-size: 1em; }
+.thoughts a::after {
+  right: 1.875rem; }
+.thoughts p {
+  margin-left: 1.875rem;
+  margin-right: 3.75rem; }
+.thoughts > li {
+  position: relative;
+  display: block;
+  margin-bottom: 1.875rem; }
 
-.js .thoughts .intro {
-  box-sizing: border-box;
-  position: absolute;
-  top: -1rem;
-  left: 0;
-  width: 100%;
-  padding-bottom: 3.75rem;
-  margin: 0 0 0 -2.5rem;
-  background: #fff;
-  -webkit-transform-origin: left top;
-          transform-origin: left top;
-  -webkit-transform: translateX(100%) scale(0.5);
-          transform: translateX(100%) scale(0.5);
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  cursor: pointer; }
-.js .thoughts p {
-  opacity: 0.7;
-  margin: 0;
-  padding-top: 1.875rem;
-  padding-left: 1.875rem;
-  padding-right: 1.875rem; }
+/*
+.js .thoughts {
 
+	.intro {
+		box-sizing:border-box;
+		position:absolute;
+		top:-1rem;
+		left:0;
+		width:100%;
+		padding-bottom:3.75rem;
+		margin:0 0 0 -2.5rem;
+		background:#fff;
+		transform-origin:left top;
+		transform:translateX(100%) scale(.5);
+		transition:$transition;
+		cursor:pointer;
+	}
+
+	p {
+		opacity:.7;
+		margin:0;
+		padding-top:$margin-base;
+		padding-left:$margin-base;
+		padding-right:$margin-base;
+	}
+
+
+
+}
+*/
 .products {
   list-style-type: none; }
   .products li {
@@ -553,19 +536,36 @@ body > nav {
 .highlight {
   position: relative;
   margin-left: -1.875rem;
+  margin-right: -1.875rem;
   overflow: hidden;
-  padding-left: 1.875rem;
-  padding-top: 1.875rem; }
+  padding: 2.5rem 1.875rem 0.875rem; }
   .highlight + .highlight {
     margin-top: 1.875rem; }
-  .highlight code:before {
+  .highlight code::before, .highlight code::after {
     position: absolute;
-    color: #fff;
     padding: 0.25rem 0.5rem;
+    color: #fff;
+    font-weight: bold; }
+  .highlight code::before {
     left: 0;
     top: 0;
-    background: #98B656;
-    content: '// ' attr(data-lang); }
+    padding-left: 0.9375rem; }
+  .highlight code::after {
+    right: 0;
+    bottom: 0;
+    padding-right: 0.9375rem; }
+  .highlight code[data-lang='javascript']::before, .highlight code[data-lang='javascript']::after {
+    background: #98B656; }
+  .highlight code[data-lang='javascript']::before {
+    content: attr(data-lang) ' {'; }
+  .highlight code[data-lang='javascript']::after {
+    content: '}'; }
+  .highlight code[data-lang='html']::before, .highlight code[data-lang='html']::after {
+    background: #539BD8; }
+  .highlight code[data-lang='html']::before {
+    content: attr(data-lang) ' <'; }
+  .highlight code[data-lang='html']::after {
+    content: '/>'; }
   .highlight .c, .highlight .cm, .highlight .c1 {
     color: #C8CCC4; }
   .highlight .k, .highlight .kd, .highlight .nt {
@@ -577,6 +577,8 @@ body > nav {
   .highlight .o {
     color: #C8CCC4; }
 
+nav, nav a {
+  margin: 0; }
 nav a {
   display: block;
   width: 3.75rem;
@@ -596,7 +598,7 @@ nav a {
   z-index: 1; }
   @media (max-width: 35rem) {
     .author {
-      margin-bottom: -1.25rem;
+      margin-bottom: -3.125rem;
       font-size: 1.125rem; }
       .author h1 {
         margin-top: -0.25rem; }
@@ -610,24 +612,24 @@ nav a {
         height: 6.25rem; } }
   @media (min-width: 35.0625rem) {
     .author {
-      font-size: 1.125rem;
-      margin-bottom: 3.875rem; }
+      font-size: 1.125rem; }
       .author img {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        margin-left: -6.25rem;
-        height: 6.25rem; }
+        height: 6.25rem;
+        margin-top: 1.25rem; }
       .author a {
         position: absolute;
         top: 0;
-        right: 0; }
-      .author a, .author img {
-        margin-top: 0; } }
+        right: 0; } }
+
+.thoughts p {
+  font-size: 1em; }
 
 @media (min-width: 28.0625rem) {
   .js .thoughts .caption {
-    width: 50%; }
+    width: 50%;
+    margin-right: 1.875rem;
+    margin-bottom: 0.75rem;
+    float: left; }
   .js .thoughts .intro {
     transition: none;
     margin-left: 0;

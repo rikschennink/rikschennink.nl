@@ -3,98 +3,38 @@ $transition:transform .5s ease-in-out;
 
 .thoughts {
 
-	margin:0 -1.875rem;
-	overflow:hidden;
-
 	&,>li {
 		padding:0;
 		list-style-type:none;
 	}
 
 	.caption {
-		margin-right:3.75rem;
-		transition:$transition;
 
-		a::after {
-			right:3.75rem;
-		}
+		margin-right:3.75rem;
+		padding-right:1.875rem;
+
+		font-size:1em;
+	}
+
+	a::after {
+		right:1.875rem;
 	}
 
 	p {
 		@extend %intro;
+		margin-left:1.875rem;
+		margin-right:3.75rem;
 	}
 
 	>li {
-
 		position:relative;
 		display:block;
 		margin-bottom:1.875rem;
-		transition:$transition;
-
-		button,
-		a[rel] {
-			position:absolute;
-			top:100%;
-			margin:-2.5rem 0 0 0;
-			line-height:2;
-			text-decoration:none;
-			font-family:$font-stack-sans;
-		}
-
-		button {
-			opacity:0;
-			left:$margin-base;
-			padding:0;
-			color:#83807d;
-			border:none;
-			background:transparent;
-			outline:none;
-			transition:opacity .5s ease-in-out;
-		}
-
-		a[rel] {
-			padding:0 .75rem;
-			right:0;
-			color:#fff;
-			background:#83807d;
-			transform:translateX(100%);
-			transition:$transition;
-		}
-
-		p {
-			transition:opacity .5s ease-in-out;
-		}
-
-		&.focus {
-
-			p {
-				opacity:1;
-			}
-
-			button {
-				opacity:1;
-				transition-delay:.25s;
-			}
-
-			a[rel] {
-				transform:translateX(0);
-			}
-
-			.intro {
-				cursor:inherit;
-				transform:translateX(2.5rem) scale(1);
-			}
-
-			.caption {
-				transform:translateX(-100%);
-			}
-
-		}
-
 	}
 }
 
 // if javascript is enabled
+/*
 .js .thoughts {
 
 	.intro {
@@ -123,3 +63,4 @@ $transition:transform .5s ease-in-out;
 
 
 }
+*/

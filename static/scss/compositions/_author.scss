@@ -9,7 +9,7 @@
 
 	@media (max-width:$mq-author-a) {
 
-		margin-bottom:-1.25rem;
+		margin-bottom:-1.875rem - 1.25rem;
 		font-size:$fs-base;
 
 		h1 {
@@ -34,14 +34,15 @@
 	@media (min-width:$mq-author-a + $pixel) {
 
 		font-size:$fs-base;
-		margin-bottom:3.875rem;
+		//margin-bottom:3.875rem;
 
 		img {
-			position:absolute;
-			left:50%;
-			top:0;
-			margin-left:-6.25rem;
+			//position:absolute;
+			//left:50%;
+			//top:0;
+			//margin-left:-6.25rem;
 			height:6.25rem;
+			margin-top:1.25rem;
 		}
 
 		a {
@@ -50,10 +51,6 @@
 			right:0;
 		}
 
-		a,img {
-			margin-top:0;
-		}
-
-}
+	}
 
 }

@@ -9,9 +9,8 @@
 	a,h1 {
 		display:block;
 		color:#fff;
-		margin:-.625rem 0 -.45rem;
+		margin:-0.25em 0 -0.3em;
 		line-height:1.3;
-		font-size:1.5rem;
 		font-weight:bold;
 	}
 
@@ -38,8 +37,18 @@
 	}
 
 	.meta {
-		margin:2.5rem 0 1.25rem;
+		margin:.5rem 0 1.25rem;
 		line-height:1;
+	}
+
+
+	a,h1 {
+		font-size:1.25em;
+		max-width: 15rem;
+	}
+
+	time {
+		font-size:.875em;
 	}
 
 }

@@ -1,11 +1,12 @@
 .highlight {
 
     position:relative;
+
 	margin-left:-$margin-base;
-	//margin-right:-$margin-base;
+	margin-right:-$margin-base;
+
 	overflow:hidden;
-	padding-left:$margin-base;
-	padding-top:$margin-base;
+	padding:2.5rem $margin-base .875rem;
 
     + .highlight {
         margin-top:$margin-base;
@@ -13,15 +14,59 @@
 
     code {
 
-        &:before {
+		&::before,
+        &::after {
             position:absolute;
-            color:#fff;
 			padding:.25rem .5rem;
+			color:#fff;
+			font-weight:bold;
+        }
+
+		&::before {
 			left:0;
 			top:0;
-			background:#98B656;
-            content: '// ' attr(data-lang);
-        }
+			padding-left:.9375rem;
+		}
+
+		&::after {
+			right:0;
+			bottom:0;
+			padding-right:.9375rem;
+		}
+
+		&[data-lang='javascript'] {
+
+			&::before,
+			&::after {
+				background:#98B656;
+			}
+
+			&::before {
+				content: attr(data-lang) ' {';
+			}
+
+			&::after {
+				content: '}';
+			}
+
+		}
+
+		&[data-lang='html'] {
+
+			&::before,
+			&::after {
+				background: #539BD8;
+			}
+
+			&::before {
+				content: attr(data-lang) ' <';
+			}
+
+			&::after {
+				content: '/>';
+			}
+
+		}
 
     }
 
