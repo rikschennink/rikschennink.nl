@@ -2,7 +2,7 @@
 layout: post
 title: Creating digital things is awesome!
 tags:
-- Development
+- About
 - Eve of Impact
 - Frontend
 - iOS

@@ -1,4 +1,4 @@
-<div class="caption caption-alpha">
+<div class="caption" data-tags="{{ include.tags | join: ', ' }}">
     {% if include.url %}
     <a href="{{ include.url }}">{{ include.title }}</a>
     {% else %}

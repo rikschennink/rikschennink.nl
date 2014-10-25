@@ -2,6 +2,7 @@
 layout: post
 title: Alien Invasion Reflow Minimization
 tags: 
+- Tutorial
 - CSS
 - JavaScript
 - Performance

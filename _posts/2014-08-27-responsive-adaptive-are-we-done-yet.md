@@ -2,6 +2,7 @@
 layout: post
 title: Responsive, Adaptive, are we done yet?
 tags:
+- Opinion
 - Frontend
 - Responsive
 - Adaptive

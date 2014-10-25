@@ -2,9 +2,9 @@
 layout: post
 title: Gulpin SASS to CSS
 tags:
-- Development
-- Frontend
+- Tutorial
 - JavaScript
+- Node
 - Gulp
 - SASS
 ---

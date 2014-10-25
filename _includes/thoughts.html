@@ -1,8 +1,8 @@
-<ul class="thoughts" data-module="ui/Thoughts">
+<ul class="thoughts">
     {% for post in site.posts %}
-    <li data-module="ui/QuickThought" data-conditions="media:{(max-width:28em)}">
+    <li>
 
-        {% include caption.html url=post.url date=post.date title=post.title %}
+        {% include caption.html url=post.url date=post.date title=post.title tags=post.tags %}
 
         {% if forloop.first %}
 

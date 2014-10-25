@@ -2,6 +2,7 @@
 layout: post
 title: Eve of Impact Doomsday Sales
 tags:
+- Resource
 - Eve of Impact
 - iOS
 - Marketing

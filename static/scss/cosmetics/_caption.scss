@@ -16,16 +16,6 @@
 
 	a {
 		text-decoration:none;
-
-		&::after {
-			position:absolute;
-			left:0;
-			top:0;
-			right:0;
-			bottom:0;
-			content:'';
-			z-index:2;
-		}
 	}
 
 	dt {
@@ -53,17 +43,21 @@
 
 }
 
-.caption-alpha {
-	background:#e76e7c;
-	time {color:#b43b49;}
-}
 
-.caption-beta {
-	background:#694e51;
-	time {color:#361b1e;}
-}
 
-.caption-gamma {
-	background:#e7ad6e;
-	time {color:#b47a3b;}
+.caption {
+    &[data-tags*=Opinion] {
+        background:#e76e7c;
+        time {color:#b43b49;}
+    }
+
+    &[data-tags*=Tutorial] {
+        background:#825252;
+        time {color:#361b1e;}
+    }
+
+    &[data-tags*=Resource] {
+        background:#E5AA4B;
+        time {color:#b47a3b;}
+    }
 }

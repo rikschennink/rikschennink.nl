@@ -2,6 +2,7 @@
 layout: post
 title: Controlling Behaviour
 tags:
+- Tutorial
 - CSS
 - Development
 - Frontend

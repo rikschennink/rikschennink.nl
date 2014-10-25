@@ -3,15 +3,19 @@ var connect = require('gulp-connect');
 var sass = require('gulp-sass');
 var sequence = require('run-sequence');
 var autoprefixer = require('gulp-autoprefixer');
-//var livereload = require('gulp-livereload');
 var spawn = require('child_process').spawn;
+var browserSync = require('browser-sync');
 
 gulp.task('_connect', function() {
 
-	connect.server({
-		root:'./_site',
-		port:4000
-	});
+    browserSync({
+        open:false,
+        notify:false,
+        port:4000,
+        server:{
+            baseDir:'./_site'
+        }
+    });
 
 });
 
@@ -41,7 +45,11 @@ gulp.task('_scss',function() {
         .pipe(autoprefixer('last 1 version', '> 5%', 'ie 8'))
 
         // one for 'gh_pages'
-        .pipe(gulp.dest('./static/css'));
+        .pipe(gulp.dest('./static/css'))
+
+        // reload browser
+        .pipe(browserSync.reload({stream:true}));
+
 
 });
 
@@ -73,9 +81,6 @@ gulp.task('build',function(cb){
 
 gulp.task('dev',['build','_connect'],function(){
 
-    // start live reload server
-    //livereload.listen();
-
     // now watching static files
     gulp.watch([
 
@@ -95,13 +100,6 @@ gulp.task('dev',['build','_connect'],function(){
         '!./node_modules/**/*',
         '!./_site/**/*'
 
-	],['_content']);
-
-    // wait for site to be rebuild
-    //gulp.watch([
-
-//        './_site/static/**/*'
-
-    //]).on('change', livereload.changed);
+	],['_content', browserSync.reload]);
 
 });

@@ -2,6 +2,7 @@
 layout: post
 title: A Webpage from Nothing
 tags:
+- Tutorial
 - CSS
 - HTML5
 - Responsive

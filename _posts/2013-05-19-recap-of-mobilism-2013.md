@@ -2,6 +2,7 @@
 layout: post
 title: Recap of Mobilism 2013
 tags:
+- Resource
 - CSS
 - Development
 - Frontend

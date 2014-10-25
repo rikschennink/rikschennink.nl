@@ -2,6 +2,7 @@
 layout: post
 title: We are still using Tables for Layout
 tags:
+- Opinion
 - Development
 - Frontend
 - HTML5

@@ -1,10 +1,5 @@
 $pixel:.0625rem;
 
-%intro {
-	font-family:$family-serif;
-	font-style:italic;
-}
-
 * {
 	-webkit-tap-highlight-color:rgba(0,0,0,0);
 }
@@ -108,15 +103,21 @@ h1,h2,h3,h4,h5,h6,strong {
 	margin-top:1.875rem;
 }
 
+// don't count script tags as elements
+script + * {
+    margin-top:0;
+}
+
+// paragraphs may be a little bit closer to each other
 p + p {
 	margin-top:.9375rem;
-//	text-indent:1em;
 }
 
 main {
 	margin-left:-1.875rem;
 	margin-right:-1.875rem;
 }
+
 
 
 /*
