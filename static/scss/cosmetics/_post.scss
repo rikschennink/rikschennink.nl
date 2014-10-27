@@ -3,8 +3,8 @@
 	header {
 
         position:relative;
-
         margin:$margin-base -$margin-base;
+
         /*
         margin:-$margin-base
 			   -1.875rem
@@ -12,7 +12,9 @@
 				3.75rem;
 
 
-        &::before {position: absolute;
+        */
+        &::before {
+			position: absolute;
             left: -1.875rem;
             right: 0;
             bottom: 0;
@@ -21,15 +23,14 @@
             height: $margin-base;
             z-index: -1;
         }
-        */
         
 	}
 
 	.caption {
 
+		font-size:1.25em;
         margin-left:3.75rem;
         margin-right:-1.875rem;
-		text-align:right;
 		padding-right:1.875rem;
 
 		> * {
@@ -50,6 +51,7 @@
             margin-top:-1.875rem;
             margin-left:-1.875rem;
             margin-bottom:1.875rem;
+			margin-right:1.875rem;
             padding:1.875rem;
             color:#9D938C;
             background-color:#f2ece9;
@@ -75,83 +77,20 @@
 
 	}
 
+	aside {
 
-}
-
-
-
-/*.post {
-
-	background:#fff;
-	padding:3.75rem 1.875rem;
-	margin:-.9875rem;
-
-    aside {
-
-        margin-top:3.75rem;
-
-        h1 {
-            text-align:center;
-            margin-bottom:3.75rem;
-        }
-    }
-
-    >div {
-
-        // paragraphs
-        >p:first-child {
-			font-size:1.25rem;
-        }
-
-        // lists
-        >ol,
-        >ul {
-            margin-left:1rem;
-			margin-right:10%;
-
-            ul,ol {
-                margin-top:.9375rem;
-                margin-right:0;
-                margin-left:1.875rem;
-            }
-
-            >li {
-                margin-bottom:.9375rem;
-            }
-        }
-
-    }
-
-}
-
-@media (min-width:$stack-width) {
-
-	.post {
-
-		padding:1.875rem 3.75rem;
-
-		header {
-			text-align:center;
+		h1 {
+			margin-top:0;
+			color:#9D938C;
+			font-size:1.25em;
+			font-family: $family-sans-serif;
 		}
 
-		>div {
-
-			>ol,
-			>ul {
-				margin-left:0;
-			}
-
-			>p:first-child {
-				margin:3.75rem 0;
-				font-size:1.5rem;
-			}
-
-			h2 {
-				margin-left:-1.875rem;
-			}
-
-		}
+		margin-right:-1.875rem;
+		padding: 1.875rem;
+		background: #f2ece9;
 	}
 
 }
-*/
+
+

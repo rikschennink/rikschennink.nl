@@ -312,13 +312,10 @@ body > nav {
   font-size: 0.75em; }
 
 .caption {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   padding-left: 1.875rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
   -webkit-flex-direction: column-reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
@@ -343,6 +340,10 @@ body > nav {
   .caption time {
     font-size: 0.875em; }
 
+.caption[data-tags*=About] {
+  background: #B0B69E; }
+  .caption[data-tags*=About] time {
+    color: #575a4e; }
 .caption[data-tags*=Opinion] {
   background: #e76e7c; }
   .caption[data-tags*=Opinion] time {
@@ -366,20 +367,20 @@ body > nav {
 				3.75rem;
 
 
-        &::before {position: absolute;
-            left: -1.875rem;
-            right: 0;
-            bottom: 0;
-            content: '';
-            background-color: #F2ECE9;
-            height: $margin-base;
-            z-index: -1;
-        }
         */ }
+  .post header::before {
+    position: absolute;
+    left: -1.875rem;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background-color: #F2ECE9;
+    height: 1.875rem;
+    z-index: -1; }
 .post .caption {
+  font-size: 1.25em;
   margin-left: 3.75rem;
   margin-right: -1.875rem;
-  text-align: right;
   padding-right: 1.875rem; }
   .post .caption > * {
     -webkit-align-self: flex-end;
@@ -391,6 +392,7 @@ body > nav {
   margin-top: -1.875rem;
   margin-left: -1.875rem;
   margin-bottom: 1.875rem;
+  margin-right: 1.875rem;
   padding: 1.875rem;
   color: #9D938C;
   background-color: #f2ece9;
@@ -403,89 +405,24 @@ body > nav {
     margin-left: 1.875rem; }
   .post > div > ol > li, .post > div > ul > li {
     margin-bottom: 0.9375rem; }
+.post aside {
+  margin-right: -1.875rem;
+  padding: 1.875rem;
+  background: #f2ece9; }
+  .post aside h1 {
+    margin-top: 0;
+    color: #9D938C;
+    font-size: 1.25em;
+    font-family: 'Helvetica Neue', sans-serif; }
 
-/*.post {
-
-	background:#fff;
-	padding:3.75rem 1.875rem;
-	margin:-.9875rem;
-
-    aside {
-
-        margin-top:3.75rem;
-
-        h1 {
-            text-align:center;
-            margin-bottom:3.75rem;
-        }
-    }
-
-    >div {
-
-        // paragraphs
-        >p:first-child {
-			font-size:1.25rem;
-        }
-
-        // lists
-        >ol,
-        >ul {
-            margin-left:1rem;
-			margin-right:10%;
-
-            ul,ol {
-                margin-top:.9375rem;
-                margin-right:0;
-                margin-left:1.875rem;
-            }
-
-            >li {
-                margin-bottom:.9375rem;
-            }
-        }
-
-    }
-
-}
-
-@media (min-width:$stack-width) {
-
-	.post {
-
-		padding:1.875rem 3.75rem;
-
-		header {
-			text-align:center;
-		}
-
-		>div {
-
-			>ol,
-			>ul {
-				margin-left:0;
-			}
-
-			>p:first-child {
-				margin:3.75rem 0;
-				font-size:1.5rem;
-			}
-
-			h2 {
-				margin-left:-1.875rem;
-			}
-
-		}
-	}
-
-}
-*/
 .thoughts, .thoughts > li {
   padding: 0;
   list-style-type: none; }
 .thoughts .caption {
   position: relative;
   margin-right: 3.75rem;
-  padding-right: 1.875rem; }
+  padding-right: 1.875rem;
+  font-size: 1.125em; }
 .thoughts p {
   position: relative;
   z-index: 1;
@@ -504,7 +441,7 @@ body > nav {
     top: 0;
     left: 100%;
     right: -3.75rem;
-    bottom: 0rem;
+    bottom: 0;
     background-image: url(../assets/arrow.svg);
     background-repeat: no-repeat;
     background-size: 1.25rem 1.25rem;
@@ -514,7 +451,7 @@ body > nav {
     position: absolute;
     left: 0;
     right: -3.75rem;
-    top: 1.25rem;
+    top: 1.875rem;
     bottom: 0;
     background: #f2ece9;
     z-index: -1;
@@ -545,8 +482,7 @@ body > nav {
       box-sizing: border-box;
       display: inline-block;
       width: 33.333%;
-      padding: 0.9875rem; }
- }
+      padding: 0.9875rem; } }
 
 .highlight {
   position: relative;
@@ -600,7 +536,13 @@ nav a {
   height: 3.75rem;
   background: #f2ece9;
   color: transparent;
-  font-size: 0; }
+  font-size: 0;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  background-image: url(../assets/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 1.25rem 1.25rem;
+  background-position: center center; }
 
 /*
  * Base compositions
@@ -646,24 +588,19 @@ nav a {
     margin-bottom: 0.75rem;
     float: left; }
   .js .thoughts .intro {
-    -webkit-transition: none;
-            transition: none;
+    transition: none;
     margin-left: 0;
     -webkit-transform: translateX(50%) scale(0.5);
-        -ms-transform: translateX(50%) scale(0.5);
-            transform: translateX(50%) scale(0.5); }
- }
+            transform: translateX(50%) scale(0.5); } }
 
 @media (min-width: 35rem) {
   .thoughts {
     margin: 0 auto;
-    max-width: 35rem; }
- }
+    max-width: 35rem; } }
 
 @media (min-width: 54rem) {
   .thoughts {
-    margin-left: 7.25rem; }
- }
+    margin-left: 7.25rem; } }
 
 nav {
   position: absolute;
@@ -679,8 +616,8 @@ main > section > h1, .caption dt, nav h1 {
           transform-style: preserve-3d;
   -webkit-perspective: 500px;
           perspective: 500px;
-  -webkit-transition: -webkit-transform 0.125s, box-shadow 0.125s, width 0.125s, height 0.125s;
-          transition: transform 0.125s, box-shadow 0.125s, width 0.125s, height 0.125s;
+  transition: -webkit-transform 0.125s, box-shadow 0.125s, width 0.125s, height 0.125s;
+  transition: transform 0.125s, box-shadow 0.125s, width 0.125s, height 0.125s;
   -webkit-highlight: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   outline: 1px solid rgba(0, 0, 0, 0); }
@@ -992,8 +929,7 @@ main > section > h1, .caption dt, nav h1 {
   list-style-type: none !important;
   margin: 0;
   padding: 0 !important;
-  -webkit-transition: height 0.25s;
-          transition: height 0.25s; }
+  transition: height 0.25s; }
   .tilt-grid > li {
     box-sizing: border-box !important;
     position: absolute !important;
@@ -1010,8 +946,8 @@ main > section > h1, .caption dt, nav h1 {
             transform-style: preserve-3d;
     -webkit-transform: perspective(1000px) translateZ(-250px) rotateX(-90deg);
             transform: perspective(1000px) translateZ(-250px) rotateX(-90deg);
-    -webkit-transition: -webkit-transform 0.5s, opacity 0.25s;
-            transition: transform 0.5s, opacity 0.25s; }
+    transition: -webkit-transform 0.5s, opacity 0.25s;
+    transition: transform 0.5s, opacity 0.25s; }
   .tilt-grid .tilt-tile {
     position: absolute;
     width: auto !important;
@@ -1021,14 +957,14 @@ main > section > h1, .caption dt, nav h1 {
     right: 0;
     bottom: 0; }
   .tilt-grid[data-ready='true'] > li > div {
-    -webkit-transition: -webkit-transform 0.5s, opacity 0.25s;
-            transition: transform 0.5s, opacity 0.25s;
+    transition: -webkit-transform 0.5s, opacity 0.25s;
+    transition: transform 0.5s, opacity 0.25s;
     opacity: 1;
     -webkit-transform: perspective(1000px) translateZ(0) rotateX(0);
             transform: perspective(1000px) translateZ(0) rotateX(0); }
   .tilt-grid[data-ready='true']:not(.tilt-static) > li {
-    -webkit-transition: -webkit-transform 0.25s;
-            transition: transform 0.25s; }
+    transition: -webkit-transform 0.25s;
+    transition: transform 0.25s; }
   .tilt-grid li[data-tile-size='_s'] .tilt-tile.tilt-icon-center > i, .tilt-grid li[data-tile-size='|s'] .tilt-tile > i, .tilt-grid li[data-tile-size='s'] .tilt-tile > i {
     font-size: 1.5em; }
   .tilt-grid li[data-tile-size='_s'] .tilt-tile.tilt-icon-center span.tilt-count, .tilt-grid li[data-tile-size='|s'] .tilt-tile span.tilt-count, .tilt-grid li[data-tile-size='s'] .tilt-tile span.tilt-count {
@@ -1106,11 +1042,11 @@ main > section > h1, .caption dt, nav h1 {
           transform-style: preserve-3d;
   -webkit-transform: perspective(1000px) translateZ(-250px) rotateX(-90deg);
           transform: perspective(1000px) translateZ(-250px) rotateX(-90deg);
-  -webkit-transition: -webkit-transform 0.5s, opacity 0.25s;
-          transition: transform 0.5s, opacity 0.25s; }
+  transition: -webkit-transform 0.5s, opacity 0.25s;
+  transition: transform 0.5s, opacity 0.25s; }
 .tilt-group[data-ready='true'] .tilt-wrapper {
-  -webkit-transition: -webkit-transform 0.5s, opacity 0.25s;
-          transition: transform 0.5s, opacity 0.25s;
+  transition: -webkit-transform 0.5s, opacity 0.25s;
+  transition: transform 0.5s, opacity 0.25s;
   opacity: 1;
   -webkit-transform: perspective(1000px) translateZ(0) rotateX(0);
           transform: perspective(1000px) translateZ(0) rotateX(0); }

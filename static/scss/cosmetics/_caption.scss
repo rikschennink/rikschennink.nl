@@ -46,6 +46,11 @@
 
 
 .caption {
+	&[data-tags*=About] {
+		background:#B0B69E;
+		time {color: #575a4e;}
+	}
+
     &[data-tags*=Opinion] {
         background:#e76e7c;
         time {color:#b43b49;}

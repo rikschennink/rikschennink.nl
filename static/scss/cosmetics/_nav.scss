@@ -11,6 +11,12 @@ nav {
 		background:#f2ece9;
 		color:transparent;
 		font-size:0;
+
+		transform:scaleX(-1);
+		background-image:url(../assets/arrow.svg);
+		background-repeat:no-repeat;
+		background-size:1.25rem 1.25rem;
+		background-position:center center;
 	}
 
 	h1 {

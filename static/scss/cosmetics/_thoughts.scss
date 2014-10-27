@@ -11,6 +11,7 @@
         position:relative;
 		margin-right:3.75rem;
 		padding-right:1.875rem;
+        font-size:1.125em;
 	}
 
 	p {
@@ -36,7 +37,7 @@
             top:0;
             left:100%;
             right:-3.75rem;
-            bottom:0rem;
+            bottom:0;
             background-image:url(../assets/arrow.svg);
             background-repeat:no-repeat;
             background-size:1.25rem 1.25rem;
@@ -52,7 +53,7 @@
                 position:absolute;
                 left:0;
                 right:-3.75rem;
-                top:1.25rem;
+                top:1.875rem;
                 bottom:0;
                 background:$background-color;
                 z-index:-1;
