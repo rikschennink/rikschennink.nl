@@ -28,11 +28,13 @@
 			padding-left:.9375rem;
 		}
 
+        /*
 		&::after {
 			right:0;
 			bottom:0;
 			padding-right:.9375rem;
 		}
+		*/
 
 		&[data-lang='javascript'] {
 
@@ -45,9 +47,9 @@
 				content: attr(data-lang) ' {';
 			}
 
-			&::after {
-				content: '}';
-			}
+			//&::after {
+			//	content: '}';
+			//}
 
 		}
 
@@ -62,9 +64,9 @@
 				content: attr(data-lang) ' <';
 			}
 
-			&::after {
-				content: '/>';
-			}
+			//&::after {
+			//	content: '/>';
+			//}
 
 		}
 

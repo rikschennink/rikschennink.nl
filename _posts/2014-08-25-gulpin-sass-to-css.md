@@ -152,6 +152,6 @@ gulp.task('default',['sass'],function(){
 
 Run <kbd>gulp</kbd> and start developing. Gulp will keep running allowing you to relax, grab coffee, and write some truly awesome CSS without the maintenance nightmare!
 
-If you ever want to stop that Gulp task, just jab <kbd>CTRL+C</kbd>.
+If you ever want to stop that Gulp task, just jab <kbd class="key">Ctrl</kbd>+<kbd class="key">C</kbd>
 
 You can view the [gulp file example code on GitHub](https://github.com/rikschennink/gulpin-sass-to-css).
