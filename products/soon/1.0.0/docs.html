@@ -1,0 +1,1788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Soon Documentation</title>
+
+    <meta name="description" content="Soon, animated counters for everyone.">
+    <meta name="author" content="Rik Schennink">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link href="static/css/styles.min.css" rel="stylesheet"/>
+
+    <!--[if lt IE 9]>
+    <script src="static/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link href="static/css/soon.min.css" rel="stylesheet"/>
+
+
+</head>
+<body>
+
+    <div class="header">
+
+        <div class="content">
+
+            <h1 class="logo"><a href="index.html">Soon</a></h1>
+            <p class="subtitle">Documentation</p>
+            
+
+        </div>
+    </div>
+
+    
+<div class="docs">
+    <div class="content">
+
+        <nav class="index">
+            <h2 class="visuallyhidden">Index</h2>
+
+            <ul>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-quick-setup">Quick setup</a>
+
+        
+
+        
+        
+
+        <ul>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-quick-setup-setting-a-due-date">Setting a due date</a>
+
+        
+
+    </li>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-quick-setup-using-jquery">Using jQuery</a>
+
+        
+
+    </li>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-quick-setup-picking-a-face">Picking a face</a>
+
+        
+
+    </li>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-quick-setup-adding-a-visual">Adding a visual</a>
+
+        
+
+    </li>
+    
+</ul>
+        
+
+    </li>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-setting-the-counter-format">Setting the counter format</a>
+
+        
+
+        
+        
+
+        <ul>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-setting-the-counter-format-date-format">Date format</a>
+
+        
+
+    </li>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-setting-the-counter-format-cascade-values">Cascade values</a>
+
+        
+
+    </li>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-setting-the-counter-format-character-separation">Character separation</a>
+
+        
+
+    </li>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-setting-the-counter-format-separator-type">Separator type</a>
+
+        
+
+    </li>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-setting-the-counter-format-label-names">Label names</a>
+
+        
+
+    </li>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-setting-the-counter-format-singular-labels">Singular labels</a>
+
+        
+
+    </li>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-setting-the-counter-format-value-padding">Value padding</a>
+
+        
+
+    </li>
+    
+</ul>
+        
+
+    </li>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-making-it-visually-unique">Making it visually unique</a>
+
+        
+
+        
+        
+
+        <ul>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-making-it-visually-unique-generic-options">Generic options</a>
+
+        
+
+        
+        
+
+        <ul>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-making-it-visually-unique-generic-options-layout">Layout</a>
+
+        
+
+    </li>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-making-it-visually-unique-generic-options-spacing">Spacing</a>
+
+        
+
+    </li>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-making-it-visually-unique-generic-options-labels">Labels</a>
+
+        
+
+    </li>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-making-it-visually-unique-generic-options-reflection">Reflection</a>
+
+        
+
+    </li>
+    
+</ul>
+        
+
+    </li>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-making-it-visually-unique-face-specific-options">Face specific options</a>
+
+        
+
+        
+        
+
+        <ul>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-making-it-visually-unique-face-specific-options-flip">Flip</a>
+
+        
+
+    </li>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-making-it-visually-unique-face-specific-options-slot">Slot</a>
+
+        
+
+    </li>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-making-it-visually-unique-face-specific-options-matrix">Matrix</a>
+
+        
+
+    </li>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-making-it-visually-unique-face-specific-options-ring">Ring</a>
+
+        
+
+    </li>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-making-it-visually-unique-face-specific-options-fill">Fill</a>
+
+        
+
+    </li>
+    
+</ul>
+        
+
+    </li>
+    
+</ul>
+        
+
+    </li>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-linking-to-other-functionality">Linking to other functionality</a>
+
+        
+
+        
+        
+
+        <ul>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-linking-to-other-functionality-now">Now</a>
+
+        
+
+    </li>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-linking-to-other-functionality-create">Create</a>
+
+        
+
+    </li>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-linking-to-other-functionality-destroy">Destroy</a>
+
+        
+
+    </li>
+    
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-linking-to-other-functionality-callback">Callback</a>
+
+        
+
+    </li>
+    
+</ul>
+        
+
+    </li>
+    
+</ul>
+
+        </nav>
+
+        
+<section>
+
+    
+
+    <h2 id="topic-quick-setup">Quick setup</h2>
+
+    <p>You can configure soon manually or use the supplied <a href="./demo-config.html">configurator</a>.</p>
+
+<p>If you&#39;re using the supplied configurator <code>extras/configurator.html</code> or are going to copy paste HTML from this document you can use the <code>extras/setup.html</code> template as a starting point.</p>
+
+<p>The easiest way to work with Soon is by writing HTML, once Soon runs it will pickup all HTML nodes with the <code>.soon</code> class and turn them into counters. If you want more control you can use jQuery or the Soon API to create your counters manually.</p>
+
+
+
+    
+
+    
+    
+    
+
+    
+<section>
+
+    
+
+    <h3 id="topic-quick-setup-setting-a-due-date">Setting a due date</h3>
+
+    <p>Add an HTML node to your website with the class <code>.soon</code> like this <code>&lt;div class=&quot;soon&quot;&gt;&lt;/div&gt;</code>. Soon will pick it up immidiately and render a simple clock. This is the default state and it quickly tells you everything is working.</p>
+
+<p>You can turn the clock into a counter by adding a <code>data-due</code> attribute. For something to be a counter it needs to countdown to a certain date.</p>
+
+<p>The <code>data-due</code> attribute should be set in <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> format. This may sound adventurous but don&#39;t worry it&#39;s actually pretty easy.</p>
+
+<p>A couple of example date are shown below:</p>
+
+<ul><li><code>2015</code> counts down to a certain year.</li><li><code>2015-11</code> counts down to a specific month.</li><li><code>2015-11-25</code> counts down to a specific day.</li><li><code>2015-11-25T22:10</code> counts down to a specific time.</li></ul>
+
+<p>For cases where you need to set a timezone just add it after the time <code>+05:00</code>.</p>
+
+<ul><li><code>2015-11-25T22:10+05:00</code></li></ul>
+
+<p>Below you can see Soon&#39;s default state (the current time) and what happens after you add a due date.</p><dl class="code-sample"><dt>from a clock to counting down to 2015</dt><dd><div class="highlight"><pre><code><span class="hljs-comment">&lt;!-- no date set --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- due date set --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span> <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        
+<div class="soon"></div>
+
+<div class="soon" data-due="2015"></div>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h3 id="topic-quick-setup-using-jquery">Using jQuery</h3>
+
+    <p>Soon can be used with jQuery, but this is <strong>not a requirement</strong>.</p>
+
+<p>If you want to use jQuery you can create Soon counters using the script shown in the codeblock below. Read more about jQuery methods in the <a href="#topic-linking-to-other-functionality-create">Create section</a> of the documentation.</p><dl class="code-sample"><dt>how to use jQuery</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+$(document).ready(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+
+    <span class="hljs-comment">// create a simple soon counter on the supplied element</span>
+    $(<span class="hljs-string">".your-counter"</span>).soon({
+        due:<span class="hljs-string">"2015"</span>,
+        layout:<span class="hljs-string">"group"</span>
+    });
+
+    <span class="hljs-comment">// create a more advanced counter</span>
+    $(<span class="hljs-string">".your-advanced-counter"</span>).soon({
+        due:<span class="hljs-string">"2015-11-25"</span>,
+        layout:<span class="hljs-string">"group tight"</span>,
+        face:<span class="hljs-string">"flip color-light corners-sharp shadow-soft"</span>,
+        separateChars:<span class="hljs-literal">false</span>,
+        eventComplete:<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span> alert(<span class="hljs-string">"done!"</span>); }
+    });
+
+});
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <div class="your-counter"></div>
+<div class="your-advanced-counter"></div>
+<script>
+window.addEventListener('load',function(){
+
+    if (typeof $ === 'undefined') {return;}
+
+    $(document).ready(function() {
+
+        /* jQuery option to data attribute reference
+         {
+             due:                'data-due',
+             now:                'data-now',
+             layout:             'data-layout',
+             face:               'data-face',
+             visual:             'data-visual',
+             format:             'data-format',
+             singular:           'data-singular',
+             reflect:            'data-reflect',
+             separateChars:      'data-separate-chars',
+             cascade:            'data-cascade',
+             separator:          'data-separator',
+             labelsDays:         'data-labels-days',
+             labelsHours:        'data-labels-hours',
+             labelsMinutes:      'data-labels-minutes',
+             labelsSeconds:      'data-labels-seconds',
+             labelsMilliseconds: 'data-labels-milliseconds',
+             padding:            'data-padding',
+             paddingDays:        'data-padding-days',
+             paddingHours:       'data-padding-hours',
+             paddingMinutes:     'data-padding-minutes',
+             paddingSeconds:     'data-padding-seconds',
+             paddingMilliseconds:'data-padding-milliseconds',
+             eventComplete:      'data-event-complete'
+         }
+         */
+
+
+        // create a simple soon counter on the supplied element
+        $(".your-counter").soon({
+            due:"2015",
+            layout:"group"
+        });
+
+        // create a more advanced counter
+        $(".your-advanced-counter").soon({
+            due:"2015-11-25",
+            layout:"group tight",
+            face:"flip color-light corners-sharp shadow-soft",
+            separateChars:false,
+            eventComplete:function(){ alert('done!'); }
+        });
+
+    });
+
+});
+</script>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h3 id="topic-quick-setup-picking-a-face">Picking a face</h3>
+
+    <p>You can pick different ways to present your counter by setting the <code>data-face</code> attribute. By default Soon uses <code>text</code>. After choosing a face type the specific type can then be customized to your liking with additional animation and visual options. We&#39;ll get to that in the <a href="#topic-making-it-visually-unique">Making it visually unique</a> topic.</p>
+
+<p>Currently available face types:</p>
+
+<ul><li><code>text</code> default</li><li><code>slot</code> animates changes between characters, you can pick from a diverse set of animations and animation directions.</li><li><code>flip</code> a beautiful flip counter, available in black and white.</li><li><code>matrix</code> a dot matrix counter, real old school.</li></ul><dl class="code-sample"><dt>different clock faces</dt><dd><div class="highlight"><pre><code><span class="hljs-comment">&lt;!-- text --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span> <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+    <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"slot"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- slot --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+    <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+    <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"slot"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- flip --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+    <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+    <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"flip"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- matrix --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"matrix"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        
+<div>
+<div class="soon"
+     data-due="2015"
+     data-cascade="false"
+     data-format="h,m,s">
+</div>
+</div>
+<div>
+<div class="soon"
+     data-due="2015"
+     data-cascade="false"
+     data-face="slot slide down"
+     data-format="h,m,s">
+</div>
+</div>
+    <div>
+<div class="soon"
+     data-due="2015"
+     data-cascade="false"
+     data-face="flip"
+     data-format="h,m,s">
+</div>
+    </div>
+        <div>
+<div class="soon"
+     data-due="2015"
+     data-cascade="false"
+     data-face="matrix"
+     data-format="h,m,s">
+</div>
+</div>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h3 id="topic-quick-setup-adding-a-visual">Adding a visual</h3>
+
+    <p>To spice up your counter you can pick from two different visuals. A ring and a fill visual. Both show the individual progress for each group of values. As with the views, these two can also be customized, this we&#39;ll dive into in the <a href="#topic-making-it-visually-unique">Making it visually unique</a> topic.</p><dl class="code-sample"><dt>different visuals</dt><dd><div class="highlight"><pre><code><span class="hljs-comment">&lt;!-- the ring visual --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"slot"</span>
+     <span class="hljs-attribute">data-visual</span>=<span class="hljs-value">"ring"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- the fill visual --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"slot"</span>
+     <span class="hljs-attribute">data-visual</span>=<span class="hljs-value">"fill"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <div class="soon"
+     data-due="2015"
+     data-cascade="false"
+     data-face="slot"
+     data-visual="ring"
+     data-format="h,m,s">
+</div>
+<div class="soon"
+     data-due="2015"
+     data-cascade="false"
+     data-face="slot"
+     data-visual="fill"
+     data-format="h,m,s">
+</div>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h2 id="topic-setting-the-counter-format">Setting the counter format</h2>
+
+    <p>There&#39;s a whole set of options to configure the way Soon formats the countdown.</p>
+
+
+
+    
+
+    
+    
+    
+
+    
+<section>
+
+    
+
+    <h3 id="topic-setting-the-counter-format-date-format">Date format</h3>
+
+    <p>You can set the date format by supplying the <code>data-format</code> attribute.</p><dl class="code-sample"><dt>different date formats</dt><dd><div class="highlight"><pre><code><span class="hljs-comment">&lt;!-- only show days --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span> <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span> <span class="hljs-attribute">data-format</span>=<span class="hljs-value">"d"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- hours and minutes --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span> <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span> <span class="hljs-attribute">data-format</span>=<span class="hljs-value">"h,m"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- only seconds --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span> <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span> <span class="hljs-attribute">data-format</span>=<span class="hljs-value">"s"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <!-- only show days -->
+<div class="soon" data-due="2015" data-format="d"></div>
+
+<!-- hours and minutes -->
+<div class="soon" data-due="2015" data-format="h,m"></div>
+
+<!-- only seconds -->
+<div class="soon" data-due="2015" data-format="s"></div>
+
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h3 id="topic-setting-the-counter-format-cascade-values">Cascade values</h3>
+
+    <p>By default Soon cascades values. This means that if you disable the day in the <code>data-format</code> attribute the amount of days will be shown as hours. Sometimes you may not want to do this, in that case you can set the <code>data-cascade</code> attribute to <code>false</code>.</p><dl class="code-sample"><dt>setting value cascade</dt><dd><div class="highlight"><pre><code><span class="hljs-comment">&lt;!-- only show days --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span> <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span> <span class="hljs-attribute">data-format</span>=<span class="hljs-value">"d"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- hours and minutes --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span> <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span> <span class="hljs-attribute">data-format</span>=<span class="hljs-value">"h,m,s"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- hours and minutes, no cascade --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span> <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span> <span class="hljs-attribute">data-format</span>=<span class="hljs-value">"h,m,s"</span> <span class="hljs-attribute">data-cascade</span>=<span class="hljs-value">"false"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <!-- only show days -->
+<div class="soon" data-due="2015" data-format="d"></div>
+
+<!-- hours and minutes -->
+<div class="soon-wrapper">
+    <div class="soon" data-due="2015" data-format="h,m,s"></div>
+    <p class="note note-with">With cascade</p>
+</div>
+
+<!-- hours and minutes, no cascade -->
+<div class="soon-wrapper">
+    <div class="soon" data-due="2015" data-format="h,m,s" data-cascade="false"></div>
+    <p class="note note-without">Without cascade</p>
+</div>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h3 id="topic-setting-the-counter-format-character-separation">Character separation</h3>
+
+    <p>Charachter separation allows you to control if Soon will put each character in it&#39;s own slot. See below for an example using the flip face.</p><dl class="code-sample"><dt>splitting characters</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"flip"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-separate-chars</span>=<span class="hljs-value">"false"</span>
+     <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"flip"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <div class="soon"
+   data-due="2015"
+   data-cascade="false"
+   data-format="m,s"
+   data-face="flip">
+</div>
+
+<div class="soon"
+   data-due="2015"
+   data-cascade="false"
+   data-format="m,s"
+   data-separate-chars="false"
+   data-face="flip">
+</div>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h3 id="topic-setting-the-counter-format-separator-type">Separator type</h3>
+
+    <p>What if you want to use a <code>:</code> or <code>.</code> between character groups? Use the <code>data-separator</code> property. Any value set will be put between the character groups.</p><dl class="code-sample"><dt>separator character</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-separator</span>=<span class="hljs-value">"/"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"text"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-separator</span>=<span class="hljs-value">":"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"text"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <div class="soon"
+     data-separator="/"
+     data-due="2015"
+     data-cascade="false"
+     data-format="h,m,s"
+     data-face="text">
+</div>
+
+<div class="soon"
+     data-separator=":"
+     data-due="2015"
+     data-cascade="false"
+     data-format="h,m,s"
+     data-face="text">
+</div>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h3 id="topic-setting-the-counter-format-label-names">Label names</h3>
+
+    <p>Use the attributes shown in the example HTML to control the names shown in the labels. You can supply a single value if you&#39;re only gowing to use plurals. If you intend to use singular labels you can supply two values by separating them with a comma.</p><dl class="code-sample"><dt>control label names</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-labels-days</span>=<span class="hljs-value">"Dia,Dias"</span>
+     <span class="hljs-attribute">data-labels-hours</span>=<span class="hljs-value">"Hora,Horas"</span>
+     <span class="hljs-attribute">data-labels-minutes</span>=<span class="hljs-value">"Minuto,Minutos"</span>
+     <span class="hljs-attribute">data-labels-seconds</span>=<span class="hljs-value">"Segundo,Segundos"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <div class="soon"
+     data-due="2015"
+     data-labels-days="Dia,Dias"
+     data-labels-hours="Hora,Horas"
+     data-labels-minutes="Minuto,Minutos"
+     data-labels-seconds="Segundo,Segundos"
+     data-layout="group spacey">
+</div>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h3 id="topic-setting-the-counter-format-singular-labels">Singular labels</h3>
+
+    <p>Controls the use of singular and plural terms in labels. If set to <code>true</code> Soon will use singulars when a counter reaches 1. The default state is <code>false</code>.</p><dl class="code-sample"><dt>toggle plurals</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-singular</span>=<span class="hljs-value">"true"</span>
+     <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"slot"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <script>
+    SoonSingularCounterComplete = function(){
+        Soon.reset(document.getElementById('soon-singular'));
+    };
+</script>
+<div class="soon"
+     id="soon-singular"
+     data-now="2015-11-25T12:00:00"
+     data-due="2015-11-25T12:00:05"
+     data-singular="true"
+     data-format="s"
+     data-event-complete="SoonSingularCounterComplete">
+</div>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h3 id="topic-setting-the-counter-format-value-padding">Value padding</h3>
+
+    <p>Allows you to put zeros in front of values. Or disable padding altogether by setting the <code>data-padding</code> attribute to <code>false</code>.</p><dl class="code-sample"><dt>padding values</dt><dd><div class="highlight"><pre><code><span class="hljs-comment">&lt;!-- no padding --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-padding</span>=<span class="hljs-value">"false"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- minute and second padding --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-padding-minutes</span>=<span class="hljs-value">"00"</span>
+     <span class="hljs-attribute">data-padding-seconds</span>=<span class="hljs-value">"00"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <script>
+    SoonPaddingCounterComplete = function(){
+        Soon.reset(document.getElementById('soon-padding'));
+    };SoonNoPaddingCounterComplete = function(){
+        Soon.reset(document.getElementById('soon-no-padding'));
+    };
+</script>
+<div class="soon demo-fixed"
+     id="soon-no-padding"
+     data-layout="group spacey"
+     data-now="2015-11-25T12:00:00"
+     data-due="2015-11-25T12:00:15"
+     data-format="m,s"
+     data-padding="false"
+     data-event-complete="SoonNoPaddingCounterComplete">
+</div>
+<div class="soon demo-fixed"
+     id="soon-padding"
+     data-layout="group spacey"
+     data-now="2015-11-25T12:00:00"
+     data-due="2015-11-25T12:00:15"
+     data-padding-minutes="00"
+     data-padding-seconds="00"
+     data-format="m,s"
+     data-event-complete="SoonPaddingCounterComplete">
+</div>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h2 id="topic-making-it-visually-unique">Making it visually unique</h2>
+
+    <p>Each type of face comes with a set of configuration options to make it unique for your use case.</p>
+
+
+
+    
+
+    
+    
+    
+
+    
+<section>
+
+    
+
+    <h3 id="topic-making-it-visually-unique-generic-options">Generic options</h3>
+
+    <p>The following options can be applied to all counter types</p>
+
+
+
+    
+
+    
+    
+    
+
+    
+<section>
+
+    
+
+    <h4 id="topic-making-it-visually-unique-generic-options-layout">Layout</h4>
+
+    <p>Add a <code>data-layout</code> attribute to control the counter layout. Default layout is <code>group</code>, the other option is <code>inline</code> which puts the counter on a single row.</p><dl class="code-sample"><dt>as a row or grouped</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-layout</span>=<span class="hljs-value">"line"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-layout</span>=<span class="hljs-value">"group"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        
+<div class="soon" data-due="2015" data-layout="line">
+
+</div>
+
+<div class="soon" data-due="2015" data-layout="group">
+
+</div>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h4 id="topic-making-it-visually-unique-generic-options-spacing">Spacing</h4>
+
+    <p>Add the values <code>overlap</code>, <code>adjacent</code>, <code>tight</code> or <code>spacey</code> to control the room between the counter groups when in <code>group</code> layout mode.</p>
+
+<p>If labels start overlapping you can adjust this using the label size configuration below.</p><dl class="code-sample"><dt>control spacing between groups</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-layout</span>=<span class="hljs-value">"spacey"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-layout</span>=<span class="hljs-value">"tight"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-layout</span>=<span class="hljs-value">"adjacent"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-layout</span>=<span class="hljs-value">"overlap"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <div class="soon"
+     data-due="2015"
+     data-layout="spacey">
+</div>
+<div class="soon"
+     data-due="2015">
+</div>
+<div class="soon"
+     data-due="2015"
+     data-layout="tight">
+</div>
+<div class="soon"
+     data-due="2015"
+     data-layout="adjacent">
+</div>
+<div class="soon"
+     data-due="2015"
+     data-layout="overlap">
+</div>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h4 id="topic-making-it-visually-unique-generic-options-labels">Labels</h4>
+
+    <p>Control the way labels are shown by adding the attribute values <code>label-hidden</code>, <code>label-small</code> and <code>label-big</code>. If you want to put the labels above the numbers use the <code>label-above</code> value.</p>
+
+<p>Combine these values with the spacing parameters if labels overlap.</p><dl class="code-sample"><dt>as a row or grouped</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-layout</span>=<span class="hljs-value">"label-hidden"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-layout</span>=<span class="hljs-value">"label-small"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-layout</span>=<span class="hljs-value">"label-big"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-layout</span>=<span class="hljs-value">"label-above"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <div class="soon"
+     data-due="2015"
+     data-layout="label-hidden">
+</div>
+<div class="soon"
+     data-due="2015"
+     data-layout="label-small">
+</div>
+<div class="soon"
+     data-due="2015">
+</div>
+<div class="soon"
+     data-due="2015"
+     data-layout="label-big">
+</div>
+<div class="soon"
+     data-due="2015"
+     data-layout="label-above">
+</div>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h4 id="topic-making-it-visually-unique-generic-options-reflection">Reflection</h4>
+
+    <p>You can have the counter reflect by adding the <code>data-reflect</code> attribute and setting the value to <code>true</code>.</p><dl class="code-sample"><dt>adding a reflection</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-layout</span>=<span class="hljs-value">"label-hidden"</span>
+     <span class="hljs-attribute">data-reflect</span>=<span class="hljs-value">"true"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <div class="soon" data-due="2015" data-reflect="true" data-layout="label-hidden"></div>
+<div class="soon" data-due="2015" data-reflect="true" data-layout="label-hidden" data-face="slot slide down"></div>
+<div class="soon" data-due="2015" data-reflect="true" data-layout="label-hidden" data-face="flip"></div>
+<div class="soon" data-due="2015" data-reflect="true" data-layout="label-hidden" data-face="matrix"></div>
+<div class="soon" data-due="2015" data-reflect="true" data-layout="label-hidden" data-face="text" data-visual="ring"></div>
+<div class="soon" data-due="2015" data-reflect="true" data-layout="label-hidden" data-face="text" data-visual="fill to-right" style="max-width:13em;margin:0 auto;" ></div>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h3 id="topic-making-it-visually-unique-face-specific-options">Face specific options</h3>
+
+    
+
+
+
+    
+
+    
+    
+    
+
+    
+<section>
+
+    
+
+    <h4 id="topic-making-it-visually-unique-face-specific-options-flip">Flip</h4>
+
+    <p>The flip counter can be configured by adding the following parameters to the <code>data-face</code> attribute.</p>
+
+<ul><li>Control color with <code>color-light</code> or <code>color-dark</code>.</li><li>Alter the shadow style with <code>shadow-hard</code> or <code>shadow-soft</code>.</li><li>Speed up animations with the <code>fast</code> or <code>faster</code> attribute.</li><li>Set corner sharpness with the <code>corners-sharp</code> and <code>corners-round</code> values.</li></ul>
+
+<p>Of course you can also fine tune all these values using CSS. See the presets page for some examples.</p><dl class="code-sample"><dt>different flip styles</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span> <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"flip color-light corners-round shadow-soft"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span> <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"flip color-dark corners-sharp shadow-hard fast"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <div class="soon"
+     data-due="2015" data-face="flip color-light corners-round shadow-soft">
+</div>
+
+<div class="soon"
+     data-due="2015" data-face="flip color-dark corners-sharp shadow-hard fast">
+</div>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h4 id="topic-making-it-visually-unique-face-specific-options-slot">Slot</h4>
+
+    <p>The slot counter can be configured with the following parameters.</p>
+
+<ul><li>Control shadow style with <code>shadow-hard</code>, <code>shadow-soft</code> or <code>glow</code>.</li><li>Set animation type with the following values <code>fade</code>, <code>slide</code>, <code>rotate</code>, <code>roll</code> and <code>doctor</code>.</li><li>Set animation direction for <code>slide</code> and <code>roll</code> by adding <code>up</code>, <code>down</code>, <code>left</code> or <code>right</code>.</li><li>Set animation direction for <code>rotate</code> with <code>left</code> and <code>right</code>.</li><li>Control animation speed with the <code>fast</code> or <code>faster</code> attribute.</li></ul>
+
+<p>Of course you can also fine tune all these values using CSS. See the presets page for some examples.</p><dl class="code-sample"><dt>different slot styles</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"slot shadow-soft fade fast"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"slot rotate left"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"slot roll down fast"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"slot doctor"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"slot roll left"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"slot shadow-hard slide up"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        
+<div class="soon"
+     data-due="2015"
+     data-format="m,s"
+     data-cascade="false"
+     data-face="slot shadow-soft fade fast">
+</div>
+
+<div class="soon"
+     data-due="2015"
+     data-format="m,s"
+     data-cascade="false"
+     data-face="slot rotate left">
+</div>
+
+<div class="soon"
+     data-due="2015"
+     data-format="m,s"
+     data-cascade="false"
+     data-face="slot roll down fast">
+</div>
+
+<div class="soon"
+     data-due="2015"
+     data-format="m,s"
+     data-cascade="false"
+     data-face="slot doctor">
+</div>
+
+<div class="soon"
+     data-due="2015"
+     data-format="m,s"
+     data-cascade="false"
+     data-face="slot roll left">
+</div>
+
+<div class="soon"
+     data-due="2015"
+     data-format="m,s"
+     data-cascade="false"
+     data-face="slot shadow-hard slide up">
+</div>
+
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h4 id="topic-making-it-visually-unique-face-specific-options-matrix">Matrix</h4>
+
+    <p>The dot matrix visual can be tweaked as well.</p>
+
+<ul><li>You can control the spacing between the dots with the <code>spacey</code> and <code>tight</code> values.</li><li>Add a shadow or glow with <code>shadow-soft</code>, <code>shadow-hard</code> and <code>glow</code>.</li><li>Change the shape of the dots with <code>dot-round</code> and <code>dot-square</code>.</li><li>Alter the color with <code>color-light</code> and <code>color-dark</code>.</li><li>You can change the dot animation with <code>slide</code> and it&#39;s modifiers <code>up</code>, <code>down</code>, <code>left</code> and <code>right</code>.</li></ul>
+
+<p>Of course you can also fine tune all these values using CSS. See the presets page for some examples.</p><dl class="code-sample"><dt>various matrix examples</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"matrix color-light dot-round"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"matrix color-dark spacey"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"matrix color-light shadow-soft"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"matrix tight dot-square"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <div class="soon"
+     data-due="2015"
+     data-face="matrix color-light dot-round">
+</div>
+
+<div class="soon"
+     data-due="2015"
+     data-face="matrix color-dark spacey slide left">
+</div>
+
+<div class="soon"
+     data-due="2015"
+     data-face="matrix color-light shadow-soft">
+</div>
+
+<div class="soon"
+     data-due="2015"
+     data-face="matrix tight dot-square slide">
+</div>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h4 id="topic-making-it-visually-unique-face-specific-options-ring">Ring</h4>
+
+    <p>The ring visual can be configured by adding the following parameters to the <code>data-visual</code> attribute.</p>
+
+<ul><li><code>color-light</code> and <code>color-dark</code> for light and dark color variants.</li><li>Control shadow style with <code>shadow-hard</code>, <code>shadow-soft</code> or <code>glow</code>.</li><li><code>width-thick</code> and <code>width-thin</code> to render a different width ring.</li><li>Add <code>cap-round</code> to render rounded ring end points.</li><li>Add <code>offset-{percentage}</code> to define the starting point of the ring.</li><li>Add <code>length-{percentage}</code> to define the length of the ring.</li><li>Add <code>gap-{percentageg}</code> to define the size of the gaps between the progress bar and the background.</li><li>Add the <code>flip</code> value to flip the progress bar in the other direction and make it fill the ring instead of run empty.</li></ul>
+
+<p>Of course you can also fine tune all these values using CSS. See the presets page for some examples.</p><dl class="code-sample"><dt>different ring visual styles</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-visual</span>=<span class="hljs-value">"ring cap-round"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-visual</span>=<span class="hljs-value">"ring shadow-hard flip"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-visual</span>=<span class="hljs-value">"ring color-dark length-50 gap-2,5"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-visual</span>=<span class="hljs-value">"ring color-dark shadow-soft offset-25 cap-round"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-visual</span>=<span class="hljs-value">"ring color-light width-thin glow"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-visual</span>=<span class="hljs-value">"ring color-dark cap-round width-thick gap-5"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <div class="soon"
+     data-due="2015"
+     data-visual="ring cap-round">
+</div>
+
+<div class="soon"
+     data-due="2015"
+     data-visual="ring shadow-hard flip">
+</div>
+
+<div class="soon"
+     data-due="2015"
+     data-visual="ring color-dark length-50 gap-2,5">
+</div>
+
+<div class="soon"
+     data-due="2015"
+     data-visual="ring color-dark shadow-soft offset-25 cap-round">
+</div>
+
+<div class="soon"
+     data-due="2015"
+     data-visual="ring color-light width-thin glow">
+</div>
+
+<div class="soon"
+     data-due="2015"
+     data-visual="ring color-dark cap-round width-thick gap-5">
+</div>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h4 id="topic-making-it-visually-unique-face-specific-options-fill">Fill</h4>
+
+    <p>The fill visual can be configured with the following parameters.</p>
+
+<ul><li><code>color-light</code> and <code>color-dark</code> for light and dark color variants.</li><li>Use <code>corners-round</code> and <code>corners-sharp</code> to control the box corner style.</li><li>Use the <code>line-top</code>, <code>line-left</code>, <code>line-right</code> and <code>line-bottom</code> values to display a thin fill.</li><li>Use the <code>cover</code> value to display a square background visual. Use <code>left</code>, <code>right</code>, <code>up</code> or <code>down</code> to control the direction of the background cover.</li></ul>
+
+<p>Of course you can also fine tune all these values using CSS. See the presets page for some examples.</p><dl class="code-sample"><dt>different fill styles</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"slot"</span>
+     <span class="hljs-attribute">data-visual</span>=<span class="hljs-value">"fill corners-sharp color-light to-top"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"slot"</span>
+     <span class="hljs-attribute">data-visual</span>=<span class="hljs-value">"fill to-top-right color-dark "</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"slot"</span>
+     <span class="hljs-attribute">data-visual</span>=<span class="hljs-value">"fill corners-sharp color-light to-right corners-round "</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"slot"</span>
+     <span class="hljs-attribute">data-visual</span>=<span class="hljs-value">"fill corners-sharp color-dark to-bottom"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-face</span>=<span class="hljs-value">"slot"</span>
+     <span class="hljs-attribute">data-visual</span>=<span class="hljs-value">"fill color-light to-left"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <div class="soon"
+     data-due="2015"
+     data-face="slot"
+     data-visual="fill corners-sharp color-light to-top">
+</div>
+
+<div class="soon"
+     data-due="2015"
+     data-face="slot"
+     data-visual="fill to-top-right color-dark ">
+</div>
+
+<div class="soon"
+     data-due="2015"
+     data-face="slot"
+     data-visual="fill corners-sharp color-light to-right corners-round ">
+</div>
+
+<div class="soon"
+     data-due="2015"
+     data-face="slot"
+     data-visual="fill corners-sharp color-dark to-bottom">
+</div>
+
+<div class="soon"
+     data-due="2015"
+     data-face="slot"
+     data-visual="fill color-light to-left">
+</div>
+
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+
+    
+
+</section>
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h2 id="topic-linking-to-other-functionality">Linking to other functionality</h2>
+
+    <p>These options are often related to connections with other systems and you&#39;ll probably only need them if you&#39;re an experienced developer.</p>
+
+
+
+    
+
+    
+    
+    
+
+    
+<section>
+
+    
+
+    <h3 id="topic-linking-to-other-functionality-now">Now</h3>
+
+    <p>Sometimes you want to control the current date yourself instead of relying on the browser date. The <code>data-now</code> attribute allows you to set a server date. It accepts the same format as the <code>data-due</code> attribute.</p>
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h3 id="topic-linking-to-other-functionality-create">Create</h3>
+
+    <p>If you want to create a Soon element manually, you can call the <code>Soon.create(element,options)</code> method and pass a reference to the element as a paremeter the second parameter contains all the options. If you&#39;re using jQuery you can call <code>$(selector).soon(options)</code>.</p><dl class="code-sample"><dt>options</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+<span class="hljs-keyword">var</span> options = {
+
+    <span class="hljs-comment">// data-due</span>
+    due:<span class="hljs-string">"2015"</span>,
+
+    <span class="hljs-comment">// data-now</span>
+    now:<span class="hljs-literal">null</span>,
+
+    <span class="hljs-comment">// data-layout</span>
+    layout:<span class="hljs-string">"group"</span>,
+
+    <span class="hljs-comment">// data-face</span>
+    face:<span class="hljs-string">"text"</span>,
+
+    <span class="hljs-comment">// data-visual</span>
+    visual:<span class="hljs-literal">null</span>,
+
+    <span class="hljs-comment">// data-format</span>
+    format:<span class="hljs-literal">null</span>,
+
+    <span class="hljs-comment">// data-singular</span>
+    singular:<span class="hljs-literal">false</span>,
+
+    <span class="hljs-comment">// data-reflect</span>
+    reflect:<span class="hljs-literal">false</span>,
+
+    <span class="hljs-comment">// data-separate-chars</span>
+    separateChars:<span class="hljs-literal">true</span>,
+
+    <span class="hljs-comment">// data-cascade</span>
+    cascade:<span class="hljs-literal">true</span>,
+
+    <span class="hljs-comment">// data-separator</span>
+    separator:<span class="hljs-string">""</span>,
+
+    <span class="hljs-comment">// data-labels-*</span>
+    labelsDays:<span class="hljs-literal">null</span>,
+    labelsHours:<span class="hljs-literal">null</span>,
+    labelsMinutes:<span class="hljs-literal">null</span>,
+    labelsSeconds:<span class="hljs-literal">null</span>,
+
+    <span class="hljs-comment">// data-padding</span>
+    padding:<span class="hljs-literal">true</span>,
+
+    <span class="hljs-comment">// data-padding-*</span>
+    paddingDays:<span class="hljs-literal">null</span>,
+    paddingHours:<span class="hljs-literal">null</span>,
+    paddingMinutes:<span class="hljs-literal">null</span>,
+    paddingSeconds:<span class="hljs-literal">null</span>,
+
+    <span class="hljs-comment">// data-event-complete</span>
+    eventComplete:<span class="hljs-literal">null</span>
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span></code></pre></div></dd></dl>
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h3 id="topic-linking-to-other-functionality-destroy">Destroy</h3>
+
+    <p>If you want to remove a Soon element, you can call the <code>Soon.destroy(element)</code> method and pass a reference to the element as a paremeter. If you&#39;re using jQuery you can also call <code>$(selector).soon.destroy()</code></p>
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+
+    <h3 id="topic-linking-to-other-functionality-callback">Callback</h3>
+
+    <p>If you want to run JavaScript after the counter has run out you can bind your function to the <code>onComplete</code> callback using the <code>data-event-complete</code> attribute.</p><dl class="code-sample"><dt>calling a function when done</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">happyNewYear</span><span class="hljs-params">()</span> {</span>
+        alert(<span class="hljs-string">'Cheers!'</span>);
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span>
+     <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"2015"</span>
+     <span class="hljs-attribute">data-event-complete</span>=<span class="hljs-value">"happyNewYear"</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <script>
+    SoonCallbackCounterComplete = function(){
+
+        var theNote = document.getElementById('soon-complete-done');
+            theNote.style.display = '';
+
+        var theButton = theNote.getElementsByTagName('button')[0];
+
+        var theClock = document.getElementById('soon-complete');
+
+        theButton.addEventListener('click',function(){
+
+            Soon.reset(theClock);
+
+            theNote.style.display = 'none';
+
+        },false);
+    };
+</script>
+<div class="soon-wrapper">
+    <div class="soon"
+         id="soon-complete"
+         data-now="2015-11-25T12:00:00"
+         data-due="2015-11-25T12:00:05"
+         data-event-complete="SoonCallbackCounterComplete">
+    </div>
+    <p id="soon-complete-done" class="note" style="display:none">Reached zero! <button>reset</button></p>
+</div>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+
+    
+
+</section>
+
+
+    </div>
+</div>
+
+
+    <footer class="footer">
+        <div class="content">
+            <ul>
+                
+                <li><a href="http://twitter.com/rikschennink">Twitter</a></li>
+                
+                <li><a href="http://codecanyon.net/user/rikschennink">CodeCanyon</a></li>
+                
+            </ul>
+            <span>&copy; <a href="http://rikschennink.nl">Rik Schennink</a></span>
+        </div>
+    </footer>
+
+    <script src="static/js/jquery.js"></script>
+<script src="static/js/soon.min.js"></script>
+
+</body>
+</html>
