@@ -233,6 +233,14 @@
 
     </li>
     
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="#topic-fill">Fill</a>
+
+        
+
+    </li>
+    
 </ul>
 
         </nav>
@@ -1519,6 +1527,68 @@
     <li><span class="tilt tilt-tile"><span>Bar</span></span>
     <li><span class="tilt tilt-tile"><span>Baz</span></span>
 </ul>
+    </div>
+    
+
+    
+
+
+
+    
+
+</section>
+
+<section>
+
+    
+    
+
+
+    <h2 id="topic-fill">Fill</h2>
+
+    <p>Use the <code>tilt-fill-tile</code> setup to make tiles fill their container. This is useful for when you want to use tiles in another grid system (for example <a href="http://getbootstrap.com/css/#grid">Bootstrap</a> or <a href="http://foundation.zurb.com/docs/components/grid.html">Foundation</a>).</p>
+
+<p>Should you want to animate the tiles you can additionally add the <code>tilt-group</code> class on the wrapping element and add a <code>tilt-wrapper</code> class next to the <code>tilt-fill-tile</code> class.</p><dl class="code-sample"><dt>tilt tile fill example</dt><dd><div class="highlight"><pre><code><span class="hljs-comment">&lt;!-- bootstrap grid example --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row tilt-group"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-md-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt-tile-fill tilt-wrapper"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt tilt-tile"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Foo<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-md-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt-tile-fill tilt-wrapper"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt tilt-tile"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Bar<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-md-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt-tile-fill tilt-wrapper"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tilt tilt-tile"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Baz<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre></div></dd></dl>
+
+    
+    <div class="el-sample">
+        
+        <div class="row tilt-group">
+    <div class="col-md-4">
+        <div class="tilt-tile-fill tilt-wrapper">
+            <span class="tilt tilt-tile"><span>Foo</span></span>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="tilt-tile-fill tilt-wrapper">
+            <span class="tilt tilt-tile"><span>Bar</span></span>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="tilt-tile-fill tilt-wrapper">
+            <span class="tilt tilt-tile"><span>Baz</span></span>
+        </div>
+    </div>
+</div>
+
     </div>
     
 

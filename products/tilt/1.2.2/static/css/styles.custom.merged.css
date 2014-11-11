@@ -35,6 +35,22 @@ a {
   color: #3273ef;
   border-bottom: 2px solid #6494EE; }
 
+/* bootstrap grid */
+.row {
+  display: block; }
+  .row:after {
+    display: table;
+    clear: both;
+    content: ''; }
+
+.col-md-4 {
+  padding: .25em; }
+
+@media (min-width: 500px) {
+  .col-md-4 {
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box; } }
 /* list*/
 .news {
   display: block;
