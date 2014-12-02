@@ -459,35 +459,6 @@ window.addEventListener('load',function(){
 
     $(document).ready(function() {
 
-        /* jQuery option to data attribute reference
-         {
-             due:                'data-due',
-             now:                'data-now',
-             layout:             'data-layout',
-             face:               'data-face',
-             visual:             'data-visual',
-             format:             'data-format',
-             singular:           'data-singular',
-             reflect:            'data-reflect',
-             separateChars:      'data-separate-chars',
-             cascade:            'data-cascade',
-             separator:          'data-separator',
-             labelsDays:         'data-labels-days',
-             labelsHours:        'data-labels-hours',
-             labelsMinutes:      'data-labels-minutes',
-             labelsSeconds:      'data-labels-seconds',
-             labelsMilliseconds: 'data-labels-milliseconds',
-             padding:            'data-padding',
-             paddingDays:        'data-padding-days',
-             paddingHours:       'data-padding-hours',
-             paddingMinutes:     'data-padding-minutes',
-             paddingSeconds:     'data-padding-seconds',
-             paddingMilliseconds:'data-padding-milliseconds',
-             eventComplete:      'data-event-complete'
-         }
-         */
-
-
         // create a simple soon counter on the supplied element
         $(".your-counter").soon({
             due:"2015",
@@ -917,7 +888,9 @@ window.addEventListener('load',function(){
         
         <script>
     SoonSingularCounterComplete = function(){
-        Soon.reset(document.getElementById('soon-singular'));
+        setTimeout(function(){
+            Soon.reset(document.getElementById('soon-singular'));
+        },1000);
     };
 </script>
 <div class="soon"
@@ -963,9 +936,13 @@ window.addEventListener('load',function(){
         
         <script>
     SoonPaddingCounterComplete = function(){
-        Soon.reset(document.getElementById('soon-padding'));
+        setTimeout(function(){
+            Soon.reset(document.getElementById('soon-padding'));
+        },1000);
     };SoonNoPaddingCounterComplete = function(){
-        Soon.reset(document.getElementById('soon-no-padding'));
+        setTimeout(function(){
+            Soon.reset(document.getElementById('soon-no-padding'));
+        },1000);
     };
 </script>
 <div class="soon demo-fixed"
