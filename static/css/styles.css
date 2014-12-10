@@ -355,8 +355,6 @@ main > section > h1 {
     position: absolute;
     width: 3.75rem;
     height: 3.75rem;
-    right: 0;
-    bottom: 0;
     background-image: url(../assets/arrow.svg);
     background-repeat: no-repeat;
     background-size: 1.25rem 1.25rem;
@@ -369,23 +367,21 @@ main > section > h1 {
   z-index: 1;
   display: block;
   margin-bottom: 1.875rem; }
+  .thoughts > li:first-child .caption {
+    font-size: 1.125em; }
   .thoughts > li:first-child p {
     position: relative;
     z-index: 1;
     padding: 1.875rem 3.75rem 1.875rem 1.875rem;
     background-color: #f0f0f0; }
   .thoughts > li:first-child a::after {
-    background-color: #f0f0f0;
-    bottom: auto;
-    top: auto;
-    margin-top: -2.25rem;
-    background-position: center top 1.5rem; }
+    background-color: #f0f0f0; }
 @media (max-width: 24.9375rem) {
   .thoughts > li + li {
     max-width: 21.25rem; }
-  .thoughts > li + li p {
-    display: none;
-    padding-bottom: 3.75rem; } }
+    .thoughts > li + li p {
+      display: none;
+      padding-bottom: 3.75rem; } }
 @media (min-width: 25rem) {
   .thoughts > li p {
     margin-left: 1.875rem;
@@ -408,7 +404,7 @@ main > section > h1 {
     .thoughts > li:first-child p {
       z-index: -1;
       padding-right: 1.875rem;
-      margin-right: 1.875rem;
+      margin-right: 0;
       margin-left: 16rem; }
     .thoughts > li:first-child .caption {
       float: left;
@@ -422,9 +418,8 @@ main > section > h1 {
     .thoughts > li:first-child ~ li .caption {
       max-width: 15.625rem; }
       .thoughts > li:first-child ~ li .caption a::after {
-        right: auto;
-        left: auto;
-        bottom: 2.75rem; }
+        margin-left: 0.9325rem;
+        bottom: -1.875rem; }
     .thoughts > li:first-child ~ li p {
       overflow: hidden;
       margin: 0 0 1.875rem 0;

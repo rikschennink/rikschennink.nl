@@ -44,8 +44,6 @@
             position:absolute;
             width:3.75rem;
             height:3.75rem;
-            right:0;
-            bottom:0;
             background-image:url(../assets/arrow.svg);
             background-repeat:no-repeat;
             background-size:1.25rem 1.25rem;
@@ -66,6 +64,10 @@
 
         &:first-child {
 
+            .caption {
+                font-size:1.125em;
+            }
+
             p {
                 position:relative;
                 z-index:1;
@@ -76,10 +78,10 @@
 
             a::after {
                 background-color:$fill-color-grey;
-                bottom:auto;
-                top:auto;
-                margin-top:-2.25rem;
-                background-position:center top 1.5rem;
+                //bottom:auto;
+                //top:auto;
+                //margin-top:-2.25rem;
+                //background-position:center top 1.5rem;
             }
 
         }
@@ -93,11 +95,11 @@
 
         >li+li {
             max-width: 21.25rem;
-        }
 
-        >li+li p {
-            display: none;
-            padding-bottom: 3.75rem;
+            p {
+                display: none;
+                padding-bottom: 3.75rem;
+            }
         }
 
     }
@@ -115,7 +117,6 @@
                 left: 16rem;
                 bottom: -3.75rem;
             }
-
 
         }
 
@@ -150,7 +151,7 @@
             p {
                 z-index:-1;
                 padding-right:1.875rem;
-                margin-right:1.875rem;
+                margin-right:0;
                 margin-left:16rem;
             }
 
@@ -173,9 +174,9 @@
                 max-width:15.625rem;
 
                 a::after {
-                    right:auto;
-                    left:auto;
-                    bottom:2.75rem;
+                    //right:auto;
+                    margin-left:.9325rem;
+                    bottom:-1.875rem;
                 }
 
             }
