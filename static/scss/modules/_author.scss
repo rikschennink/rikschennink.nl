@@ -1,0 +1,108 @@
+.author {
+
+	//max-width:$max-width-small;
+	margin-bottom: 3.75rem;
+
+	h1,p,span {
+		margin:0;
+	}
+
+	h1 {
+		font-size:1em;
+		color:$text-color-medium;
+	}
+
+	p {
+		font-family:$family-serif;
+		font-style:italic;
+		color:$text-color-light;
+		text-transform:lowercase;
+	}
+
+	img {
+		vertical-align:top;
+		background:#e3e4c8;
+	}
+
+	a {
+		text-decoration:none;
+		display:inline-block;
+		padding:.5rem .75rem;
+		color:$twitter-text;
+		background:$twitter-fill;
+		font-size:.75em;
+
+		display: none;
+	}
+
+
+	// small screen
+	h1 {
+		margin-top:-.25rem;
+	}
+
+	.avatar {
+		position:absolute;
+		top:0;
+		left:11.25rem;
+		right:3.75rem;
+		min-width:4.375rem;
+		max-width:6.25rem;
+	}
+
+	img {
+		display:block;
+		width:100%;
+		height:auto;
+	}
+
+	/*
+
+	// compositions
+	$mq-author-a:35rem;
+	$fs-base:1.125rem;
+
+	@media (max-width:$mq-author-a) {
+
+		//margin-bottom:-1.875rem - 1.25rem;
+		font-size:$fs-base;
+
+		h1 {
+			margin-top:-.25rem;
+		}
+
+		a {
+			display: none;
+			position:absolute;
+			top:100%;
+			right:-$margin-base;
+			margin-top:-6.25rem;
+		}
+
+	}
+
+
+	@media (min-width:$mq-author-a + $pixel) {
+
+		font-size:$fs-base;
+		//margin-bottom:3.875rem;
+
+		img {
+			//position:absolute;
+			//left:50%;
+			//top:0;
+			//margin-left:-6.25rem;
+			height:6.25rem;
+			margin-top:1.25rem;
+		}
+
+		a {
+			position:absolute;
+			top:0;
+			right:0;
+		}
+
+	}
+	*/
+
+}

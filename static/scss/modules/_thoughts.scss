@@ -1,0 +1,210 @@
+.thoughts {
+
+    $background-color:#f2ece9;
+
+    &::after {
+        display: table;
+        clear:both;
+        content:'';
+    }
+
+	&,>li {
+		padding:0;
+		list-style-type:none;
+	}
+
+    p {
+        font-family:$family-serif;
+        color:#83807D;
+        margin:0;
+        font-size:.875em;
+    }
+
+    .caption {
+
+        margin-right:3.75rem;
+        padding-right:1.875rem;
+
+        // makes entire element clickable
+        a::before {
+            position:absolute;
+            content:'';
+            left:0;
+            top:0;
+            right:0;
+            bottom:0;
+            z-index:2;
+
+            display: none;
+
+        }
+
+        // takes care of arrow block
+        a::after {
+            position:absolute;
+            width:3.75rem;
+            height:3.75rem;
+            right:0;
+            bottom:0;
+            background-image:url(../assets/arrow.svg);
+            background-repeat:no-repeat;
+            background-size:1.25rem 1.25rem;
+            background-position:center center;
+            content:'';
+            z-index:2;
+        }
+
+    }
+
+	>li {
+
+        max-width:$max-width-small + 3.75rem;
+		position:relative;
+        z-index:1;
+		display:block;
+		margin-bottom:1.875rem;
+
+        &:first-child {
+
+            p {
+                position:relative;
+                z-index:1;
+                padding:1.875rem 3.75rem 1.875rem 1.875rem;
+                background-color:$fill-color-grey;
+            }
+
+
+            a::after {
+                background-color:$fill-color-grey;
+                bottom:auto;
+                top:auto;
+                margin-top:-2.25rem;
+                background-position:center top 1.5rem;
+            }
+
+        }
+
+	}
+
+
+    // layout
+
+    @media (max-width:25rem - .0625rem) {
+
+        >li+li {
+            max-width: 21.25rem;
+        }
+
+        >li+li p {
+            display: none;
+            padding-bottom: 3.75rem;
+        }
+
+    }
+
+    @media (min-width:25rem) {
+
+        >li p {
+            margin-left:1.875rem;
+            max-width:15rem;
+        }
+
+        >li .caption {
+
+            a::after {
+                left: 16rem;
+                bottom: -3.75rem;
+            }
+
+
+        }
+
+        >li:first-child {
+            max-width: none;
+        }
+
+        >li:first-child~li .caption {
+            margin-bottom: 1.875rem;
+        }
+
+    }
+
+
+
+    @media (min-width:33rem) {
+
+        >li {
+            max-width:none;
+            margin-right:1.875rem;
+        }
+
+        // the first item
+        >li:first-child {
+
+            $indent:4.5rem;
+
+            max-width:34rem;
+            padding-top: $indent;
+            margin-bottom: 5.625rem;
+
+            p {
+                z-index:-1;
+                padding-right:1.875rem;
+                margin-right:1.875rem;
+                margin-left:16rem;
+            }
+
+            .caption {
+                float:left;
+                margin-top:-$indent;
+                margin-bottom: 1rem;
+                margin-right:1.875rem;
+            }
+
+        }
+
+        // all subsequent items
+        >li:first-child~li {
+
+            margin-right:0;
+            clear:both;
+
+            .caption {
+                max-width:15.625rem;
+
+                a::after {
+                    right:auto;
+                    left:auto;
+                    bottom:2.75rem;
+                }
+
+            }
+
+            p {
+                overflow: hidden;
+                margin: 0 0  1.875rem 0;
+                padding:0 1.875rem 0;
+            }
+
+            float:left;
+
+            .caption {
+                float: left;
+                margin-right:0;
+                //margin-left:1.875rem;
+            }
+
+            a::after {
+                right:0;
+            }
+
+            p {
+                padding-right:3.75rem;
+            }
+
+        }
+
+    }
+
+
+}

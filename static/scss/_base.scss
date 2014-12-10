@@ -32,8 +32,12 @@ html,table {
 }
 
 body {
+	position:relative;
 	line-height:1.5;
 	padding:1.875rem;
+	overflow-x:hidden;
+	max-width:40rem;
+	margin:0 auto;
 }
 
 ol,ul,li,dl,dt,dd,p {
@@ -76,11 +80,6 @@ canvas,img {
 	max-width:100%;
 }
 
-// main level headings
-main>section>h1 {
-	@extend %screenreader;
-}
-
 // inline code snippet
 :not(pre)>code {
 
@@ -92,7 +91,7 @@ kbd {
 	display:inline;
 	color:#747772;
 	background-color:#eceee9;
-	box-shadow:0 0 0 .25rem #eceee9;
+	box-shadow:-.125rem 0 0 .125rem #eceee9,.125rem 0 0 .125rem #eceee9;
 }
 
 kbd.key {
@@ -151,4 +150,25 @@ h2 {
 main {
 	margin-left:-1.875rem;
 	margin-right:-1.875rem;
+}
+
+// main level headings
+main>section>h1 {
+
+	text-align: right;
+	color:#83807d;
+	max-width: $max-width-small;
+	margin-right: 3.75rem;
+
+	@media (min-width:30rem) {
+
+		position: absolute;
+		margin-right: 1.875rem;
+		font-size: 1.5rem;
+		left: 20rem;
+		margin-top: 0;
+		text-align:left;
+
+	}
+
 }

@@ -6,11 +6,17 @@
 	margin-right:-$margin-base;
 
 	overflow:hidden;
-	padding:2.5rem $margin-base .875rem;
+	padding:2.5rem $margin-base 0;
 
     + .highlight {
         margin-top:$margin-base;
     }
+
+	pre {
+		padding-bottom: .75rem;
+		margin-bottom: 0;
+		overflow-x: auto;
+	}
 
     code {
 

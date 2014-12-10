@@ -4,11 +4,7 @@
 
         {% include caption.html url=post.url date=post.date title=post.title tags=post.tags %}
 
-        {% if forloop.first %}
-
         {{ post.excerpt }}
-
-        {% endif %}
 
     </li>
     {% endfor %}

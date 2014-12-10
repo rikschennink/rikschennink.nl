@@ -10,7 +10,6 @@ gulp.task('_connect', function() {
 
     browserSync({
         open:false,
-        notify:false,
         port:4000,
         server:{
             baseDir:'./_site'

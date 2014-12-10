@@ -1,5 +1,9 @@
 nav {
 
+	position:absolute;
+	top: 0;
+	left: 1.875rem;
+
 	&,a {
 		margin:0;
 	}
@@ -8,9 +12,10 @@ nav {
 		display:block;
 		width:$margin-base * 2;
 		height:$margin-base * 2;
-		background:#f2ece9;
+		background:$fill-color-grey;
 		color:transparent;
 		font-size:0;
+		margin-left: -1.875rem;
 
 		transform:scaleX(-1);
 		background-image:url(../assets/arrow.svg);
