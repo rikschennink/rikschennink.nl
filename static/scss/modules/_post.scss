@@ -11,23 +11,18 @@
 		margin-left:1.875rem;
 		max-width:18rem;
 
-        h1 {
-            margin-bottom:-.35rem;
-        }
-
 	}
 
 	>div {
 
 		margin:0;
+        color:#52504E;
 
 		// opening paragraph
 		>p:first-child {
             position:relative;
             z-index:-1;
-
 			clear:both;
-
 			margin-top:1.875rem;
             margin-left:-1.875rem;
             margin-bottom:1.875rem;
@@ -36,7 +31,6 @@
             color:$text-color-medium;
             background-color:$fill-color-grey;
 			font-family:$family-serif;
-			max-width:27.5rem;
 
 			&::after {
 				content:'';
@@ -67,6 +61,18 @@
 
 	}
 
+    h2 {
+        color:#716161;
+    }
+
+    h3 {
+        color:#9E9494;
+    }
+
+    h2,h3 {
+        margin-top:3.75rem;
+    }
+
 	aside {
 
         $fill:#EAF2F5;
@@ -94,26 +100,89 @@
 
 	@media (min-width:29rem) {
 
+
+
 		.caption {
+
+            font-size:1.25em;
+
 			float: right;
 			margin-left:1.875rem;
-			margin-right:-1.875rem;
-			margin-bottom:1.875rem;
+			margin-right:0;
+			margin-bottom:.75rem;
 			margin-top:-3.75rem;
+
+            h1 {
+                margin-bottom:-.45rem;
+            }
 		}
 
 		>div {
+
+            font-size:1.25em;
+
 			> p:first-child {
 				clear:none;
 				margin-top:3.75rem;
 				margin-left:-1.875rem;
 				margin-bottom:1.875rem;
-				margin-right:1.875rem;
+				margin-right:3.75rem;
 
 			}
 		}
 
 	}
+
+
+    @media (min-width:43rem) {
+
+        h2 {
+            margin-left:-1.875rem
+        }
+
+        .caption {
+
+            float:left;
+            margin-top:3.75rem;
+            margin-right:1.875rem;
+            margin-left:-1.875rem;
+
+        }
+
+        >div {
+
+            padding-top:3.75rem;
+            margin-right:3.75rem;
+
+            >p:first-child {
+
+                margin-left:1.875rem;
+                margin-right:-3.75rem;
+                font-size:1.125em;
+            }
+
+        }
+
+    }
+
+    @media (min-width:54rem) {
+
+        .caption {
+
+            float:left;
+            margin-top:0;
+
+        }
+
+        >div {
+
+            padding-top:1.875rem;
+
+            >p:first-child {
+                margin-top:1.875rem;
+            }
+        }
+    }
 
 }
 

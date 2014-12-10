@@ -1,8 +1,8 @@
 <ul class="thoughts">
     {% for post in site.posts %}
-    <li>
+    <li data-tags="{{ post.tags | join: ', ' }}">
 
-        {% include caption.html url=post.url date=post.date title=post.title tags=post.tags %}
+        {% include caption.html url=post.url date=post.date title=post.title %}
 
         {{ post.excerpt }}
 

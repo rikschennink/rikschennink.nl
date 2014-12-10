@@ -34,14 +34,13 @@
             right:0;
             bottom:0;
             z-index:2;
-
-            display: none;
-
         }
 
         // takes care of arrow block
         a::after {
             position:absolute;
+            right:0;
+            bottom:0;
             width:3.75rem;
             height:3.75rem;
             background-image:url(../assets/arrow.svg);
@@ -56,32 +55,22 @@
 
 	>li {
 
-        max-width:$max-width-small + 3.75rem;
-		position:relative;
-        z-index:1;
-		display:block;
+        position:relative;
+        display:block;
 		margin-bottom:1.875rem;
 
         &:first-child {
 
-            .caption {
-                font-size:1.125em;
-            }
-
             p {
+                font-size:1em;
                 position:relative;
-                z-index:1;
+                z-index:-1;
                 padding:1.875rem 3.75rem 1.875rem 1.875rem;
                 background-color:$fill-color-grey;
             }
 
-
             a::after {
                 background-color:$fill-color-grey;
-                //bottom:auto;
-                //top:auto;
-                //margin-top:-2.25rem;
-                //background-position:center top 1.5rem;
             }
 
         }
@@ -93,39 +82,98 @@
 
     @media (max-width:25rem - .0625rem) {
 
+        >li:first-child {
+            p {
+                margin-top:-3.75rem;
+                padding:5.625rem 3.75rem 1.875rem 1.875rem;
+            }
+        }
+
         >li+li {
+
             max-width: 21.25rem;
 
             p {
-                display: none;
-                padding-bottom: 3.75rem;
+                display:none;
             }
+
         }
 
     }
 
     @media (min-width:25rem) {
 
-        >li p {
-            margin-left:1.875rem;
-            max-width:15rem;
+        //
+        // all posts
+        //
+        p {
+            font-size:1em;
         }
 
-        >li .caption {
+        >li:first-child {
 
-            a::after {
-                left: 16rem;
-                bottom: -3.75rem;
+            .caption {
+
+                font-size:1.125em;
             }
 
         }
 
-        >li:first-child {
-            max-width: none;
+    }
+
+    @media (min-width:25rem) and (max-width:33rem - .0625rem) {
+
+        //
+        // all posts
+        //
+        p {
+            margin-left:1.875rem;
         }
 
-        >li:first-child~li .caption {
-            margin-bottom: 1.875rem;
+
+        //
+        // latest post
+        //
+        >li:first-child {
+
+            p {
+                margin-top:-3.75rem;
+                padding-top:5.625rem;
+            }
+
+            .caption {
+
+                font-size:1.125em;
+
+                a::after {
+                    right: 0;
+                    bottom: .75rem;
+                }
+
+            }
+
+        }
+
+        //
+        // all subsequent posts
+        //
+        >li:first-child~li {
+
+            p {
+                margin-right:3.875rem;
+            }
+
+            .caption {
+
+                margin-bottom: 1.875rem;
+
+                a::after {
+                    right:0;
+                    bottom:0;
+                }
+
+            }
+
         }
 
     }
@@ -134,78 +182,74 @@
 
     @media (min-width:33rem) {
 
+        //
+        // all posts
+        //
         >li {
-            max-width:none;
-            margin-right:1.875rem;
-        }
 
-        // the first item
-        >li:first-child {
-
-            $indent:4.5rem;
+            $indent:4.25rem;
 
             max-width:34rem;
             padding-top: $indent;
-            margin-bottom: 5.625rem;
+            margin-bottom: 3.75rem;
 
             p {
-                z-index:-1;
                 padding-right:1.875rem;
-                margin-right:0;
-                margin-left:16rem;
+                margin-left:11.25rem;
             }
 
             .caption {
                 float:left;
                 margin-top:-$indent;
-                margin-bottom: 1rem;
                 margin-right:1.875rem;
+                margin-bottom:.9375rem;
             }
 
         }
 
-        // all subsequent items
-        >li:first-child~li {
-
-            margin-right:0;
-            clear:both;
-
-            .caption {
-                max-width:15.625rem;
-
-                a::after {
-                    //right:auto;
-                    margin-left:.9325rem;
-                    bottom:-1.875rem;
-                }
-
-            }
-
-            p {
-                overflow: hidden;
-                margin: 0 0  1.875rem 0;
-                padding:0 1.875rem 0;
-            }
-
-            float:left;
-
-            .caption {
-                float: left;
-                margin-right:0;
-                //margin-left:1.875rem;
-            }
+        //
+        // latest post
+        //
+        >li:first-child {
 
             a::after {
-                right:0;
+                bottom:auto;
+                top: 5.25rem;
+            }
+
+        }
+
+        //
+        // all subsequent posts
+        //
+        >li:first-child~li {
+
+            a::after {
+                bottom:auto;
+                top: 3.75rem;
             }
 
             p {
-                padding-right:3.75rem;
+                margin-right:1.875rem;
+            }
+        }
+
+    }
+
+
+
+    @media (min-width:43rem) {
+
+        >li:first-child~li:nth-child(even) {
+
+            margin-left:11.25rem;
+
+            +li {
+                margin-top:-3.75rem;
             }
 
         }
 
     }
-
 
 }

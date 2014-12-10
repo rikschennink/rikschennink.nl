@@ -13,7 +13,7 @@
 	a,h1 {
 		display:block;
 		color:#fff;
-		margin:-0.25em 0 -0.3em;
+		margin:-0.25em 0 -0.25em;
 		line-height:1.25;
 		font-weight:normal;
 	}
@@ -44,30 +44,4 @@
 		font-size:.875em;
 	}
 
-}
-
-.caption {
-	&[data-tags*=About] {
-		background:#B0B69E;
-		time {color: #575a4e;}
-		+p::after {border-color:#B0B69E;}
-	}
-
-    &[data-tags*=Opinion] {
-        background:#e76e7c;
-        time {color:#b43b49;}
-		+p::after {border-color:#E59BA3;}
-    }
-
-    &[data-tags*=Tutorial] {
-        background:#825252;
-        time {color:#361b1e;}
-		+p::after {border-color:#A17575;}
-    }
-
-    &[data-tags*=Resource] {
-        background:#E5AA4B;
-        time {color:#b47a3b;}
-		+p::after {border-color:#E7BF80;}
-    }
 }

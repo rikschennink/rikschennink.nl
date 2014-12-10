@@ -35,3 +35,41 @@ $max-width-small:17.5rem;
 
 // external
 @import 'vendor/tilt';
+
+// colors
+body {
+
+}
+
+
+[data-tags*=About] {
+    h2 {color:#B39292;}
+    .caption {
+        background:#B39292;
+        time {color:#695154;}
+    }
+}
+
+[data-tags*=Opinion] {
+    h2 {color:#F0828F;}
+    .caption {
+        background:#F0828F;
+        time {color:#b43b49;}
+    }
+}
+
+[data-tags*=Tutorial] {
+    h2 {color:#A4A897;}
+    .caption {
+        background:#B0B69E;
+        time {color: #575a4e;}
+    }
+}
+
+[data-tags*=Resource] {
+    h2 {color:#ECBB6C;}
+    .caption {
+        background:#ECBB6C;
+        time {color:#b47a3b;}
+    }
+}
