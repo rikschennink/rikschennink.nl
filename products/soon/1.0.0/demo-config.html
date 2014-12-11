@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Soon </title>
+
+    <meta name="description" content="Soon, animated counters for everyone.">
+    <meta name="author" content="Rik Schennink">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link href="static/css/styles.min.css" rel="stylesheet"/>
+
+    <!--[if lt IE 9]>
+    <script src="static/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link href="static/css/soon.min.css" rel="stylesheet"/>
+
+
+</head>
+<body>
+
+    <div class="header">
+
+        <div class="content">
+
+            <h1 class="logo"><a href="index.html">Soon</a></h1>
+            
+            
+
+<div class="intro">
+    <p>Create stunningly beautiful countdowns in a few simple clicks with Soon. Soon contains a diverse set of counter types and comes with a configurator so you can easily configure your own unique counters.</p>
+</div>
+
+
+<a class="buy" href="http://codecanyon.net/user/rikschennink/portfolio?ref=rikschennink"><i class="fa fa-star"></i> Buy now for $7</a>
+
+
+
+
+
+        </div>
+    </div>
+
+    
+
+<nav class="main">
+
+    <div class="content">
+
+        <h2>Navigation</h2>
+
+        <ul>
+            <li><a href="index.html" title="Demos"><i class="fa fa-home"></i> <span>Demos</span></a></li>
+            <li><a href="docs.html" title="Documentation"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
+            <li><a href="http://codecanyon.net/user/rikschennink#contact" title="Contact"><i class="fa fa-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+
+    </div>
+
+</nav>
+
+<section class="demo">
+
+    <div class="content">
+
+        <h2>Examples</h2>
+
+        <nav class="demos">
+            <ul>
+
+                <li><a href="demo-presets.html" title="Presets">Presets</a></li>
+                <li><a href="demo-config.html" title="Configurator">Configurator</a></li>
+                
+            </ul>
+        </nav>
+
+        <div class="live">
+
+            
+<div class="demo-area"></div>
+
+<!-- form to make changes -->
+<form class="configurator" action="/">
+
+    <div class="col">
+
+    <div>
+        <label for="data-due">Due</label>
+        <input type="date" name="data-due" id="data-due" class="value" value="2015-01-01"/>
+    </div>
+
+    <div>
+        <label for="data-layout-layout">Layout</label>
+        <select name="data-layout" id="data-layout-layout" class="value">
+            <option value="group">Group</option>
+            <option value="inline">Inline</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="data-layout-spacing">Spacing</label>
+        <select name="data-layout" id="data-layout-spacing" class="value">
+            <option value="">Default</option>
+            <option value="overlap">Overlap</option>
+            <option value="adjacent">Adjacent</option>
+            <option value="tight">Tight</option>
+            <option value="spacey">Spacey</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="data-layout-label-size">Label Size</label>
+        <select name="data-layout" id="data-layout-label-size" class="value">
+            <option value="">Default</option>
+            <option value="label-small">Small</option>
+            <option value="label-big">Big</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="data-layout-label-position">Label Position</label>
+        <select name="data-layout" id="data-layout-label-position" class="value">
+            <option value="">Default</option>
+            <option value="label-above">Above</option>
+            <option value="label-hidden">Hidden</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="data-face-type">Face</label>
+        <select name="data-face" id="data-face-type" class="value">
+            <option value="slot">Slot</option>
+            <option value="flip">Flip</option>
+            <option value="matrix">Matrix</option>
+            <option value="text">Text</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="animation">Animation</label>
+        <select name="data-face" id="animation" class="value">
+            <option value="">No</option>
+            <optgroup label="Slot">
+                <option value="slide up">Slide Up</option>
+                <option value="slide right">Slide Right</option>
+                <option value="slide down">Slide Down</option>
+                <option value="slide left">Slide Left</option>
+                <option value="roll up">Roll Up</option>
+                <option value="roll right">Roll Right</option>
+                <option value="roll down">Roll Down</option>
+                <option value="roll left">Roll Left</option>
+                <option value="rotate left">Rotate Left</option>
+                <option value="rotate right">Rotate Right</option>
+                <option value="doctor">Doctor Who</option>
+            </optgroup>
+            <optgroup label="Matrix">
+                <option value="slide up">Slide Up</option>
+                <option value="slide right">Slide Right</option>
+                <option value="slide down">Slide Down</option>
+                <option value="slide left">Slide Left</option>
+            </optgroup>
+        </select>
+    </div>
+
+    <div>
+        <label for="data-visual-type">Visual</label>
+        <select name="data-visual" id="data-visual-type" class="value">
+            <option value="">None</option>
+            <option value="ring">Ring</option>
+            <option value="fill">Fill</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="reflect">Reflect</label>
+        <select name="data-reflect" id="reflect" class="value">
+            <option value="">No</option>
+            <option value="true">Yes</option>
+        </select>
+    </div>
+
+    </div>
+    <div class="col">
+
+    <fieldset>
+        <legend>Text and Background</legend>
+        <div>
+            <label for="color">Text Color</label>
+            <input type="color" name="color" id="color" class="style" value="#333333" data-value="getColorCSS"/>
+        </div>
+
+        <div>
+            <label for="bc">Background Color</label>
+            <input type="color" name="bc" id="bc" class="style" value="#ffffff" data-value="getBackgroundColorCSS"/>
+        </div>
+
+        <div>
+            <label for="font">Font</label>
+            <select name="font" id="font" class="font">
+                <option value="">Default</option>
+                <option value="Oswald">Oswald</option>
+                <option value="Chewy">Chewy</option>
+                <option value="Josefin+Slab:700">Josefin Slab</option>
+                <option value="Port+Lligat+Slab">Port Lligat Slab</option>
+                <option value="Source+Sans+Pro:300">Source Sans Pro</option>
+                <option value="Quicksand">Quicksand</option>
+            </select>
+        </div>
+
+    </fieldset>
+
+    </div>
+
+    <p>Best used with Google Chrome.</p>
+
+    <p>Full version offers more settings.</p>
+
+    <p>In the full version you can copy past the HTML and styles out of the textarea below.</p>
+
+    <textarea disabled><!--
+Soon HTML and CSS code, ready to be copy and pasted.
+--></textarea>
+
+</form>
+
+<!-- script -->
+<script>
+
+    var form = document.querySelector('form');
+    var node;
+    var style;
+
+    var hexToRgb = function(hex) {
+        var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+        return result ? {
+            r: parseInt(result[1], 16),
+            g: parseInt(result[2], 16),
+            b: parseInt(result[3], 16)
+        } : null;
+    };
+
+    var getColorCSS = function(value) {
+        return [{
+            'sel':'',
+            'props':'color:' + value + ';'
+        }];
+    };
+
+    var getSeparatorColorCSS = function(value) {
+        return [{
+            'sel':'.soon-separator',
+            'props':'color:' + value + ';'
+        }];
+    };
+
+    var getBackgroundColorCSS = function(value) {
+
+        var t = hexToRgb(value);
+        return [
+            {
+                'sel':'',
+                'props':'background-color:' + value + ';'
+            },
+            {
+                'sel':'.soon-reflection',
+                'props':'background-color:' + value +';background:linear-gradient(' + value + ' 25%,rgba(' + t.r + ',' + t.g + ',' + t.b +',0));'
+            }
+        ];
+
+    };
+
+    var capitaliseFirstLetter = function(str) {
+        return str.charAt(0).toUpperCase() + str.slice(1);
+    };
+
+    // to property
+    var nameToProp = function(field){
+        var prop = field.getAttribute('name').substr(5);
+        var parts = prop.split('-');
+        if (parts.length>1) {
+            return parts.shift() + parts.map(function(part){
+                return capitaliseFirstLetter(part);
+            }).join('');
+        }
+        return parts[0];
+    };
+
+    var getFieldValue = function(field) {
+        return field.nodeName === 'SELECT' ? field.options[field.selectedIndex].value : field.value;
+    };
+
+    // update method
+    var update = function(){
+
+        // base options
+        var options = {};
+
+        // get input
+        var i=0,field,fields = form.querySelectorAll('.value'),l=fields.length,prop,value,attributes='';
+        for(;i<l;i++) {
+
+            field = fields[i];
+
+            prop = nameToProp(field);
+
+            value = getFieldValue(field);
+
+            if (typeof value === 'undefined' || value.length === 0) {
+                continue;
+            }
+
+            if (!options[prop]) {
+                options[prop] = '';
+            }
+            else {
+                options[prop] += ' ';
+            }
+
+            options[prop] += value;
+        }
+
+        // to attributes
+        for(var key in options) {
+            if (options[key].length===0) {
+                continue;
+            }
+            attributes += 'data-' + key + '="' + options[key].trim() + '" ';
+        }
+
+        // get styles
+        var styles = '',selectors;
+        var font = getFieldValue(form.querySelector('.font'));
+        if (font) {
+            styles += '@import url(http://fonts.googleapis.com/css?family=' + font + ');\n';
+            font = font.split(':')[0].replace(/\+/g, ' ');
+            styles += '\n#my-soon-counter {font-family:"' + font + '", serif;}\n';
+        }
+
+        i=0;fields = form.querySelectorAll('.style');l=fields.length;
+        for(;i<l;i++) {
+            field = fields[i];
+            value = getFieldValue(field);
+            selectors = window[field.getAttribute('data-value')](value);
+            styles += selectors.map(function(css){
+                return '\n#my-soon-counter ' + css.sel + ' {' + css.props + '}\n';
+            }).join('');
+        }
+        styles+='\n';
+
+        // update style block
+        if (!style) {
+            style = document.createElement('style');
+            style.type = 'text/css';
+            document.querySelector('.demo-area').appendChild(style);
+        }
+        style.textContent = '';
+        style.appendChild(document.createTextNode(styles));
+
+        // update node
+        if (node) {
+            Soon.destroy(node);
+            node.parentNode.removeChild(node);
+        }
+
+        node = document.createElement('div');
+        node.id = 'my-soon-counter';
+        document.querySelector('.demo-area').appendChild(node);
+
+        Soon.create(node,options);
+    };
+
+    form.addEventListener('change',function(){
+        update();
+    });
+
+    window.addEventListener('load',update);
+
+</script>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="features">
+
+    <div class="content">
+
+        <h2>Features</h2>
+
+        <ul>
+            
+            <li>
+                <section>
+                    <h3><i class="fa fa-paint-brush"></i> Configurator</h3>
+                    <p>Easily build all sorts of countdowns using the <a href="demo-config.html">configurator</a>.</p>
+                </section>
+                
+            <li>
+                <section>
+                    <h3><i class="fa fa-desktop"></i> Responsive</h3>
+                    <p>It&#39;s <strong>responsive</strong> and works on a wide range of modern mobile, tablet and desktop browsers.</p>
+                </section>
+                
+            <li>
+                <section>
+                    <h3><i class="fa fa-magic"></i> Animations</h3>
+                    <p>Soon is <strong>beautifully animated</strong>, comes in various styles and is a real eye catcher.</p>
+                </section>
+                
+            <li>
+                <section>
+                    <h3><i class="fa fa-wrench"></i> Customizable</h3>
+                    <p>The package contains the <strong>original source files</strong> so you can tweak it to your own liking.</p>
+                </section>
+                
+            <li>
+                <section>
+                    <h3><i class="fa fa-envelope"></i> Support</h3>
+                    <p>Just contact me through my <a href="http://codecanyon.net/user/rikschennink#contact">codecanyon account</a>, I&#39;m <strong>happy to assist</strong>.</p>
+                </section>
+                
+            <li>
+                <section>
+                    <h3><i class="fa fa-cloud-download"></i> Free Updates</h3>
+                    <p>Any future updates are <strong>freely available</strong> after purchase.</p>
+                </section>
+                
+        </ul>
+
+    </div>
+
+</section>
+<section class="subscribe">
+    <div class="content">
+        <h2>Updates</h2>
+
+        <p>Leave your email address and I'll notify you of updates and new releases.</p>
+
+        <form action="http://rikschennink.createsend.com/t/y/s/fftdk/" method="post">
+    <label for="fieldEmail">Email</label>
+    <input id="fieldEmail" name="cm-fftdk-fftdk" type="email" placeholder="awesome@dev.com" required />
+    <button type="submit">subscribe</button>
+</form>
+
+    </div>
+</section>
+
+
+
+    <footer class="footer">
+        <div class="content">
+            <ul>
+                
+                <li><a href="http://twitter.com/rikschennink">Twitter</a></li>
+                
+                <li><a href="http://codecanyon.net/user/rikschennink">CodeCanyon</a></li>
+                
+            </ul>
+            <span>&copy; <a href="http://rikschennink.nl">Rik Schennink</a></span>
+        </div>
+    </footer>
+
+    <script src="static/js/jquery.js"></script>
+<script src="static/js/soon.min.js"></script>
+
+</body>
+</html>
