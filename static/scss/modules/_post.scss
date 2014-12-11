@@ -61,11 +61,11 @@
 
 	}
 
-    h2 {
+    h2,h2 a {
         color:#716161;
     }
 
-    h3 {
+    h3,h3 a {
         color:#9E9494;
     }
 
@@ -82,6 +82,8 @@
 		padding: 1.875rem 1.875rem 0;
 		background: $fill;
 
+		color: #83807D;
+		background-color: #EFF2F4;
 
 		h1 {
 			margin-top:0;
@@ -91,7 +93,7 @@
 
 		h1,
         a {
-            color:#E05363;
+            color:#CF6363;
         }
 
 	}

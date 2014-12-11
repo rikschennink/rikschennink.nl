@@ -41,7 +41,7 @@ ol, ul, li, dl, dt, dd, p {
   padding: 0; }
 
 a {
-  color: #839EF0; }
+  color: #CF6363; }
 
 button {
   cursor: pointer; }
@@ -68,7 +68,8 @@ canvas, img {
   max-width: 100%; }
 
 :not(pre) > code {
-  color: #A5ABB5; }
+  color: #9E9494;
+  font-size: 0.75em; }
 
 kbd {
   margin: 0 0.25rem;
@@ -113,6 +114,32 @@ h2 {
 main {
   margin-left: -1.875rem;
   margin-right: -1.875rem; }
+
+blockquote {
+  font-size: 1.125em;
+  position: relative;
+  padding: 0.9325rem;
+  margin: 0.9325rem 15% 1.875rem 0;
+  -webkit-transform: rotateZ(-2deg);
+          transform: rotateZ(-2deg); }
+  blockquote p {
+    display: inline;
+    color: #fff;
+    margin: 0 0.25em;
+    background: #9E9494;
+    box-shadow: -0.125em 0 0 0.325rem #9E9494, 0.125em 0 0 0.325rem #9E9494; }
+  blockquote strong {
+    color: #fff; }
+  @media (min-width: 40rem) {
+    blockquote {
+      margin-right: 1.875rem;
+      margin-left: -1.875rem;
+      font-size: 1.5rem;
+      float: left;
+      max-width: 40%; } }
+  @media (min-width: 50rem) {
+    blockquote {
+      margin-left: -3.75rem; } }
 
 main > section > h1 {
   text-align: right;
@@ -282,9 +309,9 @@ main > section > h1 {
       margin-left: 1.875rem; }
     .post > div > ol > li, .post > div > ul > li {
       margin-bottom: 0.9375rem; }
-.post h2 {
+.post h2, .post h2 a {
   color: #716161; }
-.post h3 {
+.post h3, .post h3 a {
   color: #9E9494; }
 .post h2, .post h3 {
   margin-top: 3.75rem; }
@@ -292,13 +319,15 @@ main > section > h1 {
   position: relative;
   margin-right: -1.875rem;
   padding: 1.875rem 1.875rem 0;
-  background: #EAF2F5; }
+  background: #EAF2F5;
+  color: #83807D;
+  background-color: #EFF2F4; }
   .post aside h1 {
     margin-top: 0;
     font-size: 1.25em;
     font-family: Lucida Sans Unicode, Lucida Grande, Arial, sans-serif; }
   .post aside h1, .post aside a {
-    color: #E05363; }
+    color: #CF6363; }
 @media (min-width: 29rem) {
   .post .caption {
     font-size: 1.25em;
@@ -370,7 +399,7 @@ main > section > h1 {
     top: 0;
     right: 0;
     bottom: 0;
-    z-index: 2; }
+    z-index: 1; }
   .thoughts .caption a::after {
     position: absolute;
     right: 0;
@@ -382,24 +411,25 @@ main > section > h1 {
     background-size: 1.25rem 1.25rem;
     background-position: center center;
     content: '';
-    z-index: 2; }
+    z-index: 1; }
 .thoughts > li {
   position: relative;
   display: block;
   margin-bottom: 1.875rem; }
+  .thoughts > li:first-child .caption {
+    float: left;
+    margin-bottom: -1.875rem; }
+    .thoughts > li:first-child .caption a::after {
+      background-color: #f0f0f0; }
   .thoughts > li:first-child p {
+    clear: both;
     font-size: 1em;
-    position: relative;
-    z-index: -1;
-    padding: 1.875rem 3.75rem 1.875rem 1.875rem;
+    padding: 3.75rem 3.75rem 1.875rem 1.875rem;
     background-color: #f0f0f0; }
-  .thoughts > li:first-child a::after {
-    background-color: #f0f0f0; }
+    .thoughts > li:first-child p a {
+      position: relative;
+      z-index: 2; }
 @media (max-width: 24.9375rem) {
-  .thoughts > li:first-child p {
-    margin-top: -3.75rem;
-    padding: 5.625rem 3.75rem 1.875rem 1.875rem; }
-
   .thoughts > li + li {
     max-width: 21.25rem; }
     .thoughts > li + li p {
@@ -416,9 +446,6 @@ main > section > h1 {
   .thoughts p {
     margin-left: 1.875rem; }
 
-  .thoughts > li:first-child p {
-    margin-top: -3.75rem;
-    padding-top: 5.625rem; }
   .thoughts > li:first-child .caption {
     font-size: 1.125em; }
     .thoughts > li:first-child .caption a::after {
@@ -447,9 +474,14 @@ main > section > h1 {
       margin-right: 1.875rem;
       margin-bottom: 0.9375rem; }
 
-  .thoughts > li:first-child a::after {
-    bottom: auto;
-    top: 5.25rem; }
+  .thoughts > li:first-child .caption {
+    margin-bottom: 0; }
+    .thoughts > li:first-child .caption a::after {
+      bottom: auto;
+      top: 5.25rem; }
+  .thoughts > li:first-child p {
+    clear: none;
+    padding-top: 1.875rem; }
 
   .thoughts > li:first-child ~ li a::after {
     bottom: auto;
@@ -531,6 +563,36 @@ main > section > h1 {
     color: #789C2A; }
   .highlight .o {
     color: #C8CCC4; }
+
+.flickr {
+  margin: 0 auto -1.875rem;
+  text-align: center; }
+  .flickr a {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 47.5%;
+    margin: 0 1.25%;
+    padding-bottom: 25%;
+    margin-bottom: 1.875rem;
+    border: 0; }
+  .flickr img {
+    position: absolute;
+    display: block;
+    max-width: none;
+    height: auto;
+    width: 100%; }
+
+@media (min-width: 30rem) {
+  .flickr a {
+    width: 30%;
+    padding-bottom: 15%; }
+ }
+
+.dataset {
+  color: #5F7386; }
 
 nav {
   position: absolute;
@@ -1021,28 +1083,28 @@ footer {
   -webkit-transform: perspective(1000px) translateZ(0) rotateX(0);
           transform: perspective(1000px) translateZ(0) rotateX(0); }
 
-[data-tags*=About] h2 {
+[data-tags*=About] h2, [data-tags*=About] h2 a {
   color: #B39292; }
 [data-tags*=About] .caption {
   background: #B39292; }
   [data-tags*=About] .caption time {
     color: #695154; }
 
-[data-tags*=Opinion] h2 {
+[data-tags*=Opinion] h2, [data-tags*=Opinion] h2 a {
   color: #F0828F; }
 [data-tags*=Opinion] .caption {
   background: #F0828F; }
   [data-tags*=Opinion] .caption time {
     color: #b43b49; }
 
-[data-tags*=Tutorial] h2 {
+[data-tags*=Tutorial] h2, [data-tags*=Tutorial] h2 a {
   color: #A4A897; }
 [data-tags*=Tutorial] .caption {
   background: #B0B69E; }
   [data-tags*=Tutorial] .caption time {
     color: #575a4e; }
 
-[data-tags*=Resource] h2 {
+[data-tags*=Resource] h2, [data-tags*=Resource] h2 a {
   color: #ECBB6C; }
 [data-tags*=Resource] .caption {
   background: #ECBB6C; }

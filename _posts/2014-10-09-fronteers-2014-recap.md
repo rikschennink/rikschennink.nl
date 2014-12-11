@@ -2,6 +2,7 @@
 layout: post
 title: Fronteers 2014 Recap
 tags: 
+- Resource
 - HTML
 - CSS
 - JavaScript

@@ -2,6 +2,7 @@
 layout: post
 title: They are your users
 tags: 
+- Resource
 - Accessibility
 - Statistics
 - Browsers

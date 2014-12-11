@@ -43,7 +43,7 @@ body {
 
 
 [data-tags*=About] {
-    h2 {color:#B39292;}
+    h2,h2 a {color:#B39292;}
     .caption {
         background:#B39292;
         time {color:#695154;}
@@ -51,7 +51,7 @@ body {
 }
 
 [data-tags*=Opinion] {
-    h2 {color:#F0828F;}
+    h2,h2 a {color:#F0828F;}
     .caption {
         background:#F0828F;
         time {color:#b43b49;}
@@ -59,7 +59,7 @@ body {
 }
 
 [data-tags*=Tutorial] {
-    h2 {color:#A4A897;}
+    h2,h2 a {color:#A4A897;}
     .caption {
         background:#B0B69E;
         time {color: #575a4e;}
@@ -67,7 +67,7 @@ body {
 }
 
 [data-tags*=Resource] {
-    h2 {color:#ECBB6C;}
+    h2,h2 a {color:#ECBB6C;}
     .caption {
         background:#ECBB6C;
         time {color:#b47a3b;}

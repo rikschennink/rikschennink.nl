@@ -48,7 +48,7 @@ ol,ul,li,dl,dt,dd,p {
 }
 
 a {
-	color:#839EF0;
+	color:#CF6363;
 }
 
 button {
@@ -82,7 +82,8 @@ canvas,img {
 
 // inline code snippet
 :not(pre)>code {
-    color:#A5ABB5;
+    color:#9E9494;
+	font-size:.75em;
 }
 
 // keyboard commands
@@ -153,12 +154,40 @@ main {
 }
 
 blockquote {
-    border-left:2px solid #CFCCC6;
-    color: #8f8d88;
-    font-style:italic;
-    margin-left:0;
-    margin-right:3rem;
-    padding-left:1.75rem;
+
+	font-size:1.125em;
+	position:relative;
+	padding:.9325rem;
+	margin:.9325rem 15% 1.875rem 0;
+	transform:rotateZ(-2deg);
+
+	p {
+		display:inline;
+		color:#fff;
+		$fill:#9E9494;
+		margin:0 .25em;
+		background:$fill;
+		box-shadow:-.125em 0 0 .325rem $fill,.125em 0 0 .325rem $fill;
+	}
+
+	strong {
+		color:#fff;
+	}
+
+	@media (min-width:40rem) {
+
+		margin-right:1.875rem;
+		margin-left:-1.875rem;
+		font-size:1.5rem;
+		float:left;
+		max-width:40%;
+
+	}
+	@media (min-width:50rem) {
+		margin-left:-3.75rem;
+
+	}
+
 }
 
 // main level headings

@@ -33,7 +33,7 @@
             top:0;
             right:0;
             bottom:0;
-            z-index:2;
+            z-index:1;
         }
 
         // takes care of arrow block
@@ -48,7 +48,7 @@
             background-size:1.25rem 1.25rem;
             background-position:center center;
             content:'';
-            z-index:2;
+            z-index:1;
         }
 
     }
@@ -60,18 +60,30 @@
 		margin-bottom:1.875rem;
 
         &:first-child {
+            .caption {
+
+                float:left;
+                margin-bottom:-1.875rem;
+
+                a::after {
+                    background-color:$fill-color-grey;
+                }
+
+            }
 
             p {
+
+                clear:both;
                 font-size:1em;
-                position:relative;
-                z-index:-1;
-                padding:1.875rem 3.75rem 1.875rem 1.875rem;
+                padding:3.75rem 3.75rem 1.875rem 1.875rem;
                 background-color:$fill-color-grey;
+
+                a {
+                    position:relative;
+                    z-index:2;
+                }
             }
 
-            a::after {
-                background-color:$fill-color-grey;
-            }
 
         }
 
@@ -81,13 +93,6 @@
     // layout
 
     @media (max-width:25rem - .0625rem) {
-
-        >li:first-child {
-            p {
-                margin-top:-3.75rem;
-                padding:5.625rem 3.75rem 1.875rem 1.875rem;
-            }
-        }
 
         >li+li {
 
@@ -110,10 +115,13 @@
             font-size:1em;
         }
 
+
+        //
+        // latest post
+        //
         >li:first-child {
 
             .caption {
-
                 font-size:1.125em;
             }
 
@@ -135,11 +143,6 @@
         // latest post
         //
         >li:first-child {
-
-            p {
-                margin-top:-3.75rem;
-                padding-top:5.625rem;
-            }
 
             .caption {
 
@@ -212,9 +215,20 @@
         //
         >li:first-child {
 
-            a::after {
-                bottom:auto;
-                top: 5.25rem;
+            .caption {
+
+                margin-bottom:0;
+
+                a::after {
+                    bottom:auto;
+                    top: 5.25rem;
+                }
+
+            }
+
+            p {
+                clear:none;
+                padding-top:1.875rem;
             }
 
         }
