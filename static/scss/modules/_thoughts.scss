@@ -18,6 +18,10 @@
         color:#83807D;
         margin:0;
         font-size:.875em;
+
+        a {
+            color:#544E48;
+        }
     }
 
     .caption {
@@ -45,7 +49,7 @@
             height:3.75rem;
             background-image:url(../assets/arrow.svg);
             background-repeat:no-repeat;
-            background-size:1.25rem 1.25rem;
+            background-size: 25%;
             background-position:center center;
             content:'';
             z-index:1;

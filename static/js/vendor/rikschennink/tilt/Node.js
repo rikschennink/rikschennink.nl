@@ -1,8 +1,4 @@
-var TiltNode = (function(win,doc,utils) {
-
-    if (!utils) {
-        return null;
-    }
+define(['./Utils'],function(utils) {
 
     /**
      * Tilt constants
@@ -21,7 +17,7 @@ var TiltNode = (function(win,doc,utils) {
         document.documentElement.appendChild(test);
         test.className = 'tilt';
 
-        styles = win.getComputedStyle(test,null);
+        styles = window.getComputedStyle(test,null);
         value = styles[utils.prefix + 'Perspective'];
 
         // clean up
@@ -61,7 +57,7 @@ var TiltNode = (function(win,doc,utils) {
             this._element.style.backgroundImage = 'url(' + img.src + ')';
         }
 
-        // if has no support for transforms, copout
+        // if has no support for transforms, cop-out
         if (!utils.hasTransforms()) {
             return;
         }
@@ -89,7 +85,7 @@ var TiltNode = (function(win,doc,utils) {
             var self = this,rect,x,y,tiltX,tiltY,moveZ,originX,originY,computedStyles,transforms;
 
             // remember original style elements
-            computedStyles = win.getComputedStyle(this._element,null);
+            computedStyles = window.getComputedStyle(this._element,null);
             this._styles['boxShadow'] = computedStyles.getPropertyValue('box-shadow');
 
             // listen to release events
@@ -188,9 +184,10 @@ var TiltNode = (function(win,doc,utils) {
                 rotateX:null,
                 rotateY:null
             });
+
         }
     };
 
     return exports;
 
-}(window,document,window['TiltUtils']));
+});
