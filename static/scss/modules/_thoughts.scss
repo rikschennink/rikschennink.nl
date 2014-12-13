@@ -64,6 +64,7 @@
 
                 float:left;
                 margin-bottom:-1.875rem;
+                font-size:1.125em;
 
                 a::after {
                     background-color:$fill-color-grey;
@@ -115,18 +116,6 @@
             font-size:1em;
         }
 
-
-        //
-        // latest post
-        //
-        >li:first-child {
-
-            .caption {
-                font-size:1.125em;
-            }
-
-        }
-
     }
 
     @media (min-width:25rem) and (max-width:33rem - .0625rem) {
@@ -145,8 +134,6 @@
         >li:first-child {
 
             .caption {
-
-                font-size:1.125em;
 
                 a::after {
                     right: 0;

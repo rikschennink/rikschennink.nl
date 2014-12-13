@@ -23,12 +23,11 @@
             position:relative;
             z-index:-1;
 			clear:both;
-			margin-top:1.875rem;
-            margin-left:-1.875rem;
-            margin-bottom:1.875rem;
-			margin-right:1.875rem;
+			margin:1.875rem;
             padding:1.875rem;
-            color:$text-color-medium;
+			margin-top:0;
+			margin-left:-1.875rem;
+			color:$text-color-medium;
             background-color:$fill-color-grey;
 			font-family:$family-serif;
 
@@ -98,11 +97,7 @@
 
 	}
 
-
-
 	@media (min-width:29rem) {
-
-
 
 		.caption {
 
@@ -134,7 +129,6 @@
 		}
 
 	}
-
 
     @media (min-width:43rem) {
 

@@ -156,55 +156,7 @@ main > section > h1 {
       text-align: left; } }
 
 .author {
-  margin-bottom: 3.75rem;
-  /*
-
-	// compositions
-	$mq-author-a:35rem;
-	$fs-base:1.125rem;
-
-	@media (max-width:$mq-author-a) {
-
-		//margin-bottom:-1.875rem - 1.25rem;
-		font-size:$fs-base;
-
-		h1 {
-			margin-top:-.25rem;
-		}
-
-		a {
-			display: none;
-			position:absolute;
-			top:100%;
-			right:-$margin-base;
-			margin-top:-6.25rem;
-		}
-
-	}
-
-
-	@media (min-width:$mq-author-a + $pixel) {
-
-		font-size:$fs-base;
-		//margin-bottom:3.875rem;
-
-		img {
-			//position:absolute;
-			//left:50%;
-			//top:0;
-			//margin-left:-6.25rem;
-			height:6.25rem;
-			margin-top:1.25rem;
-		}
-
-		a {
-			position:absolute;
-			top:0;
-			right:0;
-		}
-
-	}
-	*/ }
+  margin-bottom: 3.75rem; }
   .author h1, .author p, .author span {
     margin: 0; }
   .author h1 {
@@ -239,6 +191,18 @@ main > section > h1 {
     display: block;
     width: 100%;
     height: auto; }
+  @media (min-width: 25rem) {
+    .author {
+      font-size: 1.125em; }
+      .author p {
+        margin-bottom: -0.375rem; } }
+  @media (min-width: 33rem) {
+    .author {
+      font-size: 1.25em; }
+      .author h1, .author p {
+        margin-left: 18rem; }
+      .author p {
+        margin-bottom: -0.75rem; } }
 
 .caption {
   display: -webkit-box;
@@ -289,11 +253,10 @@ main > section > h1 {
     position: relative;
     z-index: -1;
     clear: both;
-    margin-top: 1.875rem;
-    margin-left: -1.875rem;
-    margin-bottom: 1.875rem;
-    margin-right: 1.875rem;
+    margin: 1.875rem;
     padding: 1.875rem;
+    margin-top: 0;
+    margin-left: -1.875rem;
     color: #83807D;
     background-color: #f0f0f0;
     font-family: Palatino, 'Noto Serif', 'Times', serif; }
@@ -418,7 +381,8 @@ main > section > h1 {
   margin-bottom: 1.875rem; }
   .thoughts > li:first-child .caption {
     float: left;
-    margin-bottom: -1.875rem; }
+    margin-bottom: -1.875rem;
+    font-size: 1.125em; }
     .thoughts > li:first-child .caption a::after {
       background-color: #f0f0f0; }
   .thoughts > li:first-child p {
@@ -438,19 +402,14 @@ main > section > h1 {
 @media (min-width: 25rem) {
   .thoughts p {
     font-size: 1em; }
-
-  .thoughts > li:first-child .caption {
-    font-size: 1.125em; }
  }
 @media (min-width: 25rem) and (max-width: 32.9375rem) {
   .thoughts p {
     margin-left: 1.875rem; }
 
-  .thoughts > li:first-child .caption {
-    font-size: 1.125em; }
-    .thoughts > li:first-child .caption a::after {
-      right: 0;
-      bottom: 0.75rem; }
+  .thoughts > li:first-child .caption a::after {
+    right: 0;
+    bottom: 0.75rem; }
 
   .thoughts > li:first-child ~ li p {
     margin-right: 3.875rem; }

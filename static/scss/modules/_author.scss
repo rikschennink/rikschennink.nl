@@ -56,53 +56,28 @@
 		height:auto;
 	}
 
-	/*
+	@media (min-width:25rem) {
 
-	// compositions
-	$mq-author-a:35rem;
-	$fs-base:1.125rem;
+		font-size:1.125em;
 
-	@media (max-width:$mq-author-a) {
-
-		//margin-bottom:-1.875rem - 1.25rem;
-		font-size:$fs-base;
-
-		h1 {
-			margin-top:-.25rem;
-		}
-
-		a {
-			display: none;
-			position:absolute;
-			top:100%;
-			right:-$margin-base;
-			margin-top:-6.25rem;
+		p {
+			margin-bottom:-.375rem;
 		}
 
 	}
 
+	@media (min-width:33rem) {
 
-	@media (min-width:$mq-author-a + $pixel) {
+		font-size:1.25em;
 
-		font-size:$fs-base;
-		//margin-bottom:3.875rem;
-
-		img {
-			//position:absolute;
-			//left:50%;
-			//top:0;
-			//margin-left:-6.25rem;
-			height:6.25rem;
-			margin-top:1.25rem;
+		h1,p {
+			margin-left:18rem;
 		}
 
-		a {
-			position:absolute;
-			top:0;
-			right:0;
+		p {
+			margin-bottom:-.75rem;
 		}
 
 	}
-	*/
 
 }
