@@ -45,8 +45,7 @@
 		// lists
 		>ol,
 		>ul {
-			margin-left:1em;
-			margin-right:10%;
+			margin-left:1.875rem;
 
 			ul,ol {
 				margin-right:0;
@@ -57,6 +56,27 @@
 				margin-bottom:.9375rem;
 			}
 		}
+
+		>ul {
+
+			list-style-type:none;
+
+			li::before {
+				position:relative;
+				left:-1.875rem;
+				top:-.125rem;
+				content:'';
+				height:.4375rem;
+				width:.4375rem;
+				margin-right:-.5rem;
+				border-radius:50%;
+				background:#9E9494;
+				display:inline-block;
+				vertical-align:baseline;
+			}
+
+		}
+
 
 	}
 
@@ -134,7 +154,7 @@
 
 		.caption {
 
-            font-size:1.25em;
+            //font-size:1.25em;
 
 			float: right;
 			margin-left:1.875rem;
@@ -149,7 +169,7 @@
 
 		>div {
 
-            font-size:1.25em;
+            //font-size:1.25em;
 
 			> p:first-child {
 				clear:none;

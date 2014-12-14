@@ -3,7 +3,7 @@
     $background-color:#f2ece9;
 
     &::after {
-        display: table;
+        display:table;
         clear:both;
         content:'';
     }
@@ -15,12 +15,13 @@
 
     p {
         font-family:$family-serif;
-        color:#83807D;
         margin:0;
         font-size:.875em;
 
+        &,
         a {
-            color:#544E48;
+            color:#83807D;
+            text-decoration:none;
         }
     }
 
@@ -68,7 +69,7 @@
 
                 float:left;
                 margin-bottom:-1.875rem;
-                font-size:1.125em;
+                //font-size:1.125em;
 
                 a::after {
                     background-color:$fill-color-grey;
@@ -77,16 +78,10 @@
             }
 
             p {
-
                 clear:both;
                 font-size:1em;
                 padding:3.75rem 3.75rem 1.875rem 1.875rem;
                 background-color:$fill-color-grey;
-
-                a {
-                    position:relative;
-                    z-index:2;
-                }
             }
 
 
@@ -117,7 +112,7 @@
         // all posts
         //
         p {
-            font-size:1em;
+            //font-size:1em;
         }
 
     }

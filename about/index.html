@@ -1,0 +1,10 @@
+---
+layout: sub
+title: About Rik
+---
+<div class="me">
+
+    {% capture content %}{% include me.md %}{% endcapture %}
+    {{ content | markdownify }}
+
+</div>

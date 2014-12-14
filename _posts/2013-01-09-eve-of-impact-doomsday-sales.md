@@ -52,12 +52,11 @@ Forums also give you the opportunity to monitor the amount of views a certain to
 
 In the beginning of 2012 I added a social aspect to Eve of Impact, the ability to share your score over Twitter. If you choose to share your score, the game automatically adds a screenshot of the game-over screen, in a way it’s a little teaser. Since this generates free exposure, I thought this component was essential to have before even considering dropping the price. Having a lot of people tweet about your app will result in extra traffic, which might result in extra sales.
 
-<div class="cinema">
-
-    <blockquote class="twitter-tweet" lang="en"><p>Broadcast to 17.880 survivors: Earth has been lost, it&#39;s up to us to find a new home. <a href="https://twitter.com/hashtag/eveofimpact?src=hash">#eveofimpact</a> <a href="http://t.co/S4kRS59i">pic.twitter.com/S4kRS59i</a></p>&mdash; Rik Schennink (@rikschennink) <a href="https://twitter.com/rikschennink/statuses/219403098161033218">July 1, 2012</a></blockquote>
-    
-    <script async src="http://platform.twitter.com/widgets.js"></script>
+<div class="tweet">
+<blockquote class="twitter-tweet" lang="en"><p>Broadcast to 17.880 survivors: Earth has been lost, it&#39;s up to us to find a new home. <a href="https://twitter.com/hashtag/eveofimpact?src=hash">#eveofimpact</a> <a href="http://t.co/S4kRS59i">pic.twitter.com/S4kRS59i</a></p>&mdash; Rik Schennink (@rikschennink) <a href="https://twitter.com/rikschennink/statuses/219403098161033218">July 1, 2012</a></blockquote>
 </div>
+
+<script async src="http://platform.twitter.com/widgets.js"></script>
 
 ## Results
 
@@ -67,51 +66,49 @@ Before the first 24 hours where over I already shipped 25.000 units. Most of the
 
 Below you can see the amount of downloads during the free period. It’s quit shocking compared to the 2 to 5 downloads I normally get on an average day.
 
-<div class="cinema">
-    <div class="dataset" data-module="ui/LineChart" data-conditions="media:{(min-width:30rem)}">
-        <table summary="Eve of Impact Free Period Downloads">
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Downloads</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th><time datetime="2012-12-14">Fri. 14th</time></th>
-                    <td data-value="5">5</td>
-                </tr>
-                <tr>
-                    <th><time datetime="2012-12-15">Sat. 15th</time></th>
-                    <td data-value="7000">7.000</td>
-                </tr>
-                <tr>
-                    <th><time datetime="2012-12-16">Sun. 16th</time></th>
-                    <td data-value="29759">29.759</td>
-                </tr>
-                <tr>
-                    <th><time datetime="2012-12-17">Mon. 17th</time></th>
-                    <td data-value="24482">24.482</td>
-                </tr>
-                <tr>
-                    <th><time datetime="2012-12-18">Tue. 18th</time></th>
-                    <td data-value="15989">15.989</td>
-                </tr>
-                <tr>
-                    <th><time datetime="2012-12-19">Wed. 19th</time></th>
-                    <td data-value="11295">11.295</td>
-                </tr>
-                <tr>
-                    <th><time datetime="2012-12-20">Thu. 20th</time></th>
-                    <td data-value="5324">5.324</td>
-                </tr>
-                <tr>
-                    <th><time datetime="2012-12-21">Fri. 21th</time></th>
-                    <td data-value="65">65</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<div class="dataset" data-module="ui/LineChart" data-conditions="media:{(min-width:30rem)}">
+    <table summary="Eve of Impact Free Period Downloads">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Downloads</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th><time datetime="2012-12-14">Fri. 14th</time></th>
+                <td data-value="5">5</td>
+            </tr>
+            <tr>
+                <th><time datetime="2012-12-15">Sat. 15th</time></th>
+                <td data-value="7000">7.000</td>
+            </tr>
+            <tr>
+                <th><time datetime="2012-12-16">Sun. 16th</time></th>
+                <td data-value="29759">29.759</td>
+            </tr>
+            <tr>
+                <th><time datetime="2012-12-17">Mon. 17th</time></th>
+                <td data-value="24482">24.482</td>
+            </tr>
+            <tr>
+                <th><time datetime="2012-12-18">Tue. 18th</time></th>
+                <td data-value="15989">15.989</td>
+            </tr>
+            <tr>
+                <th><time datetime="2012-12-19">Wed. 19th</time></th>
+                <td data-value="11295">11.295</td>
+            </tr>
+            <tr>
+                <th><time datetime="2012-12-20">Thu. 20th</time></th>
+                <td data-value="5324">5.324</td>
+            </tr>
+            <tr>
+                <th><time datetime="2012-12-21">Fri. 21th</time></th>
+                <td data-value="65">65</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 
 
@@ -124,10 +121,8 @@ So, a little more than 90.000 downloads in a short week with almost no preparati
 
 The social aspect of the game worked out really great, nearly 450 end game screenshots were shared on Twitter, some of them even sparked discussion. Normally there’s maybe one share a week so that’s quit the increase. I’ve collected and uploaded all shots to [Flickr](http://www.flickr.com/photos/rikschennink/sets/72157632472688670).
 
-<div class="cinema">
-    <div class="flickr">
-        <script src="http://www.flickr.com/badge_code_v2.gne?count=6&display=random&size=m&layout=h&source=user_set&user=68438664%40N05&set=72157632472688670&context=in%2Fset-72157632472688670%2F"></script>
-    </div>
+<div class="flickr">
+    <script src="http://www.flickr.com/badge_code_v2.gne?count=6&display=random&size=m&layout=h&source=user_set&user=68438664%40N05&set=72157632472688670&context=in%2Fset-72157632472688670%2F"></script>
 </div>
 
 
@@ -142,63 +137,61 @@ Since I suspected most of my original sales happened through people searching th
 
 Before the sale Eve of Impact was slowly falling down in the search ranking, I also saw this happening to my sales (not a lot but a negative trend), so these two variables might be related. As you can see below the sale positively impacted search ranking which in turn should, if my theory is correct, improve future sales. I’ll only show the keyword “asteroid”, the other keywords follow a similar pattern. At the time of this writing (three weeks after the sale has ended) it’s still ranked around position 25.
 
-<div class="cinema">
-    <div class="dataset" data-module="ui/LineChart" data-conditions="media:{(min-width:30rem)}">
-        <table summary="Eve of Impact Search Ranking">
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Ranking</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th><time datetime="2012-12-13">Thu. 13th</time></th>
-                    <td data-value="-139">139</td>
-                </tr>
-                <tr>
-                    <th><time datetime="2012-12-14">Fri. 14th</time></th>
-                    <td data-value="-145">145</td>
-                </tr>
-                <tr>
-                    <th><time datetime="2012-12-15">Sat. 15th</time></th>
-                    <td data-value="-42">42</td>
-                </tr>
-                <tr>
-                    <th><time datetime="2012-12-16">Sun. 16th</time></th>
-                    <td data-value="-17">17</td>
-                </tr>
-                <tr>
-                    <th><time datetime="2012-12-17">Mon. 17th</time></th>
-                    <td data-value="-10">10</td>
-                </tr>
-                <tr>
-                    <th><time datetime="2012-12-18">Tue. 18th</time></th>
-                    <td data-value="-10">10</td>
-                </tr>
-                <tr>
-                    <th><time datetime="2012-12-19">Wed. 19th</time></th>
-                    <td data-value="-10">10</td>
-                </tr>
-                <tr>
-                    <th><time datetime="2012-12-20">Thu. 20th</time></th>
-                    <td data-value="-10">10</td>
-                </tr>
-                <tr>
-                    <th><time datetime="2012-12-21">Fri. 21th</time></th>
-                    <td data-value="-10">10</td>
-                </tr>
-                <tr>
-                    <th><time datetime="2012-12-22">Sat. 22th</time></th>
-                    <td data-value="-27">27</td>
-                </tr>
-                <tr>
-                    <th><time datetime="2012-12-23">Sun. 23th</time></th>
-                    <td data-value="-27">27</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<div class="dataset" data-module="ui/LineChart" data-conditions="media:{(min-width:30rem)}">
+    <table summary="Eve of Impact Search Ranking">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Ranking</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th><time datetime="2012-12-13">Thu. 13th</time></th>
+                <td data-value="-139">139</td>
+            </tr>
+            <tr>
+                <th><time datetime="2012-12-14">Fri. 14th</time></th>
+                <td data-value="-145">145</td>
+            </tr>
+            <tr>
+                <th><time datetime="2012-12-15">Sat. 15th</time></th>
+                <td data-value="-42">42</td>
+            </tr>
+            <tr>
+                <th><time datetime="2012-12-16">Sun. 16th</time></th>
+                <td data-value="-17">17</td>
+            </tr>
+            <tr>
+                <th><time datetime="2012-12-17">Mon. 17th</time></th>
+                <td data-value="-10">10</td>
+            </tr>
+            <tr>
+                <th><time datetime="2012-12-18">Tue. 18th</time></th>
+                <td data-value="-10">10</td>
+            </tr>
+            <tr>
+                <th><time datetime="2012-12-19">Wed. 19th</time></th>
+                <td data-value="-10">10</td>
+            </tr>
+            <tr>
+                <th><time datetime="2012-12-20">Thu. 20th</time></th>
+                <td data-value="-10">10</td>
+            </tr>
+            <tr>
+                <th><time datetime="2012-12-21">Fri. 21th</time></th>
+                <td data-value="-10">10</td>
+            </tr>
+            <tr>
+                <th><time datetime="2012-12-22">Sat. 22th</time></th>
+                <td data-value="-27">27</td>
+            </tr>
+            <tr>
+                <th><time datetime="2012-12-23">Sun. 23th</time></th>
+                <td data-value="-27">27</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 
 ## AppStore Holiday Closing

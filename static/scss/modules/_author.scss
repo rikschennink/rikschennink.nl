@@ -38,6 +38,7 @@
 body>.author {
 
 	margin-bottom:3.75rem;
+	font-size:1.125em;
 
 	a {
 		position:absolute;
@@ -67,7 +68,6 @@ body>.author {
 
 	@media (min-width:25rem) {
 
-		font-size:1.125em;
 
 		p {
 			margin-bottom:-.375rem;
@@ -75,9 +75,15 @@ body>.author {
 
 	}
 
+	@media (min-width:30rem) {
+
+		margin-left:18rem;
+
+	}
+
 	@media (min-width:33rem) {
 
-		font-size:1.25em;
+		//font-size:1.25em;
 
 		p {
 			margin-bottom:-.75rem;
@@ -85,17 +91,16 @@ body>.author {
 
 	}
 
-	@media (min-width:34rem) {
+	@media (min-width:38rem) {
+
+		// space between thoughts and author block
+		margin-bottom:7.5rem;
+		padding-bottom: 1.125rem;
 
 		.avatar {
-			left:30rem;
+			left:32rem;
+			right:0;
 		}
-
-	}
-
-	@media (min-width:30rem) {
-
-		margin-left:18rem;
 
 	}
 

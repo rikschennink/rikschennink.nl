@@ -49,9 +49,9 @@ I wonder if a blind user understands the concept of a tab. Do we need to communi
 - Links without `href` attributes are nonsense and also cannot be focused.
 - An overkill of web animations and parallaxing can make people physically sick. Be kind to your users.
 
-<div class="cinema">
+<div class="tweet">
 <blockquote class="twitter-tweet" lang="en"><p>Web animations &amp; parallax make people with vestibular issues sick! The only way they can turn them off is to disable CSS &amp; JavaScript. <a href="https://twitter.com/hashtag/a11y?src=hash">#a11y</a></p>&mdash; Jeffrey Zeldman (@zeldman) <a href="https://twitter.com/zeldman/status/492805247455072256">July 25, 2014</a></blockquote>
-    <script async src="http://platform.twitter.com/widgets.js"></script>
+<script async src="http://platform.twitter.com/widgets.js"></script>
 </div>
 
 - Complexity originates from: Obligatory widgets, social media, carousels, feedback controls, all sorts of stuff that is not intended for the user and/or has not been usability tested.
@@ -282,7 +282,7 @@ Takeaway, it’s time to restructure static source files in to "web_modules". Al
 - 300ms delay on page load is 5% higher bounce rate.
 - Mobile-first means Performance-first.
 
-<div class="cinema">
+<div class="tweet">
 <blockquote class="twitter-tweet" lang="en"><p>mobile first&#10;offline first&#10;performance first&#10;content first&#10;&#10;Okay guys, who&#39;s first. Pick one.&#10;&#10;<a href="https://twitter.com/hashtag/fronteers14?src=hash">#fronteers14</a></p>&mdash; Rik Schennink (@rikschennink) <a href="https://twitter.com/rikschennink/status/520484504985960448">October 10, 2014</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 
@@ -360,9 +360,7 @@ I’ve never learned so much web things in such a short timespan.
 - Raise your prices for IE8, developing for IE8 adds a lot of complexity for your internal infrastructure, virtual machines, test scripts, legacy code, impact on maintainability.
 - Developers are dropping accessibility support in favor of IE8 support which is a really bad thing. Percentage wise there are more users with disabilities than people using IE8.
 
-<div class="cinema">
 <blockquote class="twitter-tweet" lang="en"><p>There’s more users with disabilities than people using IE8. &#10;&#10;Still, we tend to drop accessibility in favour of IE8 support.&#10;&#10; <a href="https://twitter.com/hashtag/fronteers14?src=hash">#fronteers14</a></p>&mdash; Rik Schennink (@rikschennink) <a href="https://twitter.com/rikschennink/status/520521059884617728">October 10, 2014</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
 
 At this point, Paul takes a small moment to try and burn his retinas with his laser pointer.
 

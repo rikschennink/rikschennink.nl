@@ -21,12 +21,6 @@ require(['conditioner'],function(conditioner) {
 	                'fontColor':'#b8b6ae',
                     'axisFont':'Lucida Sans Unicode, Lucida Grande, Arial, sans-serif'
                 }
-            },
-            'ui/QuickThought':{
-                'options':{
-       	             'more':'read the article',
-                    'less':'back'
-                }
             }
         }
     });
