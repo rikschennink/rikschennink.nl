@@ -61,7 +61,7 @@
 
 			list-style-type:none;
 
-			li::before {
+			>li::before {
 				position:relative;
 				left:-1.875rem;
 				top:-.125rem;

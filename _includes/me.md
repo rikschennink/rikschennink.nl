@@ -1,16 +1,12 @@
 
 # Hi!
 
-It’s me, Rik! 
+I’m Rik a [creative front-end engineer](https://www.linkedin.com/in/rikschennink) living on this 2D plane people call The Netherlands.
 
-A creative front-end engineer occupying this 2D plane people call The Netherlands. While we don’t have any serious mountains around here we do have a thriving and adventurous web industry. 
+I [tweet](http://twitter.com/rikschennink) about things I find on the web and things I find of it. When my thoughts exceed 140 characters I like to take a little time and [write them down](/). I’ve written for [Smashing Magazine](http://www.smashingmagazine.com/author/rik-schennink/) and hope to be contributing some more articles in the near future.
 
-I like to think about where the web is heading and often [tweet](http://twitter.com/rikschennink) about this. When my thoughts don’t fit in 140 characters I like to [write them down](http://rikschennink.nl/thoughts/). I’ve written for [Smashing Magazine](http://www.smashingmagazine.com/author/rik-schennink/) and hope to be contributing some more articles in the near future.
+I love to push HTML, CSS and JavaScript to their limits and share results on [Dribbble](https://dribbble.com/rikschennink) and [CodePen](http://codepen.io/rikschennink/). I maintain a couple of [active repositories on GitHub](https://github.com/rikschennink) and have created [ConditionerJS](http://conditionerjs.com) to better deal with responsive web functionality. I sell web components on [CodeCanyon](http://codecanyon.net/user/rikschennink/portfolio?WT.ac=portfolio_item&WT.z_author=rikschennink&ref=rikschennink) which pushes me to research new tech, experiment with marketing techniques and interact with fellow developers of all kinds.
 
-I experiment with CSS and JavaScript, and like to post results to [Dribbble](https://dribbble.com/rikschennink) and [CodePen](http://codepen.io/rikschennink/). I have some [active repositories](https://github.com/rikschennink) on GitHub and sell web components on [CodeCanyon](http://codecanyon.net/user/rikschennink/portfolio?WT.ac=portfolio_item&WT.z_author=rikschennink). 
+The growing device landscape reshaping the web so fast the industry is barely keeping up. I'm sure you'll agree it's fun and exiting times to be active on the web.
 
-Building my own products and helping people setup their own ventures is fantastic, it really highlights the openness of the web and shows how people are using it around the globe.
-
-With the device landscape exploding around us, the web, and with it the industry, will evolve and change beyond our wildest expectations. To be in the middle of that is amazing.
-
-
+Say hi via [hello@rikschennink.nl](hello@rikschennink.nl) or [follow me on Twitter](http://twitter.com/rikschennink).

@@ -42,9 +42,8 @@ body>.author {
 
 	a {
 		position:absolute;
-		bottom:1.875rem;
-		left:50%;
-		transform:translateX(-50%);
+		bottom:3.75rem;
+		left:0;
 		text-align:center;
 	}
 
@@ -94,7 +93,7 @@ body>.author {
 	@media (min-width:38rem) {
 
 		// space between thoughts and author block
-		margin-bottom:7.5rem;
+		margin-bottom:3.75rem;
 		padding-bottom: 1.125rem;
 
 		.avatar {

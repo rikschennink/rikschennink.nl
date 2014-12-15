@@ -39,7 +39,7 @@ body {
 	position:relative;
 	line-height:1.5;
 	padding:1.875rem;
-	padding-bottom: 5.625rem;
+	padding-bottom: 7.5rem;
 	overflow-x:hidden;
 	max-width:40rem;
 	margin:0 auto;
@@ -70,7 +70,7 @@ pre {
         top:1.875rem;
         bottom:1.875rem;
         width:3.75rem;
-        background: linear-gradient(to right, transparent, white);
+        background: linear-gradient(to right, rgba(255,255,255,0), white);
         content:'';
         pointer-events:none;
     }
@@ -222,12 +222,12 @@ main>section>h1 {
 
 	h1 {
 		float:left;
-		margin:0 1.875rem .9625rem 0;
-		font-size:2.5em;
-		line-height:1.1;
+		margin:0 1.875rem .5rem 0;
+		font-size:2em;
+		line-height:1.25;
 	}
 
-	margin:0 1.875rem;
+	margin:0 1.875rem 1.875rem;
 
 }
 
@@ -253,6 +253,15 @@ main>section>h1 {
 		font-size:1.25em;
 	}
 
+	.post {
+
+		margin-top:-.375rem;
+
+		+nav.back {
+			top:-.375rem;
+		}
+
+	}
 }
 
 @media (min-width:38rem) {
@@ -260,5 +269,17 @@ main>section>h1 {
 	html {
 		padding-top:10.6875rem;
 	}
+
+
+	.post {
+
+		margin-top:-7.1875rem;
+
+		+nav.back {
+			top:-7.1875rem;
+		}
+
+	}
+
 
 }
