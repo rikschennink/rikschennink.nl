@@ -8,7 +8,7 @@ tags:
 - Gulp
 - SASS
 ---
-Writing maintainable CSS can be a tough cookie. CSS has this tendency to quickly spiral out of control, before you know it you find yourself between managing way too many specific selectors and hundreds of deprecated vendor prefixes. Technologies like SASS and AutoPrefixer can help you get out of this uncomfortable situation, but to get there, you'll have to jump some hoops.
+Writing maintainable CSS can be a tough cookie. CSS has the tendency to quickly spiral out of control. Before you know it you find yourself between managing way too many specific selectors and hundreds of deprecated vendor prefixes. Technologies like SASS and AutoPrefixer can help you get out of this uncomfortable situation, but to get there, you'll have to jump some hoops.
 
 We'll start by setting up NodeJS, it allows us to run JavaScript outside of the browser.
 
@@ -18,14 +18,14 @@ We'll start by setting up NodeJS, it allows us to run JavaScript outside of the 
 - Open a Terminal window. 
 I can imagine you might be uncomfortable using the Terminal, if so, just take your time, you'll get the hang of it. To get started, read [introduction to the Terminal by Jim Hoskins](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line).
 - Now, navigate to your project directory. If you don't know how to do this, no worries, the article I mentioned in the previous step will explain further.
-- Run <kbd>npm init</kbd>, this will create a "package.json" file. This file contains the name of your project, the description, version, dependencies, license and some other stuff. If you're lazy just jab your return key like a madman and it will use defaults for everything.
+- Run <kbd>npm init</kbd>, this will create a "package.json" file. This file contains the name of your project, the description, version, dependencies, license and some other stuff. If you're lazy just jab <kbd class="key">return</kbd> like a madman and it will use defaults for everything.
 
 Now, about that "npm" command. NPM stands for Node Package Manager, it's used to install node packages from [npmjs.org](http://www.npmjs.org), this we'll be doing in a couple of seconds.
 
-We've now setup Node and are ready to install Gulp and some of it's tasks. Good stuff!
+We've finished setting up NodeJS and are ready to install [Gulp](http://gulpjs.com) and some of it's tasks. Good stuff!
 
 
-## Getting ready to Gulp
+## Getting ready to go
 
 Gulp is there to take commands. You just give it a list of things to do and in what order to do them and it will just handle it all like a pro and report back to you on it's progress.
 
@@ -92,7 +92,7 @@ Run the <kbd>gulp</kbd> command again and you'll see a *styles.css* file has bee
 
 ### Getting rid of those prefixes
 
-Still things could be better, we've got our SASS magic, which is great and all, but AutoPrefixer that's where things really start moving in the right direction.
+Still things could be better, we've got our SASS magic, which is great and all, but [AutoPrefixer](https://github.com/postcss/autoprefixer) that's where things really start moving in the right direction.
 
 Run <kbd>npm install --save-dev gulp-autoprefixer</kbd> to add the AutoPrefixer task to your project. Adding modules really is this simple, I can't get enough of it. View the small code changes to the gulp file below.
 
@@ -155,4 +155,4 @@ If you ever want to stop that Gulp task, just jab <kbd class="key">Ctrl</kbd>+<k
 
 We've done it! We've written a simple [GulpJS](http://gulpjs.com/) script and are now running a [SASS](http://sass-lang.com/), [AutoPrefixer](https://github.com/metrime/gulp-autoprefixer) and watch task. It's the perfect stepping stone to start adding more tasks which will make developing websites even easier.
 
-You can view the [gulp file example code on GitHub](https://github.com/rikschennink/gulpin-sass-to-css).
+You can view the [gulp file and example code on GitHub](https://github.com/rikschennink/gulpin-sass-to-css).

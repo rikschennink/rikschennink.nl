@@ -12,13 +12,15 @@ tags:
 - Conference
 ---
 
-A list based recap of what was said during [Fronteers 2014](https://fronteers.nl/congres/2014). Was planning to just jot down some small notes, but it turned I had a lot to write down. If you were at the conference and want to refresh your memory or if you missed it and want to have a taste, here it is.
+A list based recap of what was said during [Fronteers 2014](https://fronteers.nl/congres/2014). I was planning to just jot down some small notes, but it turned out there was a lot to write down. If you were at the conference and want to refresh your memory or if you missed it and want to have a taste, here it is.
 
 Links to the presentations will be added as they come available.
 
 ## Day 1
 
-It’s gotta be said, [Jake Archibald](https://twitter.com/jaffathecake) kicked of this conference like a pro. He talked about being nice, the location of fire exists, picking the right fire exit, being nice to fire, fire not being a requirement for a conference, no need to start a fire then, plus, some excuses about the british people pissing walls after football matches. To the first talk!
+It’s gotta be said, [Jake Archibald](https://twitter.com/jaffathecake) kicked of this conference like a pro. He talked about being nice, the location of fire exists, picking the right fire exit, being nice to fire, fire not being a requirement for a conference, no need to start a fire then. Plus, excuses were made to the people of Holland to make up for British soccer fans pissing the city walls after football matches.
+
+To the first talk!
 
 ### [Getting nowhere with CSS best practices](http://slides.com/heydon/getting-nowhere-with-css-best-practices) - [Heydon Pickering](http://twitter.com/heydonworks)
 
@@ -39,7 +41,7 @@ A very dramatic quote from a developer out there.
 - Use conventions, but pick the right convention for the job. Once you’ve chosen one, it often sticks till the end of a project.
 - Use `role=“tab”` to describe a tab element. 
 
-I wonder if a blind user understands the concept of a tab. Do we need to communicate the fact that it’s an explicit tab control instead of an on page index?
+I wonder if a blind user understands the concept of a tab. Do we need to communicate the fact that it’s an explicit tab control instead of an on-page index?
 
 - Use [Aria states](http://www.w3.org/TR/wai-aria/states_and_properties), there’s a lot of them, so there’s almost no excuse to use class names. [Be careful to not misuse aria attributes though.](https://www.ssbbartgroup.com/blog/2014/06/05/how-not-to-misuse-aria-states-properties-and-roles/)
 - Compares class and attribute selector performance. A Greyhound race visualisation is shown, the difference is extremely minimal at first but class takes the lead. But the moment an image is loaded it's clear selector performance tweaking is micro optimisation.
