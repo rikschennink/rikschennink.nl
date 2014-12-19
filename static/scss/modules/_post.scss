@@ -1,12 +1,13 @@
 .post {
 
 	header {
+		position:relative;
+		z-index:2;
         margin:$margin-base -$margin-base;
 		max-width:38rem;
 	}
 
 	.caption {
-
 		padding-right:1.875rem;
 		margin-left:1.875rem;
 		max-width:18rem;
@@ -21,7 +22,8 @@
 		// opening paragraph
 		>p:first-child {
             position:relative;
-            z-index:-1;
+			z-index:1;
+            //z-index:-1;
 			clear:both;
 			margin:1.875rem;
             padding:1.875rem;
@@ -163,7 +165,7 @@
 			margin-top:-3.75rem;
 
             h1 {
-                margin-bottom:-.45rem;
+                margin-bottom:-.5rem;
             }
 		}
 

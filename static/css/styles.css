@@ -288,9 +288,11 @@ body > .author {
       margin-bottom: -0.3em; } }
   @media (min-width: 35rem) {
     .caption a, .caption h1 {
-      margin-bottom: -0.285em; } }
+      margin-bottom: -0.295em; } }
 
 .post header {
+  position: relative;
+  z-index: 2;
   margin: 0rem;
   max-width: 38rem; }
 .post .caption {
@@ -302,7 +304,7 @@ body > .author {
   color: #52504E; }
   .post > div > p:first-child {
     position: relative;
-    z-index: -1;
+    z-index: 1;
     clear: both;
     margin: 1.875rem;
     padding: 1.875rem;
@@ -383,7 +385,7 @@ body > .author {
     margin-bottom: 0.75rem;
     margin-top: -3.75rem; }
     .post .caption h1 {
-      margin-bottom: -0.45rem; }
+      margin-bottom: -0.5rem; }
   .post > div > p:first-child {
     clear: none;
     margin-top: 3.75rem;
