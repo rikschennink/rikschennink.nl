@@ -59,7 +59,8 @@ pre {
     top: 1.875rem;
     bottom: 1.875rem;
     width: 3.75rem;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), white);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
     content: '';
     pointer-events: none; }
 
@@ -169,26 +170,33 @@ main > section > h1 {
 @media (min-width: 29rem) {
   html {
     padding-top: 3.125rem; }
+
   body {
-    font-size: 1.125em; } }
+    font-size: 1.125em; }
+ }
 
 @media (min-width: 35rem) {
   html {
     padding-top: 3.5rem; }
+
   body {
     font-size: 1.25em; }
+
   .post {
     margin-top: -0.375rem; }
     .post + nav.back {
-      top: -0.375rem; } }
+      top: -0.375rem; }
+ }
 
 @media (min-width: 38rem) {
   html {
     padding-top: 10.6875rem; }
+
   .post {
     margin-top: -7.1875rem; }
     .post + nav.back {
-      top: -7.1875rem; } }
+      top: -7.1875rem; }
+ }
 
 .author h1, .author p, .author span, .author a {
   margin: 0; }
@@ -236,13 +244,15 @@ body > .author {
     height: auto; }
   @media (min-width: 25rem) {
     body > .author p {
-      margin-bottom: -0.375rem; } }
+      margin-bottom: -0.375rem; }
+ }
   @media (min-width: 30rem) {
     body > .author {
       margin-left: 18rem; } }
   @media (min-width: 33rem) {
     body > .author p {
-      margin-bottom: -0.75rem; } }
+      margin-bottom: -0.75rem; }
+ }
   @media (min-width: 38rem) {
     body > .author {
       margin-bottom: 3.75rem;
@@ -252,10 +262,13 @@ body > .author {
         right: 0; } }
 
 .caption {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   padding-left: 1.875rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
   -webkit-flex-direction: column-reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
@@ -285,10 +298,12 @@ body > .author {
     font-size: 0.875em; }
   @media (min-width: 29rem) {
     .caption a, .caption h1 {
-      margin-bottom: -0.3em; } }
+      margin-bottom: -0.3em; }
+ }
   @media (min-width: 35rem) {
     .caption a, .caption h1 {
-      margin-bottom: -0.295em; } }
+      margin-bottom: -0.295em; }
+ }
 
 .post header {
   position: relative;
@@ -386,41 +401,49 @@ body > .author {
     margin-top: -3.75rem; }
     .post .caption h1 {
       margin-bottom: -0.5rem; }
+
   .post > div > p:first-child {
     clear: none;
     margin-top: 3.75rem;
     margin-left: -1.875rem;
     margin-bottom: 1.875rem;
     margin-right: 3.75rem; }
+
   .post .author {
     height: 6rem;
     padding-left: 7.5rem;
     margin-bottom: 3.75rem; }
     .post .author a {
-      left: 5rem; } }
+      left: 5rem; }
+ }
 @media (min-width: 43rem) {
   .post h2 {
     margin-left: -1.875rem; }
+
   .post .caption {
     float: left;
     margin-top: 3.75rem;
     margin-right: 1.875rem;
     margin-left: -1.875rem; }
+
   .post > div {
     padding-top: 3.75rem;
     margin-right: 3.75rem; }
     .post > div > p:first-child {
       margin-left: 1.875rem;
       margin-right: -3.75rem;
-      font-size: 1.125em; } }
+      font-size: 1.125em; }
+ }
 @media (min-width: 54rem) {
   .post .caption {
     float: left;
     margin-top: 0; }
+
   .post > div {
     padding-top: 1.875rem; }
     .post > div > p:first-child {
-      margin-top: 1.875rem; } }
+      margin-top: 1.875rem; }
+ }
 
 .thoughts::after {
   display: table;
@@ -477,21 +500,24 @@ body > .author {
   .thoughts > li + li {
     max-width: 21.25rem; }
     .thoughts > li + li p {
-      display: none; } }
-@media (min-width: 25rem) { }
+      display: none; }
+ }
 @media (min-width: 25rem) and (max-width: 32.9375rem) {
   .thoughts p {
     margin-left: 1.875rem; }
+
   .thoughts > li:first-child .caption a::after {
     right: 0;
     bottom: 0.75rem; }
+
   .thoughts > li:first-child ~ li p {
     margin-right: 3.875rem; }
   .thoughts > li:first-child ~ li .caption {
     margin-bottom: 1.875rem; }
     .thoughts > li:first-child ~ li .caption a::after {
       right: 0;
-      bottom: 0; } }
+      bottom: 0; }
+ }
 @media (min-width: 33rem) {
   .thoughts > li {
     max-width: 34rem;
@@ -505,6 +531,7 @@ body > .author {
       margin-top: -4.25rem;
       margin-right: 1.875rem;
       margin-bottom: 0.9375rem; }
+
   .thoughts > li:first-child .caption {
     margin-bottom: 0; }
     .thoughts > li:first-child .caption a::after {
@@ -513,16 +540,19 @@ body > .author {
   .thoughts > li:first-child p {
     clear: none;
     padding-top: 1.875rem; }
+
   .thoughts > li:first-child ~ li a::after {
     bottom: auto;
     top: 3.75rem; }
   .thoughts > li:first-child ~ li p {
-    margin-right: 1.875rem; } }
+    margin-right: 1.875rem; }
+ }
 @media (min-width: 43rem) {
   .thoughts > li:first-child ~ li:nth-child(even) {
     margin-left: 11.25rem; }
     .thoughts > li:first-child ~ li:nth-child(even) + li {
-      margin-top: -3.75rem; } }
+      margin-top: -3.75rem; }
+ }
 
 .products {
   list-style-type: none; }
@@ -549,7 +579,8 @@ body > .author {
       box-sizing: border-box;
       display: inline-block;
       width: 33.333%;
-      padding: 0.9875rem; } }
+      padding: 0.9875rem; }
+ }
 
 .highlight {
   position: relative;
@@ -615,7 +646,8 @@ body > .author {
 @media (min-width: 30rem) {
   .flickr a {
     width: 30%;
-    padding-bottom: 15%; } }
+    padding-bottom: 15%; }
+ }
 
 .tweet {
   margin: 1.875rem 0; }
@@ -694,6 +726,7 @@ nav.back {
     bottom: 0;
     top: 0;
     -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
             transform: scaleX(-1);
     background: #f0f0f0;
     background-image: url(../assets/arrow.svg);
@@ -733,8 +766,8 @@ footer {
           transform-style: preserve-3d;
   -webkit-perspective: 500px;
           perspective: 500px;
-  transition: -webkit-transform 0.125s, box-shadow 0.125s, width 0.125s, height 0.125s;
-  transition: transform 0.125s, box-shadow 0.125s, width 0.125s, height 0.125s;
+  -webkit-transition: -webkit-transform 0.125s, box-shadow 0.125s, width 0.125s, height 0.125s;
+          transition: transform 0.125s, box-shadow 0.125s, width 0.125s, height 0.125s;
   -webkit-highlight: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   outline: 1px solid rgba(0, 0, 0, 0); }
@@ -1046,7 +1079,8 @@ footer {
   list-style-type: none !important;
   margin: 0;
   padding: 0 !important;
-  transition: height 0.25s; }
+  -webkit-transition: height 0.25s;
+          transition: height 0.25s; }
   .tilt-grid > li {
     box-sizing: border-box !important;
     position: absolute !important;
@@ -1063,8 +1097,8 @@ footer {
             transform-style: preserve-3d;
     -webkit-transform: perspective(1000px) translateZ(-250px) rotateX(-90deg);
             transform: perspective(1000px) translateZ(-250px) rotateX(-90deg);
-    transition: -webkit-transform 0.5s, opacity 0.25s;
-    transition: transform 0.5s, opacity 0.25s; }
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.25s;
+            transition: transform 0.5s, opacity 0.25s; }
   .tilt-grid .tilt-tile {
     position: absolute;
     width: auto !important;
@@ -1074,14 +1108,14 @@ footer {
     right: 0;
     bottom: 0; }
   .tilt-grid[data-ready='true'] > li > div {
-    transition: -webkit-transform 0.5s, opacity 0.25s;
-    transition: transform 0.5s, opacity 0.25s;
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.25s;
+            transition: transform 0.5s, opacity 0.25s;
     opacity: 1;
     -webkit-transform: perspective(1000px) translateZ(0) rotateX(0);
             transform: perspective(1000px) translateZ(0) rotateX(0); }
   .tilt-grid[data-ready='true']:not(.tilt-static) > li {
-    transition: -webkit-transform 0.25s;
-    transition: transform 0.25s; }
+    -webkit-transition: -webkit-transform 0.25s;
+            transition: transform 0.25s; }
   .tilt-grid li[data-tile-size='_s'] .tilt-tile.tilt-icon-center > i, .tilt-grid li[data-tile-size='|s'] .tilt-tile > i, .tilt-grid li[data-tile-size='s'] .tilt-tile > i {
     font-size: 1.5em; }
   .tilt-grid li[data-tile-size='_s'] .tilt-tile.tilt-icon-center span.tilt-count, .tilt-grid li[data-tile-size='|s'] .tilt-tile span.tilt-count, .tilt-grid li[data-tile-size='s'] .tilt-tile span.tilt-count {
@@ -1159,11 +1193,11 @@ footer {
           transform-style: preserve-3d;
   -webkit-transform: perspective(1000px) translateZ(-250px) rotateX(-90deg);
           transform: perspective(1000px) translateZ(-250px) rotateX(-90deg);
-  transition: -webkit-transform 0.5s, opacity 0.25s;
-  transition: transform 0.5s, opacity 0.25s; }
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.25s;
+          transition: transform 0.5s, opacity 0.25s; }
 .tilt-group[data-ready='true'] .tilt-wrapper {
-  transition: -webkit-transform 0.5s, opacity 0.25s;
-  transition: transform 0.5s, opacity 0.25s;
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.25s;
+          transition: transform 0.5s, opacity 0.25s;
   opacity: 1;
   -webkit-transform: perspective(1000px) translateZ(0) rotateX(0);
           transform: perspective(1000px) translateZ(0) rotateX(0); }
