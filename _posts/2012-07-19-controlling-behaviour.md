@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Controlling Behaviour
+title: Controlling behaviour
 tags:
 - Tutorial
 - CSS

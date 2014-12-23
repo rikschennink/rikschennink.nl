@@ -1,6 +1,6 @@
 ---
 layout: post
-title: We are still using Tables for Layout
+title: We are still using tables for layout
 tags:
 - Opinion
 - Development

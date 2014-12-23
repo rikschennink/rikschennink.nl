@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fronteers 2014 Recap
+title: Fronteers 2014 recap
 tags: 
 - Resource
 - HTML

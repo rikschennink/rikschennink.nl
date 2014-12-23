@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Webpage from Nothing
+title: A webpage from nothing
 tags:
 - Tutorial
 - CSS

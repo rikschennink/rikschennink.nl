@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Alien Invasion Reflow Minimization
+title: Alien invasion reflow minimization
 tags: 
 - Tutorial
 - CSS

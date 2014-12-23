@@ -25,7 +25,7 @@ Now, about that "npm" command. NPM stands for Node Package Manager, it's used to
 We've finished setting up NodeJS and are ready to install [Gulp](http://gulpjs.com) and some of it's tasks. Good stuff!
 
 
-## Getting ready to go
+## Getting ready to Gulp
 
 Gulp is there to take commands. You just give it a list of things to do and in what order to do them and it will just handle it all like a pro and report back to you on it's progress.
 

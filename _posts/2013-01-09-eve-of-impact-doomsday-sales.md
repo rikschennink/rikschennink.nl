@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Eve of Impact Doomsday Sales
+title: Eve of Impact doomsday sales
 tags:
 - Resource
 - Eve of Impact
