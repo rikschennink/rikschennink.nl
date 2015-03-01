@@ -1,0 +1,61 @@
+%screenreader {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border: 0;
+}
+
+#__bs_notify__ {
+    opacity: .25 !important;
+    width:1rem;
+    height:1rem;
+    padding:0 !important;
+    right:1rem !important;
+    top:1rem !important;
+    overflow: hidden;
+    color:transparent !important;
+    border-radius:50% !important;
+    background-color:green !important;
+}
+
+@mixin define-layout($name,$map) {
+
+    // if key not found, stop here
+    @if not map-has-key($map,$name) {
+        @error 'No value found for `#{$name}`';
+    }
+
+    // get all keys
+    $keys:map-keys($map);
+
+    // get from breakpoint value by layout name
+    $fromValue:map-get($map,$name);
+
+    // find next key
+    $current:index($keys,$name);
+
+    // if is top layout
+    @if $current == length($keys) {
+
+        @media (min-width:$fromValue) {
+            @content;
+        }
+
+    }
+    @else {
+
+        // get next key
+        $next:nth($keys,$current+1);
+
+        // get till breakpoint value by next key name
+        $tillValue:map-get($map,$next) - (1em / 16);
+
+        // setup media query
+        @media (min-width:$fromValue) and (max-width:$tillValue) {
+            @content;
+        }
+
+    }
+
+}

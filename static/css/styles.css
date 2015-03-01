@@ -1,3 +1,25 @@
+.caption dt, nav.back h1 {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; }
+
+#__bs_notify__ {
+  opacity: 0.25 !important;
+  width: 1rem;
+  height: 1rem;
+  padding: 0 !important;
+  right: 1rem !important;
+  top: 1rem !important;
+  overflow: hidden;
+  color: transparent !important;
+  border-radius: 50% !important;
+  background-color: green !important; }
+
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
@@ -745,21 +767,6 @@ nav.back {
 footer {
   color: #C5C0BC; }
 
-.caption dt, nav.back h1 {
-  display: none; }
-
-#__bs_notify__ {
-  opacity: 0.25 !important;
-  width: 1rem;
-  height: 1rem;
-  padding: 0 !important;
-  right: 1rem !important;
-  top: 1rem !important;
-  overflow: hidden;
-  color: transparent !important;
-  border-radius: 50% !important;
-  background-color: green !important; }
-
 .tilt {
   display: inline-block;
   -webkit-transform-style: preserve-3d;
@@ -1202,30 +1209,30 @@ footer {
   -webkit-transform: perspective(1000px) translateZ(0) rotateX(0);
           transform: perspective(1000px) translateZ(0) rotateX(0); }
 
-[data-tags*=About] h2, [data-tags*=About] h2 a {
+[data-tags*='About'] h2, [data-tags*='About'] h2 a {
   color: #B39292; }
-[data-tags*=About] .caption {
+[data-tags*='About'] .caption {
   background: #B39292; }
-  [data-tags*=About] .caption time {
+  [data-tags*='About'] .caption time {
     color: #695154; }
 
-[data-tags*=Opinion] h2, [data-tags*=Opinion] h2 a {
+[data-tags*='Opinion'] h2, [data-tags*='Opinion'] h2 a {
   color: #F0828F; }
-[data-tags*=Opinion] .caption {
+[data-tags*='Opinion'] .caption {
   background: #F0828F; }
-  [data-tags*=Opinion] .caption time {
+  [data-tags*='Opinion'] .caption time {
     color: #b43b49; }
 
-[data-tags*=Tutorial] h2, [data-tags*=Tutorial] h2 a {
+[data-tags*='Tutorial'] h2, [data-tags*='Tutorial'] h2 a {
   color: #95A073; }
-[data-tags*=Tutorial] .caption {
+[data-tags*='Tutorial'] .caption {
   background: #B0B69E; }
-  [data-tags*=Tutorial] .caption time {
+  [data-tags*='Tutorial'] .caption time {
     color: #575a4e; }
 
-[data-tags*=Resource] h2, [data-tags*=Resource] h2 a {
+[data-tags*='Resource'] h2, [data-tags*='Resource'] h2 a {
   color: #ECBB6C; }
-[data-tags*=Resource] .caption {
+[data-tags*='Resource'] .caption {
   background: #ECBB6C; }
-  [data-tags*=Resource] .caption time {
+  [data-tags*='Resource'] .caption time {
     color: #b47a3b; }

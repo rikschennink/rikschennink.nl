@@ -66,7 +66,7 @@ Before the first 24 hours where over I already shipped 25.000 units. Most of the
 
 Below you can see the amount of downloads during the free period. It’s quit shocking compared to the 2 to 5 downloads I normally get on an average day.
 
-<div class="dataset" data-module="ui/LineChart" data-conditions="media:{(min-width:30rem)}">
+<div class="dataset" data-module="ui/LineChart" data-conditions="media:{(min-width:30em)}">
     <table summary="Eve of Impact Free Period Downloads">
         <thead>
             <tr>
@@ -137,7 +137,7 @@ Since I suspected most of my original sales happened through people searching th
 
 Before the sale Eve of Impact was slowly falling down in the search ranking, I also saw this happening to my sales (not a lot but a negative trend), so these two variables might be related. As you can see below the sale positively impacted search ranking which in turn should, if my theory is correct, improve future sales. I’ll only show the keyword “asteroid”, the other keywords follow a similar pattern. At the time of this writing (three weeks after the sale has ended) it’s still ranked around position 25.
 
-<div class="dataset" data-module="ui/LineChart" data-conditions="media:{(min-width:30rem)}">
+<div class="dataset" data-module="ui/LineChart" data-conditions="media:{(min-width:30em)}">
     <table summary="Eve of Impact Search Ranking">
         <thead>
             <tr>

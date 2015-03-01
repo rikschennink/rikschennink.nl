@@ -1,0 +1,285 @@
+$pixel:.0625rem;
+
+* {
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+::selection {
+    color:#fff;
+    background:#cc4654;
+}
+
+section,aside,article,nav,footer {
+    display:block;
+}
+
+html,body {
+    margin:0;
+    padding:0;
+}
+
+html {
+    background:#fff;
+}
+
+html,button {
+    font-size:1rem;
+    font-family:$family-serif;
+}
+
+html,table {
+    color:#83807d;
+}
+
+html {
+    padding-top:2.8125rem;
+}
+
+body {
+    position:relative;
+    line-height:1.5;
+    padding:1.875rem;
+    padding-bottom: 7.5rem;
+    overflow-x:hidden;
+    max-width:40rem;
+    margin:0 auto;
+}
+
+ol,ul,li,dl,dt,dd,p {
+    margin-bottom:0;
+    margin-left:0;
+    margin-right:0;
+    padding:0;
+}
+
+a {
+    color:#CF6363;
+}
+
+button {
+    cursor:pointer;
+}
+
+pre {
+    overflow-x:scroll;
+    padding-right:3.75rem;
+
+    &::after {
+        position:absolute;
+        right:1.875rem;
+        top:1.875rem;
+        bottom:1.875rem;
+        width:3.75rem;
+        background: linear-gradient(to right, rgba(255,255,255,0), white);
+        content:'';
+        pointer-events:none;
+    }
+}
+
+pre, code, kbd, samp {
+    font-size:.875em;
+    font-family:$font-stack-mono;
+}
+
+canvas,img {
+    max-width:100%;
+}
+
+// inline code snippet
+:not(pre)>code {
+    color:#9E9494;
+    font-size:.75em;
+}
+
+// keyboard commands
+kbd {
+    margin:0 .25rem;
+    display:inline;
+    color:#747772;
+    background-color:#eceee9;
+    box-shadow:-.125rem 0 0 .125rem #eceee9,.125rem 0 0 .125rem #eceee9;
+}
+
+kbd.key {
+    display:inline-block;
+    border-radius:.0625rem;
+    font-size:.75em;
+    margin: 0 .5em;
+    padding:.06125em .5em 0;
+    box-shadow:0 .125rem 0 .15rem #dcded9,0 .125rem 0 .2rem #c3c5c0,0 0 0 .125rem #eceee9;
+}
+
+// computer output
+samp {
+
+}
+
+// headers
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom:0;
+    font-weight:normal;
+}
+
+h1,h2,h3,h4,h5,h6,strong {
+    color:#47413B;
+}
+
+// base layout rules
+* + * {
+    margin-top:1.875rem;
+}
+
+// don't count script tags as elements
+script + * {
+    margin-top:0;
+}
+
+// paragraphs may be a little bit closer to each other
+p + p {
+    margin-top:.9375rem;
+}
+
+h2,h3,h4 {
+    + * {
+        margin-top:.9875rem;
+    }
+}
+
+li+li {
+    margin-top:.9875rem;
+}
+
+h2 {
+    font-family:$family-sans-serif;
+}
+
+main {
+    margin-left:-1.875rem;
+    margin-right:-1.875rem;
+}
+
+blockquote {
+
+    font-size:1.125em;
+    position:relative;
+    padding:.9325rem;
+    margin:.9325rem 15% 1.875rem 0;
+    transform:rotateZ(-2deg);
+
+    p {
+        display:inline;
+        color:#fff;
+        $fill:#9E9494;
+        margin:0 .25em;
+        background:$fill;
+        box-shadow:-.125em 0 0 .325rem $fill,.125em 0 0 .325rem $fill;
+    }
+
+    strong {
+        color:#fff;
+    }
+
+    @media (min-width:40rem) {
+
+        margin-right:1.875rem;
+        margin-left:-1.875rem;
+        font-size:1.5rem;
+        float:left;
+        max-width:40%;
+
+    }
+    @media (min-width:50rem) {
+        margin-left:-3.75rem;
+
+    }
+
+}
+
+// main level headings
+main>section>h1 {
+
+    padding-top:1.875rem;
+    margin-top:-1.875rem;
+    text-align: right;
+    color:#83807D;
+    max-width: $max-width-small;
+    margin-right: 3.75rem;
+
+    @media (min-width:30rem) {
+
+        position: absolute;
+        margin-right: 1.875rem;
+        //font-size: 1.5rem;
+        left: 20rem;
+        text-align:left;
+
+    }
+
+}
+
+// about
+.me {
+
+    h1 {
+        float:left;
+        margin:0 1.875rem .5rem 0;
+        font-size:2em;
+        line-height:1.25;
+    }
+
+    margin:0 1.875rem 1.875rem;
+
+}
+
+@media (min-width:29rem) {
+
+    html {
+        padding-top:3.125rem;
+    }
+
+    body {
+        font-size:1.125em;
+    }
+
+}
+
+@media (min-width:35rem) {
+
+    html {
+        padding-top:3.5rem;
+    }
+
+    body {
+        font-size:1.25em;
+    }
+
+    .post {
+
+        margin-top:-.375rem;
+
+        +nav.back {
+            top:-.375rem;
+        }
+
+    }
+}
+
+@media (min-width:38rem) {
+
+    html {
+        padding-top:10.6875rem;
+    }
+
+
+    .post {
+
+        margin-top:-7.1875rem;
+
+        +nav.back {
+            top:-7.1875rem;
+        }
+
+    }
+
+
+}
