@@ -9,4 +9,4 @@ I love to push HTML, CSS and JavaScript to their limits and share results on [Dr
 
 The growing device landscape is reshaping the web so fast the industry can barely keep up. I'm super excited about this and I hope you are too!
 
-Say [hi](hello@rikschennink.nl) or [follow me on Twitter](http://twitter.com/rikschennink)
+Say [hi](mailto:hello@rikschennink.nl) or [follow me on Twitter](http://twitter.com/rikschennink)
