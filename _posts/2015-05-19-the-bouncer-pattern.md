@@ -15,6 +15,8 @@ If your brain is having trouble picturing the cat, [click here to help it on its
 
 Anyhow, you’re sitting in your lairs most secure room petting your curly whiskered cat while listening to some german techno and you’ve just conjured up the following JavaScript function.
 
+If the previous sentence put you out of breath your volcano might be leaking carbon dioxide. On to the function.
+
 {% highlight javascript %}
 function fireZeMissiles(amount) {
 
@@ -32,7 +34,7 @@ function fireZeMissiles(amount) {
 }
 {% endhighlight %}
 
-This of course works fine (you're a super villain, common). But as this article is about the bouncer pattern, let's refactor this so it actually implements the pattern.
+This of course works fine (you're a super villain, common). But as this article is about the bouncer pattern, let's refactor this a bit so it actually implements the pattern.
 
 {% highlight javascript %}
 function fireZeMissiles(amount) {
