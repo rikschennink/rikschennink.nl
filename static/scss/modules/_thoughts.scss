@@ -75,7 +75,6 @@
 
                 float:left;
                 margin-bottom:-1.875rem;
-                //font-size:1.125em;
 
                 a::after {
                     background-color:$fill-color-grey;
@@ -185,7 +184,7 @@
                 float:left;
                 margin-top:-$indent;
                 margin-right:1.875rem;
-                margin-bottom:.9375rem;
+                margin-bottom:1.25rem;
             }
 
         }
@@ -197,7 +196,7 @@
 
             .caption {
 
-                margin-bottom:0;
+                margin-bottom:1.25rem;
 
                 a::after {
                     bottom:auto;

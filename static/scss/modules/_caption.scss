@@ -13,10 +13,9 @@
 	a,h1 {
 		display:block;
 		color:#fff;
-		margin:-.25em 0 -.25em;
+		margin:-.25em 0 .75em;
 		line-height:1.25;
 		font-weight:normal;
-		text-transform:uppercase;
 	}
 
 	a {
@@ -45,15 +44,4 @@
 		font-size:.875em;
 	}
 
-	@media (min-width:29rem) {
-		a,h1 {
-			margin-bottom:-.3em;
-		}
-	}
-
-	@media (min-width:35rem) {
-		a,h1 {
-			margin-bottom:-.295em;
-		}
-	}
 }

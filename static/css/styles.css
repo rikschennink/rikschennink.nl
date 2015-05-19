@@ -302,10 +302,9 @@ body > .author {
   .caption a, .caption h1 {
     display: block;
     color: #fff;
-    margin: -0.25em 0 -0.25em;
+    margin: -0.25em 0 0.75em;
     line-height: 1.25;
-    font-weight: normal;
-    text-transform: uppercase; }
+    font-weight: normal; }
   .caption a {
     text-decoration: none; }
   .caption time {
@@ -318,14 +317,6 @@ body > .author {
     max-width: 15rem; }
   .caption time {
     font-size: 0.875em; }
-  @media (min-width: 29rem) {
-    .caption a, .caption h1 {
-      margin-bottom: -0.3em; }
- }
-  @media (min-width: 35rem) {
-    .caption a, .caption h1 {
-      margin-bottom: -0.295em; }
- }
 
 .post header {
   position: relative;
@@ -421,8 +412,6 @@ body > .author {
     margin-right: 0;
     margin-bottom: 0.75rem;
     margin-top: -3.75rem; }
-    .post .caption h1 {
-      margin-bottom: -0.5rem; }
 
   .post > div > p:first-child {
     clear: none;
@@ -552,10 +541,10 @@ body > .author {
       float: left;
       margin-top: -4.25rem;
       margin-right: 1.875rem;
-      margin-bottom: 0.9375rem; }
+      margin-bottom: 1.25rem; }
 
   .thoughts > li:first-child .caption {
-    margin-bottom: 0; }
+    margin-bottom: 1.25rem; }
     .thoughts > li:first-child .caption a::after {
       bottom: auto;
       top: 5.25rem; }
