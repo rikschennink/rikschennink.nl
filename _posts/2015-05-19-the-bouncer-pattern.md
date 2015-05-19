@@ -9,7 +9,7 @@ tags:
 
 Nesting if statements can quickly result in a lot of indenting and difficult to comprehend code. Implementing the bouncer pattern reduces these side effects and returns your code to a more readable and maintainable state.
 
-Imagine you’re a French super villain working on the new intranet of your volcano lair. You know your HTML, your CSS and of course, your JavaScripts. Also, you’ve got a somehwat white cat with elegant curly whiskers. 
+Imagine you’re a French super villain working on the new intranet of your volcano lair. You know your HTML, your CSS and of course, your JavaScripts. Also, you’ve got a somewhat white cat with elegant curly whiskers.
 
 If your brain is having trouble picturing the cat, [click here to help it on its way](/media/bouncer/cat.jpg).
 
