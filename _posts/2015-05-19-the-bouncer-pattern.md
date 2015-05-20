@@ -36,7 +36,7 @@ function fireZeMissiles(amount) {
 }
 {% endhighlight %}
 
-This of course works fine (you're a super villain, common). But as this article is about the bouncer pattern, let's refactor this a bit so it actually implements the pattern.
+This of course works fine (you're a super villain, come on). But as this article is about the bouncer pattern, let's refactor this a bit so it actually implements the pattern.
 
 {% highlight javascript %}
 function fireZeMissiles(amount) {
