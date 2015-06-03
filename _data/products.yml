@@ -20,7 +20,7 @@ fig:
   - 1.1.2
   - 1.1.3
   url: http://codecanyon.net/item/fig-animated-image-galleries/6000717
-  description: Beautifully animated photo galleries with little effort.
+  description: Beautifully animated photo galleries.
   price: 6
 
 soon:
@@ -33,7 +33,8 @@ soon:
   - 1.4.0
   - 1.6.0
   - 1.7.0
-  url: http://codecanyon.net/item/soon-animated-responsive-countdowns-jq-support/9485513
+  - 1.8.0
+  url: http://codecanyon.net/item/soon-animated-responsive-countdowns-jquery/9485513
   description: Responsive animated countdowns for everyone.
   price: 7
 
@@ -42,8 +43,9 @@ soon-wp:
   versions:
   - 1.6.0
   - 1.7.0
+  - 1.8.0
   url: http://codecanyon.net/item/soon-animated-responsive-countdowns-wordpress/10201472
-  description: Soon for WordPress, responsive animated countdowns for everyone.
+  description: Soon for WordPress.
   price: 16
 
 sunsets:
