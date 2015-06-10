@@ -79,6 +79,8 @@ for (var i=0; i<l; i++) {
 }
 {% endhighlight %}
 
+We fetch all nodes matching the `data-module` attribute. While looping over the nodes we get the name of the module from the attribute itself and then reference it on the global scope. Done. Single loop.
+
 While our classic `getElementsByClassName` method performs better than the `querySelectorAll` method the later unlocks advantages that outweigh the slight performance difference.
 
 - Your JavaScript does not know about the specific modules it might have to load, it gets the names from the HTML itself. Also, there’s no class names, your JavaScript only has to check for the `data-module` attribute, that’s it.
