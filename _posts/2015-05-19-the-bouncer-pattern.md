@@ -3,13 +3,13 @@ layout: post
 title: The bouncer pattern
 tags:
 - Tutorial
-- Programming
 - JavaScript
+- Programming
 ---
 
 Nesting if statements can quickly result in a lot of indenting and difficult to comprehend code. Implementing the bouncer pattern reduces these side effects and returns your code to a more readable and maintainable state.
 
-Imagine you’re a French super villain working on the new intranet of your volcano lair. You know your HTML, your CSS and of course, your JavaScripts. Also, you’ve got a somewhat white cat with elegant curly whiskers.
+Imagine you’re a French super villain working on the new intranet of your volcano lair. You know your HTML, your CSS and of course, your JavaScripts. Also, you own a somewhat white cat with elegant curly whiskers, it's on your lap, don't look down, it might get mad.
 
 If your brain is having trouble picturing the cat, [click here to help it on its way](/media/bouncer/cat.jpg).
 
@@ -57,7 +57,7 @@ function fireZeMissiles(amount) {
 
 Ah that's better. When using the bouncer pattern we test for argument validity first and then move on to the actual function logic. When we find out an argument smells fishy we use the `return` statement to stop function execution.
 
-You've just unlocked several advantages:
+You've just unlocked several advantages, achievements might start to rain down from the skies any moment now.
 
 - There’s now a clear distinction between testing argument validity and firing missiles. This results in precisely zero worries about invalid variables while you’re writing your superior missile firing logic.
 - Nesting is reduced which makes the function easier to read. If-else constructs will be closer together and you’ll be doing less hunting for opening and closing brackets;
