@@ -55,7 +55,7 @@ Our initialisation script queries the DOM for each available class name. The ele
 
 Works fine right? Well, it does, but, using the above setup, your logic needs to know the names of each CSS class and each and everyone of the JavaScript modules.
 
-Let’s give this a shot using data attributes and look at the differences.
+Let’s give this a shot using data attributes and examine the differences.
 
 {% highlight html %}
 <div data-module="Foo"> … </div>
@@ -73,19 +73,21 @@ Let’s give this a shot using data attributes and look at the differences.
 var nodes = document.querySelectorAll('[data-module]');
 var l = nodes.length;
 var node;
+var name;
 for (var i=0; i<l; i++) {
     node = nodes[i];
-    new window[node.getAttribute('data-module')](node);
+    name = node.getAttribute('data-module');
+    new window[name](node);
 }
 {% endhighlight %}
 
-We fetch all nodes matching the `data-module` attribute. While looping over the nodes we get the name of the module from the attribute itself and then reference it on the global scope. Done. Single loop.
+We fetch all nodes matching having a `data-module` attribute. While looping over those nodes we get the name of the module from the `data-module` attribute itself and then reference it on the global scope (`window[name]`). Done. Single loop.
 
-While our classic `getElementsByClassName` method performs better than the `querySelectorAll` method the later unlocks advantages that outweigh the slight performance difference.
+While our classic `getElementsByClassName` method performs a little bit better than the `querySelectorAll` method the later unlocks advantages that outweigh this performance difference.
 
-- Your JavaScript does not know about the specific modules it might have to load, it gets the names from the HTML itself. Also, there’s no class names, your JavaScript only has to check for the `data-module` attribute, that’s it.
+- Your JavaScript does not need know about the specific modules it might have to load, it gets the names from the HTML itself. Also, there’s no class names, your JavaScript only has to check for the `data-module` attribute, that’s it.
 - Looking at the HTML it’s crystal clear which part of the DOM is or will be enhanced with JavaScript functionality. It will always be in the form of a `data-module` attribute.
-- Because the modules are loaded in a single loop the order in which the modules load is out of your control. Meaning you’ll have to improve your code to better test if everything is ready for the module to load.
+- Because the modules are loaded in a single loop the order in which the modules load is out of your control. Meaning you’ll have to improve your code to better test if everything is ready for a module to load.
 - Once you’ve got this setup, you never have to touch it again, with the classic class name version you have to keep adding loops for each new functionality.
 - You can easily take this to the next level by defining modules using [UMD](https://github.com/umdjs/umd). This way you can load your module async using a module loader with the advantage that you’ll no longer have to embed the `<script>` tag manually. Total separation.
 
