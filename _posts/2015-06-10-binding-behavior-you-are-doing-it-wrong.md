@@ -6,7 +6,7 @@ tags:
 - JavaScript
 - Programming
 ---
-As a fellow web dev you’re probably separating your HTML and JavaScript layers following [the holy peanut strategy we all love](https://twitter.com/rikschennink/status/489317032337616896). This separation is classically done based on CSS classes. In this article I’ll compare this classic bind-on-class-name method with the a new and improved bind-on-data-attribute method.
+As a fellow web dev you’re probably separating your HTML and JavaScript layers following [the holy peanut strategy we all love](https://twitter.com/rikschennink/status/489317032337616896). This separation is classically done based on CSS classes. In this article I’ll compare this classic bind-on-class-name method with the new and improved bind-on-data-attribute method.
 
 Let’s take a look at the classic class name example.
 
