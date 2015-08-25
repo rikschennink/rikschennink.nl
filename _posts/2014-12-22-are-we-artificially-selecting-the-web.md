@@ -23,7 +23,7 @@ We’re moving to simpler, content oriented, and more effective cross-context so
 
 This is what's happening on the sideline:
 
-- We're being introduced to data abstraction services. There are moments when you no longer interact with apps or websites directly but interact via notifications or other layers on top of the actual data. Think [replying to messages via notification center](](http://www.imore.com/interactive-notifications-ios-8-explained)), or Google [presenting results of a search query on the search page](https://www.google.nl/search?q=Mount%20Everest).
+- We're being introduced to data abstraction services. There are moments when you no longer interact with apps or websites directly but interact via notifications or other layers on top of the actual data. Think [replying to messages via notification center](http://www.imore.com/interactive-notifications-ios-8-explained), or Google [presenting results of a search query on the search page](https://www.google.nl/search?q=Mount%20Everest).
 - Voice and speech algorithms like Apple's Siri, Microsoft's Cortana and Google's Voice Search are getting better each year.
 - Data interpretation algorithms are emerging around us, things like [IBM's Watson](http://www.wired.co.uk/news/archive/2013-02/11/ibm-watson-medical-doctor), [Microsoft's project Adam](http://blogs.microsoft.com/next/2014/07/14/microsoft-research-shows-advances-artificial-intelligence-project-adam/) and [Facebook's DeepFace](http://www.extremetech.com/extreme/178777-facebooks-facial-recognition-software-is-now-as-accurate-as-the-human-brain-but-what-now) are getting better at interpreting data and linking data together. They’re changing how we get to our data.
 
