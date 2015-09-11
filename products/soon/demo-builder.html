@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Soon </title>
+
+    <meta name="description" content="Soon, Animated Responsive Countdowns, jQuery">
+    <meta name="author" content="Rik Schennink">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link href="static/css/styles.min.css" rel="stylesheet"/>
+
+    <!--[if lt IE 9]>
+    <script src="static/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link href="static/css/soon.min.css" rel="stylesheet"/>
+
+
+</head>
+<body>
+
+    <div class="header">
+
+        <div class="content">
+
+            <h1 class="logo"><a href="index.html">Soon</a></h1>
+            
+            
+
+<div class="intro">
+    <p>Create stunningly beautiful countdowns in a few simple clicks with Soon. Soon contains a diverse set of counter types and comes with a visual builder so you can easily configure your own unique counters.</p>
+</div>
+
+
+<a class="buy" href="http://codecanyon.net/item/soon-animated-responsive-countdowns-jquery/9485513?ref=pqina"><i class="fa fa-star"></i> Buy now for $7</a>
+
+
+
+
+
+        </div>
+    </div>
+
+    
+
+<nav class="main">
+
+    <div class="content">
+
+        <h2>Navigation</h2>
+
+        <ul>
+            <li><a href="index.html" title="Demos"><i class="fa fa-home"></i> <span>Demos</span></a></li>
+            <li><a href="docs.html" title="Documentation"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
+            <li><a href="http://codecanyon.net/user/pqina" title="Contact"><i class="fa fa-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+
+    </div>
+
+</nav>
+
+<section class="demo">
+
+    <div class="content">
+
+        <h2>Examples</h2>
+
+        <nav class="demos">
+            <ul>
+
+                <li><a href="demo-presets.html" title="Presets">Presets</a></li>
+                <li><a href="demo-builder.html" title="Visual Builder">Visual Builder</a></li>
+                
+            </ul>
+        </nav>
+
+        <div class="live">
+
+            <style>
+    iframe {
+        display:block;
+        margin:0 auto;
+        max-width:100%;
+    }
+</style>
+<iframe width="750" height="422" src="//www.youtube.com/embed/bnxEZAS0XwU" frameborder="0" allowfullscreen></iframe>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="features">
+
+    <div class="content">
+
+        <h2>Features</h2>
+
+        <ul>
+            
+            <li>
+                <section>
+                    <h3><i class="fa fa-paint-brush"></i> Visual Builder</h3>
+                    <p>Easily build and design all sorts of different countdowns using the <a href="demo-builder.html">visual builder</a>.</p>
+                </section>
+                
+            <li>
+                <section>
+                    <h3><i class="fa fa-desktop"></i> Responsive</h3>
+                    <p>It&#39;s <strong>responsive</strong> and works on a wide range of modern mobile, tablet and desktop browsers.</p>
+                </section>
+                
+            <li>
+                <section>
+                    <h3><i class="fa fa-magic"></i> Animations</h3>
+                    <p>Soon is <strong>beautifully animated</strong>, comes in various styles and is a real eye catcher.</p>
+                </section>
+                
+            <li>
+                <section>
+                    <h3><i class="fa fa-wrench"></i> Customizable</h3>
+                    <p>The package contains the <strong>original source files</strong> so you can tweak it to your own liking.</p>
+                </section>
+                
+            <li>
+                <section>
+                    <h3><i class="fa fa-envelope"></i> Support</h3>
+                    <p>Just contact me through my <a href="http://codecanyon.net/user/pqina#contact">codecanyon account</a>, I&#39;m <strong>happy to assist</strong>.</p>
+                </section>
+                
+            <li>
+                <section>
+                    <h3><i class="fa fa-cloud-download"></i> Free Updates</h3>
+                    <p>Any future updates are <strong>freely available</strong> after purchase.</p>
+                </section>
+                
+        </ul>
+
+    </div>
+
+</section>
+<section class="subscribe">
+    <div class="content">
+        <h2>Updates</h2>
+
+        <p>Leave your email address and I'll notify you of updates and new releases.</p>
+
+        <form action="http://rikschennink.createsend.com/t/y/s/fftdk/" method="post">
+    <label for="fieldEmail">Email</label>
+    <input id="fieldEmail" name="cm-fftdk-fftdk" type="email" placeholder="awesome@dev.com" required />
+    <button type="submit">subscribe</button>
+</form>
+
+    </div>
+</section>
+
+
+
+    <footer class="footer">
+        <div class="content">
+            <ul>
+                
+                <li><a href="http://twitter.com/rikschennink">Twitter</a></li>
+                
+                <li><a href="http://codecanyon.net/user/pqina">CodeCanyon</a></li>
+                
+            </ul>
+            <span>&copy; <a href="http://rikschennink.nl">Rik Schennink</a></span>
+        </div>
+    </footer>
+
+    <script src="static/js/jquery.js"></script>
+<script src="static/js/soon.min.js" data-auto="false"></script>
+<script>
+  if ('addEventListener' in document) {
+    var showDemo = function(e){
+        var btn = e.target;
+        btn.style.display = 'none';
+        var wrapper = e.target.parentNode;
+        var panel = wrapper.querySelector('.el-sample');
+        panel.style.display = 'block';
+        var nodes = e.target.parentNode.querySelectorAll('.soon');
+        for(var i=0;i<nodes.length;i++){
+            Soon.create(nodes[i]);
+        }
+    };
+    var buttons = document.querySelectorAll('.demo-button');
+    for(var i=0;i<buttons.length;i++) {
+        buttons[i].addEventListener('click',showDemo);
+    }
+  }
+  var soons = document.querySelectorAll('.auto-due .soon');
+  for(var i=0;i<soons.length;i++) {
+      Soon.create(soons[i]);
+  }
+</script>
+
+</body>
+</html>

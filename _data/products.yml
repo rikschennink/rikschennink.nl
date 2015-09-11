@@ -25,31 +25,16 @@ fig:
 
 soon:
   title: Soon
-  versions:
-  - 1.0.0
-  - 1.1.0
-  - 1.2.0
-  - 1.3.0
-  - 1.4.0
-  - 1.6.0
-  - 1.7.0
-  - 1.8.0
   url: http://codecanyon.net/item/soon-animated-responsive-countdowns-jquery/9485513
   description: Responsive animated countdowns for everyone.
   price: 7
 
 soon-wp:
   title: Soon WordPress
-  versions:
-  - 1.6.0
-  - 1.7.0
-  - 1.8.0
   url: http://codecanyon.net/item/soon-animated-responsive-countdowns-wordpress/10201472
   description: Soon for WordPress.
   price: 16
 
 sunsets:
   title: Sunsets
-  versions:
-  - 1.0.0
   description: A collection of 15 high resolution blurry sunsets.
