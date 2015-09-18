@@ -95,4 +95,4 @@ The above is a stepping stone. Because of a better separation of concerns you’
 
 Give data attributes a go, you’ll never look back!
 
-Webucator has published a [tutorial video of this article](https://youtu.be/DRkkK1eMKl0).
+[Webucator](https://www.webucator.com) has published a [tutorial video of this article](https://youtu.be/DRkkK1eMKl0).
