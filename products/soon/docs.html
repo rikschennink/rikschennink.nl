@@ -500,10 +500,10 @@
 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span> <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"at 23:30"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
 <span class="hljs-comment">&lt;!-- due date set --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span> <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"at monday 12:00"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span> <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"monday at 12:00"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
 <span class="hljs-comment">&lt;!-- due date set --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span> <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"reset at monday 12:00"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span> <span class="hljs-attribute">data-due</span>=<span class="hljs-value">"reset monday at 12:00"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 
 <span class="hljs-comment">&lt;!-- since date set --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"soon"</span> <span class="hljs-attribute">data-since</span>=<span class="hljs-value">"2014"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
@@ -524,9 +524,9 @@
 
 <div class="soon" data-due="at 23:30"></div>
 
-<div class="soon" data-due="at monday 12:00"></div>
+<div class="soon" data-due="monday at 12:00"></div>
 
-<div class="soon" data-due="reset at monday 12:00"></div>
+<div class="soon" data-due="reset monday at 12:00"></div>
 
 <div class="soon" data-since="2014"></div>
         </div>
@@ -556,13 +556,13 @@
 $(document).ready(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
 
     <span class="hljs-comment">// create a simple soon counter on the supplied element</span>
-    $(<span class="hljs-string">".your-counter"</span>).soon({
+    $(<span class="hljs-string">".your-counter"</span>).soon().create({
         due:<span class="hljs-string">"2016"</span>,
         layout:<span class="hljs-string">"group"</span>
     });
 
     <span class="hljs-comment">// create a more advanced counter</span>
-    $(<span class="hljs-string">".your-advanced-counter"</span>).soon({
+    $(<span class="hljs-string">".your-advanced-counter"</span>).soon().create({
         due:<span class="hljs-string">"2015-11-25"</span>,
         layout:<span class="hljs-string">"group tight"</span>,
         face:<span class="hljs-string">"flip color-light corners-sharp shadow-soft"</span>,
@@ -1938,7 +1938,7 @@ $(document).ready(<span class="hljs-function"><span class="hljs-keyword">functio
 
     <h3 id="topic-linking-to-other-functionality-create">Create</h3>
 
-    <p>If you want to create a Soon element manually, you can call the <code>Soon.create(element,options)</code> method and pass a reference to the element as a paremeter the second parameter contains all the options. If you&#39;re using jQuery you can call <code>$(selector).soon(options)</code>.</p><dl class="code-sample"><dt>options</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+    <p>If you want to create a Soon element manually, you can call the <code>Soon.create(element,options)</code> method and pass a reference to the element as a paremeter the second parameter contains all the options. If you&#39;re using jQuery you can call <code>$(selector).soon().create(options)</code>.</p><dl class="code-sample"><dt>options</dt><dd><div class="highlight"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
 <span class="hljs-comment">// available options</span>
 <span class="hljs-keyword">var</span> options = {
 
@@ -2036,7 +2036,7 @@ $(document).ready(<span class="hljs-function"><span class="hljs-keyword">functio
 
     <h3 id="topic-linking-to-other-functionality-destroy">Destroy</h3>
 
-    <p>If you want to remove a Soon element, you can call the <code>Soon.destroy(element)</code> method and pass a reference to the element as a paremeter. If you&#39;re using jQuery you can also call <code>$(selector).soon.destroy()</code></p>
+    <p>If you want to remove a Soon element, you can call the <code>Soon.destroy(element)</code> method and pass a reference to the element as a paremeter. If you&#39;re using jQuery you can also call <code>$(selector).soon().destroy()</code></p>
 
 
 
@@ -2068,7 +2068,7 @@ $(document).ready(<span class="hljs-function"><span class="hljs-keyword">functio
 
     <h3 id="topic-linking-to-other-functionality-redraw">Redraw</h3>
 
-    <p>If you want to redraw the Soon element, for instance after you&#39;ve modified or resized the parent DOM element, you can call the <code>Soon.redraw(element)</code> method  and pass a reference to the element as a paremeter. If you&#39;re using jQuery you can also call <code>$(selector).soon.redraw()</code>. Soon calls this method when automatically on page load and when the browser window is resized.</p>
+    <p>If you want to redraw the Soon element, for instance after you&#39;ve modified or resized the parent DOM element, you can call the <code>Soon.redraw(element)</code> method  and pass a reference to the element as a paremeter. If you&#39;re using jQuery you can also call <code>$(selector).soon().redraw()</code>. Soon calls this method when automatically on page load and when the browser window is resized.</p>
 
 
 
@@ -2084,7 +2084,7 @@ $(document).ready(<span class="hljs-function"><span class="hljs-keyword">functio
 
     <h3 id="topic-linking-to-other-functionality-option-override">Option Override</h3>
 
-    <p>You can use the <code>setOption</code> call to change a setting after you&#39;ve created the counter. <code>Soon.setOption(element,&#39;due&#39;,&#39;2017&#39;)</code> or <code>$(element).setOption(&#39;due&#39;,&#39;2017&#39;)</code> will change the due date to 2017.</p>
+    <p>You can use the <code>setOption</code> call to change a setting after you&#39;ve created the counter. <code>Soon.setOption(element,&#39;due&#39;,&#39;2017&#39;)</code> or <code>$(element).soon().setOption(&#39;due&#39;,&#39;2017&#39;)</code> will change the due date to 2017. Setting multiple properties at once can be done with the <code>setOptions(optionsObject)</code> call. For instance <code>Soon.setOptions(element,{&#39;due&#39;:&#39;2017&#39;,&#39;padding&#39;:false})</code>.</p>
 
 
 
