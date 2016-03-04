@@ -26,3 +26,26 @@ $text-color-dark: #545250;
 $margin-base:1.875rem;
 
 $max-width-small:17.5rem;
+
+$categories:(
+  (
+	name:'About',
+	light:#B39292,
+	dark:#695154
+  ),
+  (
+	name:'Opinion',
+	light:#F0828F,
+	dark:#b43b49
+  ),
+  (
+	name:'Tutorial',
+	light:#B0B69E,
+	dark:#5e6a53
+  ),
+  (
+	name:'Resource',
+	light:#ECBB6C,
+	dark:#b47a3b
+  )
+);

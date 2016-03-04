@@ -9,7 +9,6 @@
 @import 'modules/caption';
 @import 'modules/post';
 @import 'modules/thoughts';
-@import 'modules/products';
 @import 'modules/highlight';
 @import 'modules/flickr';
 @import 'modules/tweet';
@@ -19,30 +18,7 @@
 @import 'layout/nav';
 @import 'layout/footer';
 
-$categories:(
-  (
-	name:'About',
-	light:#B39292,
-	dark:#695154
-  ),
-  (
-	name:'Opinion',
-	light:#F0828F,
-	dark:#b43b49
-  ),
-  (
-	name:'Tutorial',
-	light:#B0B69E,
-	dark:#5e6a53
-  ),
-  (
-	name:'Resource',
-	light:#ECBB6C,
-	dark:#b47a3b
-  )
-);
-
-
+// colors
 @each $category in $categories {
 
   $name: map-get($category,name);
