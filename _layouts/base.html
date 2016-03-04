@@ -13,22 +13,8 @@
     {% else %}
     <title>{{ page.title }}</title>
     {% endif %}
-
-    <script>
-        document.documentElement.className = 'js';
-        var cb = function() {
-            var l = document.createElement('link'); l.rel = 'stylesheet';
-            l.href = '/static/css/styles.css';
-            var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-        };
-        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-                webkitRequestAnimationFrame || msRequestAnimationFrame;
-        if (raf) raf(cb);
-        else window.addEventListener('load', cb);
-    </script>
-    <noscript>
-        <link href="/static/css/styles.css" rel="stylesheet">
-    </noscript>
+    
+    <link href="/static/css/styles.css" rel="stylesheet">
 
 </head>
 <body>
