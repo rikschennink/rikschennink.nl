@@ -160,38 +160,36 @@ main {
 
 blockquote {
 
-    font-size:1.125em;
     position:relative;
-    padding:.9325rem;
-    margin:.9325rem 15% 1.875rem 0;
-    transform:rotateZ(-2deg);
+    font-size:1.125em;
+    padding:0;
+    margin:.9325rem 0;
 
     p {
-        display:inline;
-        color:#fff;
-        $fill:#9E9494;
-        margin:0 .25em;
-        background:$fill;
-        box-shadow:-.125em 0 0 .325rem $fill,.125em 0 0 .325rem $fill;
+        margin:0;
+        padding:.9325rem 1.875rem;
     }
 
-    strong {
-        color:#fff;
+    @media (max-width:50rem) {
+        border-left:3px solid;
     }
 
-    @media (min-width:40rem) {
-
-        margin-right:1.875rem;
-        margin-left:-1.875rem;
-        font-size:1.5rem;
-        float:left;
-        max-width:40%;
-
-    }
     @media (min-width:50rem) {
-        margin-left:-3.75rem;
+
+        border-right:3px solid;
+        margin-right:3.5rem;
+
+        float:left;
+        font-size:1.5rem;
+
+        max-width:30vw;
+        margin-left:-10vw;
 
     }
+//    @media (min-width:50rem) {
+  //      margin-left:-3.75rem;
+
+    //}
 
 }
 

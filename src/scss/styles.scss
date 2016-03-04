@@ -19,43 +19,43 @@
 @import 'layout/nav';
 @import 'layout/footer';
 
-// external
-@import 'vendor/tilt/tilt';
+$categories:(
+  (
+	name:'About',
+	light:#B39292,
+	dark:#695154
+  ),
+  (
+	name:'Opinion',
+	light:#F0828F,
+	dark:#b43b49
+  ),
+  (
+	name:'Tutorial',
+	light:#B0B69E,
+	dark:#5e6a53
+  ),
+  (
+	name:'Resource',
+	light:#ECBB6C,
+	dark:#b47a3b
+  )
+);
 
-// vendor overrides
 
+@each $category in $categories {
 
+  $name: map-get($category,name);
+  $light: map-get($category,light);
+  $dark: map-get($category,dark);
 
-
-// color overrides
-[data-tags*='About'] {
-    h2,h2 a {color:#B39292;}
+  [data-tags*='#{$name}'] {
+    h2,h2 a {color:$light;}
     .caption {
-        background:#B39292;
-        time {color:#695154;}
+      background:$light;
+      time {color:$dark;}
     }
-}
+	blockquote{border-color:$light;}
+  }
 
-[data-tags*='Opinion'] {
-    h2,h2 a {color:#F0828F;}
-    .caption {
-        background:#F0828F;
-        time {color:#b43b49;}
-    }
-}
-
-[data-tags*='Tutorial'] {
-    h2,h2 a {color:#95A073;}
-    .caption {
-        background:#B0B69E;
-        time {color: #575a4e;}
-    }
-}
-
-[data-tags*='Resource'] {
-    h2,h2 a {color:#ECBB6C;}
-    .caption {
-        background:#ECBB6C;
-        time {color:#b47a3b;}
-    }
 }
