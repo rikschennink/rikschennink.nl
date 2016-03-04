@@ -5,6 +5,8 @@ var sequence = require('run-sequence');
 var autoprefixer = require('gulp-autoprefixer');
 var spawn = require('child_process').spawn;
 var browserSync = require('browser-sync');
+var sourcemaps = require('gulp-sourcemaps');
+var uglify = require('gulp-uglify');
 
 gulp.task('_connect', function() {
 
@@ -37,24 +39,35 @@ gulp.task('_jekyll',function(cb){
 
 });
 
+gulp.task('_assets',function(){
+
+	return gulp.src('./src/assets/*')
+		.pipe(gulp.dest('./static/assets'))
+
+});
+
 gulp.task('_scss',function() {
 
-    return gulp.src('./static/scss/styles.scss')
-        .pipe(sass({errLogToConsole:true}))
+    return gulp.src('./src/scss/styles.scss')
+		.pipe(sourcemaps.init())
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(autoprefixer('last 1 version', '> 5%', 'ie 8'))
-
-        // one for 'gh_pages'
+		.pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./static/css'))
+	    .pipe(browserSync.reload({stream:true}));
 
-        // reload browser
-        .pipe(browserSync.reload({stream:true}));
+});
 
+gulp.task('_js',function(){
 
+	return gulp.src('./src/js/**/*.js')
+		.pipe(uglify())
+		.pipe(gulp.dest('./static/js'))
 });
 
 gulp.task('_static',function(cb){
 
-    sequence('_scss','_inject',cb);
+    sequence('_assets','_js','_scss','_inject',cb);
 
 });
 
@@ -67,7 +80,6 @@ gulp.task('_inject',function(){
 
 gulp.task('_content',function(cb){
 
-    // build new jekyll site, than inject static files
 	sequence('_jekyll','_inject',cb);
 
 });
@@ -82,10 +94,7 @@ gulp.task('dev',['build','_connect'],function(){
 
     // now watching static files
     gulp.watch([
-
-        // all static files
-        './static/**/*'
-
+        './src/**/*'
     ],['_static']);
 
     // now watching html files
@@ -95,7 +104,7 @@ gulp.task('dev',['build','_connect'],function(){
 		'./**/*.html',
 		'./**/*.md',
 
-		// exclude these files
+		// exclude these
         '!./node_modules/**/*',
         '!./_site/**/*'
 

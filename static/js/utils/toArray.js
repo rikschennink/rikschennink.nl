@@ -1,11 +1,1 @@
-define(function(){
-
-    'use strict';
-
-    return function(obj) {
-        return [].map.call(obj,function(element) {
-            return element;
-        })
-    };
-
-});
+define(function(){"use strict";return function(n){return[].map.call(n,function(n){return n})}});
