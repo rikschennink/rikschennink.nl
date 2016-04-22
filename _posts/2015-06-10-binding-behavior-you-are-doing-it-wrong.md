@@ -94,5 +94,3 @@ While our classic `getElementsByClassName` method performs a little bit better t
 The above is a stepping stone. Because of a better separation of concerns you’ll force yourself to think more modular. This results in cleaner, more reusable and maintainable code.
 
 Give data attributes a go, you’ll never look back!
-
-[Webucator](https://www.webucator.com) has published a [tutorial video of this article](https://youtu.be/DRkkK1eMKl0).
