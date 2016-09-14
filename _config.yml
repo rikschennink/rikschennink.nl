@@ -1,4 +1,4 @@
 highlighter: rouge
 safe: true
 exclude: [node_modules, CNAME, README.md, package.json, gulpfile.js]
-permalink: /thoughts/:title
+permalink: /thoughts/:title/
