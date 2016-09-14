@@ -36,7 +36,7 @@ With the above process you’re effectively killing all creative input from the 
 
 Your development team knows of the latest API’s, the coolest new features, and the smartest and most effective ways to get things done. Instead of making use of that knowledge you’ve reduced them to mere design-to-web translators.
 
-Being part of the creative process is not for everyone. So ask around, you might have some developers in your team who do want be a part of it. Getting them involved wil improve communication between teams, increase creativity, and as a result, make the end product more memorable.
+Being part of the creative process is not for everyone. So ask around, you might have some developers in your team who do want be a part of it. Getting them involved will improve communication between teams, increase creativity, and as a result, make the end product more memorable.
 
 Now take the afternoon off and go watch all those other interesting movie analyses by [Every Frame a Painting](https://www.youtube.com/channel/UCjFqcJQXGZ6T6sxyFB-5i6A).
 
