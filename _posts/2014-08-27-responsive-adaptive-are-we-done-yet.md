@@ -14,7 +14,6 @@ There was a time, a simple time, when we had the internet with its back against 
 I did some quick research on responsive and adaptive, but had to stop because I started bleeding profusely from the eyes and ears. 
 
 - **Responsive**: Is flexible, so scales with the viewport, functionality however is the same across all devices.
-
 - **Adaptive**: A set of fixed width layout definitions. For instance, mobile, tablet and desktop. Also, per size, functionality can vary.
 
 That’s fine and all but apparently responsive can be a subset of adaptive, this is a bit problematic because things key to the fixed adaptive way of life contradict core concepts in the responsive flex camp. If it's a subset, it's a really awkward one.

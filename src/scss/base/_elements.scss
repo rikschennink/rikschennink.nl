@@ -87,8 +87,11 @@ canvas,img {
 
 // inline code snippet
 :not(pre)>code {
-    color:#9E9494;
-    font-size:.75em;
+	color: #473f3f;
+	font-size: .75em;
+	background-color: #f0f0f0;
+	padding: .25em .3125em;
+	border-radius:.1875em;
 }
 
 // keyboard commands
