@@ -90,7 +90,7 @@ gulp.task('build',function(cb){
 
 });
 
-gulp.task('dev',['build','_connect'],function(){
+gulp.task('default',['build','_connect'],function(){
 
     // now watching static files
     gulp.watch([

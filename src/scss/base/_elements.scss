@@ -167,32 +167,19 @@ blockquote {
     font-size:1.125em;
     padding:0;
     margin:.9325rem 0;
+	border-left:3px solid;
 
     p {
         margin:0;
         padding:.9325rem 1.875rem;
     }
 
-    @media (max-width:50rem) {
-        border-left:3px solid;
-    }
-
     @media (min-width:50rem) {
 
-        border-right:3px solid;
-        margin-right:3.5rem;
-
-        float:left;
+		margin:2.5rem 0;
         font-size:1.5rem;
 
-        max-width:30vw;
-        margin-left:-10vw;
-
     }
-//    @media (min-width:50rem) {
-  //      margin-left:-3.75rem;
-
-    //}
 
 }
 
@@ -210,7 +197,6 @@ main>section>h1 {
 
         position: absolute;
         margin-right: 1.875rem;
-        //font-size: 1.5rem;
         left: 20rem;
         text-align:left;
 
