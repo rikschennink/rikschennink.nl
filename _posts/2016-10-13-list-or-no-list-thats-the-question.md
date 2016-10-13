@@ -1,6 +1,6 @@
 ---
 layout: post
-title: List or no list, that's the question.
+title: List or no list, that's the question
 tags:
 - Resource
 - HTML
