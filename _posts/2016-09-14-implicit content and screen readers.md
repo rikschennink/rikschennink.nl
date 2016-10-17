@@ -21,6 +21,7 @@ To help these users we add hidden descriptive texts to the page. We do this by c
   margin: -1px;
   padding: 0;
   border: 0;
+  white-space: nowrap;
 }
 {% endhighlight %}
 
