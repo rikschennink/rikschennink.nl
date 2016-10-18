@@ -53,3 +53,7 @@ This is how you would use this `implicit` class in your HTML.
 These [implicit elements are now hidden](http://codepen.io/rikschennink/pen/JRXjdQ) but are still read by screen readers. People using assistive technologies now have a little bit of extra context to make it easier to understand the content. 
 
 As a bonus, this additional information will also benefit search engines.
+
+Sources:
+- http://hugogiraudel.com/2016/10/13/css-hide-and-seek/
+- https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
