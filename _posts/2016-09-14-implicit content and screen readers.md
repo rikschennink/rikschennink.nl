@@ -15,13 +15,12 @@ To help these users we add hidden descriptive texts to the page. We do this by c
 .implicit {
   position: absolute;
   overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
   height: 1px;
   width: 1px;
-  margin: -1px;
   padding: 0;
   border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   white-space: nowrap;
 }
 {% endhighlight %}
@@ -56,5 +55,5 @@ As a bonus, this additional information will also benefit search engines.
 
 Sources:
 
-- [CSS Hide and Seek](http://hugogiraudel.com/2016/10/13/css-hide-and-seek/)
+- [CSS hide-and-seek](http://hugogiraudel.com/2016/10/13/css-hide-and-seek/)
 - [Beware smushed off-screen accessible text](https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe)
