@@ -56,5 +56,5 @@ As a bonus, this additional information will also benefit search engines.
 
 Sources:
 
-- [http://hugogiraudel.com/2016/10/13/css-hide-and-seek/](CSS Hide and Seek)
-- [https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe](Beware smushed off-screen accessible text)
+- [CSS Hide and Seek](http://hugogiraudel.com/2016/10/13/css-hide-and-seek/)
+- [Beware smushed off-screen accessible text](https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe)
