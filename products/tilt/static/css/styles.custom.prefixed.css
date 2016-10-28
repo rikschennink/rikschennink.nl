@@ -1,3 +1,11 @@
+.demo-button {
+  display: none;
+}
+
+.demo-button + .el-sample {
+  display: block;
+}
+
 .el-sample {
   background: #27262A;
 }
