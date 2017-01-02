@@ -12,8 +12,7 @@ tags:
 
 Yesterday I presented ConditionerJS during at an NLHTML5 meetup hosted by Booking.com. Excellent venue, very kind attendees, interesting questions and ideas on how to use ConditionerJS with React or Redux.
 
-The talk has been recorded and should be up soon on the [NLHTML5 YouTube channel](https://www.youtube.com/user/nlhtml5).
-
+- [Presentation Video](https://www.youtube.com/watch?v=o5blCuONALE)
 - [ConditionerJS](http://conditionerjs.com)
 - [Presentation Slides](https://speakerdeck.com/rikschennink/context-based-progressive-enhancement-using-conditionerjs)
 - [More information on ConditionerJS at Smashing Magazine](http://www.smashingmagazine.com/2014/04/03/frizz-free-javascript-with-conditionerjs/)
